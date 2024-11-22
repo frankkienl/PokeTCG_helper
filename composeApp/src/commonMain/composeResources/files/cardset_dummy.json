@@ -1,0 +1,54 @@
+{
+  "name": "Dummy Set",
+  "numberOfCards": 5,
+  "imageUrl": "card_back.png",
+  "packs": [
+    {
+      "id": "MEWTWO",
+      "name": "Mewtwo",
+      "imageUrl": "Genetic-Apex-Mewtwo-106x200.jpg"
+    },
+    {
+      "id": "CHARIZARD",
+      "name": "Charizard",
+      "imageUrl": "Genetic-Apex-Charizard-1-106x200.jpg"
+    },
+    {
+      "id": "PIKACHU",
+      "name": "Pikachu",
+      "imageUrl": "Genetic-Apex-Pikachu-1-106x200.jpg"
+    }
+  ],
+  "cards": [
+    {
+      "number": 1,
+      "pokeName": "Bulbasaur",
+      "imageUrl": "1-Bulbasaur-Genetic-Apex-143x200.png",
+      "packId": "MEWTWO"
+    },
+    {
+      "number": 2,
+      "pokeName": "Ivysaur",
+      "imageUrl": "2-Ivysaur-Genetic-Apex-143x200.png",
+      "packId": "MEWTWO"
+    },
+    {
+      "number": 3,
+      "pokeName": "Venusaur",
+      "imageUrl": "3-Venusaur-Genetic-Apex-143x200.png",
+      "packId": "MEWTWO"
+    },
+    {
+      "number": 4,
+      "pokeName": "Venusaur ex",
+      "imageUrl": "4-Venusaur-ex-Genetic-Apex-143x200.png",
+      "packId": "MEWTWO"
+    },
+    {
+      "numbers": 5,
+      "pokeName": "Caterpie",
+      "imageUrl": "5-Caterpie-Genetic-Apex-143x200.png",
+      "packId": "PIKACHU"
+    }
+  ]
+}
