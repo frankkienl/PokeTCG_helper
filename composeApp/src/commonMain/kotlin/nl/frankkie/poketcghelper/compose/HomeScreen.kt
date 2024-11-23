@@ -9,12 +9,20 @@ import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import nl.frankkie.poketcghelper.cardSet
 import nl.frankkie.poketcghelper.initializeCards
+import nl.frankkie.poketcghelper.model.PokeCardSet
 
 @Composable
-fun HomeScreen(navController: NavController) {
+fun HomeScreen(
+    navController: NavController,
+    viewModel: HomeScreenViewModel = viewModel { HomeScreenViewModel() }
+) {
     var cardsInitialized by remember { mutableStateOf(false) }
     LaunchedEffect(null) {
         if (!cardsInitialized) {
@@ -24,19 +32,38 @@ fun HomeScreen(navController: NavController) {
     }
 
     Scaffold(
-        topBar = { TopAppBar(title = { Text("Poke TCG Helper") }) },
+        topBar = { HomeScreenTopBar(navController) },
     ) {
         if (!cardsInitialized) {
             Text("Loading...")
         } else {
-            LazyVerticalGrid(
-                modifier = Modifier.fillMaxSize(),
-                columns = GridCells.Fixed(5),
-            ) {
-                items(cardSet.cards) { card ->
-                    PokeCardComposable(card)
-                }
-            }
+            GridOfCards(cardSet)
         }
     }
 }
+
+@Composable
+fun GridOfCards(cardSet: PokeCardSet) {
+    LazyVerticalGrid(
+        modifier = Modifier.fillMaxSize(),
+        columns = GridCells.Fixed(5),
+    ) {
+        items(cardSet.cards) { card ->
+            PokeCardComposable(card)
+        }
+    }
+}
+
+@Composable
+fun HomeScreenTopBar(navController: NavController) {
+    TopAppBar(title = { Text("Poke TCG Helper") })
+}
+
+class HomeScreenViewModel : ViewModel() {
+    private val _uiState = MutableStateFlow(HomeScreenUiState(false))
+    val uiState = _uiState.asStateFlow()
+}
+
+data class HomeScreenUiState(
+    val isLoggedIn: Boolean
+)
