@@ -20,6 +20,7 @@ kotlinx-serialization = "1.7.3"
 ktor = "3.0.0"
 logback = "1.5.11"
 navigationCompose = "2.8.4"
+krpc = "0.4.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -37,11 +38,21 @@ androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle
 androidx-navigation-compose = { group = "org.jetbrains.androidx.navigation", name = "navigation-compose", version.ref = "compose-navigation" }
 kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
 logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 ktor-server-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
 ktor-server-netty = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "ktor" }
 ktor-server-tests = { module = "io.ktor:ktor-server-tests-jvm", version.ref = "ktor" }
-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+# Kotlinx RPC
+krpc-client = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-client", version.ref="krpc"}
+krpc-server = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-server", version.ref="krpc"}
+krpc-serialization-json = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-serialization-json", version.ref="krpc"}
+krpc-ktor-client = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-ktor-client", version.ref="krpc"}
+krpc-ktor-server = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-ktor-server", version.ref="krpc"}
+krpc-api = { group = "org.jetbrains.kotlinx", name="ktor-server-netty-jvm", version.ref="krpc"}
+
 
 
 [plugins]
@@ -53,3 +64,4 @@ kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+krpc = { id = "org.jetbrains.kotlinx.rpc.plugin", version.ref="krpc"}

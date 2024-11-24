@@ -49,7 +49,12 @@ fun GridOfCards(cardSet: PokeCardSet) {
         columns = GridCells.Fixed(5),
     ) {
         items(cardSet.cards) { card ->
-            PokeCardComposable(card)
+            PokeCardComposable(
+                card,
+                isLoggedIn = true,
+                isOwned = false,
+                onClick = {}
+            )
         }
     }
 }

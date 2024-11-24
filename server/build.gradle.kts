@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.kotlinJvm)
     alias(libs.plugins.ktor)
     application
+    alias(libs.plugins.krpc)
 }
 
 group = "nl.frankkie.poketcghelper"
@@ -16,6 +17,13 @@ dependencies {
     implementation(libs.logback)
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.netty)
+    // KRPC
+    implementation(libs.krpc.server)
+    implementation(libs.krpc.serialization.json)
+    implementation(libs.krpc.ktor.server)
+    implementation(libs.krpc.api)
+
+    // Test
     testImplementation(libs.ktor.server.tests)
     testImplementation(libs.kotlin.test.junit)
 }

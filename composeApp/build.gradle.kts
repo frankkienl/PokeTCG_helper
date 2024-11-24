@@ -10,6 +10,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.serialization)
+    alias(libs.plugins.krpc)
 }
 
 kotlin {
@@ -70,7 +71,13 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.androidx.navigation.compose)
+            // JSON parsing
             implementation(libs.kotlinx.serialization)
+            // KRPC
+            implementation(libs.krpc.client)
+            implementation(libs.krpc.serialization.json)
+            implementation(libs.krpc.ktor.client)
+            //
             implementation(projects.shared)
         }
         desktopMain.dependencies {

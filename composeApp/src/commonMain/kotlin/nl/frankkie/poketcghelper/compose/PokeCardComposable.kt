@@ -1,7 +1,7 @@
 package nl.frankkie.poketcghelper.compose
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Text
@@ -9,6 +9,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
 import nl.frankkie.poketcghelper.model.PokeCard
@@ -18,7 +19,12 @@ import poketcg_helper.composeapp.generated.resources.Res
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
-fun PokeCardComposable(pokeCard: PokeCard) {
+fun PokeCardComposable(
+    pokeCard: PokeCard,
+    isLoggedIn: Boolean,
+    isOwned: Boolean,
+    onClick: (PokeCard) -> Unit
+) {
     var bytes by remember {
         mutableStateOf(ByteArray(0))
     }
@@ -30,11 +36,23 @@ fun PokeCardComposable(pokeCard: PokeCard) {
         imageBitmap = bytes.decodeToImageBitmap()
     }
     Column(
-        modifier = Modifier.padding(top = 8.dp),
+        modifier = Modifier
+            .padding(top = 8.dp)
+            .clickable { onClick(pokeCard) },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         imageBitmap?.let {
-            Image(it, null)
+            if (isLoggedIn && !isOwned) {
+                //Show blurred
+                Image(
+                    it,
+                    null,
+                    colorFilter = ColorFilter.tint(Color.White)
+                )
+            } else {
+                //Show normally
+                Image(it, null)
+            }
         }
         Text(pokeCard.number.toString())
         Text(pokeCard.pokeName)
