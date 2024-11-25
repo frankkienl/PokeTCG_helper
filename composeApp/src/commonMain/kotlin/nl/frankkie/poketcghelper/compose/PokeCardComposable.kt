@@ -8,9 +8,11 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import nl.frankkie.poketcghelper.model.PokeCard
 import org.jetbrains.compose.resources.ExperimentalResourceApi
@@ -38,7 +40,9 @@ fun PokeCardComposable(
     Column(
         modifier = Modifier
             .padding(top = 8.dp)
-            .clickable { onClick(pokeCard) },
+            .clickable {
+                onClick(pokeCard)
+            },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         imageBitmap?.let {
@@ -47,7 +51,7 @@ fun PokeCardComposable(
                 Image(
                     it,
                     null,
-                    colorFilter = ColorFilter.tint(Color.White)
+                    colorFilter = ColorFilter.tint(Color(0x99FFFFFF), blendMode = BlendMode.Color),
                 )
             } else {
                 //Show normally

@@ -16,6 +16,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import nl.frankkie.poketcghelper.cardSet
 import nl.frankkie.poketcghelper.initializeCards
+import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeCardSet
 
 @Composable
@@ -31,19 +32,31 @@ fun HomeScreen(
         }
     }
 
+    val uiState = viewModel.uiState.collectAsState().value
+
     Scaffold(
         topBar = { HomeScreenTopBar(navController) },
     ) {
         if (!cardsInitialized) {
             Text("Loading...")
         } else {
-            GridOfCards(cardSet)
+            GridOfCards(cardSet, onCardClick = { card ->
+                viewModel.showDialog(card)
+            })
+            if (uiState.cardDialog != null) {
+                PokeCardDialog(
+                    uiState.cardDialog,
+                    amountOwned = 1,
+                    onChangeAmountOwned = {},
+                    onDismissRequest = { viewModel.hideDialog() }
+                )
+            }
         }
     }
 }
 
 @Composable
-fun GridOfCards(cardSet: PokeCardSet) {
+fun GridOfCards(cardSet: PokeCardSet, onCardClick: (PokeCard) -> Unit) {
     LazyVerticalGrid(
         modifier = Modifier.fillMaxSize(),
         columns = GridCells.Fixed(5),
@@ -51,9 +64,11 @@ fun GridOfCards(cardSet: PokeCardSet) {
         items(cardSet.cards) { card ->
             PokeCardComposable(
                 card,
-                isLoggedIn = true,
-                isOwned = false,
-                onClick = {}
+                isLoggedIn = false,
+                isOwned = true,
+                onClick = {
+                    onCardClick(card)
+                }
             )
         }
     }
@@ -65,10 +80,28 @@ fun HomeScreenTopBar(navController: NavController) {
 }
 
 class HomeScreenViewModel : ViewModel() {
-    private val _uiState = MutableStateFlow(HomeScreenUiState(false))
+    private val _uiState = MutableStateFlow(
+        HomeScreenUiState(
+            isLoggedIn = false,
+            cardDialog = null
+        )
+    )
     val uiState = _uiState.asStateFlow()
+
+    fun showDialog(card: PokeCard) {
+        _uiState.value = _uiState.value.copy(
+            cardDialog = card
+        )
+    }
+
+    fun hideDialog() {
+        _uiState.value = _uiState.value.copy(
+            cardDialog = null
+        )
+    }
+
 }
 
 data class HomeScreenUiState(
-    val isLoggedIn: Boolean
+    val isLoggedIn: Boolean, val cardDialog: PokeCard?
 )
