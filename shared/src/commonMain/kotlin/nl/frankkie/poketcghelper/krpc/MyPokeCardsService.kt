@@ -5,8 +5,8 @@ import kotlinx.rpc.annotations.Rpc
 
 @Rpc
 interface MyPokeCardsService : RemoteService {
-    suspend fun getOwnedCards(): List<Int>
-    suspend fun setOwnedCards(ownedCards: List<Int>)
-    suspend fun setOwnedCard(card: Int, owned: Boolean)
-    suspend fun getOwnedCard(card: Int): Boolean
+    suspend fun getOwnedCards(user: MyUser): MyOwnedCards
+    suspend fun setOwnedCards(user: MyUser, ownedCards: MyOwnedCards)
+    suspend fun setOwnedCard(user: MyUser, cardNumber: Int, ownedAmount: Int)
+    suspend fun getOwnedCard(user: MyUser, cardNumber: Int): Int
 }

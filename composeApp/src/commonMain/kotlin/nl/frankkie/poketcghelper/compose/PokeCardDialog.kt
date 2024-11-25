@@ -39,11 +39,11 @@ fun PokeCardDialog(
     Dialog(onDismissRequest = onDismissRequest) {
         Card(
             modifier = Modifier
-                .padding(16.dp),
-            shape = RoundedCornerShape(16.dp),
+                .padding(8.dp),
+            shape = RoundedCornerShape(8.dp),
         ) {
             Column(
-                modifier = Modifier.padding(16.dp),
+                modifier = Modifier.padding(8.dp),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
@@ -65,7 +65,7 @@ fun PokeCardDialog(
                         Text(pokeCard.packId ?: "")
 
                         if (isLoggedIn) {
-                            Spacer(modifier = Modifier.height(16.dp))
+                            Spacer(modifier = Modifier.height(8.dp))
                             Text("Amount owned:")
                             Row(verticalAlignment = Alignment.CenterVertically) {
                                 OutlinedButton(onClick = { onChangeAmountOwned(amountOwned - 1) }) {

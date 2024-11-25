@@ -4,9 +4,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
-import androidx.compose.material.TopAppBar
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.ViewModel
@@ -14,6 +14,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.cardSet
 import nl.frankkie.poketcghelper.initializeCards
 import nl.frankkie.poketcghelper.model.PokeCard
@@ -22,6 +23,7 @@ import nl.frankkie.poketcghelper.model.PokeCardSet
 @Composable
 fun HomeScreen(
     navController: NavController,
+    appViewModel: AppViewModel,
     viewModel: HomeScreenViewModel = viewModel { HomeScreenViewModel() }
 ) {
     var cardsInitialized by remember { mutableStateOf(false) }
@@ -35,7 +37,7 @@ fun HomeScreen(
     val uiState = viewModel.uiState.collectAsState().value
 
     Scaffold(
-        topBar = { HomeScreenTopBar(navController) },
+        topBar = { HomeScreenTopBar(navController, appViewModel) },
     ) {
         if (!cardsInitialized) {
             Text("Loading...")
@@ -75,8 +77,21 @@ fun GridOfCards(cardSet: PokeCardSet, onCardClick: (PokeCard) -> Unit) {
 }
 
 @Composable
-fun HomeScreenTopBar(navController: NavController) {
-    TopAppBar(title = { Text("Poke TCG Helper") })
+fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel) {
+    TopAppBar(
+        title = { Text("Poke TCG Helper") },
+        actions = {
+            if (appViewModel.appState.value.myUser!=null) {
+                IconButton(onClick = { navController.navigate(Routes.LoginScreen) }) {
+                    Icon(Icons.Default.AccountCircle, contentDescription = "Login icon")
+                }
+            } else {
+                IconButton(onClick = { navController.navigate(Routes.LoginScreen) }) {
+                    Icon(Icons.Filled.AccountCircle, contentDescription = "Logout icon")
+                }
+            }
+        }
+    )
 }
 
 class HomeScreenViewModel : ViewModel() {

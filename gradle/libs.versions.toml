@@ -51,8 +51,10 @@ krpc-server = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-server",
 krpc-serialization-json = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-serialization-json", version.ref="krpc"}
 krpc-ktor-client = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-ktor-client", version.ref="krpc"}
 krpc-ktor-server = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-ktor-server", version.ref="krpc"}
-krpc-api = { group = "org.jetbrains.kotlinx", name="ktor-server-netty-jvm", version.ref="krpc"}
 
+# Ktor client
+ktor-client-core = { group = "io.ktor", name="ktor-client-core", version.ref="ktor"}
+ktor-client-cio = { group = "io.ktor", name="ktor-client-cio", version.ref="ktor"}
 
 
 [plugins]

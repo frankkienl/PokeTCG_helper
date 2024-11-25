@@ -21,9 +21,8 @@ dependencies {
     implementation(libs.krpc.server)
     implementation(libs.krpc.serialization.json)
     implementation(libs.krpc.ktor.server)
-    implementation(libs.krpc.api)
 
     // Test
-    testImplementation(libs.ktor.server.tests)
-    testImplementation(libs.kotlin.test.junit)
+    //testImplementation(libs.ktor.server.tests)
+    //testImplementation(libs.kotlin.test.junit)
 }

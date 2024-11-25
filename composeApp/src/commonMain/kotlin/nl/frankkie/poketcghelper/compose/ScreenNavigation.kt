@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import kotlinx.serialization.Serializable
+import nl.frankkie.poketcghelper.AppViewModel
 
 // Type-Safe navigation
 // https://developer.android.com/guide/navigation/design/type-safety
@@ -21,13 +22,13 @@ object Routes {
 }
 
 @Composable
-fun createNavGraph(navController: NavHostController) {
+fun createNavGraph(navController: NavHostController, appViewModel: AppViewModel) {
     NavHost(navController, startDestination = Routes.HomeScreen) {
         composable<Routes.HomeScreen> {
-            HomeScreen(navController)
+            HomeScreen(navController, appViewModel)
         }
         composable<Routes.LoginScreen> {
-            LoginScreen(navController)
+            LoginScreen(navController, appViewModel)
         }
     }
 }

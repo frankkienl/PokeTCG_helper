@@ -60,6 +60,8 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            //
+            implementation(libs.ktor.client.cio)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -77,12 +79,17 @@ kotlin {
             implementation(libs.krpc.client)
             implementation(libs.krpc.serialization.json)
             implementation(libs.krpc.ktor.client)
+            // Ktor client
+            implementation(libs.ktor.client.core)
+
             //
             implementation(projects.shared)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
+            //
+            implementation(libs.ktor.client.cio)
         }
     }
 }
