@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import nl.frankkie.poketcghelper.model.PokeCard
+import nl.frankkie.poketcghelper.model.PokeRarity
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
@@ -62,4 +63,9 @@ fun PokeCardComposable(
         //Text(pokeCard.pokeName)
         Text(pokeCard.packId ?: "", fontSize = 10.sp)
     }
+}
+
+@Composable
+fun PokeRarityComposable(pokeRarityString: String) {
+    val pokeRarity = PokeRarity.valueOf(pokeRarityString)
 }

@@ -22,12 +22,19 @@ data class PokeCardSetPack (
 data class PokeCard(
     val number: Int,
     val pokeName: String,
+    val pokeRarity: String,
     val imageUrl: String,
     val packId: String?
 )
 
-
-
-
-
-
+enum class PokeRarity {
+    UNKNOWN, //0
+    DIAMOND_ONE, //1
+    DIAMOND_TWO, //2
+    DIAMOND_THREE, //3
+    DIAMOND_FOUR, //4
+    STAR_ONE, //5
+    STAR_TWO, //6
+    STAR_THREE, //7
+    CROWN //8
+}

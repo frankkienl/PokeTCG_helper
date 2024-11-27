@@ -23,8 +23,8 @@ fun App(
 ) {
     val myCoroutineScope = rememberCoroutineScope()
     LaunchedEffect(null) {
-        val myRpc = MyPokeCardsServiceClient(myCoroutineScope)
-        appViewModel.setRpc(myRpc)
+        //val myRpc = MyPokeCardsServiceClient(myCoroutineScope)
+        //appViewModel.setRpc(myRpc)
     }
 
     MaterialTheme {

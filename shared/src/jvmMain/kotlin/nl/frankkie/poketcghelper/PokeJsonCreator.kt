@@ -20,9 +20,10 @@ fun main() {
                 .replace("_", ".") //"Mr_-Mime" -> "Mr. Mime"
                 .replace("-", " ") //"Gengar-ex" -> "Gengar ex"
             PokeCard(
-                number,
-                pokeName,
-                it,
+                number = number,
+                pokeName = pokeName,
+                pokeRarity = 0,
+                imageUrl = it,
                 packId = null
             )
         } else null
@@ -50,6 +51,7 @@ fun PokeCard.toJsonString(): String {
         { 
             "number": ${number},
             "pokeName": "$pokeName",
+            "pokeRarity": $pokeRarity,
             "imageUrl": "$imageUrl",
             "packId": ${
             if (packId != null) {

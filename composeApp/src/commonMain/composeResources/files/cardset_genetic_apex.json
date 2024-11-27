@@ -23,1716 +23,2002 @@
     {
       "number": 1,
       "pokeName": "Bulbasaur",
+      "pokeRarity": 1,
       "imageUrl": "1-Bulbasaur-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 2,
       "pokeName": "Ivysaur",
+      "pokeRarity": 2,
       "imageUrl": "2-Ivysaur-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 3,
       "pokeName": "Venusaur",
+      "pokeRarity": 3,
       "imageUrl": "3-Venusaur-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 4,
       "pokeName": "Venusaur ex",
+      "pokeRarity": 4,
       "imageUrl": "4-Venusaur-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 5,
       "pokeName": "Caterpie",
+      "pokeRarity": 1,
       "imageUrl": "5-Caterpie-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 6,
       "pokeName": "Metapod",
+      "pokeRarity": 1,
       "imageUrl": "6-Metapod-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 7,
       "pokeName": "Butterfree",
+      "pokeRarity": 3,
       "imageUrl": "7-Butterfree-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 8,
       "pokeName": "Weedle",
+      "pokeRarity": 0,
       "imageUrl": "8-Weedle-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 9,
       "pokeName": "Kakuna",
+      "pokeRarity": 0,
       "imageUrl": "9-Kakuna-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 10,
       "pokeName": "Beedrill",
+      "pokeRarity": 0,
       "imageUrl": "10-Beedrill-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 11,
       "pokeName": "Oddish",
+      "pokeRarity": 0,
       "imageUrl": "11-Oddish-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 12,
       "pokeName": "Gloom",
+      "pokeRarity": 0,
       "imageUrl": "12-Gloom-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 13,
       "pokeName": "Vileplume",
+      "pokeRarity": 0,
       "imageUrl": "13-Vileplume-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 14,
       "pokeName": "Paras",
+      "pokeRarity": 0,
       "imageUrl": "14-Paras-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 15,
       "pokeName": "Parasect",
+      "pokeRarity": 0,
       "imageUrl": "15-Parasect-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 16,
       "pokeName": "Venonat",
+      "pokeRarity": 0,
       "imageUrl": "16-Venonat-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 17,
       "pokeName": "Venomoth",
+      "pokeRarity": 0,
       "imageUrl": "17-Venomoth-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 18,
       "pokeName": "Bellsprout",
+      "pokeRarity": 0,
       "imageUrl": "18-Bellsprout-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 19,
       "pokeName": "Weepinbell",
+      "pokeRarity": 0,
       "imageUrl": "19-Weepinbell-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 20,
       "pokeName": "Victreebel",
+      "pokeRarity": 0,
       "imageUrl": "20-Victreebel-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 21,
       "pokeName": "Exeggcute",
+      "pokeRarity": 0,
       "imageUrl": "21-Exeggcute-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 22,
       "pokeName": "Exeggutor",
+      "pokeRarity": 0,
       "imageUrl": "22-Exeggutor-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 23,
       "pokeName": "Exeggutor ex",
+      "pokeRarity": 0,
       "imageUrl": "23-Exeggutor-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 24,
       "pokeName": "Tangela",
+      "pokeRarity": 0,
       "imageUrl": "24-Tangela-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 25,
       "pokeName": "Scyther",
+      "pokeRarity": 0,
       "imageUrl": "25-Scyther-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 26,
       "pokeName": "Pinsir",
+      "pokeRarity": 0,
       "imageUrl": "26-Pinsir-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 27,
       "pokeName": "Cottonee",
+      "pokeRarity": 0,
       "imageUrl": "27-Cottonee-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 28,
       "pokeName": "Whimsicott",
+      "pokeRarity": 0,
       "imageUrl": "28-Whimsicott-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 29,
       "pokeName": "Petilil",
+      "pokeRarity": 0,
       "imageUrl": "29-Petilil-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 30,
       "pokeName": "Lilligant",
+      "pokeRarity": 0,
       "imageUrl": "30-Lilligant-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 31,
       "pokeName": "Skiddo",
+      "pokeRarity": 0,
       "imageUrl": "31-Skiddo-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 32,
       "pokeName": "Gogoat",
+      "pokeRarity": 0,
       "imageUrl": "32-Gogoat-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 33,
       "pokeName": "Charmander",
+      "pokeRarity": 0,
       "imageUrl": "33-Charmander-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 34,
       "pokeName": "Charmeleon",
+      "pokeRarity": 0,
       "imageUrl": "34-Charmeleon-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 35,
       "pokeName": "Charizard",
+      "pokeRarity": 0,
       "imageUrl": "35-Charizard-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 36,
       "pokeName": "Charizard ex",
+      "pokeRarity": 0,
       "imageUrl": "36-Charizard-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 37,
       "pokeName": "Vulpix",
+      "pokeRarity": 0,
       "imageUrl": "37-Vulpix-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 38,
       "pokeName": "Ninetales",
+      "pokeRarity": 0,
       "imageUrl": "38-Ninetales-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 39,
       "pokeName": "Growlithe",
+      "pokeRarity": 0,
       "imageUrl": "39-Growlithe-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 40,
       "pokeName": "Arcanine",
+      "pokeRarity": 0,
       "imageUrl": "40-Arcanine-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 41,
       "pokeName": "Arcanine ex",
+      "pokeRarity": 0,
       "imageUrl": "41-Arcanine-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 42,
       "pokeName": "Ponyta",
+      "pokeRarity": 0,
       "imageUrl": "42-Ponyta-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 43,
       "pokeName": "Rapidash",
+      "pokeRarity": 0,
       "imageUrl": "43-Rapidash-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 44,
       "pokeName": "Magmar",
+      "pokeRarity": 0,
       "imageUrl": "44-Magmar-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 45,
       "pokeName": "Flareon",
+      "pokeRarity": 0,
       "imageUrl": "45-Flareon-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 46,
       "pokeName": "Moltres",
+      "pokeRarity": 0,
       "imageUrl": "46-Moltres-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 47,
       "pokeName": "Moltres ex",
+      "pokeRarity": 0,
       "imageUrl": "47-Moltres-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 48,
       "pokeName": "Heatmor",
+      "pokeRarity": 0,
       "imageUrl": "48-Heatmor-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 49,
       "pokeName": "Salandit",
+      "pokeRarity": 0,
       "imageUrl": "49-Salandit-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 50,
       "pokeName": "Salazzle",
+      "pokeRarity": 0,
       "imageUrl": "50-Salazzle-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 51,
       "pokeName": "Sizzlipede",
+      "pokeRarity": 0,
       "imageUrl": "51-Sizzlipede-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 52,
       "pokeName": "Centiskorch",
+      "pokeRarity": 0,
       "imageUrl": "52-Centiskorch-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 53,
       "pokeName": "Squirtle",
+      "pokeRarity": 0,
       "imageUrl": "53-Squirtle-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 54,
       "pokeName": "Wartortle",
+      "pokeRarity": 0,
       "imageUrl": "54-Wartortle-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 55,
       "pokeName": "Blastoise",
+      "pokeRarity": 0,
       "imageUrl": "55-Blastoise-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 56,
       "pokeName": "Blastoise ex",
+      "pokeRarity": 0,
       "imageUrl": "56-Blastoise-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 57,
       "pokeName": "Psyduck",
+      "pokeRarity": 0,
       "imageUrl": "57-Psyduck-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 58,
       "pokeName": "Golduck",
+      "pokeRarity": 0,
       "imageUrl": "58-Golduck-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 59,
       "pokeName": "Poliwag",
+      "pokeRarity": 0,
       "imageUrl": "59-Poliwag-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 60,
       "pokeName": "Poliwhirl",
+      "pokeRarity": 0,
       "imageUrl": "60-Poliwhirl-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 61,
       "pokeName": "Poliwrath",
+      "pokeRarity": 0,
       "imageUrl": "61-Poliwrath-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 62,
       "pokeName": "Tentacool",
+      "pokeRarity": 0,
       "imageUrl": "62-Tentacool-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 63,
       "pokeName": "Tentacruel",
+      "pokeRarity": 0,
       "imageUrl": "63-Tentacruel-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 64,
       "pokeName": "Seel",
+      "pokeRarity": 0,
       "imageUrl": "64-Seel-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 65,
       "pokeName": "Dewgong",
+      "pokeRarity": 0,
       "imageUrl": "65-Dewgong-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 66,
       "pokeName": "Shellder",
+      "pokeRarity": 0,
       "imageUrl": "66-Shellder-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 67,
       "pokeName": "Cloyster",
+      "pokeRarity": 0,
       "imageUrl": "67-Cloyster-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 68,
       "pokeName": "Krabby",
+      "pokeRarity": 0,
       "imageUrl": "68-Krabby-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 69,
       "pokeName": "Kingler",
+      "pokeRarity": 0,
       "imageUrl": "69-Kingler-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 70,
       "pokeName": "Horsea",
+      "pokeRarity": 0,
       "imageUrl": "70-Horsea-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 71,
       "pokeName": "Seadra",
+      "pokeRarity": 0,
       "imageUrl": "71-Seadra-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 72,
       "pokeName": "Goldeen",
+      "pokeRarity": 0,
       "imageUrl": "72-Goldeen-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 73,
       "pokeName": "Seaking",
+      "pokeRarity": 0,
       "imageUrl": "73-Seaking-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 74,
       "pokeName": "Staryu",
+      "pokeRarity": 0,
       "imageUrl": "74-Staryu-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 75,
       "pokeName": "Starmie",
+      "pokeRarity": 0,
       "imageUrl": "75-Starmie-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 76,
       "pokeName": "Starmie ex",
+      "pokeRarity": 0,
       "imageUrl": "76-Starmie-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 77,
       "pokeName": "Magikarp",
+      "pokeRarity": 0,
       "imageUrl": "77-Magikarp-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 78,
       "pokeName": "Gyarados",
+      "pokeRarity": 0,
       "imageUrl": "78-Gyarados-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 79,
       "pokeName": "Lapras",
+      "pokeRarity": 0,
       "imageUrl": "79-Lapras-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 80,
       "pokeName": "Vaporeon",
+      "pokeRarity": 0,
       "imageUrl": "80-Vaporeon-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 81,
       "pokeName": "Omanyte",
+      "pokeRarity": 0,
       "imageUrl": "81-Omanyte-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 82,
       "pokeName": "Omastar",
+      "pokeRarity": 0,
       "imageUrl": "82-Omastar-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 83,
       "pokeName": "Articuno",
+      "pokeRarity": 0,
       "imageUrl": "83-Articuno-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 84,
       "pokeName": "Articuno ex",
+      "pokeRarity": 0,
       "imageUrl": "84-Articuno-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 85,
       "pokeName": "Ducklett",
+      "pokeRarity": 0,
       "imageUrl": "85-Ducklett-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 86,
       "pokeName": "Swanna",
+      "pokeRarity": 0,
       "imageUrl": "86-Swanna-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 87,
       "pokeName": "Froakie",
+      "pokeRarity": 0,
       "imageUrl": "87-Froakie-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 88,
       "pokeName": "Frogadier",
+      "pokeRarity": 0,
       "imageUrl": "88-Frogadier-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 89,
       "pokeName": "Greninja",
+      "pokeRarity": 0,
       "imageUrl": "89-Greninja-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 90,
       "pokeName": "Pyukumuku",
+      "pokeRarity": 0,
       "imageUrl": "90-Pyukumuku-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 91,
       "pokeName": "Bruxish",
+      "pokeRarity": 0,
       "imageUrl": "91-Bruxish-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 92,
       "pokeName": "Snom",
+      "pokeRarity": 0,
       "imageUrl": "92-Snom-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 93,
       "pokeName": "Frosmoth",
+      "pokeRarity": 0,
       "imageUrl": "93-Frosmoth-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 94,
       "pokeName": "Pikachu",
+      "pokeRarity": 0,
       "imageUrl": "94-Pikachu-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 95,
       "pokeName": "Raichu",
+      "pokeRarity": 0,
       "imageUrl": "95-Raichu-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 96,
       "pokeName": "Pikachu ex",
+      "pokeRarity": 0,
       "imageUrl": "96-Pikachu-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 97,
       "pokeName": "Magnemite",
+      "pokeRarity": 0,
       "imageUrl": "97-Magnemite-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 98,
       "pokeName": "Magneton",
+      "pokeRarity": 0,
       "imageUrl": "98-Magneton-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 99,
       "pokeName": "Voltorb",
+      "pokeRarity": 0,
       "imageUrl": "99-Voltorb-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 100,
       "pokeName": "Electrode",
+      "pokeRarity": 0,
       "imageUrl": "100-Electrode-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 101,
       "pokeName": "Electabuzz",
+      "pokeRarity": 0,
       "imageUrl": "101-Electabuzz-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 102,
       "pokeName": "Jolteon",
+      "pokeRarity": 0,
       "imageUrl": "102-Jolteon-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 103,
       "pokeName": "Zapdos",
+      "pokeRarity": 0,
       "imageUrl": "103-Zapdos-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 104,
       "pokeName": "Zapdos ex",
+      "pokeRarity": 0,
       "imageUrl": "104-Zapdos-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 105,
       "pokeName": "Blitzle",
+      "pokeRarity": 0,
       "imageUrl": "105-Blitzle-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 106,
       "pokeName": "Zebstrika",
+      "pokeRarity": 0,
       "imageUrl": "106-Zebstrika-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 107,
       "pokeName": "Tynamo",
+      "pokeRarity": 0,
       "imageUrl": "107-Tynamo-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 108,
       "pokeName": "Eelektrik",
+      "pokeRarity": 0,
       "imageUrl": "108-Eelektrik-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 109,
       "pokeName": "Eelektross",
+      "pokeRarity": 0,
       "imageUrl": "109-Eelektross-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 110,
       "pokeName": "Helioptile",
+      "pokeRarity": 0,
       "imageUrl": "110-Helioptile-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 111,
       "pokeName": "Heliolisk",
+      "pokeRarity": 0,
       "imageUrl": "111-Heliolisk-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 112,
       "pokeName": "Pincurchin",
+      "pokeRarity": 0,
       "imageUrl": "112-Pincurchin-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 113,
       "pokeName": "Clefairy",
+      "pokeRarity": 0,
       "imageUrl": "113-Clefairy-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 114,
       "pokeName": "Clefable",
+      "pokeRarity": 0,
       "imageUrl": "114-Clefable-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 115,
       "pokeName": "Abra",
+      "pokeRarity": 0,
       "imageUrl": "115-Abra-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 116,
       "pokeName": "Kadabra",
+      "pokeRarity": 0,
       "imageUrl": "116-Kadabra-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 117,
       "pokeName": "Alakazam",
+      "pokeRarity": 0,
       "imageUrl": "117-Alakazam-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 118,
       "pokeName": "Slowpoke",
+      "pokeRarity": 0,
       "imageUrl": "118-Slowpoke-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 119,
       "pokeName": "Slowbro",
+      "pokeRarity": 0,
       "imageUrl": "119-Slowbro-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 120,
       "pokeName": "Gastly",
+      "pokeRarity": 0,
       "imageUrl": "120-Gastly-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 121,
       "pokeName": "Haunter",
+      "pokeRarity": 0,
       "imageUrl": "121-Haunter-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 122,
       "pokeName": "Gengar",
+      "pokeRarity": 0,
       "imageUrl": "122-Gengar-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 123,
       "pokeName": "Gengar ex",
+      "pokeRarity": 0,
       "imageUrl": "123-Gengar-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 124,
       "pokeName": "Drowzee",
+      "pokeRarity": 0,
       "imageUrl": "124-Drowzee-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 125,
       "pokeName": "Hypno",
+      "pokeRarity": 0,
       "imageUrl": "125-Hypno-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 126,
       "pokeName": "Mr. Mime",
+      "pokeRarity": 0,
       "imageUrl": "126-Mr_-Mime-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 127,
       "pokeName": "Jynx",
+      "pokeRarity": 0,
       "imageUrl": "127-Jynx-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 128,
       "pokeName": "Mewtwo",
+      "pokeRarity": 0,
       "imageUrl": "128-Mewtwo-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 129,
       "pokeName": "Mewtwo ex",
+      "pokeRarity": 0,
       "imageUrl": "129-Mewtwo-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 130,
       "pokeName": "Ralts",
+      "pokeRarity": 0,
       "imageUrl": "130-Ralts-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 131,
       "pokeName": "Kirlia",
+      "pokeRarity": 0,
       "imageUrl": "131-Kirlia-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 132,
       "pokeName": "Gardevoir",
+      "pokeRarity": 0,
       "imageUrl": "132-Gardevoir-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 133,
       "pokeName": "Woobat",
+      "pokeRarity": 0,
       "imageUrl": "133-Woobat-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 134,
       "pokeName": "Swoobat",
+      "pokeRarity": 0,
       "imageUrl": "134-Swoobat-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 135,
       "pokeName": "Golett",
+      "pokeRarity": 0,
       "imageUrl": "135-Golett-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 136,
       "pokeName": "Golurk",
+      "pokeRarity": 0,
       "imageUrl": "136-Golurk-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 137,
       "pokeName": "Sandshrew",
+      "pokeRarity": 0,
       "imageUrl": "137-Sandshrew-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 138,
       "pokeName": "Sandslash",
+      "pokeRarity": 0,
       "imageUrl": "138-Sandslash-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 139,
       "pokeName": "Diglett",
+      "pokeRarity": 0,
       "imageUrl": "139-Diglett-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 140,
       "pokeName": "Dugtrio",
+      "pokeRarity": 0,
       "imageUrl": "140-Dugtrio-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 141,
       "pokeName": "Mankey",
+      "pokeRarity": 0,
       "imageUrl": "141-Mankey-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 142,
       "pokeName": "Primeape",
+      "pokeRarity": 0,
       "imageUrl": "142-Primeape-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 143,
       "pokeName": "Machop",
+      "pokeRarity": 0,
       "imageUrl": "143-Machop-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 144,
       "pokeName": "Machoke",
+      "pokeRarity": 0,
       "imageUrl": "144-Machoke-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 145,
       "pokeName": "Machamp",
+      "pokeRarity": 0,
       "imageUrl": "145-Machamp-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 146,
       "pokeName": "Machamp ex",
+      "pokeRarity": 0,
       "imageUrl": "146-Machamp-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 147,
       "pokeName": "Geodude",
+      "pokeRarity": 0,
       "imageUrl": "147-Geodude-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 148,
       "pokeName": "Graveler",
+      "pokeRarity": 0,
       "imageUrl": "148-Graveler-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 149,
       "pokeName": "Golem",
+      "pokeRarity": 0,
       "imageUrl": "149-Golem-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 150,
       "pokeName": "Onix",
+      "pokeRarity": 0,
       "imageUrl": "150-Onix-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 151,
       "pokeName": "Cubone",
+      "pokeRarity": 0,
       "imageUrl": "151-Cubone-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 152,
       "pokeName": "Marowak",
+      "pokeRarity": 0,
       "imageUrl": "152-Marowak-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 153,
       "pokeName": "Marowak ex",
+      "pokeRarity": 0,
       "imageUrl": "153-Marowak-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 154,
       "pokeName": "Hitmonlee",
+      "pokeRarity": 0,
       "imageUrl": "154-Hitmonlee-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 155,
       "pokeName": "Hitmonchan",
+      "pokeRarity": 0,
       "imageUrl": "155-Hitmonchan-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 156,
       "pokeName": "Rhyhorn",
+      "pokeRarity": 0,
       "imageUrl": "156-Rhyhorn-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 157,
       "pokeName": "Rhydon",
+      "pokeRarity": 0,
       "imageUrl": "157-Rhydon-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 158,
       "pokeName": "Kabuto",
+      "pokeRarity": 0,
       "imageUrl": "158-Kabuto-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 159,
       "pokeName": "Kabutops",
+      "pokeRarity": 0,
       "imageUrl": "159-Kabutops-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 160,
       "pokeName": "Mienfoo",
+      "pokeRarity": 0,
       "imageUrl": "160-Mienfoo-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 161,
       "pokeName": "Mienshao",
+      "pokeRarity": 0,
       "imageUrl": "161-Mienshao-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 162,
       "pokeName": "Clobbopus",
+      "pokeRarity": 0,
       "imageUrl": "162-Clobbopus-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 163,
       "pokeName": "Grapploct",
+      "pokeRarity": 0,
       "imageUrl": "163-Grapploct-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 164,
       "pokeName": "Ekans",
+      "pokeRarity": 0,
       "imageUrl": "164-Ekans-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 165,
       "pokeName": "Arbok",
+      "pokeRarity": 0,
       "imageUrl": "165-Arbok-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 166,
       "pokeName": "Nidoran♀",
+      "pokeRarity": 0,
       "imageUrl": "166-Nidoran♀-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 167,
       "pokeName": "Nidorina",
+      "pokeRarity": 0,
       "imageUrl": "167-Nidorina-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 168,
       "pokeName": "Nidoqueen",
+      "pokeRarity": 0,
       "imageUrl": "168-Nidoqueen-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 169,
       "pokeName": "Nidoran♂",
+      "pokeRarity": 0,
       "imageUrl": "169-Nidoran♂-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 170,
       "pokeName": "Nidorino",
+      "pokeRarity": 0,
       "imageUrl": "170-Nidorino-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 171,
       "pokeName": "Nidoking",
+      "pokeRarity": 0,
       "imageUrl": "171-Nidoking-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 172,
       "pokeName": "Zubat",
+      "pokeRarity": 0,
       "imageUrl": "172-Zubat-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 173,
       "pokeName": "Golbat",
+      "pokeRarity": 0,
       "imageUrl": "173-Golbat-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 174,
       "pokeName": "Grimer",
+      "pokeRarity": 0,
       "imageUrl": "174-Grimer-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 175,
       "pokeName": "Muk",
+      "pokeRarity": 0,
       "imageUrl": "175-Muk-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 176,
       "pokeName": "Koffing",
+      "pokeRarity": 0,
       "imageUrl": "176-Koffing-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 177,
       "pokeName": "Weezing",
+      "pokeRarity": 0,
       "imageUrl": "177-Weezing-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 178,
       "pokeName": "Mawile",
+      "pokeRarity": 0,
       "imageUrl": "178-Mawile-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 179,
       "pokeName": "Pawniard",
+      "pokeRarity": 0,
       "imageUrl": "179-Pawniard-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 180,
       "pokeName": "Bisharp",
+      "pokeRarity": 0,
       "imageUrl": "180-Bisharp-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 181,
       "pokeName": "Meltan",
+      "pokeRarity": 0,
       "imageUrl": "181-Meltan-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 182,
       "pokeName": "Melmetal",
+      "pokeRarity": 0,
       "imageUrl": "182-Melmetal-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 183,
       "pokeName": "Dratini",
+      "pokeRarity": 0,
       "imageUrl": "183-Dratini-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 184,
       "pokeName": "Dragonair",
+      "pokeRarity": 0,
       "imageUrl": "184-Dragonair-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 185,
       "pokeName": "Dragonite",
+      "pokeRarity": 0,
       "imageUrl": "185-Dragonite-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 186,
       "pokeName": "Pidgey",
+      "pokeRarity": 0,
       "imageUrl": "186-Pidgey-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 187,
       "pokeName": "Pidgeotto",
+      "pokeRarity": 0,
       "imageUrl": "187-Pidgeotto-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 188,
       "pokeName": "Pidgeot",
+      "pokeRarity": 0,
       "imageUrl": "188-Pidgeot-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 189,
       "pokeName": "Rattata",
+      "pokeRarity": 0,
       "imageUrl": "189-Rattata-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 190,
       "pokeName": "Raticate",
+      "pokeRarity": 0,
       "imageUrl": "190-Raticate-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 191,
       "pokeName": "Spearow",
+      "pokeRarity": 0,
       "imageUrl": "191-Spearow-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 192,
       "pokeName": "Fearow",
+      "pokeRarity": 0,
       "imageUrl": "192-Fearow-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 193,
       "pokeName": "Jigglypuff",
+      "pokeRarity": 0,
       "imageUrl": "193-Jigglypuff-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 194,
       "pokeName": "Wigglytuff",
+      "pokeRarity": 0,
       "imageUrl": "194-Wigglytuff-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 195,
       "pokeName": "Wigglytuff ex",
+      "pokeRarity": 0,
       "imageUrl": "195-Wigglytuff-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 196,
       "pokeName": "Meowth",
+      "pokeRarity": 0,
       "imageUrl": "196-Meowth-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 197,
       "pokeName": "Persian",
+      "pokeRarity": 0,
       "imageUrl": "197-Persian-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 198,
       "pokeName": "Farfetchd",
+      "pokeRarity": 0,
       "imageUrl": "198-Farfetchd-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 199,
       "pokeName": "Doduo",
+      "pokeRarity": 0,
       "imageUrl": "199-Doduo-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 200,
       "pokeName": "Dodrio",
+      "pokeRarity": 0,
       "imageUrl": "200-Dodrio-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 201,
       "pokeName": "Lickitung",
+      "pokeRarity": 0,
       "imageUrl": "201-Lickitung-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 202,
       "pokeName": "Chansey",
+      "pokeRarity": 0,
       "imageUrl": "202-Chansey-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 203,
       "pokeName": "Kangaskhan",
+      "pokeRarity": 0,
       "imageUrl": "203-Kangaskhan-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 204,
       "pokeName": "Tauros",
+      "pokeRarity": 0,
       "imageUrl": "204-Tauros-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 205,
       "pokeName": "Ditto",
+      "pokeRarity": 0,
       "imageUrl": "205-Ditto-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 206,
       "pokeName": "Eevee",
+      "pokeRarity": 0,
       "imageUrl": "206-Eevee-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 207,
       "pokeName": "Eevee",
+      "pokeRarity": 0,
       "imageUrl": "207-Eevee-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 208,
       "pokeName": "Eevee",
+      "pokeRarity": 0,
       "imageUrl": "208-Eevee-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 209,
       "pokeName": "Porygon",
+      "pokeRarity": 0,
       "imageUrl": "209-Porygon-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 210,
       "pokeName": "Aerodactyl",
+      "pokeRarity": 0,
       "imageUrl": "210-Aerodactyl-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 211,
       "pokeName": "Snorlax",
+      "pokeRarity": 0,
       "imageUrl": "211-Snorlax-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 212,
       "pokeName": "Minccino",
+      "pokeRarity": 0,
       "imageUrl": "212-Minccino-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 213,
       "pokeName": "Cinccino",
+      "pokeRarity": 0,
       "imageUrl": "213-Cinccino-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 214,
       "pokeName": "Wooloo",
+      "pokeRarity": 0,
       "imageUrl": "214-Wooloo-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 215,
       "pokeName": "Dubwool",
+      "pokeRarity": 0,
       "imageUrl": "215-Dubwool-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 216,
       "pokeName": "Helix Fossil",
+      "pokeRarity": 0,
       "imageUrl": "216-Helix-Fossil-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 217,
       "pokeName": "Dome Fossil",
+      "pokeRarity": 0,
       "imageUrl": "217-Dome-Fossil-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 218,
       "pokeName": "Old Amber",
+      "pokeRarity": 0,
       "imageUrl": "218-Old-Amber-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 219,
       "pokeName": "Erika",
+      "pokeRarity": 0,
       "imageUrl": "219-Erika-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 220,
       "pokeName": "Misty",
+      "pokeRarity": 0,
       "imageUrl": "220-Misty-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 221,
       "pokeName": "Blaine",
+      "pokeRarity": 0,
       "imageUrl": "221-Blaine-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 222,
       "pokeName": "Koga",
+      "pokeRarity": 0,
       "imageUrl": "222-Koga-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 223,
       "pokeName": "Giovanni",
+      "pokeRarity": 0,
       "imageUrl": "223-Giovanni-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 224,
       "pokeName": "Brock",
+      "pokeRarity": 0,
       "imageUrl": "224-Brock-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 225,
       "pokeName": "Sabrina",
+      "pokeRarity": 0,
       "imageUrl": "225-Sabrina-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 226,
       "pokeName": "Lt. Surge",
+      "pokeRarity": 0,
       "imageUrl": "226-Lt_-Surge-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 227,
       "pokeName": "Bulbasaur",
+      "pokeRarity": 0,
       "imageUrl": "227-Bulbasaur-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 228,
       "pokeName": "Gloom",
+      "pokeRarity": 0,
       "imageUrl": "228-Gloom-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 229,
       "pokeName": "Pinsir",
+      "pokeRarity": 0,
       "imageUrl": "229-Pinsir-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 230,
       "pokeName": "Charmander",
+      "pokeRarity": 0,
       "imageUrl": "230-Charmander-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 231,
       "pokeName": "Rapidash",
+      "pokeRarity": 0,
       "imageUrl": "231-Rapidash-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 232,
       "pokeName": "Squirtle",
+      "pokeRarity": 0,
       "imageUrl": "232-Squirtle-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 233,
       "pokeName": "Gyarados",
+      "pokeRarity": 0,
       "imageUrl": "233-Gyarados-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 234,
       "pokeName": "Lapras",
+      "pokeRarity": 0,
       "imageUrl": "234-Lapras-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 235,
       "pokeName": "Electrode",
+      "pokeRarity": 0,
       "imageUrl": "235-Electrode-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 236,
       "pokeName": "Alakazam",
+      "pokeRarity": 0,
       "imageUrl": "236-Alakazam-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 237,
       "pokeName": "Slowpoke",
+      "pokeRarity": 0,
       "imageUrl": "237-Slowpoke-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 238,
       "pokeName": "Diglett",
+      "pokeRarity": 0,
       "imageUrl": "238-Diglett-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 239,
       "pokeName": "Cubone",
+      "pokeRarity": 0,
       "imageUrl": "239-Cubone-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 240,
       "pokeName": "Nidoqueen",
+      "pokeRarity": 0,
       "imageUrl": "240-Nidoqueen-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 241,
       "pokeName": "Nidoking",
+      "pokeRarity": 0,
       "imageUrl": "241-Nidoking-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 242,
       "pokeName": "Golbat",
+      "pokeRarity": 0,
       "imageUrl": "242-Golbat-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 243,
       "pokeName": "Weezing",
+      "pokeRarity": 0,
       "imageUrl": "243-Weezing-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 244,
       "pokeName": "Dragonite",
+      "pokeRarity": 0,
       "imageUrl": "244-Dragonite-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 245,
       "pokeName": "Pidgeot",
+      "pokeRarity": 0,
       "imageUrl": "245-Pidgeot-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 246,
       "pokeName": "Meowth",
+      "pokeRarity": 0,
       "imageUrl": "246-Meowth-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 247,
       "pokeName": "Ditto",
+      "pokeRarity": 0,
       "imageUrl": "247-Ditto-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 248,
       "pokeName": "Eevee",
+      "pokeRarity": 0,
       "imageUrl": "248-Eevee-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 249,
       "pokeName": "Porygon",
+      "pokeRarity": 0,
       "imageUrl": "249-Porygon-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 250,
       "pokeName": "Snorlax",
+      "pokeRarity": 0,
       "imageUrl": "250-Snorlax-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 251,
       "pokeName": "Venusaur ex",
+      "pokeRarity": 0,
       "imageUrl": "251-Venusaur-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 252,
       "pokeName": "Exeggutor ex",
+      "pokeRarity": 0,
       "imageUrl": "252-Exeggutor-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 253,
       "pokeName": "Charizard ex",
+      "pokeRarity": 0,
       "imageUrl": "253-Charizard-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 254,
       "pokeName": "Arcanine ex",
+      "pokeRarity": 0,
       "imageUrl": "254-Arcanine-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 255,
       "pokeName": "Moltres ex",
+      "pokeRarity": 0,
       "imageUrl": "255-Moltres-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 256,
       "pokeName": "Blastoise ex",
+      "pokeRarity": 0,
       "imageUrl": "256-Blastoise-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 257,
       "pokeName": "Starmie ex",
+      "pokeRarity": 0,
       "imageUrl": "257-Starmie-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 258,
       "pokeName": "Articuno ex",
+      "pokeRarity": 0,
       "imageUrl": "258-Articuno-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 259,
       "pokeName": "Pikachu ex",
+      "pokeRarity": 0,
       "imageUrl": "259-Pikachu-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 260,
       "pokeName": "Zapdos ex",
+      "pokeRarity": 0,
       "imageUrl": "260-Zapdos-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 261,
       "pokeName": "Gengar ex",
+      "pokeRarity": 0,
       "imageUrl": "261-Gengar-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 262,
       "pokeName": "Mewtwo ex",
+      "pokeRarity": 0,
       "imageUrl": "262-Mewtwo-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 263,
       "pokeName": "Machamp ex",
+      "pokeRarity": 0,
       "imageUrl": "263-Machamp-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 264,
       "pokeName": "Marowak ex",
+      "pokeRarity": 0,
       "imageUrl": "264-Marowak-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 265,
       "pokeName": "Wigglytuff ex",
+      "pokeRarity": 0,
       "imageUrl": "265-Wigglytuff-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 266,
       "pokeName": "Erika",
+      "pokeRarity": 0,
       "imageUrl": "266-Erika-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 267,
       "pokeName": "Misty",
+      "pokeRarity": 0,
       "imageUrl": "267-Misty-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 268,
       "pokeName": "Blaine",
+      "pokeRarity": 0,
       "imageUrl": "268-Blaine-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 269,
       "pokeName": "Koga",
+      "pokeRarity": 0,
       "imageUrl": "269-Koga-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 270,
       "pokeName": "Giovanni",
+      "pokeRarity": 0,
       "imageUrl": "270-Giovanni-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 271,
       "pokeName": "Brock",
+      "pokeRarity": 0,
       "imageUrl": "271-Brock-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 272,
       "pokeName": "Sabrina",
+      "pokeRarity": 0,
       "imageUrl": "272-Sabrina-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 273,
       "pokeName": "Lt. Surge",
+      "pokeRarity": 0,
       "imageUrl": "273-Lt_-Surge-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 274,
       "pokeName": "Moltres ex",
+      "pokeRarity": 0,
       "imageUrl": "274-Moltres-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 275,
       "pokeName": "Articuno ex",
+      "pokeRarity": 0,
       "imageUrl": "275-Articuno-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 276,
       "pokeName": "Zapdos ex",
+      "pokeRarity": 0,
       "imageUrl": "276-Zapdos-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 277,
       "pokeName": "Gengar ex",
+      "pokeRarity": 0,
       "imageUrl": "277-Gengar-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 278,
       "pokeName": "Machamp ex",
+      "pokeRarity": 0,
       "imageUrl": "278-Machamp-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 279,
       "pokeName": "Wigglytuff ex",
+      "pokeRarity": 0,
       "imageUrl": "279-Wigglytuff-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 280,
       "pokeName": "Charizard ex",
+      "pokeRarity": 0,
       "imageUrl": "280-Charizard-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
     {
       "number": 281,
       "pokeName": "Pikachu ex",
+      "pokeRarity": 0,
       "imageUrl": "281-Pikachu-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
     {
       "number": 282,
       "pokeName": "Mewtwo ex",
+      "pokeRarity": 0,
       "imageUrl": "282-Mewtwo-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
     {
       "number": 283,
       "pokeName": "Charizard ex",
+      "pokeRarity": 0,
       "imageUrl": "283-Charizard-ex-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 284,
       "pokeName": "Pikachu ex",
+      "pokeRarity": 0,
       "imageUrl": "284-Pikachu-ex-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 285,
       "pokeName": "Mewtwo ex",
+      "pokeRarity": 0,
       "imageUrl": "285-Mewtwo-ex-Genetic-Apex-143x200.png",
       "packId": null
     },
     {
       "number": 286,
       "pokeName": "Mew",
+      "pokeRarity": 0,
       "imageUrl": "286-Mew-Genetic-Apex-143x200.png",
       "packId": null
     }
