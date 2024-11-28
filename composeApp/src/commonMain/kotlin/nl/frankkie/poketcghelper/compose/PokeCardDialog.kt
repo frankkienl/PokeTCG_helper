@@ -14,11 +14,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
-import nl.frankkie.poketcghelper.model.PokeCard
-import nl.frankkie.poketcghelper.model.PokeCardSet
-import nl.frankkie.poketcghelper.model.PokeCardSetPack
-import nl.frankkie.poketcghelper.model.PokeFlair
-import nl.frankkie.poketcghelper.model.PokeRarity
+import nl.frankkie.poketcghelper.model.*
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
@@ -66,9 +62,15 @@ fun PokeCardDialog(
                         verticalArrangement = Arrangement.Center,
                     ) {
                         Text(pokeCard.number.toString())
+                        Spacer(modifier = Modifier.height(12.dp))
+                        PokeTypeComposable(pokeCard.pokeType)
+                        Spacer(modifier = Modifier.height(12.dp))
                         Text(pokeCard.pokeName)
+                        Spacer(modifier = Modifier.height(12.dp))
                         PokeRarityComposable(pokeCard.pokeRarity)
+                        Spacer(modifier = Modifier.height(12.dp))
                         PokeFlairComposable(pokeCard.pokeFlair)
+                        Spacer(modifier = Modifier.height(12.dp))
                         PokePackComposable(pokeCardSet, pokeCard.packId)
 
                         if (isLoggedIn) {
@@ -102,10 +104,66 @@ fun PokeCardDialog(
 
 }
 
+@OptIn(ExperimentalResourceApi::class)
 @Composable
-fun PokeRarityComposable(pokeRarityString: String) {
+fun PokeTypeComposable(pokeTypeString: String?) {
+    if (pokeTypeString == null) {
+        return
+    }
+    val pokeType = PokeType.valueOf(pokeTypeString)
+    if (pokeType.imageUrl == null) {
+        Text(pokeType.displayName)
+        return
+    }
+    var imageBitmap by remember {
+        mutableStateOf<ImageBitmap?>(null)
+    }
+    LaunchedEffect(pokeType) {
+        val bytes = Res.readBytes("files/card_symbols/${pokeType.imageUrl}")
+        imageBitmap = bytes.decodeToImageBitmap()
+    }
+
+    imageBitmap?.let {
+        Image(it, contentDescription = pokeType.displayName)
+    } ?: run {
+        Text(pokeType.displayName)
+    }
+}
+
+@OptIn(ExperimentalResourceApi::class)
+@Composable
+fun PokeRarityComposable(pokeRarityString: String?) {
+    if (pokeRarityString == null) {
+        return
+    }
     val pokeRarity = PokeRarity.valueOf(pokeRarityString)
-    Text(pokeRarity.displayName)
+    if (pokeRarity == PokeRarity.UNKNOWN) {
+        return
+    }
+    //Get image
+    var imageBitmap by remember {
+        mutableStateOf<ImageBitmap?>(null)
+    }
+    LaunchedEffect(pokeRarity) {
+        val bytes = Res.readBytes("files/card_symbols/${pokeRarity.imageUrl}")
+        imageBitmap = bytes.decodeToImageBitmap()
+    }
+    if (imageBitmap == null) {
+        Text(pokeRarity.displayName)
+    } else {
+        Row {
+            repeat(pokeRarity.symbolCount ?: 0) {
+                imageBitmap?.let {
+                    Image(
+                        it,
+                        contentScale = ContentScale.FillHeight,
+                        contentDescription = null,
+                        modifier = Modifier.height(30.dp)
+                    )
+                }
+            }
+        }
+    }
 }
 
 @Composable
@@ -131,7 +189,7 @@ fun PokePackComposable(pokeCardSet: PokeCardSet?, packId: String?) {
                 }
 
                 imageBitmap?.let {
-                    Image(it, contentDescription = packId)
+                    Image(it, contentDescription = packId, modifier = Modifier.height(80.dp))
                 } ?: run {
                     Text(packId)
                 }
