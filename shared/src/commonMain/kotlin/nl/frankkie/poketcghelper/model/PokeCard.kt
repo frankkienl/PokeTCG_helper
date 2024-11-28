@@ -45,4 +45,5 @@ enum class PokeFlair(val codeName: String, val displayName: String) {
     FOIL(codeName = "FOIL", "Foil"),
     EX("EX", "EX"),
     FULL_ART(codeName = "FULL_ART", "Full Art"),
+    FULL_ART_EX(codeName = "FULL_ART_EX", "Full Art EX"),
 }

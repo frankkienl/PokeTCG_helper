@@ -1839,6 +1839,7 @@
       "number": 251,
       "pokeName": "Venusaur ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "251-Venusaur-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1846,6 +1847,7 @@
       "number": 252,
       "pokeName": "Exeggutor ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "252-Exeggutor-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1853,6 +1855,7 @@
       "number": 253,
       "pokeName": "Charizard ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "253-Charizard-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1860,6 +1863,7 @@
       "number": 254,
       "pokeName": "Arcanine ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "254-Arcanine-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1867,6 +1871,7 @@
       "number": 255,
       "pokeName": "Moltres ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "255-Moltres-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1874,6 +1879,7 @@
       "number": 256,
       "pokeName": "Blastoise ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "256-Blastoise-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1881,6 +1887,7 @@
       "number": 257,
       "pokeName": "Starmie ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "257-Starmie-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1888,6 +1895,7 @@
       "number": 258,
       "pokeName": "Articuno ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "258-Articuno-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1895,6 +1903,7 @@
       "number": 259,
       "pokeName": "Pikachu ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "259-Pikachu-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1902,6 +1911,7 @@
       "number": 260,
       "pokeName": "Zapdos ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "260-Zapdos-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1909,6 +1919,7 @@
       "number": 261,
       "pokeName": "Gengar ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "261-Gengar-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1916,6 +1927,7 @@
       "number": 262,
       "pokeName": "Mewtwo ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "262-Mewtwo-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1923,6 +1935,7 @@
       "number": 263,
       "pokeName": "Machamp ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "263-Machamp-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1930,6 +1943,7 @@
       "number": 264,
       "pokeName": "Marowak ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "264-Marowak-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1937,6 +1951,7 @@
       "number": 265,
       "pokeName": "Wigglytuff ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "265-Wigglytuff-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1944,6 +1959,7 @@
       "number": 266,
       "pokeName": "Erika",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART",
       "imageUrl": "266-Erika-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1951,6 +1967,7 @@
       "number": 267,
       "pokeName": "Misty",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART",
       "imageUrl": "267-Misty-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1958,6 +1975,7 @@
       "number": 268,
       "pokeName": "Blaine",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART",
       "imageUrl": "268-Blaine-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1965,6 +1983,7 @@
       "number": 269,
       "pokeName": "Koga",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART",
       "imageUrl": "269-Koga-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1972,6 +1991,7 @@
       "number": 270,
       "pokeName": "Giovanni",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART",
       "imageUrl": "270-Giovanni-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1979,6 +1999,7 @@
       "number": 271,
       "pokeName": "Brock",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART",
       "imageUrl": "271-Brock-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1986,6 +2007,7 @@
       "number": 272,
       "pokeName": "Sabrina",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART",
       "imageUrl": "272-Sabrina-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1993,6 +2015,7 @@
       "number": 273,
       "pokeName": "Lt. Surge",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART",
       "imageUrl": "273-Lt_-Surge-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -2000,6 +2023,7 @@
       "number": 274,
       "pokeName": "Moltres ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "274-Moltres-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -2007,6 +2031,7 @@
       "number": 275,
       "pokeName": "Articuno ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "275-Articuno-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -2014,6 +2039,7 @@
       "number": 276,
       "pokeName": "Zapdos ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "276-Zapdos-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -2021,6 +2047,7 @@
       "number": 277,
       "pokeName": "Gengar ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "277-Gengar-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -2028,6 +2055,7 @@
       "number": 278,
       "pokeName": "Machamp ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "278-Machamp-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -2035,6 +2063,7 @@
       "number": 279,
       "pokeName": "Wigglytuff ex",
       "pokeRarity": "S2",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "279-Wigglytuff-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -2042,6 +2071,7 @@
       "number": 280,
       "pokeName": "Charizard ex",
       "pokeRarity": "S3",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "280-Charizard-ex-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -2049,6 +2079,7 @@
       "number": 281,
       "pokeName": "Pikachu ex",
       "pokeRarity": "S3",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "281-Pikachu-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -2056,6 +2087,7 @@
       "number": 282,
       "pokeName": "Mewtwo ex",
       "pokeRarity": "S3",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "282-Mewtwo-ex-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -2063,6 +2095,7 @@
       "number": 283,
       "pokeName": "Charizard ex",
       "pokeRarity": "C",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "283-Charizard-ex-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -2070,6 +2103,7 @@
       "number": 284,
       "pokeName": "Pikachu ex",
       "pokeRarity": "C",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "284-Pikachu-ex-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -2077,6 +2111,7 @@
       "number": 285,
       "pokeName": "Mewtwo ex",
       "pokeRarity": "C",
+      "pokeFlair": "FULL_ART_EX",
       "imageUrl": "285-Mewtwo-ex-Genetic-Apex-143x200.png",
       "packId": null
     },
