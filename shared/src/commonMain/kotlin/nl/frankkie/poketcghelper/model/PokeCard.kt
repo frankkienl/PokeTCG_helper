@@ -15,7 +15,8 @@ data class PokeCardSet(
 data class PokeCardSetPack(
     val id: String,
     val name: String,
-    var imageUrl: String
+    var imageUrl: String,
+    var imageUrlSymbol: String? = null
 )
 
 @Serializable
@@ -28,16 +29,16 @@ data class PokeCard(
     val packId: String?
 )
 
-enum class PokeRarity(val codeName: String, val displayName: String) {
+enum class PokeRarity(val codeName: String, val displayName: String, val imageUrl: String? = null) {
     UNKNOWN(codeName = "UNKNOWN", displayName = "Unknown"), //0
     D1(codeName = "DIAMOND_1", displayName = "♦\uFE0F"), //1
     D2(codeName = "DIAMOND_2", displayName = "♦\uFE0F ♦\uFE0F"), //2
     D3(codeName = "DIAMOND_3", displayName = "♦\uFE0F ♦\uFE0F ♦\uFE0F"), //3), //3
-    D4(codeName = "DIAMOND_4", displayName = "♦\uFE0F ♦\uFE0F ♦\uFE0F ♦\uFE0F"), //4
+    D4(codeName = "DIAMOND_4", displayName = "♦\uFE0F ♦\uFE0F ♦\uFE0F ♦\uFE0F", imageUrl = "diamonds_4.png"), //4
     S1(codeName = "STAR_1", displayName = "★\uFE0F"), //5), //5
     S2(codeName = "STAR_2", displayName = "★\uFE0F ★\uFE0F"), //6
-    S3(codeName = "STAR_3", displayName = "★\uFE0F ★\uFE0F ★\uFE0F"), //7
-    C(codeName = "CROWN", displayName = "\uD83D\uDC51") //8
+    S3(codeName = "STAR_3", displayName = "★\uFE0F ★\uFE0F ★\uFE0F", imageUrl = "stars_3.png"), //7
+    C(codeName = "CROWN", displayName = "\uD83D\uDC51", imageUrl = "crown.png") //8
 }
 
 enum class PokeFlair(val codeName: String, val displayName: String) {

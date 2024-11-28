@@ -19,6 +19,7 @@ import nl.frankkie.poketcghelper.cardSet
 import nl.frankkie.poketcghelper.initializeCards
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeCardSetPack
 
 @Composable
 fun HomeScreen(
@@ -42,12 +43,13 @@ fun HomeScreen(
         if (!cardsInitialized) {
             Text("Loading...")
         } else {
-            GridOfCards(cardSet, onCardClick = { card ->
-                viewModel.showDialog(card)
+            GridOfCards(cardSet, onCardClick = { _cardSet, _card ->
+                viewModel.showDialog(_cardSet, _card)
             })
-            if (uiState.cardDialog != null) {
+            if (uiState.cardDialog != null && uiState.cardSet != null) {
                 PokeCardDialog(
-                    uiState.cardDialog,
+                    pokeCardSet = uiState.cardSet,
+                    pokeCard = uiState.cardDialog,
                     amountOwned = 1,
                     onChangeAmountOwned = {},
                     onDismissRequest = { viewModel.hideDialog() }
@@ -58,18 +60,19 @@ fun HomeScreen(
 }
 
 @Composable
-fun GridOfCards(cardSet: PokeCardSet, onCardClick: (PokeCard) -> Unit) {
+fun GridOfCards(cardSet: PokeCardSet, onCardClick: (PokeCardSet, PokeCard) -> Unit) {
     LazyVerticalGrid(
         modifier = Modifier.fillMaxSize(),
         columns = GridCells.Fixed(5),
     ) {
         items(cardSet.cards) { card ->
             PokeCardComposable(
-                card,
+                cardSet = cardSet,
+                pokeCard = card,
                 isLoggedIn = false,
                 isOwned = true,
-                onClick = {
-                    onCardClick(card)
+                onClick = { _set, _card ->
+                    onCardClick(_set, _card)
                 }
             )
         }
@@ -81,7 +84,7 @@ fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel) {
     TopAppBar(
         title = { Text("Poke TCG Helper") },
         actions = {
-            if (appViewModel.appState.value.myUser!=null) {
+            if (appViewModel.appState.value.myUser != null) {
                 IconButton(onClick = { navController.navigate(Routes.LoginScreen) }) {
                     Icon(Icons.Default.AccountCircle, contentDescription = "Login icon")
                 }
@@ -98,19 +101,22 @@ class HomeScreenViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(
         HomeScreenUiState(
             isLoggedIn = false,
+            cardSet = null,
             cardDialog = null
         )
     )
     val uiState = _uiState.asStateFlow()
 
-    fun showDialog(card: PokeCard) {
+    fun showDialog(cardSet: PokeCardSet, card: PokeCard) {
         _uiState.value = _uiState.value.copy(
+            cardSet = cardSet,
             cardDialog = card
         )
     }
 
     fun hideDialog() {
         _uiState.value = _uiState.value.copy(
+            cardSet = null,
             cardDialog = null
         )
     }
@@ -118,5 +124,7 @@ class HomeScreenViewModel : ViewModel() {
 }
 
 data class HomeScreenUiState(
-    val isLoggedIn: Boolean, val cardDialog: PokeCard?
+    val isLoggedIn: Boolean,
+    val cardSet: PokeCardSet?,
+    val cardDialog: PokeCard?
 )

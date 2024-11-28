@@ -14,9 +14,7 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import nl.frankkie.poketcghelper.model.PokeCard
-import nl.frankkie.poketcghelper.model.PokeFlair
-import nl.frankkie.poketcghelper.model.PokeRarity
+import nl.frankkie.poketcghelper.model.*
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
@@ -24,10 +22,11 @@ import poketcg_helper.composeapp.generated.resources.Res
 @OptIn(ExperimentalResourceApi::class)
 @Composable
 fun PokeCardComposable(
+    cardSet: PokeCardSet,
     pokeCard: PokeCard,
     isLoggedIn: Boolean,
     isOwned: Boolean,
-    onClick: (PokeCard) -> Unit
+    onClick: (PokeCardSet, PokeCard) -> Unit
 ) {
     var bytes by remember {
         mutableStateOf(ByteArray(0))
@@ -43,7 +42,7 @@ fun PokeCardComposable(
         modifier = Modifier
             .padding(top = 8.dp)
             .clickable {
-                onClick(pokeCard)
+                onClick(cardSet, pokeCard)
             },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -63,19 +62,5 @@ fun PokeCardComposable(
         Text(pokeCard.number.toString())
         //Text(pokeCard.pokeName)
         Text(pokeCard.packId ?: "", fontSize = 10.sp)
-    }
-}
-
-@Composable
-fun PokeRarityComposable(pokeRarityString: String) {
-    val pokeRarity = PokeRarity.valueOf(pokeRarityString)
-    Text(pokeRarity.displayName)
-}
-
-@Composable
-fun PokeFlairComposable(pokeFlairString: String?) {
-    if (pokeFlairString != null) {
-        val pokeFlair = PokeFlair.valueOf(pokeFlairString)
-        Text(pokeFlair.displayName)
     }
 }

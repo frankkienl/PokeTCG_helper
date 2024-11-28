@@ -15,6 +15,10 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import nl.frankkie.poketcghelper.model.PokeCard
+import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeCardSetPack
+import nl.frankkie.poketcghelper.model.PokeFlair
+import nl.frankkie.poketcghelper.model.PokeRarity
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
@@ -22,6 +26,7 @@ import poketcg_helper.composeapp.generated.resources.Res
 @OptIn(ExperimentalResourceApi::class)
 @Composable
 fun PokeCardDialog(
+    pokeCardSet: PokeCardSet,
     pokeCard: PokeCard,
     isLoggedIn: Boolean = false,
     amountOwned: Int = 0,
@@ -62,9 +67,9 @@ fun PokeCardDialog(
                     ) {
                         Text(pokeCard.number.toString())
                         Text(pokeCard.pokeName)
-                        Text(pokeCard.packId ?: "")
                         PokeRarityComposable(pokeCard.pokeRarity)
                         PokeFlairComposable(pokeCard.pokeFlair)
+                        PokePackComposable(pokeCardSet, pokeCard.packId)
 
                         if (isLoggedIn) {
                             Spacer(modifier = Modifier.height(8.dp))
@@ -95,4 +100,44 @@ fun PokeCardDialog(
         }
     }
 
+}
+
+@Composable
+fun PokeRarityComposable(pokeRarityString: String) {
+    val pokeRarity = PokeRarity.valueOf(pokeRarityString)
+    Text(pokeRarity.displayName)
+}
+
+@Composable
+fun PokeFlairComposable(pokeFlairString: String?) {
+    if (pokeFlairString != null) {
+        val pokeFlair = PokeFlair.valueOf(pokeFlairString)
+        Text(pokeFlair.displayName)
+    }
+}
+
+@OptIn(ExperimentalResourceApi::class)
+@Composable
+fun PokePackComposable(pokeCardSet: PokeCardSet?, packId: String?) {
+    if (packId != null) {
+        if (pokeCardSet != null) {
+            pokeCardSet.packs.find { somePack -> somePack.id == packId }?.let { thePack ->
+                var imageBitmap by remember {
+                    mutableStateOf<ImageBitmap?>(null)
+                }
+                LaunchedEffect(pokeCardSet, packId) {
+                    val bytes = Res.readBytes("files/card_symbols/${thePack.imageUrlSymbol}")
+                    imageBitmap = bytes.decodeToImageBitmap()
+                }
+
+                imageBitmap?.let {
+                    Image(it, contentDescription = packId)
+                } ?: run {
+                    Text(packId)
+                }
+            }
+        } else {
+            Text(packId)
+        }
+    }
 }

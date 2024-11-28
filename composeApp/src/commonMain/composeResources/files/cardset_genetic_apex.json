@@ -6,17 +6,20 @@
     {
       "id": "MEWTWO",
       "name": "Mewtwo",
-      "imageUrl": "Genetic-Apex-Mewtwo-106x200.jpg"
+      "imageUrl": "Genetic-Apex-Mewtwo-106x200.jpg",
+      "imageUrlSymbol": "mewtwo.png"
     },
     {
       "id": "CHARIZARD",
       "name": "Charizard",
-      "imageUrl": "Genetic-Apex-Charizard-1-106x200.jpg"
+      "imageUrl": "Genetic-Apex-Charizard-1-106x200.jpg",
+      "imageUrlSymbol": "charizard.png"
     },
     {
       "id": "PIKACHU",
       "name": "Pikachu",
-      "imageUrl": "Genetic-Apex-Pikachu-1-106x200.jpg"
+      "imageUrl": "Genetic-Apex-Pikachu-1-106x200.jpg",
+      "imageUrlSymbol": "pikachu.png"
     }
   ],
   "cards": [
