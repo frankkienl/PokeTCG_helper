@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import nl.frankkie.poketcghelper.model.PokeCard
+import nl.frankkie.poketcghelper.model.PokeFlair
 import nl.frankkie.poketcghelper.model.PokeRarity
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
@@ -68,4 +69,13 @@ fun PokeCardComposable(
 @Composable
 fun PokeRarityComposable(pokeRarityString: String) {
     val pokeRarity = PokeRarity.valueOf(pokeRarityString)
+    Text(pokeRarity.displayName)
+}
+
+@Composable
+fun PokeFlairComposable(pokeFlairString: String?) {
+    if (pokeFlairString != null) {
+        val pokeFlair = PokeFlair.valueOf(pokeFlairString)
+        Text(pokeFlair.displayName)
+    }
 }

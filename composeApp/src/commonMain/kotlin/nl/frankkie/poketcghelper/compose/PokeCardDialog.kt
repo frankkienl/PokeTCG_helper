@@ -63,6 +63,8 @@ fun PokeCardDialog(
                         Text(pokeCard.number.toString())
                         Text(pokeCard.pokeName)
                         Text(pokeCard.packId ?: "")
+                        PokeRarityComposable(pokeCard.pokeRarity)
+                        PokeFlairComposable(pokeCard.pokeFlair)
 
                         if (isLoggedIn) {
                             Spacer(modifier = Modifier.height(8.dp))

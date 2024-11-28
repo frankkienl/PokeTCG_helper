@@ -3,7 +3,7 @@ package nl.frankkie.poketcghelper.model
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class PokeCardSet (
+data class PokeCardSet(
     val name: String,
     val numberOfCards: Int,
     val imageUrl: String,
@@ -12,7 +12,7 @@ data class PokeCardSet (
 )
 
 @Serializable
-data class PokeCardSetPack (
+data class PokeCardSetPack(
     val id: String,
     val name: String,
     var imageUrl: String
@@ -23,18 +23,26 @@ data class PokeCard(
     val number: Int,
     val pokeName: String,
     val pokeRarity: String,
+    val pokeFlair: String? = null,
     val imageUrl: String,
     val packId: String?
 )
 
-enum class PokeRarity {
-    UNKNOWN, //0
-    DIAMOND_ONE, //1
-    DIAMOND_TWO, //2
-    DIAMOND_THREE, //3
-    DIAMOND_FOUR, //4
-    STAR_ONE, //5
-    STAR_TWO, //6
-    STAR_THREE, //7
-    CROWN //8
+enum class PokeRarity(val codeName: String, val displayName: String) {
+    UNKNOWN(codeName = "UNKNOWN", displayName = "Unknown"), //0
+    D1(codeName = "DIAMOND_1", displayName = "♦\uFE0F"), //1
+    D2(codeName = "DIAMOND_2", displayName = "♦\uFE0F ♦\uFE0F"), //2
+    D3(codeName = "DIAMOND_3", displayName = "♦\uFE0F ♦\uFE0F ♦\uFE0F"), //3), //3
+    D4(codeName = "DIAMOND_4", displayName = "♦\uFE0F ♦\uFE0F ♦\uFE0F ♦\uFE0F"), //4
+    S1(codeName = "STAR_1", displayName = "★\uFE0F"), //5), //5
+    S2(codeName = "STAR_2", displayName = "★\uFE0F ★\uFE0F"), //6
+    S3(codeName = "STAR_3", displayName = "★\uFE0F ★\uFE0F ★\uFE0F"), //7
+    C(codeName = "CROWN", displayName = "\uD83D\uDC51") //8
+}
+
+enum class PokeFlair(val codeName: String, val displayName: String) {
+    NONE(codeName = "NONE", "None"),
+    FOIL(codeName = "FOIL", "Foil"),
+    EX("EX", "EX"),
+    FULL_ART(codeName = "FULL_ART", "Full Art"),
 }

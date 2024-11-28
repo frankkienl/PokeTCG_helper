@@ -22,7 +22,8 @@ fun main() {
             PokeCard(
                 number = number,
                 pokeName = pokeName,
-                pokeRarity = 0,
+                pokeRarity = "UNKNOWN",
+                pokeFlair = null,
                 imageUrl = it,
                 packId = null
             )
