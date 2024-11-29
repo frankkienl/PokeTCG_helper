@@ -124,7 +124,12 @@ fun PokeTypeComposable(pokeTypeString: String?) {
     }
 
     imageBitmap?.let {
-        Image(it, contentDescription = pokeType.displayName)
+        Image(
+            it,
+            contentScale = ContentScale.FillHeight,
+            contentDescription = pokeType.displayName,
+            modifier = Modifier.height(30.dp)
+        )
     } ?: run {
         Text(pokeType.displayName)
     }
