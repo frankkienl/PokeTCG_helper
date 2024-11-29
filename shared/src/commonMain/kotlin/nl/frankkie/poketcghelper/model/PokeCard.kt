@@ -51,16 +51,16 @@ enum class PokeFlair(val codeName: String, val displayName: String) {
 }
 
 enum class PokeType(val codeName: String, val displayName: String, val imageUrl: String? = null) {
-    NORMAL(codeName = "NORMAL", displayName = "Normal", imageUrl = "normal.png"),
     DARKNESS(codeName = "DARKNESS", displayName = "Darkness", imageUrl = "darkness.png"),
     DRAGON(codeName = "DRAGON", displayName = "Dragon", imageUrl = "dragon.png"),
     FIGHTING(codeName = "FIGHTING", displayName = "Fighting", imageUrl = "fighting.png"),
     FIRE(codeName = "FIRE", displayName = "Fire", imageUrl = "fire.png"),
-    GRASS(codeName = "GRASS", displayName = "Grens", imageUrl = "grass.png"),
-    LIGHTNING(codeName = "LIGHTNING", displayName = "Lightning", imageUrl = "lightning.png"),
-    METAL(codeName = "METAL", displayName = "Metadata", imageUrl = "metal.png"),
-    PSYCHIC(codeName = "PSYCHIC", displayName = "Psychic", imageUrl = "psychic.png"),
-    WATER(codeName = "WATER", displayName = "Water", imageUrl = "water.png"),
+    GRASS(codeName = "GRASS", displayName = "Grass", imageUrl = "grass.png"),
     ITEM(codeName = "ITEM", displayName = "Item", imageUrl = null),
+    LIGHTNING(codeName = "LIGHTNING", displayName = "Lightning", imageUrl = "lightning.png"),
+    METAL(codeName = "METAL", displayName = "Metal", imageUrl = "metal.png"),
+    NORMAL(codeName = "NORMAL", displayName = "Normal", imageUrl = "normal.png"),
+    PSYCHIC(codeName = "PSYCHIC", displayName = "Psychic", imageUrl = "psychic.png"),
     SUPPORT(codeName = "SUPPORT", displayName = "Support", imageUrl = null),
+    WATER(codeName = "WATER", displayName = "Water", imageUrl = "water.png"),
 }
