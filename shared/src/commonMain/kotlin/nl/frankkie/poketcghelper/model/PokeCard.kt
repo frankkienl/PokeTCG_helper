@@ -39,7 +39,8 @@ enum class PokeRarity(val codeName: String, val displayName: String, val imageUr
     S1(codeName = "STAR_1", displayName = "★\uFE0F", imageUrl = "star.png", symbolCount = 1), //5), //5
     S2(codeName = "STAR_2", displayName = "★\uFE0F ★\uFE0F", imageUrl = "star.png", symbolCount = 2), //6
     S3(codeName = "STAR_3", displayName = "★\uFE0F ★\uFE0F ★\uFE0F", imageUrl = "star.png", symbolCount = 3), //7
-    C(codeName = "CROWN", displayName = "\uD83D\uDC51", imageUrl = "crown.png", symbolCount = 1) //8
+    C(codeName = "CROWN", displayName = "\uD83D\uDC51", imageUrl = "crown.png", symbolCount = 1), //8
+    PROMO(codeName="PROMO", displayName = "Promo", imageUrl = null, symbolCount = 0),
 }
 
 enum class PokeFlair(val codeName: String, val displayName: String) {
@@ -59,7 +60,7 @@ enum class PokeType(val codeName: String, val displayName: String, val imageUrl:
     ITEM(codeName = "ITEM", displayName = "Item", imageUrl = null),
     LIGHTNING(codeName = "LIGHTNING", displayName = "Lightning", imageUrl = "lightning.png"),
     METAL(codeName = "METAL", displayName = "Metal", imageUrl = "metal.png"),
-    NORMAL(codeName = "NORMAL", displayName = "Normal", imageUrl = "normal.png"),
+    COLORLESS(codeName = "COLORLESS", displayName = "Colorless", imageUrl = "colorless.png"),
     PSYCHIC(codeName = "PSYCHIC", displayName = "Psychic", imageUrl = "psychic.png"),
     SUPPORT(codeName = "SUPPORT", displayName = "Support", imageUrl = null),
     WATER(codeName = "WATER", displayName = "Water", imageUrl = "water.png"),

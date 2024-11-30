@@ -43,7 +43,7 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel) {
                     buildFilterType(homeScreenUiState, homeScreenViewModel, PokeType.GRASS)
                     buildFilterType(homeScreenUiState, homeScreenViewModel, PokeType.LIGHTNING)
                     buildFilterType(homeScreenUiState, homeScreenViewModel, PokeType.METAL)
-                    buildFilterType(homeScreenUiState, homeScreenViewModel, PokeType.NORMAL)
+                    buildFilterType(homeScreenUiState, homeScreenViewModel, PokeType.COLORLESS)
                     buildFilterType(homeScreenUiState, homeScreenViewModel, PokeType.PSYCHIC)
                     buildFilterType(homeScreenUiState, homeScreenViewModel, PokeType.WATER)
                     buildFilterType(homeScreenUiState, homeScreenViewModel, PokeType.ITEM)

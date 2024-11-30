@@ -1542,7 +1542,7 @@
       "number": 186,
       "pokeName": "Pidgey",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "186-Pidgey-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1550,7 +1550,7 @@
       "number": 187,
       "pokeName": "Pidgeotto",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "187-Pidgeotto-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1558,7 +1558,7 @@
       "number": 188,
       "pokeName": "Pidgeot",
       "pokeRarity": "D3",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FOIL",
       "imageUrl": "188-Pidgeot-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
@@ -1567,7 +1567,7 @@
       "number": 189,
       "pokeName": "Rattata",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "189-Rattata-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -1575,7 +1575,7 @@
       "number": 190,
       "pokeName": "Raticate",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "190-Raticate-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -1583,7 +1583,7 @@
       "number": 191,
       "pokeName": "Spearow",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "191-Spearow-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1591,7 +1591,7 @@
       "number": 192,
       "pokeName": "Fearow",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "192-Fearow-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1599,7 +1599,7 @@
       "number": 193,
       "pokeName": "Jigglypuff",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "193-Jigglypuff-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1607,7 +1607,7 @@
       "number": 194,
       "pokeName": "Wigglytuff",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "194-Wigglytuff-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1615,7 +1615,7 @@
       "number": 195,
       "pokeName": "Wigglytuff ex",
       "pokeRarity": "D4",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "EX",
       "imageUrl": "195-Wigglytuff-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
@@ -1624,7 +1624,7 @@
       "number": 196,
       "pokeName": "Meowth",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "196-Meowth-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1632,7 +1632,7 @@
       "number": 197,
       "pokeName": "Persian",
       "pokeRarity": "D2",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "197-Persian-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1640,7 +1640,7 @@
       "number": 198,
       "pokeName": "Farfetchd",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "198-Farfetchd-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -1648,7 +1648,7 @@
       "number": 199,
       "pokeName": "Doduo",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "199-Doduo-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -1656,7 +1656,7 @@
       "number": 200,
       "pokeName": "Dodrio",
       "pokeRarity": "D2",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "200-Dodrio-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -1664,7 +1664,7 @@
       "number": 201,
       "pokeName": "Lickitung",
       "pokeRarity": "D2",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "201-Lickitung-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1672,7 +1672,7 @@
       "number": 202,
       "pokeName": "Chansey",
       "pokeRarity": "D2",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "202-Chansey-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1680,7 +1680,7 @@
       "number": 203,
       "pokeName": "Kangaskhan",
       "pokeRarity": "D3",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FOIL",
       "imageUrl": "203-Kangaskhan-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
@@ -1689,7 +1689,7 @@
       "number": 204,
       "pokeName": "Tauros",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "204-Tauros-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1697,7 +1697,7 @@
       "number": 205,
       "pokeName": "Ditto",
       "pokeRarity": "D3",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FOIL",
       "imageUrl": "205-Ditto-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
@@ -1706,7 +1706,7 @@
       "number": 206,
       "pokeName": "Eevee",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "206-Eevee-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1714,7 +1714,7 @@
       "number": 207,
       "pokeName": "Eevee",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "207-Eevee-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1722,7 +1722,7 @@
       "number": 208,
       "pokeName": "Eevee",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "208-Eevee-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1730,7 +1730,7 @@
       "number": 209,
       "pokeName": "Porygon",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "209-Porygon-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1738,7 +1738,7 @@
       "number": 210,
       "pokeName": "Aerodactyl",
       "pokeRarity": "D3",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FOIL",
       "imageUrl": "210-Aerodactyl-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
@@ -1747,7 +1747,7 @@
       "number": 211,
       "pokeName": "Snorlax",
       "pokeRarity": "D3",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FOIL",
       "imageUrl": "211-Snorlax-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
@@ -1756,7 +1756,7 @@
       "number": 212,
       "pokeName": "Minccino",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "212-Minccino-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -1764,7 +1764,7 @@
       "number": 213,
       "pokeName": "Cinccino",
       "pokeRarity": "D2",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "213-Cinccino-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -1772,7 +1772,7 @@
       "number": 214,
       "pokeName": "Wooloo",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "214-Wooloo-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -1780,7 +1780,7 @@
       "number": 215,
       "pokeName": "Dubwool",
       "pokeRarity": "D1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "imageUrl": "215-Dubwool-Genetic-Apex-143x200.png",
       "packId": null
     },
@@ -2038,7 +2038,7 @@
       "number": 245,
       "pokeName": "Pidgeot",
       "pokeRarity": "S1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FULL_ART",
       "imageUrl": "245-Pidgeot-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
@@ -2047,7 +2047,7 @@
       "number": 246,
       "pokeName": "Meowth",
       "pokeRarity": "S1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FULL_ART",
       "imageUrl": "246-Meowth-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
@@ -2056,7 +2056,7 @@
       "number": 247,
       "pokeName": "Ditto",
       "pokeRarity": "S1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FULL_ART",
       "imageUrl": "247-Ditto-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
@@ -2065,7 +2065,7 @@
       "number": 248,
       "pokeName": "Eevee",
       "pokeRarity": "S1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FULL_ART",
       "imageUrl": "248-Eevee-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
@@ -2074,7 +2074,7 @@
       "number": 249,
       "pokeName": "Porygon",
       "pokeRarity": "S1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FULL_ART",
       "imageUrl": "249-Porygon-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
@@ -2083,7 +2083,7 @@
       "number": 250,
       "pokeName": "Snorlax",
       "pokeRarity": "S1",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FULL_ART",
       "imageUrl": "250-Snorlax-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
@@ -2218,7 +2218,7 @@
       "number": 265,
       "pokeName": "Wigglytuff ex",
       "pokeRarity": "S2",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FULL_ART_EX",
       "imageUrl": "265-Wigglytuff-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
@@ -2344,7 +2344,7 @@
       "number": 279,
       "pokeName": "Wigglytuff ex",
       "pokeRarity": "S2",
-      "pokeType": "NORMAL",
+      "pokeType": "COLORLESS",
       "pokeFlair": "FULL_ART_EX",
       "imageUrl": "279-Wigglytuff-ex-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
