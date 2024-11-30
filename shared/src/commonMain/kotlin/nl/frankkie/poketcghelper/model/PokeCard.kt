@@ -45,7 +45,7 @@ enum class PokeRarity(val codeName: String, val displayName: String, val imageUr
 
 enum class PokeFlair(val codeName: String, val displayName: String) {
     NONE(codeName = "NONE", "None"),
-    FOIL(codeName = "FOIL", "Foil"),
+    HOLO(codeName = "HOLO", "Holo"),
     EX("EX", "EX"),
     FULL_ART(codeName = "FULL_ART", "Full Art"),
     FULL_ART_EX(codeName = "FULL_ART_EX", "Full Art EX"),

@@ -44,7 +44,7 @@
       "pokeName": "Venusaur",
       "pokeRarity": "D3",
       "pokeType": "GRASS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "3-Venusaur-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -77,7 +77,7 @@
       "pokeName": "Butterfree",
       "pokeRarity": "D3",
       "pokeType": "GRASS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "7-Butterfree-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -182,7 +182,7 @@
       "pokeName": "Victreebel",
       "pokeRarity": "D3",
       "pokeType": "GRASS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "20-Victreebel-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -199,7 +199,7 @@
       "pokeName": "Exeggutor",
       "pokeRarity": "D3",
       "pokeType": "GRASS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "22-Exeggutor-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -304,7 +304,7 @@
       "pokeName": "Charizard",
       "pokeRarity": "D3",
       "pokeType": "FIRE",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "35-Charizard-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -345,7 +345,7 @@
       "pokeName": "Arcanine",
       "pokeRarity": "D3",
       "pokeType": "FIRE",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "40-Arcanine-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -394,7 +394,7 @@
       "pokeName": "Moltres",
       "pokeRarity": "D3",
       "pokeType": "FIRE",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "46-Moltres-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -467,7 +467,7 @@
       "pokeName": "Blastoise",
       "pokeRarity": "D3",
       "pokeType": "WATER",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "55-Blastoise-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -516,7 +516,7 @@
       "pokeName": "Poliwrath",
       "pokeRarity": "D3",
       "pokeType": "WATER",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "61-Poliwrath-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -653,7 +653,7 @@
       "pokeName": "Gyarados",
       "pokeRarity": "D3",
       "pokeType": "WATER",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "78-Gyarados-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -662,7 +662,7 @@
       "pokeName": "Lapras",
       "pokeRarity": "D3",
       "pokeType": "WATER",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "79-Lapras-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -671,7 +671,7 @@
       "pokeName": "Vaporeon",
       "pokeRarity": "D3",
       "pokeType": "WATER",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "80-Vaporeon-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -688,7 +688,7 @@
       "pokeName": "Omastar",
       "pokeRarity": "D3",
       "pokeType": "WATER",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "82-Omastar-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -697,7 +697,7 @@
       "pokeName": "Articuno",
       "pokeRarity": "D3",
       "pokeType": "WATER",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "83-Articuno-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -746,7 +746,7 @@
       "pokeName": "Greninja",
       "pokeRarity": "D3",
       "pokeType": "WATER",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "89-Greninja-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -795,7 +795,7 @@
       "pokeName": "Raichu",
       "pokeRarity": "D3",
       "pokeType": "LIGHTNING",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "95-Raichu-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -820,7 +820,7 @@
       "pokeName": "Magneton",
       "pokeRarity": "D3",
       "pokeType": "LIGHTNING",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "98-Magneton-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -853,7 +853,7 @@
       "pokeName": "Jolteon",
       "pokeRarity": "D3",
       "pokeType": "LIGHTNING",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "102-Jolteon-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -862,7 +862,7 @@
       "pokeName": "Zapdos",
       "pokeRarity": "D3",
       "pokeType": "LIGHTNING",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "103-Zapdos-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -911,7 +911,7 @@
       "pokeName": "Eelektross",
       "pokeRarity": "D3",
       "pokeType": "LIGHTNING",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "109-Eelektross-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -976,7 +976,7 @@
       "pokeName": "Alakazam",
       "pokeRarity": "D3",
       "pokeType": "PSYCHIC",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "117-Alakazam-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1017,7 +1017,7 @@
       "pokeName": "Gengar",
       "pokeRarity": "D3",
       "pokeType": "PSYCHIC",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "122-Gengar-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1042,7 +1042,7 @@
       "pokeName": "Hypno",
       "pokeRarity": "D3",
       "pokeType": "PSYCHIC",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "125-Hypno-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1067,7 +1067,7 @@
       "pokeName": "Mewtwo",
       "pokeRarity": "D3",
       "pokeType": "PSYCHIC",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "128-Mewtwo-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1204,7 +1204,7 @@
       "pokeName": "Machamp",
       "pokeRarity": "D3",
       "pokeType": "FIGHTING",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "145-Machamp-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1238,7 +1238,7 @@
       "pokeName": "Golem",
       "pokeRarity": "D3",
       "pokeType": "FIGHTING",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "149-Golem-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1320,7 +1320,7 @@
       "pokeName": "Kabutops",
       "pokeRarity": "D3",
       "pokeType": "FIGHTING",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "159-Kabutops-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1393,7 +1393,7 @@
       "pokeName": "Nidoqueen",
       "pokeRarity": "D3",
       "pokeType": "DARKNESS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "168-Nidoqueen-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1418,7 +1418,7 @@
       "pokeName": "Nidoking",
       "pokeRarity": "D3",
       "pokeType": "DARKNESS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "171-Nidoking-Genetic-Apex-143x200.png",
       "packId": "PIKACHU"
     },
@@ -1451,7 +1451,7 @@
       "pokeName": "Muk",
       "pokeRarity": "D3",
       "pokeType": "DARKNESS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "175-Muk-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1468,7 +1468,7 @@
       "pokeName": "Weezing",
       "pokeRarity": "D3",
       "pokeType": "DARKNESS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "177-Weezing-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1509,7 +1509,7 @@
       "pokeName": "Melmetal",
       "pokeRarity": "D3",
       "pokeType": "METAL",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "182-Melmetal-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1534,7 +1534,7 @@
       "pokeName": "Dragonite",
       "pokeRarity": "D3",
       "pokeType": "DRAGON",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "185-Dragonite-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1559,7 +1559,7 @@
       "pokeName": "Pidgeot",
       "pokeRarity": "D3",
       "pokeType": "COLORLESS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "188-Pidgeot-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1681,7 +1681,7 @@
       "pokeName": "Kangaskhan",
       "pokeRarity": "D3",
       "pokeType": "COLORLESS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "203-Kangaskhan-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
@@ -1698,7 +1698,7 @@
       "pokeName": "Ditto",
       "pokeRarity": "D3",
       "pokeType": "COLORLESS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "205-Ditto-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1739,7 +1739,7 @@
       "pokeName": "Aerodactyl",
       "pokeRarity": "D3",
       "pokeType": "COLORLESS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "210-Aerodactyl-Genetic-Apex-143x200.png",
       "packId": "MEWTWO"
     },
@@ -1748,7 +1748,7 @@
       "pokeName": "Snorlax",
       "pokeRarity": "D3",
       "pokeType": "COLORLESS",
-      "pokeFlair": "FOIL",
+      "pokeFlair": "HOLO",
       "imageUrl": "211-Snorlax-Genetic-Apex-143x200.png",
       "packId": "CHARIZARD"
     },
