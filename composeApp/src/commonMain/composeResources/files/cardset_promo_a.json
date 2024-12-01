@@ -1,0 +1,180 @@
+{
+  "codeName": "PROMO_A",
+  "displayName": "Promo-A",
+  "numberOfCards": 23,
+  "imageUrl": "promo_a.png",
+  "packs": [],
+  "cards": [
+    {
+      "number": 1,
+      "pokeName": "Potion",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "1-Potion.png"
+    },
+    {
+      "number": 2,
+      "pokeName": "X Speed",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "2-X-Speed.png"
+    },
+    {
+      "number": 3,
+      "pokeName": "Poke Ball",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "3-Poke-Ball.png"
+    },
+    {
+      "number": 4,
+      "pokeName": "Professor's Research",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "4-Professors-Research-Oak.png"
+    },
+    {
+      "number": 5,
+      "pokeName": "Hand Scope",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "5-Hand-Scope.png"
+    },
+    {
+      "number": 6,
+      "pokeName": "Pokedex",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "6-Pokedex.png"
+    },
+    {
+      "number": 7,
+      "pokeName": "Red Card",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "7-Red-Card.png"
+    },
+    {
+      "number": 8,
+      "pokeName": "Pikachu ex",
+      "pokeRarity": "PROMO",
+      "pokeType": "LIGHTNING",
+      "pokeFlair": "FULL_ART_EX",
+      "imageUrl": "8-Pikachu-ex.png"
+    },
+    {
+      "number": 9,
+      "pokeName": "Mewtwo",
+      "pokeRarity": "PROMO",
+      "pokeType": "PSYCHIC",
+      "pokeFlair": "FULL_ART",
+      "imageUrl": "9-Mewtwo.png"
+    },
+    {
+      "number": 10,
+      "pokeName": "Chansey",
+      "pokeRarity": "PROMO",
+      "pokeType": "COLORLESS",
+      "pokeFlair": "HOLO",
+      "imageUrl": "10-Chansey.png"
+    },
+    {
+      "number": 11,
+      "pokeName": "Meowth",
+      "pokeRarity": "PROMO",
+      "pokeType": "COLORLESS",
+      "pokeFlair": "HOLO",
+      "imageUrl": "11-Meowth.png"
+    },
+    {
+      "number": 12,
+      "pokeName": "Butterfree",
+      "pokeRarity": "PROMO",
+      "pokeType": "GRASS",
+      "pokeFlair": "HOLO",
+      "imageUrl": "12-Butterfree.png"
+    },
+    {
+      "number": 13,
+      "pokeName": "Lapras ex",
+      "pokeRarity": "PROMO",
+      "pokeType": "WATER",
+      "pokeFlair": "EX",
+      "imageUrl": "13-Lapras-ex.png"
+    },
+    {
+      "number": 14,
+      "pokeName": "Pikachu",
+      "pokeRarity": "PROMO",
+      "pokeType": "LIGHTNING",
+      "imageUrl": "14-Pikachu.png"
+    },
+    {
+      "number": 15,
+      "pokeName": "Clefairy",
+      "pokeRarity": "PROMO",
+      "pokeType": "PSYCHIC",
+      "imageUrl": "15-Clefairy.png"
+    },
+    {
+      "number": 16,
+      "pokeName": "Mankey",
+      "pokeRarity": "PROMO",
+      "pokeType": "FIGHTING",
+      "imageUrl": "16-Mankey.png"
+    },
+    {
+      "number": 17,
+      "pokeName": "Venusaur",
+      "pokeRarity": "PROMO",
+      "pokeType": "GRASS",
+      "pokeFlair": "FULL_ART",
+      "imageUrl": "17-Venusaur.png"
+    },
+    {
+      "number": 18,
+      "pokeName": "Greninja",
+      "pokeRarity": "PROMO",
+      "pokeType": "WATER",
+      "pokeFlair": "HOLO",
+      "imageUrl": "18-Greninja.png"
+    },
+    {
+      "number": 19,
+      "pokeName": "Haunter",
+      "pokeRarity": "PROMO",
+      "pokeType": "PSYCHIC",
+      "imageUrl": "19-Haunter.png"
+    },
+    {
+      "number": 20,
+      "pokeName": "Onix",
+      "pokeRarity": "PROMO",
+      "pokeType": "FIGHTING",
+      "imageUrl": "20-Onix.png"
+    },
+    {
+      "number": 21,
+      "pokeName": "Jigglypuff",
+      "pokeRarity": "PROMO",
+      "pokeType": "COLORLESS",
+      "imageUrl": "21-Jigglypuff.png"
+    },
+    {
+      "number": 22,
+      "pokeName": "Bulbasaur",
+      "pokeRarity": "PROMO",
+      "pokeType": "GRASS",
+      "pokeFlair": "HOLO",
+      "imageUrl": "22-Bulbasaur.png"
+    },
+    {
+      "number": 23,
+      "pokeName": "Magnemite",
+      "pokeRarity": "PROMO",
+      "pokeType": "LIGHTNING",
+      "pokeFlair": "HOLO",
+      "imageUrl": "23-Magnemite.png"
+    }
+  ]
+}

@@ -35,7 +35,7 @@ fun PokeCardComposable(
         mutableStateOf<ImageBitmap?>(null)
     }
     LaunchedEffect(pokeCard) {
-        bytes = Res.readBytes("files/card_images/${pokeCard.imageUrl}")
+        bytes = Res.readBytes("files/card_images/${cardSet.codeName}/${pokeCard.imageUrl}")
         imageBitmap = bytes.decodeToImageBitmap()
     }
     Column(

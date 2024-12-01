@@ -1,25 +1,30 @@
 package nl.frankkie.poketcghelper.compose
 
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.grid.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import nl.frankkie.poketcghelper.AppViewModel
-import nl.frankkie.poketcghelper.cardSet
 import nl.frankkie.poketcghelper.initializeCards
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeCardSet
+import org.jetbrains.compose.resources.ExperimentalResourceApi
+import org.jetbrains.compose.resources.decodeToImageBitmap
+import poketcg_helper.composeapp.generated.resources.Res
 
 @Composable
 fun HomeScreen(
@@ -27,60 +32,72 @@ fun HomeScreen(
     appViewModel: AppViewModel,
     homeScreenViewModel: HomeScreenViewModel = viewModel { HomeScreenViewModel() }
 ) {
-    var cardsInitialized by remember { mutableStateOf(false) }
-    LaunchedEffect(null) {
-        if (!cardsInitialized) {
-            cardSet = initializeCards()
-            cardsInitialized = true
-        }
-    }
-
     val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
+    val appState = appViewModel.appState.collectAsState().value
 
     Scaffold(
         topBar = { HomeScreenTopBar(navController, appViewModel, homeScreenViewModel) },
     ) {
-        if (!cardsInitialized) {
+        if (appState.cardSets.isEmpty()) {
             Text("Loading...")
         } else {
-            GridOfCards(cardSet, homeScreenUiState.cardFilter, onCardClick = { _cardSet, _card ->
+            GridOfCards(appState.cardSets, homeScreenUiState.cardFilter, onCardClick = { _cardSet, _card ->
                 homeScreenViewModel.showCardDialog(_cardSet, _card)
             })
-            if (homeScreenUiState.cardDialog != null && homeScreenUiState.cardSet != null) {
-                PokeCardDialog(
-                    pokeCardSet = homeScreenUiState.cardSet,
-                    pokeCard = homeScreenUiState.cardDialog,
-                    amountOwned = 1,
-                    onChangeAmountOwned = {},
-                    onDismissRequest = { homeScreenViewModel.hideCardDialog() }
-                )
-            }
-            if (homeScreenUiState.filterDialog) {
-                PokeFilterDialog(homeScreenViewModel)
-            }
+        }
+        if (homeScreenUiState.cardDialog != null && homeScreenUiState.cardSet != null) {
+            PokeCardDialog(
+                pokeCardSet = homeScreenUiState.cardSet,
+                pokeCard = homeScreenUiState.cardDialog,
+                amountOwned = 1,
+                onChangeAmountOwned = {},
+                onDismissRequest = { homeScreenViewModel.hideCardDialog() }
+            )
+        }
+        if (homeScreenUiState.filterDialog) {
+            PokeFilterDialog(homeScreenViewModel)
         }
     }
 }
 
+@OptIn(ExperimentalResourceApi::class)
 @Composable
-fun GridOfCards(cardSet: PokeCardSet, cardFilter: PokeCardFilter?, onCardClick: (PokeCardSet, PokeCard) -> Unit) {
+fun GridOfCards(cardSets: List<PokeCardSet>, cardFilter: PokeCardFilter?, onCardClick: (PokeCardSet, PokeCard) -> Unit) {
+    //Grid of cards
     LazyVerticalGrid(
         modifier = Modifier.fillMaxSize(),
         columns = GridCells.Fixed(5),
     ) {
-        val filteredCards = cardSet.cards.filter { someCard ->
-            matchesCardFilter(someCard, cardFilter)
-        }
-        items(filteredCards) { card ->
-            PokeCardComposable(
-                cardSet = cardSet,
-                pokeCard = card,
-                isLoggedIn = false,
-                isOwned = true,
-                onClick = { _set, _card ->
-                    onCardClick(_set, _card)
+
+        cardSets.forEach { cardSet ->
+            item(span = { GridItemSpan(5) }) {
+                //Cardset logo
+                var imageBitmap by remember { mutableStateOf<ImageBitmap?>(null) }
+                LaunchedEffect(cardSet) {
+                    val bytes = Res.readBytes("files/card_symbols/${cardSet.codeName}/${cardSet.imageUrl}")
+                    imageBitmap = bytes.decodeToImageBitmap()
                 }
-            )
+                if (imageBitmap == null) {
+                    Text(cardSet.displayName)
+                } else {
+                    imageBitmap?.let { Image(it, contentDescription = cardSet.displayName, modifier = Modifier.padding(8.dp)) }
+                }
+            }
+            //Cards
+            val filteredCards = cardSet.cards.filter { someCard ->
+                matchesCardFilter(someCard, cardFilter)
+            }
+            items(filteredCards) { card ->
+                PokeCardComposable(
+                    cardSet = cardSet,
+                    pokeCard = card,
+                    isLoggedIn = false,
+                    isOwned = true,
+                    onClick = { _set, _card ->
+                        onCardClick(_set, _card)
+                    }
+                )
+            }
         }
     }
 }

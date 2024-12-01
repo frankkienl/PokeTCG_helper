@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import nl.frankkie.poketcghelper.model.*
 import org.jetbrains.compose.resources.ExperimentalResourceApi
+import org.jetbrains.compose.resources.MissingResourceException
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
 
@@ -34,8 +35,12 @@ fun PokeCardDialog(
         mutableStateOf<ImageBitmap?>(null)
     }
     LaunchedEffect(pokeCard) {
-        val bytes = Res.readBytes("files/card_images2/${pokeCard.imageUrl.replace("-143x200", "")}")
-        imageBitmap = bytes.decodeToImageBitmap()
+        try {
+            val bytes = Res.readBytes("files/card_images2/${pokeCardSet.codeName}/${pokeCard.imageUrl}")
+            imageBitmap = bytes.decodeToImageBitmap()
+        } catch (missingResourceException: MissingResourceException) {
+            //Ignore; No image it is.
+        }
     }
     Dialog(onDismissRequest = onDismissRequest) {
         Card(
@@ -150,8 +155,10 @@ fun PokeRarityComposable(pokeRarityString: String?) {
         mutableStateOf<ImageBitmap?>(null)
     }
     LaunchedEffect(pokeRarity) {
-        val bytes = Res.readBytes("files/card_symbols/${pokeRarity.imageUrl}")
-        imageBitmap = bytes.decodeToImageBitmap()
+        if (pokeRarity.imageUrl != null) {
+            val bytes = Res.readBytes("files/card_symbols/${pokeRarity.imageUrl}")
+            imageBitmap = bytes.decodeToImageBitmap()
+        }
     }
     if (imageBitmap == null) {
         Text(pokeRarity.displayName)
@@ -189,7 +196,7 @@ fun PokePackComposable(pokeCardSet: PokeCardSet?, packId: String?) {
                     mutableStateOf<ImageBitmap?>(null)
                 }
                 LaunchedEffect(pokeCardSet, packId) {
-                    val bytes = Res.readBytes("files/card_symbols/${thePack.imageUrlSymbol}")
+                    val bytes = Res.readBytes("files/card_symbols/${pokeCardSet.codeName}/${thePack.imageUrlSymbol}")
                     imageBitmap = bytes.decodeToImageBitmap()
                 }
 

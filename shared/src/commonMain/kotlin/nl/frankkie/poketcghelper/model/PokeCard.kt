@@ -4,7 +4,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class PokeCardSet(
-    val name: String,
+    val codeName: String,
+    val displayName: String,
     val numberOfCards: Int,
     val imageUrl: String,
     val packs: List<PokeCardSetPack>,
@@ -23,11 +24,11 @@ data class PokeCardSetPack(
 data class PokeCard(
     val number: Int,
     val pokeName: String,
-    val pokeRarity: String,
+    val pokeRarity: String = "UNKNOWN",
     val pokeType: String? = null,
     val pokeFlair: String? = null,
     val imageUrl: String,
-    val packId: String?
+    val packId: String? = null
 )
 
 enum class PokeRarity(val codeName: String, val displayName: String, val imageUrl: String? = null, val symbolCount: Int? = null) {

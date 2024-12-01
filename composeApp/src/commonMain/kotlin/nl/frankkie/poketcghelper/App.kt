@@ -13,8 +13,6 @@ import nl.frankkie.poketcghelper.krpc.MyUser
 import nl.frankkie.poketcghelper.model.PokeCardSet
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
-lateinit var cardSet: PokeCardSet
-
 @Composable
 @Preview
 fun App(
@@ -25,6 +23,15 @@ fun App(
     LaunchedEffect(null) {
         //val myRpc = MyPokeCardsServiceClient(myCoroutineScope)
         //appViewModel.setRpc(myRpc)
+    }
+
+    var cardsInitialized by remember { mutableStateOf(false) }
+    LaunchedEffect(cardsInitialized) {
+        if (!cardsInitialized) {
+            val cardSets = initializeCards()
+            appViewModel.setCardSets(cardSets)
+            cardsInitialized = true
+        }
     }
 
     MaterialTheme {
@@ -49,9 +56,16 @@ class AppViewModel : ViewModel() {
             myUser = myUser
         )
     }
+
+    fun setCardSets(cardSets: List<PokeCardSet>) {
+        _appState.value = _appState.value.copy(
+            cardSets = cardSets
+        )
+    }
 }
 
 data class AppState(
+    val cardSets: List<PokeCardSet> = emptyList(),
     val myRpc: MyPokeCardsServiceClient? = null,
     val myUser: MyUser? = null
 )
