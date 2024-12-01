@@ -19,10 +19,10 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
         //Pack id
         if (someCard.packId!=null) {
             if (!pokeCardSetIds.contains(someCard.packId)) {
-                print("---------------------------------")
+                println("---------------------------------")
                 println("Card contains non-existing Pack")
                 println(someCard)
-                print("=================================")
+                println("=================================")
                 throw Exception("Card contains non-existing Pack")
             }
         }
@@ -32,10 +32,10 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
                 //this will throw if pokeRarity-string does not match with an Enum value
                 PokeRarity.valueOf(someCard.pokeRarity)
             } catch (e: Exception) {
-                print("---------------------------------")
+                println("---------------------------------")
                 println("Card contains non-existing Rarity")
                 println(someCard)
-                print("=================================")
+                println("=================================")
                 throw Exception("Card contains non-existing Rarity")
             }
         }
@@ -45,10 +45,10 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
                 //this will throw if pokeRarity-string does not match with an Enum value
                 PokeType.valueOf(someCard.pokeType)
             } catch (e: Exception) {
-                print("---------------------------------")
+                println("---------------------------------")
                 println("Card contains non-existing Type")
                 println(someCard)
-                print("=================================")
+                println("=================================")
                 throw Exception("Card contains non-existing Type")
             }
         }
@@ -58,10 +58,10 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
                 //this will throw if pokeRarity-string does not match with an Enum value
                 PokeFlair.valueOf(someCard.pokeFlair)
             } catch (e: Exception) {
-                print("---------------------------------")
+                println("---------------------------------")
                 println("Card contains non-existing Flair")
                 println(someCard)
-                print("=================================")
+                println("=================================")
                 throw Exception("Card contains non-existing Flair")
             }
         }
