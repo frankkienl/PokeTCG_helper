@@ -41,7 +41,7 @@ fun HomeScreen(
         topBar = { HomeScreenTopBar(navController, appViewModel, homeScreenViewModel) },
     ) {
         if (appState.cardSets.isEmpty()) {
-            Text("Loading...")
+            Text("Loading Card Sets...")
         } else {
             GridOfCards(appState.cardSets, homeScreenUiState.cardFilter, onCardClick = { _cardSet, _card ->
                 homeScreenViewModel.showCardDialog(_cardSet, _card)
