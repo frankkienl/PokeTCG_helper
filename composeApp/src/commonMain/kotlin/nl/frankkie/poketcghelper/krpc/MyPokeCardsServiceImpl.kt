@@ -2,7 +2,7 @@ package nl.frankkie.poketcghelper.krpc
 
 import kotlin.coroutines.CoroutineContext
 
-class MyPokeCardsServiceImpl(private val ctx: CoroutineContext) : MyPokeCardsService {
+class MyPokeCardsServiceImpl(override val coroutineContext: CoroutineContext) : MyPokeCardsService {
 
     private var _ownedCards: MyOwnedCards = mapOf()
 
@@ -23,7 +23,4 @@ class MyPokeCardsServiceImpl(private val ctx: CoroutineContext) : MyPokeCardsSer
     override suspend fun getOwnedCard(user: MyUser, cardNumber: Int): Int {
         _ownedCards[cardNumber]?.let { return it } ?: return 0
     }
-
-    override val coroutineContext: CoroutineContext
-        get() = ctx
 }

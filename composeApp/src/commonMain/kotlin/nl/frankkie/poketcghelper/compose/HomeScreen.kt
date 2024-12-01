@@ -1,7 +1,6 @@
 package nl.frankkie.poketcghelper.compose
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.*
@@ -18,8 +17,8 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.AppViewModel
-import nl.frankkie.poketcghelper.initializeCards
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeCardSet
 import nl.frankkie.poketcghelper.model.PokeRarity
@@ -43,14 +42,13 @@ fun HomeScreen(
         if (appState.cardSets.isEmpty()) {
             Text("Loading Card Sets...")
         } else {
-            GridOfCards(appState.cardSets, homeScreenUiState.cardFilter, onCardClick = { _cardSet, _card ->
+            GridOfCards(appState, appState.cardSets, homeScreenUiState.cardFilter, onCardClick = { _cardSet, _card ->
                 homeScreenViewModel.showCardDialog(_cardSet, _card)
             })
         }
-        if (homeScreenUiState.cardDialog != null && homeScreenUiState.cardSet != null) {
+        if (homeScreenUiState.cardDialogData != null) {
             PokeCardDialog(
-                pokeCardSet = homeScreenUiState.cardSet,
-                pokeCard = homeScreenUiState.cardDialog,
+                cardDialogData = homeScreenUiState.cardDialogData,
                 amountOwned = 1,
                 onChangeAmountOwned = {},
                 onDismissRequest = { homeScreenViewModel.hideCardDialog() }
@@ -64,7 +62,11 @@ fun HomeScreen(
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
-fun GridOfCards(cardSets: List<PokeCardSet>, cardFilter: PokeCardFilter, onCardClick: (PokeCardSet, PokeCard) -> Unit) {
+fun GridOfCards(
+    appState: AppState,
+    cardSets: List<PokeCardSet>,
+    cardFilter: PokeCardFilter,
+    onCardClick: (PokeCardSet, PokeCard) -> Unit) {
     //Placeholder image
     var placeHolderImage by remember {
         mutableStateOf<ImageBitmap?>(null)
@@ -102,7 +104,7 @@ fun GridOfCards(cardSets: List<PokeCardSet>, cardFilter: PokeCardFilter, onCardC
                 PokeCardComposable(
                     cardSet = cardSet,
                     pokeCard = card,
-                    isLoggedIn = false,
+                    isLoggedIn = appState.myUser!=null,
                     isOwned = true,
                     cardPlaceholderImage = placeHolderImage,
                     onClick = { _set, _card ->
@@ -156,9 +158,7 @@ fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, h
 class HomeScreenViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(
         HomeScreenUiState(
-            isLoggedIn = false,
-            cardSet = null,
-            cardDialog = null,
+            cardDialogData = null,
             filterDialog = false,
             cardFilter = PokeCardFilter()
         )
@@ -167,15 +167,13 @@ class HomeScreenViewModel : ViewModel() {
 
     fun showCardDialog(cardSet: PokeCardSet, card: PokeCard) {
         _uiState.value = _uiState.value.copy(
-            cardSet = cardSet,
-            cardDialog = card
+            cardDialogData = CardDialogData(cardSet, card)
         )
     }
 
     fun hideCardDialog() {
         _uiState.value = _uiState.value.copy(
-            cardSet = null,
-            cardDialog = null
+            cardDialogData = null
         )
     }
 
@@ -200,9 +198,7 @@ class HomeScreenViewModel : ViewModel() {
 }
 
 data class HomeScreenUiState(
-    val isLoggedIn: Boolean,
-    val cardSet: PokeCardSet?,
-    val cardDialog: PokeCard?,
+    val cardDialogData: CardDialogData?,
     val filterDialog: Boolean,
     val cardFilter: PokeCardFilter = PokeCardFilter()
 )

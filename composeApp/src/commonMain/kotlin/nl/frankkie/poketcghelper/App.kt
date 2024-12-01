@@ -51,6 +51,14 @@ class AppViewModel : ViewModel() {
         )
     }
 
+    fun login(username:String) {
+        _appState.value = _appState.value.copy(
+            myUser = MyUser(username = username, ownedCards = emptyMap())
+        )
+        //get owned card from server
+
+    }
+
     fun setMyUser(myUser: MyUser?) {
         _appState.value = _appState.value.copy(
             myUser = myUser

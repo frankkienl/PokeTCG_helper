@@ -23,18 +23,19 @@ import poketcg_helper.composeapp.generated.resources.Res
 @OptIn(ExperimentalResourceApi::class)
 @Composable
 fun PokeCardDialog(
-    pokeCardSet: PokeCardSet,
-    pokeCard: PokeCard,
+    cardDialogData: CardDialogData,
     isLoggedIn: Boolean = false,
     amountOwned: Int = 0,
     onChangeAmountOwned: (Int) -> Unit,
     onDismissRequest: () -> Unit
 ) {
     val cardHeight = 250.dp
+    val pokeCard = cardDialogData.pokeCard
+    val pokeCardSet = cardDialogData.pokeCardSet
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
     }
-    LaunchedEffect(pokeCard) {
+    LaunchedEffect(cardDialogData) {
         try {
             val bytes = Res.readBytes("files/card_images2/${pokeCardSet.codeName}/${pokeCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
@@ -211,3 +212,8 @@ fun PokePackComposable(pokeCardSet: PokeCardSet?, packId: String?) {
         }
     }
 }
+
+data class CardDialogData(
+    val pokeCardSet: PokeCardSet,
+    val pokeCard: PokeCard
+)

@@ -29,7 +29,7 @@ class MyPokeCardsServiceClient(coroutineScope: CoroutineScope) {
 
             rpcClient = ktorClient.rpc {
                 url {
-                    host = if (isDebug) "locahost" else "frankkie.8s.nl"
+                    host = if (isDebug) "locahost" else "home.frankkie.nl"
                     port = if (isDebug) 8080 else 80
                     encodedPath = "poketcg/api/v1/"
                 }
