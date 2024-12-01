@@ -22,6 +22,8 @@ import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.initializeCards
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeRarity
+import nl.frankkie.poketcghelper.model.PokeType
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
@@ -62,7 +64,7 @@ fun HomeScreen(
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
-fun GridOfCards(cardSets: List<PokeCardSet>, cardFilter: PokeCardFilter?, onCardClick: (PokeCardSet, PokeCard) -> Unit) {
+fun GridOfCards(cardSets: List<PokeCardSet>, cardFilter: PokeCardFilter, onCardClick: (PokeCardSet, PokeCard) -> Unit) {
     //Grid of cards
     LazyVerticalGrid(
         modifier = Modifier.fillMaxSize(),
@@ -102,12 +104,22 @@ fun GridOfCards(cardSets: List<PokeCardSet>, cardFilter: PokeCardFilter?, onCard
     }
 }
 
-fun matchesCardFilter(card: PokeCard, cardFilter: PokeCardFilter?): Boolean {
-    if (cardFilter == null) return true
-    if (cardFilter.types.isEmpty()) return true
-    if (cardFilter.types.contains(card.pokeType)) return true
-    /* TODO: Add other filters too */
-    return false
+fun matchesCardFilter(card: PokeCard, cardFilter: PokeCardFilter): Boolean {
+    //Rarity
+    if (cardFilter.rarities.isNotEmpty()) {
+        val rarity = PokeRarity.valueOf(card.pokeRarity?: "UNKNOWN")
+        if (!cardFilter.rarities.contains(rarity)) {
+            return false
+        }
+    }
+    //Types
+    if (cardFilter.types.isNotEmpty()) {
+        val type = PokeType.valueOf(card.pokeType ?: "UNKNOWN")
+        if (!cardFilter.types.contains(type)) {
+            return false
+        }
+    }
+    return true
 }
 
 @Composable
@@ -138,7 +150,7 @@ class HomeScreenViewModel : ViewModel() {
             cardSet = null,
             cardDialog = null,
             filterDialog = false,
-            cardFilter = null
+            cardFilter = PokeCardFilter()
         )
     )
     val uiState = _uiState.asStateFlow()
@@ -169,7 +181,7 @@ class HomeScreenViewModel : ViewModel() {
         )
     }
 
-    fun setCardFilter(pokeCardFilter: PokeCardFilter?) {
+    fun setCardFilter(pokeCardFilter: PokeCardFilter) {
         _uiState.value = _uiState.value.copy(
             cardFilter = pokeCardFilter,
         )
@@ -182,5 +194,5 @@ data class HomeScreenUiState(
     val cardSet: PokeCardSet?,
     val cardDialog: PokeCard?,
     val filterDialog: Boolean,
-    val cardFilter: PokeCardFilter?
+    val cardFilter: PokeCardFilter = PokeCardFilter()
 )

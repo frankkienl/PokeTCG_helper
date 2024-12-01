@@ -927,7 +927,7 @@
     {
       "number": 111,
       "pokeName": "Heliolisk",
-      "pokeRarity": "1",
+      "pokeRarity": "D1",
       "pokeType": "LIGHTNING",
       "imageUrl": "111-Heliolisk-Genetic-Apex.png",
       "packId": null
@@ -1985,7 +1985,7 @@
       "number": 239,
       "pokeName": "Cubone",
       "pokeRarity": "S1",
-      "pokeType": "FIGTHING",
+      "pokeType": "FIGHTING",
       "pokeFlair": "FULL_ART",
       "imageUrl": "239-Cubone-Genetic-Apex.png",
       "packId": "MEWTWO"
