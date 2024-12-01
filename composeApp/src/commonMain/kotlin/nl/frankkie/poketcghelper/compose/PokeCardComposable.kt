@@ -2,16 +2,15 @@ package nl.frankkie.poketcghelper.compose
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.BlendMode
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ColorFilter
-import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.graphics.*
+import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import nl.frankkie.poketcghelper.model.*
@@ -26,16 +25,14 @@ fun PokeCardComposable(
     pokeCard: PokeCard,
     isLoggedIn: Boolean,
     isOwned: Boolean,
+    cardPlaceholderImage: ImageBitmap? = null,
     onClick: (PokeCardSet, PokeCard) -> Unit
 ) {
-    var bytes by remember {
-        mutableStateOf(ByteArray(0))
-    }
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
     }
     LaunchedEffect(pokeCard) {
-        bytes = Res.readBytes("files/card_images/${cardSet.codeName}/${pokeCard.imageUrl}")
+        val bytes = Res.readBytes("files/card_images/${cardSet.codeName}/${pokeCard.imageUrl}")
         imageBitmap = bytes.decodeToImageBitmap()
     }
     Column(
@@ -46,17 +43,49 @@ fun PokeCardComposable(
             },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        imageBitmap?.let {
-            if (isLoggedIn && !isOwned) {
-                //Show blurred
-                Image(
-                    it,
-                    null,
-                    colorFilter = ColorFilter.tint(Color(0x99FFFFFF), blendMode = BlendMode.Color),
-                )
-            } else {
-                //Show normally
-                Image(it, null)
+        Box(modifier = Modifier.height(100.dp)) {
+            if (imageBitmap == null) {
+                cardPlaceholderImage?.let {
+                    Image(it, contentDescription = "Loading ...")
+                }
+                Box(Modifier.padding(top = 10.dp).align(Alignment.Center)) {
+                    Text(
+                        "Loading ...",
+                        modifier = Modifier.fillMaxHeight().align(Alignment.Center),
+                        style = TextStyle.Default.copy(
+                            color = Color.White,
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold,
+                        ),
+                    )
+                    Text(
+                        "Loading ...",
+                        modifier = Modifier.fillMaxHeight().align(Alignment.Center),
+                        style = TextStyle.Default.copy(
+                            color = Color.Black,
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold,
+                            drawStyle = Stroke(
+                                miter = 10f,
+                                width = 2f,
+                                join = StrokeJoin.Round
+                            )
+                        )
+                    )
+                }
+            }
+            imageBitmap?.let {
+                if (isLoggedIn && !isOwned) {
+                    //Show blurred
+                    Image(
+                        it,
+                        null,
+                        colorFilter = ColorFilter.tint(Color(0x99FFFFFF), blendMode = BlendMode.Color),
+                    )
+                } else {
+                    //Show normally
+                    Image(it, null)
+                }
             }
         }
         Text(pokeCard.number.toString())

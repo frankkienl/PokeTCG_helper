@@ -65,6 +65,15 @@ fun HomeScreen(
 @OptIn(ExperimentalResourceApi::class)
 @Composable
 fun GridOfCards(cardSets: List<PokeCardSet>, cardFilter: PokeCardFilter, onCardClick: (PokeCardSet, PokeCard) -> Unit) {
+    //Placeholder image
+    var placeHolderImage by remember {
+        mutableStateOf<ImageBitmap?>(null)
+    }
+    LaunchedEffect(cardSets) {
+        val bytes = Res.readBytes("files/card_symbols/card_back.png")
+        placeHolderImage = bytes.decodeToImageBitmap()
+    }
+
     //Grid of cards
     LazyVerticalGrid(
         modifier = Modifier.fillMaxSize(),
@@ -95,6 +104,7 @@ fun GridOfCards(cardSets: List<PokeCardSet>, cardFilter: PokeCardFilter, onCardC
                     pokeCard = card,
                     isLoggedIn = false,
                     isOwned = true,
+                    cardPlaceholderImage = placeHolderImage,
                     onClick = { _set, _card ->
                         onCardClick(_set, _card)
                     }
