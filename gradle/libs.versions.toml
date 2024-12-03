@@ -14,13 +14,12 @@ androidx-test-junit = "1.2.1"
 compose-multiplatform = "1.7.0"
 compose-navigation = "2.8.0-alpha10"
 junit = "4.13.2"
-kotlin = "2.0.21"
+kotlin = "2.1.0"
 kotlinx-coroutines = "1.9.0"
 kotlinx-serialization = "1.7.3"
 ktor = "3.0.1"
-logback = "1.5.11"
 navigationCompose = "2.8.4"
-krpc = "0.4.0"
+supabase = "3.0.2"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -40,22 +39,19 @@ kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-seria
 kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
 navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 
-logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
-ktor-server-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
-ktor-server-netty = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "ktor" }
-ktor-server-tests = { module = "io.ktor:ktor-server-tests-jvm", version.ref = "ktor" }
-
-# Kotlinx RPC
-krpc-client = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-client", version.ref="krpc"}
-krpc-server = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-server", version.ref="krpc"}
-krpc-serialization-json = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-serialization-json", version.ref="krpc"}
-krpc-ktor-client = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-ktor-client", version.ref="krpc"}
-krpc-ktor-server = { group = "org.jetbrains.kotlinx", name="kotlinx-rpc-krpc-ktor-server", version.ref="krpc"}
-
 # Ktor client
-ktor-client-core = { group = "io.ktor", name="ktor-client-core", version.ref="ktor"}
-ktor-client-cio = { group = "io.ktor", name="ktor-client-cio", version.ref="ktor"}
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
 
+# Supabase
+supabase-bom = { group = "io.github.jan-tennert.supabase:bom", name="bom", version.ref = "supabase" }
+supabase-postgrest-kt = { group = "io.github.jan-tennert.supabase", name="postgrest-kt", version.ref = "supabase" }
+supabase-auth-kt = { group = "io.github.jan-tennert.supabase", name="auth-kt", version.ref = "supabase" }
+supabase-realtime-kt = { group = "io.github.jan-tennert.supabase", name="realtime-kt", version.ref = "supabase" }
+supabase-storage-kt = { group = "io.github.jan-tennert.supabase", name="storage-kt", version.ref = "supabase" }
+supabase-functions-kt = { group = "io.github.jan-tennert.supabase", name="functions-kt", version.ref = "supabase" }
+supabase-compose-auth = { group = "io.github.jan-tennert.supabase", name="compose-auth", version.ref = "supabase" }
+supabase-compose-auth-ui = { group = "io.github.jan-tennert.supabase", name="compose-auth-ui", version.ref = "supabase" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -63,7 +59,5 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
-ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-krpc = { id = "org.jetbrains.kotlinx.rpc.plugin", version.ref="krpc"}

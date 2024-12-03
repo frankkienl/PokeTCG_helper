@@ -10,7 +10,6 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.serialization)
-    alias(libs.plugins.krpc)
 }
 
 kotlin {
@@ -75,12 +74,17 @@ kotlin {
             implementation(libs.androidx.navigation.compose)
             // JSON parsing
             implementation(libs.kotlinx.serialization)
-            // KRPC
-            implementation(libs.krpc.client)
-            implementation(libs.krpc.serialization.json)
-            implementation(libs.krpc.ktor.client)
             // Ktor client
             implementation(libs.ktor.client.core)
+            // Supabase
+            //implementation(project.dependencies.platform(libs.supabase.bom))
+            implementation(libs.supabase.postgrest.kt)
+            implementation(libs.supabase.auth.kt)
+            implementation(libs.supabase.realtime.kt)
+            implementation(libs.supabase.storage.kt)
+            implementation(libs.supabase.functions.kt)
+            implementation(libs.supabase.compose.auth)
+            implementation(libs.supabase.compose.auth.ui)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)

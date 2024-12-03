@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import nl.frankkie.poketcghelper.compose.createNavGraph
+import nl.frankkie.poketcghelper.krpc.MyOwnedCards
 import nl.frankkie.poketcghelper.krpc.MyPokeCardsServiceClient
 import nl.frankkie.poketcghelper.krpc.MyUser
 import nl.frankkie.poketcghelper.model.PokeCardSet
@@ -53,7 +54,7 @@ class AppViewModel : ViewModel() {
 
     fun login(username:String) {
         _appState.value = _appState.value.copy(
-            myUser = MyUser(username = username, ownedCards = emptyMap())
+            myUser = MyUser(username = username, ownedCards = MyOwnedCards(emptyMap()))
         )
         //get owned card from server
 

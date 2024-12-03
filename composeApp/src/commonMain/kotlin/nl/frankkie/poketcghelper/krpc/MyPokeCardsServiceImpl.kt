@@ -2,9 +2,9 @@ package nl.frankkie.poketcghelper.krpc
 
 import kotlin.coroutines.CoroutineContext
 
-class MyPokeCardsServiceImpl(override val coroutineContext: CoroutineContext) : MyPokeCardsService {
+class MyPokeCardsServiceImpl(val coroutineContext: CoroutineContext) : MyPokeCardsService {
 
-    private var _ownedCards: MyOwnedCards = mapOf()
+    private var _ownedCards: MyOwnedCards = MyOwnedCards(mapOf())
 
     override suspend fun getOwnedCards(user: MyUser): MyOwnedCards {
         return _ownedCards
@@ -15,12 +15,12 @@ class MyPokeCardsServiceImpl(override val coroutineContext: CoroutineContext) : 
     }
 
     override suspend fun setOwnedCard(user: MyUser, cardNumber: Int, ownedAmount: Int) {
-        val temp = _ownedCards.toMutableMap()
+        val temp = _ownedCards.cardAmounts.toMutableMap()
         temp[cardNumber] = ownedAmount
-        _ownedCards = temp.toMap()
+        _ownedCards = MyOwnedCards(temp)
     }
 
     override suspend fun getOwnedCard(user: MyUser, cardNumber: Int): Int {
-        _ownedCards[cardNumber]?.let { return it } ?: return 0
+        _ownedCards.cardAmounts[cardNumber]?.let { return it } ?: return 0
     }
 }
