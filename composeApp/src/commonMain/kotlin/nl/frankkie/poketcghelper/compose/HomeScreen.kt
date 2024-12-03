@@ -1,22 +1,29 @@
 package nl.frankkie.poketcghelper.compose
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.*
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.outlined.AccountCircle
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.window.Dialog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
+import io.github.jan.supabase.auth.auth
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
 import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.model.PokeCard
@@ -57,6 +64,9 @@ fun HomeScreen(
         if (homeScreenUiState.filterDialog) {
             PokeFilterDialog(homeScreenViewModel)
         }
+        if (homeScreenUiState.showLogoutDialog) {
+            LogoutDialog(appViewModel, homeScreenViewModel)
+        }
     }
 }
 
@@ -66,7 +76,8 @@ fun GridOfCards(
     appState: AppState,
     cardSets: List<PokeCardSet>,
     cardFilter: PokeCardFilter,
-    onCardClick: (PokeCardSet, PokeCard) -> Unit) {
+    onCardClick: (PokeCardSet, PokeCard) -> Unit
+) {
     //Placeholder image
     var placeHolderImage by remember {
         mutableStateOf<ImageBitmap?>(null)
@@ -104,7 +115,7 @@ fun GridOfCards(
                 PokeCardComposable(
                     cardSet = cardSet,
                     pokeCard = card,
-                    isLoggedIn = appState.myUser!=null,
+                    isLoggedIn = appState.supabaseUserInfo != null,
                     isOwned = true,
                     cardPlaceholderImage = placeHolderImage,
                     onClick = { _set, _card ->
@@ -119,7 +130,7 @@ fun GridOfCards(
 fun matchesCardFilter(card: PokeCard, cardFilter: PokeCardFilter): Boolean {
     //Rarity
     if (cardFilter.rarities.isNotEmpty()) {
-        val rarity = PokeRarity.valueOf(card.pokeRarity?: "UNKNOWN")
+        val rarity = PokeRarity.valueOf(card.pokeRarity ?: "UNKNOWN")
         if (!cardFilter.rarities.contains(rarity)) {
             return false
         }
@@ -136,23 +147,76 @@ fun matchesCardFilter(card: PokeCard, cardFilter: PokeCardFilter): Boolean {
 
 @Composable
 fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, homeScreenViewModel: HomeScreenViewModel) {
+    val appState = appViewModel.appState.collectAsState().value
     TopAppBar(
         title = { Text("Poke TCG Helper") },
         actions = {
             IconButton(onClick = { homeScreenViewModel.showFilterDialog() }) {
                 Icon(Icons.Filled.Search, contentDescription = "Search")
             }
-            if (appViewModel.appState.value.myUser != null) {
+            if (appState.supabaseUserInfo == null) {
+                //Not logged in (go to login-screen)
                 IconButton(onClick = { navController.navigate(Routes.LoginScreen) }) {
-                    Icon(Icons.Default.AccountCircle, contentDescription = "Login icon")
+                    Icon(Icons.Outlined.AccountCircle, contentDescription = "Login icon")
                 }
             } else {
-                IconButton(onClick = { navController.navigate(Routes.LoginScreen) }) {
+                //Logged in (this is now a logout-button)
+                IconButton(onClick = { homeScreenViewModel.showLogoutDialog(true) }) {
                     Icon(Icons.Filled.AccountCircle, contentDescription = "Logout icon")
                 }
             }
         }
     )
+}
+
+@Composable
+fun LogoutDialog(appViewModel: AppViewModel, homeScreenViewModel: HomeScreenViewModel) {
+    Dialog(
+        onDismissRequest = { homeScreenViewModel.showLogoutDialog(false) },
+    ) {
+        val rememberCoroutineScope = rememberCoroutineScope()
+        var isLoading by remember {
+            mutableStateOf(false)
+        }
+        Card(
+            modifier = Modifier.padding(8.dp),
+            shape = RoundedCornerShape(8.dp),
+        ) {
+            Column(
+                modifier = Modifier.padding(8.dp),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text("Logout?")
+                Spacer(Modifier.height(8.dp))
+                Text("Currently logged in as: ")
+                Text(appViewModel.appState.value.supabaseUserInfo?.email ?: "Anonymous")
+                Spacer(Modifier.height(8.dp))
+                Row {
+                    TextButton(
+                        onClick = { homeScreenViewModel.showLogoutDialog(false) },
+                        content = { Text("Cancel") }
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    if (isLoading) {
+                        CircularProgressIndicator()
+                    } else {
+                        TextButton(
+                            onClick = {
+                                rememberCoroutineScope.launch {
+                                    isLoading = true
+                                    appViewModel.logout()
+                                    isLoading = false
+                                    homeScreenViewModel.showLogoutDialog(false)
+                                }
+                            },
+                            content = { Text("Logout", color = Color.Red) }
+                        )
+                    }
+                }
+            }
+        }
+    }
 }
 
 class HomeScreenViewModel : ViewModel() {
@@ -195,10 +259,17 @@ class HomeScreenViewModel : ViewModel() {
         )
     }
 
+    fun showLogoutDialog(isVisible: Boolean) {
+        _uiState.value = _uiState.value.copy(
+            showLogoutDialog = isVisible
+        )
+    }
+
 }
 
 data class HomeScreenUiState(
     val cardDialogData: CardDialogData?,
     val filterDialog: Boolean,
-    val cardFilter: PokeCardFilter = PokeCardFilter()
+    val cardFilter: PokeCardFilter = PokeCardFilter(),
+    val showLogoutDialog: Boolean = false,
 )
