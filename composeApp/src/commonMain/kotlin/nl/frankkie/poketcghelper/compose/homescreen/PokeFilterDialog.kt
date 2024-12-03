@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper.compose
+package nl.frankkie.poketcghelper.compose.homescreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*

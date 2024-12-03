@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper.compose
+package nl.frankkie.poketcghelper.compose.homescreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -77,10 +77,7 @@ fun PokeCardComposable(
             imageBitmap?.let {
                 if (isLoggedIn && !isOwned) {
                     //Show blurred
-                    Image(
-                        it,
-                        null,
-                        colorFilter = ColorFilter.tint(Color(0x99FFFFFF), blendMode = BlendMode.Color),
+                    Image(it, null, colorFilter = ColorFilter.tint(Color(0xCCFFFFFF), blendMode = BlendMode.Color),
                     )
                 } else {
                     //Show normally

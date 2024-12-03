@@ -1,0 +1,144 @@
+package nl.frankkie.poketcghelper.compose.homescreen
+
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.outlined.AccountCircle
+import androidx.compose.runtime.*
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavController
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
+import nl.frankkie.poketcghelper.AppViewModel
+import nl.frankkie.poketcghelper.compose.*
+import nl.frankkie.poketcghelper.model.PokeCard
+import nl.frankkie.poketcghelper.model.PokeCardSet
+
+@Composable
+fun HomeScreen(
+    navController: NavController,
+    appViewModel: AppViewModel,
+    homeScreenViewModel: HomeScreenViewModel = viewModel { HomeScreenViewModel() }
+) {
+    val rememberCoroutineScope = rememberCoroutineScope()
+    val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
+    val appState = appViewModel.appState.collectAsState().value
+    var cardAmountLoading by remember { mutableStateOf(false) }
+    Scaffold(
+        topBar = { HomeScreenTopBar(navController, appViewModel, homeScreenViewModel) },
+    ) {
+        if (appState.cardSets.isEmpty()) {
+            Text("Loading Card Sets...")
+        } else {
+            GridOfCards(appState, appState.cardSets, homeScreenUiState.cardFilter, onCardClick = { _cardSet, _card ->
+                homeScreenViewModel.showCardDialog(_cardSet, _card)
+            })
+        }
+        if (homeScreenUiState.cardDialogData != null) {
+            val theCardData = homeScreenUiState.cardDialogData
+            val amountOwned = appState.ownedCards.find { it.pokeCard == theCardData.pokeCard }?.amount ?:0
+            PokeCardDialog(
+                cardDialogData = homeScreenUiState.cardDialogData,
+                amountOwned = amountOwned,
+                isAmountLoading = cardAmountLoading,
+                isLoggedIn = appState.supabaseUserInfo != null,
+                onChangeAmountOwned = { amount ->
+                    rememberCoroutineScope.launch {
+                        cardAmountLoading = true
+                        appViewModel.changeOwnedCardAmount(theCardData.pokeCardSet, theCardData.pokeCard, amount)
+                        cardAmountLoading = false
+                    }
+                },
+                onDismissRequest = { homeScreenViewModel.hideCardDialog() }
+            )
+        }
+        if (homeScreenUiState.filterDialog) {
+            PokeFilterDialog(homeScreenViewModel)
+        }
+        if (homeScreenUiState.showLogoutDialog) {
+            HomeScreenLogoutDialog(appViewModel, homeScreenViewModel)
+        }
+    }
+}
+
+@Composable
+fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, homeScreenViewModel: HomeScreenViewModel) {
+    val appState = appViewModel.appState.collectAsState().value
+    TopAppBar(
+        title = { Text("Poke TCG Helper") },
+        actions = {
+            IconButton(onClick = { homeScreenViewModel.showFilterDialog() }) {
+                Icon(Icons.Filled.Search, contentDescription = "Search")
+            }
+            if (appState.supabaseUserInfo == null) {
+                //Not logged in (go to login-screen)
+                IconButton(onClick = { navController.navigate(Routes.LoginScreen) }) {
+                    Icon(Icons.Outlined.AccountCircle, contentDescription = "Login icon")
+                }
+            } else {
+                //Logged in (this is now a logout-button)
+                IconButton(onClick = { homeScreenViewModel.showLogoutDialog(true) }) {
+                    Icon(Icons.Filled.AccountCircle, contentDescription = "Logout icon")
+                }
+            }
+        }
+    )
+}
+
+class HomeScreenViewModel : ViewModel() {
+    private val _uiState = MutableStateFlow(
+        HomeScreenUiState(
+            cardDialogData = null,
+            filterDialog = false,
+            cardFilter = PokeCardFilter()
+        )
+    )
+    val uiState = _uiState.asStateFlow()
+
+    fun showCardDialog(cardSet: PokeCardSet, card: PokeCard) {
+        _uiState.value = _uiState.value.copy(
+            cardDialogData = CardDialogData(cardSet, card)
+        )
+    }
+
+    fun hideCardDialog() {
+        _uiState.value = _uiState.value.copy(
+            cardDialogData = null
+        )
+    }
+
+    fun showFilterDialog() {
+        _uiState.value = _uiState.value.copy(
+            filterDialog = true
+        )
+    }
+
+    fun hideFilterDialog() {
+        _uiState.value = _uiState.value.copy(
+            filterDialog = false
+        )
+    }
+
+    fun setCardFilter(pokeCardFilter: PokeCardFilter) {
+        _uiState.value = _uiState.value.copy(
+            cardFilter = pokeCardFilter,
+        )
+    }
+
+    fun showLogoutDialog(isVisible: Boolean) {
+        _uiState.value = _uiState.value.copy(
+            showLogoutDialog = isVisible
+        )
+    }
+
+}
+
+data class HomeScreenUiState(
+    val cardDialogData: CardDialogData?,
+    val filterDialog: Boolean,
+    val cardFilter: PokeCardFilter = PokeCardFilter(),
+    val showLogoutDialog: Boolean = false,
+)

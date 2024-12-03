@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper.compose
+package nl.frankkie.poketcghelper.compose.homescreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -26,10 +26,11 @@ fun PokeCardDialog(
     cardDialogData: CardDialogData,
     isLoggedIn: Boolean = false,
     amountOwned: Int = 0,
+    isAmountLoading: Boolean = false,
     onChangeAmountOwned: (Int) -> Unit,
     onDismissRequest: () -> Unit
 ) {
-    val cardHeight = 250.dp
+    val cardHeight = 350.dp
     val pokeCard = cardDialogData.pokeCard
     val pokeCardSet = cardDialogData.pokeCardSet
     var imageBitmap by remember {
@@ -64,7 +65,7 @@ fun PokeCardDialog(
                         )
                     }
                     Column(
-                        modifier = Modifier.height(cardHeight).padding(8.dp),
+                        modifier = Modifier.height(cardHeight).widthIn(250.dp).padding(8.dp),
                         verticalArrangement = Arrangement.Center,
                     ) {
                         Text(pokeCard.number.toString())
@@ -83,14 +84,18 @@ fun PokeCardDialog(
                             Spacer(modifier = Modifier.height(8.dp))
                             Text("Amount owned:")
                             Row(verticalAlignment = Alignment.CenterVertically) {
-                                OutlinedButton(onClick = { onChangeAmountOwned(amountOwned - 1) }) {
+                                OutlinedButton(
+                                    enabled = !isAmountLoading,
+                                    onClick = { onChangeAmountOwned(amountOwned - 1) }) {
                                     Text("-")
                                 }
                                 Text(
                                     amountOwned.toString(),
                                     modifier = Modifier.padding(8.dp)
                                 )
-                                OutlinedButton(onClick = { onChangeAmountOwned(amountOwned - 1) }) {
+                                OutlinedButton(
+                                    enabled = !isAmountLoading,
+                                    onClick = { onChangeAmountOwned(amountOwned + 1) }) {
                                     Text("+")
                                 }
                             }
@@ -202,7 +207,7 @@ fun PokePackComposable(pokeCardSet: PokeCardSet?, packId: String?) {
                 }
 
                 imageBitmap?.let {
-                    Image(it, contentDescription = packId, modifier = Modifier.height(80.dp))
+                    Image(it, contentDescription = packId, modifier = Modifier.height(50.dp))
                 } ?: run {
                     Text(packId)
                 }
