@@ -81,9 +81,6 @@ kotlin {
             implementation(libs.krpc.ktor.client)
             // Ktor client
             implementation(libs.ktor.client.core)
-
-            //
-            implementation(projects.shared)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
