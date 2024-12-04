@@ -3,9 +3,11 @@ package nl.frankkie.poketcghelper.compose.homescreen
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.outlined.AccountCircle
+import androidx.compose.material.icons.outlined.Add
 import androidx.compose.runtime.*
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -34,9 +36,22 @@ fun HomeScreen(
         if (appState.cardSets.isEmpty()) {
             Text("Loading Card Sets...")
         } else {
-            GridOfCards(appState, appState.cardSets, homeScreenUiState.cardFilter, onCardClick = { _cardSet, _card ->
-                homeScreenViewModel.showCardDialog(_cardSet, _card)
-            })
+            GridOfCards(
+                appState,
+                appState.cardSets,
+                homeScreenUiState,
+                cardAmountLoading = cardAmountLoading,
+                onCardClick = { _cardSet, _card ->
+                    homeScreenViewModel.showCardDialog(_cardSet, _card)
+                },
+                onChangeAmountOwned = { _cardSet, _card, _amount ->
+                    rememberCoroutineScope.launch {
+                        cardAmountLoading = true
+                        appViewModel.changeOwnedCardAmount(_cardSet, _card, _amount)
+                        cardAmountLoading = false
+                    }
+                }
+            )
         }
         if (homeScreenUiState.cardDialogData != null) {
             val theCardData = homeScreenUiState.cardDialogData
@@ -68,12 +83,22 @@ fun HomeScreen(
 @Composable
 fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, homeScreenViewModel: HomeScreenViewModel) {
     val appState = appViewModel.appState.collectAsState().value
+    val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
     val rememberCoroutineScope = rememberCoroutineScope()
     TopAppBar(
         title = { Text("Poke TCG Helper") },
         actions = {
             IconButton(onClick = { rememberCoroutineScope.launch { appViewModel.refreshOwnedCards() } }) {
                 Icon(Icons.Filled.Refresh, contentDescription = "Refresh")
+            }
+            if (homeScreenUiState.amountInputMode) {
+                IconButton(onClick = { homeScreenViewModel.setAmountInputMode(false) }) {
+                    Icon(Icons.Filled.Add, contentDescription = "Number input mode")
+                }
+            } else {
+                IconButton(onClick = { homeScreenViewModel.setAmountInputMode(true) }) {
+                    Icon(Icons.Outlined.Add, contentDescription = "Number input mode")
+                }
             }
             IconButton(onClick = { homeScreenViewModel.showFilterDialog() }) {
                 Icon(Icons.Filled.Search, contentDescription = "Search")
@@ -95,11 +120,7 @@ fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, h
 
 class HomeScreenViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(
-        HomeScreenUiState(
-            cardDialogData = null,
-            filterDialog = false,
-            cardFilter = PokeCardFilter()
-        )
+        HomeScreenUiState()
     )
     val uiState = _uiState.asStateFlow()
 
@@ -139,11 +160,18 @@ class HomeScreenViewModel : ViewModel() {
         )
     }
 
+    fun setAmountInputMode(newValue: Boolean) {
+        _uiState.value = _uiState.value.copy(
+            amountInputMode = newValue
+        )
+    }
+
 }
 
 data class HomeScreenUiState(
-    val cardDialogData: CardDialogData?,
-    val filterDialog: Boolean,
+    val cardDialogData: CardDialogData? = null,
+    val filterDialog: Boolean = false,
     val cardFilter: PokeCardFilter = PokeCardFilter(),
     val showLogoutDialog: Boolean = false,
+    val amountInputMode: Boolean = false,
 )

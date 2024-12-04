@@ -26,9 +26,13 @@ import poketcg_helper.composeapp.generated.resources.Res
 fun GridOfCards(
     appState: AppState,
     cardSets: List<PokeCardSet>,
-    cardFilter: PokeCardFilter,
-    onCardClick: (PokeCardSet, PokeCard) -> Unit
+    homeScreenUiState: HomeScreenUiState,
+    onCardClick: (PokeCardSet, PokeCard) -> Unit,
+    cardAmountLoading: Boolean,
+    onChangeAmountOwned: (PokeCardSet, PokeCard, Int) -> Unit,
 ) {
+    val cardFilter = homeScreenUiState.cardFilter
+    val isLoggedIn = appState.supabaseUserInfo != null
     //Placeholder image
     var placeHolderImage by remember {
         mutableStateOf<ImageBitmap?>(null)
@@ -65,16 +69,28 @@ fun GridOfCards(
             items(filteredCards) { card ->
                 val ownedCard = appState.ownedCards.find { card.number == it.pokeCard.number }
                 val isOwned = ownedCard != null && ownedCard.amount > 0
-                PokeCardComposable(
-                    cardSet = cardSet,
-                    pokeCard = card,
-                    isLoggedIn = appState.supabaseUserInfo != null,
-                    isOwned = isOwned,
-                    cardPlaceholderImage = placeHolderImage,
-                    onClick = { _set, _card ->
-                        onCardClick(_set, _card)
-                    }
-                )
+                val amountOwned = ownedCard?.amount ?: 0
+                if (homeScreenUiState.amountInputMode && isLoggedIn) {
+                    PokeCardComposableAmountInputMode(
+                        cardSet = cardSet,
+                        pokeCard = card,
+                        amountOwned = amountOwned,
+                        cardAmountLoading = cardAmountLoading,
+                        cardPlaceholderImage = placeHolderImage,
+                        onChangeAmountOwned = onChangeAmountOwned,
+                    )
+                } else {
+                    PokeCardComposableNormalMode(
+                        cardSet = cardSet,
+                        pokeCard = card,
+                        isLoggedIn = appState.supabaseUserInfo != null,
+                        isOwned = isOwned,
+                        cardPlaceholderImage = placeHolderImage,
+                        onClick = { _set, _card ->
+                            onCardClick(_set, _card)
+                        }
+                    )
+                }
             }
         }
     }
