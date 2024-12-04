@@ -44,7 +44,7 @@ fun PokeCardComposableNormalMode(
             },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(modifier = Modifier.height(100.dp)) {
+        Box(modifier = Modifier.heightIn(50.dp, 150.dp)) {
             if (imageBitmap == null) {
                 cardPlaceholderImage?.let {
                     Image(it, contentDescription = "Loading ...")
@@ -78,7 +78,8 @@ fun PokeCardComposableNormalMode(
             imageBitmap?.let {
                 if (isLoggedIn && !isOwned) {
                     //Show blurred
-                    Image(it, null, colorFilter = ColorFilter.tint(Color(0xCCFFFFFF), blendMode = BlendMode.Color),
+                    Image(
+                        it, null, colorFilter = ColorFilter.tint(Color(0xCCFFFFFF), blendMode = BlendMode.Color),
                     )
                 } else {
                     //Show normally
@@ -113,7 +114,7 @@ fun PokeCardComposableAmountInputMode(
         modifier = Modifier.padding(top = 8.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(modifier = Modifier.height(100.dp)) {
+        Box(modifier = Modifier.heightIn(50.dp, 150.dp)) {
             if (imageBitmap == null) {
                 cardPlaceholderImage?.let {
                     Image(it, contentDescription = "Loading ...")
@@ -147,7 +148,8 @@ fun PokeCardComposableAmountInputMode(
             imageBitmap?.let {
                 if (amountOwned < 1) {
                     //Show blurred
-                    Image(it, null, colorFilter = ColorFilter.tint(Color(0xCCFFFFFF), blendMode = BlendMode.Color),
+                    Image(
+                        it, null, colorFilter = ColorFilter.tint(Color(0xCCFFFFFF), blendMode = BlendMode.Color),
                     )
                 } else {
                     //Show normally
@@ -156,21 +158,53 @@ fun PokeCardComposableAmountInputMode(
             }
         }
         //Text(pokeCard.number.toString())
-        Text(pokeCard.pokeName)
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            OutlinedButton(
-                enabled = !cardAmountLoading,
-                onClick = { onChangeAmountOwned(cardSet, pokeCard, amountOwned - 1) }) {
-                Text("-")
+        Text(pokeCard.pokeName, fontSize = 10.sp)
+        val useVertical = true
+        if (!useVertical) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                OutlinedButton(
+                    enabled = !cardAmountLoading,
+                    onClick = {
+                        var newAmount = amountOwned - 1
+                        if (newAmount < 0) {
+                            newAmount = 0
+                        } // prevent negative numbers
+                        onChangeAmountOwned(cardSet, pokeCard, newAmount)
+                    }) {
+                    Text("-")
+                }
+                Text(
+                    amountOwned.toString(),
+                    modifier = Modifier.padding(4.dp)
+                )
+                OutlinedButton(
+                    enabled = !cardAmountLoading,
+                    onClick = { onChangeAmountOwned(cardSet, pokeCard, amountOwned + 1) }) {
+                    Text("+")
+                }
             }
-            Text(
-                amountOwned.toString(),
-                modifier = Modifier.padding(4.dp)
-            )
-            OutlinedButton(
-                enabled = !cardAmountLoading,
-                onClick = { onChangeAmountOwned(cardSet, pokeCard, amountOwned + 1) }) {
-                Text("+")
+        } else {
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                OutlinedButton(
+                    enabled = !cardAmountLoading,
+                    onClick = { onChangeAmountOwned(cardSet, pokeCard, amountOwned + 1) }) {
+                    Text("+")
+                }
+                Text(
+                    amountOwned.toString(),
+                    modifier = Modifier.padding(4.dp)
+                )
+                OutlinedButton(
+                    enabled = !cardAmountLoading,
+                    onClick = {
+                        var newAmount = amountOwned - 1
+                        if (newAmount < 0) {
+                            newAmount = 0
+                        } // prevent negative numbers
+                        onChangeAmountOwned(cardSet, pokeCard, newAmount)
+                    }) {
+                    Text("-")
+                }
             }
         }
         //Text(pokeCard.packId ?: "", fontSize = 10.sp)

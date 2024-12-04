@@ -67,7 +67,7 @@ fun GridOfCards(
                 matchesCardFilter(someCard, cardFilter)
             }
             items(filteredCards) { card ->
-                val ownedCard = appState.ownedCards.find { card.number == it.pokeCard.number }
+                val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeCardSet.codeName) }
                 val isOwned = ownedCard != null && ownedCard.amount > 0
                 val amountOwned = ownedCard?.amount ?: 0
                 if (homeScreenUiState.amountInputMode && isLoggedIn) {
