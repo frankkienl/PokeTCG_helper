@@ -15,6 +15,7 @@ import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
 import io.github.jan.supabase.postgrest.postgrest
 import io.github.jan.supabase.serializer.KotlinXSerializer
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -122,14 +123,22 @@ class AppViewModel : ViewModel() {
     }
 
     suspend fun refreshOwnedCards() {
+        println("refreshOwnedCards")
         if (_appState.value.supabaseClient == null) {
+            println("refreshOwnedCards: supabaseClient == null")
             return
         }
         if (_appState.value.supabaseUserInfo == null) {
+            println("refreshOwnedCards: supabaseUserInfo == null")
             return
         }
         if (_appState.value.cardSets.isEmpty()) {
-            return
+            println("refreshOwnedCards: cardSets is empty")
+            delay(500L)
+            if (_appState.value.cardSets.isEmpty()) {
+                println("refreshOwnedCards: cardSets is still empty")
+                return
+            }
         }
         val db = _appState.value.supabaseClient?.postgrest ?: return
         val listOfOwnedCards = db.from(dbTableUserOwnedCards).select().decodeList<UserOwnedCardRow>()
@@ -143,21 +152,25 @@ class AppViewModel : ViewModel() {
                 amount = dbRow.card_amount,
                 remarks = dbRow.card_remarks.toList()
             )
-
         }
+        println("refreshOwnedCards: received ${ownedCards.size} owned cards rows")
         _appState.value = _appState.value.copy(
             ownedCards = ownedCards
         )
     }
 
     suspend fun changeOwnedCardAmount(pokeCardSet: PokeCardSet, pokeCard: PokeCard, amount: Int) {
+        println("changeOwnedCardAmount")
         if (_appState.value.supabaseClient == null) {
+            println("changeOwnedCardAmount: supabaseClient == null")
             return
         }
         if (_appState.value.supabaseUserInfo == null) {
+            println("changeOwnedCardAmount: supabaseUserInfo == null")
             return
         }
         if (_appState.value.cardSets.isEmpty()) {
+            println("changeOwnedCardAmount: cardSets is empty")
             return
         }
         val db = _appState.value.supabaseClient?.postgrest ?: return
@@ -180,16 +193,18 @@ class AppViewModel : ViewModel() {
                     eq("card_number", pokeCard.number)
                 }
             }.decodeSingle()
+            println("changeOwnedCardAmount: received oldRow $oldRow")
         } catch (e: Exception) {
             //Row does not exist
-            println("changeOwnedCardAmount: oldRow")
+            println("changeOwnedCardAmount: exception on getting oldRow")
             println("Error: ${e.message}")
         }
         if (oldRow == null) {
             try {
                 db.from(dbTableUserOwnedCards).insert(newRow)
+                println("changeOwnedCardAmount: inserted new row")
             } catch (e: Exception) {
-                println("changeOwnedCardAmount: DB error")
+                println("changeOwnedCardAmount: DB error on inserting new row")
                 println("Error: ${e.message}")
                 e.printStackTrace()
             }
@@ -206,8 +221,9 @@ class AppViewModel : ViewModel() {
 //                        eq("card_number", pokeCard.number)
                     }
                 }
+                println("changeOwnedCardAmount: updated row")
             } catch (e: Exception) {
-                println("changeOwnedCardAmount: DB error")
+                println("changeOwnedCardAmount: DB error on updating row")
                 println("Error: ${e.message}")
                 e.printStackTrace()
             }

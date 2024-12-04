@@ -3,6 +3,7 @@ package nl.frankkie.poketcghelper.compose.homescreen
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.outlined.AccountCircle
 import androidx.compose.runtime.*
@@ -39,7 +40,7 @@ fun HomeScreen(
         }
         if (homeScreenUiState.cardDialogData != null) {
             val theCardData = homeScreenUiState.cardDialogData
-            val amountOwned = appState.ownedCards.find { it.pokeCard == theCardData.pokeCard }?.amount ?:0
+            val amountOwned = appState.ownedCards.find { it.pokeCard == theCardData.pokeCard }?.amount ?: 0
             PokeCardDialog(
                 cardDialogData = homeScreenUiState.cardDialogData,
                 amountOwned = amountOwned,
@@ -67,9 +68,13 @@ fun HomeScreen(
 @Composable
 fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, homeScreenViewModel: HomeScreenViewModel) {
     val appState = appViewModel.appState.collectAsState().value
+    val rememberCoroutineScope = rememberCoroutineScope()
     TopAppBar(
         title = { Text("Poke TCG Helper") },
         actions = {
+            IconButton(onClick = { rememberCoroutineScope.launch { appViewModel.refreshOwnedCards() } }) {
+                Icon(Icons.Filled.Refresh, contentDescription = "Refresh")
+            }
             IconButton(onClick = { homeScreenViewModel.showFilterDialog() }) {
                 Icon(Icons.Filled.Search, contentDescription = "Search")
             }

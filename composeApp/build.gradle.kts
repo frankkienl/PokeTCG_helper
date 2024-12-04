@@ -80,11 +80,11 @@ kotlin {
             //implementation(project.dependencies.platform(libs.supabase.bom))
             implementation(libs.supabase.postgrest.kt)
             implementation(libs.supabase.auth.kt)
-            implementation(libs.supabase.realtime.kt)
-            implementation(libs.supabase.storage.kt)
-            implementation(libs.supabase.functions.kt)
-            implementation(libs.supabase.compose.auth)
-            implementation(libs.supabase.compose.auth.ui)
+            //implementation(libs.supabase.realtime.kt)
+            //implementation(libs.supabase.storage.kt)
+            //implementation(libs.supabase.functions.kt)
+            //implementation(libs.supabase.compose.auth)
+            //implementation(libs.supabase.compose.auth.ui)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
@@ -92,7 +92,14 @@ kotlin {
             //
             implementation(libs.ktor.client.cio)
         }
+        wasmJsMain.dependencies {
+            implementation(libs.ktor.client.js)
+        }
     }
+    /*
+    /Users/frankbouwens/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-wasm-js/2.1.0/b96271506fb37f4d8d1c63db7a57384ab16ae218/kotlin-stdlib-wasm-js-2.1.0.klib,
+    /Users/frankbouwens/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-wasm/1.9.0/ec6525e2b8f7cf4f4fe62db24012ec26d0803ea/kotlin-stdlib-wasm-1.9.0.klib
+     */
 }
 
 android {
