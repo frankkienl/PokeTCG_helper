@@ -194,7 +194,18 @@ fun buildFilterOwned(homeScreenUiState: HomeScreenUiState, homeScreenViewModel: 
     FilterChip(
         selected = selected,
         onClick = { clickedFilterOwned(homeScreenViewModel, isOwned) },
-        content = { Text(if (isOwned) "Owned" else "Not owned") }
+        content = { Text(if (isOwned) "Owned" else "Not owned") },
+        leadingIcon = if (selected) {
+            {
+                Icon(
+                    imageVector = Icons.Filled.Done,
+                    contentDescription = "Selected icon",
+                    modifier = Modifier.size(16.dp)
+                )
+            }
+        } else {
+            null
+        },
     )
 }
 
