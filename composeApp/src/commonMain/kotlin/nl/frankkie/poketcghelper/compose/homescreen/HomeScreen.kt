@@ -30,16 +30,29 @@ fun HomeScreen(
     val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
     val appState = appViewModel.appState.collectAsState().value
     var cardAmountLoading by remember { mutableStateOf(false) }
+    var filteredCards by remember { mutableStateOf<Map<PokeCardSet, List<PokeCard>>>(emptyMap()) }
+
     Scaffold(
         topBar = { HomeScreenTopBar(navController, appViewModel, homeScreenViewModel) },
     ) {
         if (appState.cardSets.isEmpty()) {
             Text("Loading Card Sets...")
         } else {
+            val cardSets = appState.cardSets
+            val cardFilter = homeScreenUiState.cardFilter
+            val tempMap = mutableMapOf<PokeCardSet, List<PokeCard>>()
+            cardSets.forEach { cardSet ->
+                val cards = cardSet.cards.filter { someCard ->
+                    matchesCardFilter(someCard, cardSet, cardFilter, appState)
+                }
+                tempMap[cardSet] = cards
+            }
+            filteredCards = tempMap.toMap()
+
             GridOfCards(
                 appState,
-                appState.cardSets,
-                homeScreenUiState,
+                homeScreenViewModel,
+                filteredCards,
                 cardAmountLoading = cardAmountLoading,
                 onCardClick = { _cardSet, _card ->
                     homeScreenViewModel.showCardDialog(_cardSet, _card)

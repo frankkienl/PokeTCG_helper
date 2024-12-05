@@ -25,13 +25,14 @@ import poketcg_helper.composeapp.generated.resources.Res
 @Composable
 fun GridOfCards(
     appState: AppState,
-    cardSets: List<PokeCardSet>,
-    homeScreenUiState: HomeScreenUiState,
+    homeScreenViewModel: HomeScreenViewModel,
+    filteredCards: Map<PokeCardSet, List<PokeCard>>,
     onCardClick: (PokeCardSet, PokeCard) -> Unit,
     cardAmountLoading: Boolean,
     onChangeAmountOwned: (PokeCardSet, PokeCard, Int) -> Unit,
 ) {
-    val cardFilter = homeScreenUiState.cardFilter
+    val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
+    val cardSets = appState.cardSets
     val isLoggedIn = appState.supabaseUserInfo != null
     //Placeholder image
     var placeHolderImage by remember {
@@ -49,24 +50,24 @@ fun GridOfCards(
     ) {
 
         cardSets.forEach { cardSet ->
-            item(span = { GridItemSpan(5) }) {
-                //Cardset logo
-                var imageBitmap by remember { mutableStateOf<ImageBitmap?>(null) }
-                LaunchedEffect(cardSet) {
-                    val bytes = Res.readBytes("files/card_symbols/${cardSet.codeName}/${cardSet.imageUrl}")
-                    imageBitmap = bytes.decodeToImageBitmap()
-                }
-                if (imageBitmap == null) {
-                    Text(cardSet.displayName)
-                } else {
-                    imageBitmap?.let { Image(it, contentDescription = cardSet.displayName, modifier = Modifier.padding(8.dp)) }
+            val filteredCardsForCardSet = filteredCards[cardSet] ?: emptyList()
+            if (filteredCardsForCardSet.isNotEmpty()) {
+                //No need to show header, if there's no cards shown in this set.
+                item(span = { GridItemSpan(5) }) {
+                    //Cardset logo
+                    var imageBitmap by remember { mutableStateOf<ImageBitmap?>(null) }
+                    LaunchedEffect(cardSet) {
+                        val bytes = Res.readBytes("files/card_symbols/${cardSet.codeName}/${cardSet.imageUrl}")
+                        imageBitmap = bytes.decodeToImageBitmap()
+                    }
+                    if (imageBitmap == null) {
+                        Text(cardSet.displayName)
+                    } else {
+                        imageBitmap?.let { Image(it, contentDescription = cardSet.displayName, modifier = Modifier.padding(8.dp)) }
+                    }
                 }
             }
-            //Cards
-            val filteredCards = cardSet.cards.filter { someCard ->
-                matchesCardFilter(someCard, cardSet, cardFilter, appState)
-            }
-            items(filteredCards) { card ->
+            items(filteredCardsForCardSet) { card ->
                 val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeCardSet.codeName) }
                 val isOwned = ownedCard != null && ownedCard.amount > 0
                 val amountOwned = ownedCard?.amount ?: 0
