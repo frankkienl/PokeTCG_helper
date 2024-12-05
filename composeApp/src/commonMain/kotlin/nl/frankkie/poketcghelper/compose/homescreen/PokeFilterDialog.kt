@@ -1,7 +1,10 @@
 package nl.frankkie.poketcghelper.compose.homescreen
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.gestures.Orientation
+import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -23,7 +26,8 @@ data class PokeCardFilter(
     val types: List<PokeType> = emptyList(),
     val rarities: List<PokeRarity> = emptyList(),
     val flairs: List<String> = emptyList(),
-    val packs: List<String> = emptyList()
+    val packs: List<String> = emptyList(),
+    val ownedStatus: List<Boolean> = emptyList(),
 )
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -34,7 +38,13 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel) {
         onDismissRequest = { homeScreenViewModel.hideFilterDialog() },
     ) {
         Card(modifier = Modifier.padding(8.dp).widthIn(250.dp), shape = RoundedCornerShape(8.dp)) {
-            Column(modifier = Modifier.padding(8.dp)) {
+            val scrollState = rememberScrollState()
+            Column(modifier = Modifier.padding(8.dp).scrollable(scrollState, orientation = Orientation.Vertical)) {
+                Text("Owned")
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    buildFilterOwned(homeScreenUiState, homeScreenViewModel, true)
+                    buildFilterOwned(homeScreenUiState, homeScreenViewModel, false)
+                }
                 Text("Rarity")
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     buildFilterRarity(homeScreenUiState, homeScreenViewModel, PokeRarity.D1)
@@ -174,5 +184,27 @@ fun clickedFilterType(homeScreenViewModel: HomeScreenViewModel, pokeType: PokeTy
             it.copy(types = it.types + pokeType)
         }
         homeScreenViewModel.setCardFilter(newFilterType)
+    }
+}
+
+@OptIn(ExperimentalMaterialApi::class)
+@Composable
+fun buildFilterOwned(homeScreenUiState: HomeScreenUiState, homeScreenViewModel: HomeScreenViewModel, isOwned: Boolean) {
+    val selected = homeScreenUiState.cardFilter.ownedStatus.contains(isOwned)
+    FilterChip(
+        selected = selected,
+        onClick = { clickedFilterOwned(homeScreenViewModel, isOwned) },
+        content = { Text(if (isOwned) "Owned" else "Not owned") }
+    )
+}
+
+fun clickedFilterOwned(homeScreenViewModel: HomeScreenViewModel, isOwned: Boolean) {
+    homeScreenViewModel.uiState.value.cardFilter.let {
+        val newFilterOwned = if (it.ownedStatus.contains(isOwned)) {
+            it.copy(ownedStatus = it.ownedStatus - isOwned)
+        } else {
+            it.copy(ownedStatus = it.ownedStatus + isOwned)
+        }
+        homeScreenViewModel.setCardFilter(newFilterOwned)
     }
 }

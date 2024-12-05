@@ -64,7 +64,7 @@ fun GridOfCards(
             }
             //Cards
             val filteredCards = cardSet.cards.filter { someCard ->
-                matchesCardFilter(someCard, cardFilter)
+                matchesCardFilter(someCard, cardSet, cardFilter, appState)
             }
             items(filteredCards) { card ->
                 val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeCardSet.codeName) }
@@ -96,7 +96,16 @@ fun GridOfCards(
     }
 }
 
-fun matchesCardFilter(card: PokeCard, cardFilter: PokeCardFilter): Boolean {
+fun matchesCardFilter(card: PokeCard, cardSet: PokeCardSet, cardFilter: PokeCardFilter, appState: AppState): Boolean {
+    //Owned
+    if (cardFilter.ownedStatus.isNotEmpty()) {
+        val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeCardSet.codeName) }
+        val isOwned = ownedCard != null && ownedCard.amount > 0
+        //val amountOwned = ownedCard?.amount ?: 0
+        if (!cardFilter.ownedStatus.contains(isOwned)) {
+            return false
+        }
+    }
     //Rarity
     if (cardFilter.rarities.isNotEmpty()) {
         val rarity = PokeRarity.valueOf(card.pokeRarity ?: "UNKNOWN")
