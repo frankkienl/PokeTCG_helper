@@ -85,7 +85,7 @@ fun HomeScreen(
             )
         }
         if (homeScreenUiState.filterDialog) {
-            PokeFilterDialog(homeScreenViewModel)
+            PokeFilterDialog(homeScreenViewModel, appState)
         }
         if (homeScreenUiState.showLogoutDialog) {
             HomeScreenLogoutDialog(appViewModel, homeScreenViewModel)

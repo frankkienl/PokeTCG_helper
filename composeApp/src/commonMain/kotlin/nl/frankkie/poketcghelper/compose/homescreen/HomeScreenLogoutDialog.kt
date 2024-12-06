@@ -58,6 +58,12 @@ fun HomeScreenLogoutDialog(appViewModel: AppViewModel, homeScreenViewModel: Home
                                 rememberCoroutineScope.launch {
                                     isLoading = true
                                     appViewModel.logout()
+                                    //clear owned cards filter
+                                    homeScreenViewModel.setCardFilter(
+                                        homeScreenViewModel.uiState.value.cardFilter.copy(
+                                            ownedStatus = emptyList()
+                                        )
+                                    )
                                     isLoading = false
                                     homeScreenViewModel.showLogoutDialog(false)
                                 }

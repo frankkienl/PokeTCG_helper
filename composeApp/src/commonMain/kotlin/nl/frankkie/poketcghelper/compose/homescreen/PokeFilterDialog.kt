@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
+import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
 import org.jetbrains.compose.resources.ExperimentalResourceApi
@@ -32,7 +33,7 @@ data class PokeCardFilter(
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel) {
+fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel, appState: AppState) {
     val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
     Dialog(
         onDismissRequest = { homeScreenViewModel.hideFilterDialog() },
@@ -40,10 +41,12 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel) {
         Card(modifier = Modifier.padding(8.dp).widthIn(250.dp), shape = RoundedCornerShape(8.dp)) {
             val scrollState = rememberScrollState()
             Column(modifier = Modifier.padding(8.dp).scrollable(scrollState, orientation = Orientation.Vertical)) {
-                Text("Owned")
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    buildFilterOwned(homeScreenUiState, homeScreenViewModel, true)
-                    buildFilterOwned(homeScreenUiState, homeScreenViewModel, false)
+                if (appState.supabaseUserInfo!=null) {
+                    Text("Owned")
+                    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        buildFilterOwned(homeScreenUiState, homeScreenViewModel, true)
+                        buildFilterOwned(homeScreenUiState, homeScreenViewModel, false)
+                    }
                 }
                 Text("Rarity")
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {

@@ -119,7 +119,14 @@ class AppViewModel : ViewModel() {
 
     suspend fun logout() {
         _appState.value.supabaseClient?.auth?.signOut()
+        clearOwnedCards()
         setSupabaseUserInfo(null)
+    }
+
+    private fun clearOwnedCards() {
+        _appState.value = _appState.value.copy(
+            ownedCards = emptyList()
+        )
     }
 
     suspend fun refreshOwnedCards() {
