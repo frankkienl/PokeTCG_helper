@@ -47,14 +47,14 @@ fun ana1(appState: AppState) {
     if (appState.supabaseUserInfo == null) {
         return
     }
-    val uniqueCardsCount = appState.ownedCards.size
+    val uniqueCardsCount = appState.ownedCards.filter { it.amount > 0 }.size
     var totalCardsCount = 0
     appState.ownedCards.forEach { ownedCard -> totalCardsCount += ownedCard.amount }
     Text("You have collected $uniqueCardsCount unique cards")
     Text("You have collected $totalCardsCount total cards")
-    val ownedCharizardCount = appState.ownedCards.filter { someCard -> someCard.pokeCard.packId == "CHARIZARD" }.size
-    val ownedMewtwoCount = appState.ownedCards.filter { someCard -> someCard.pokeCard.packId == "MEWTWO" }.size
-    val ownedPikachuCount = appState.ownedCards.filter { someCard -> someCard.pokeCard.packId == "PIKACHU" }.size
+    val ownedCharizardCount = appState.ownedCards.filter { it.pokeCard.packId == "CHARIZARD" && it.amount > 0 }.size
+    val ownedMewtwoCount = appState.ownedCards.filter { it.pokeCard.packId == "MEWTWO" && it.amount > 0 }.size
+    val ownedPikachuCount = appState.ownedCards.filter { it.pokeCard.packId == "PIKACHU" && it.amount > 0 }.size
     Text("You have $ownedCharizardCount cards from Charizard packs")
     Text("You have $ownedMewtwoCount cards from Mewtwo packs")
     Text("You have $ownedPikachuCount cards from Pikachu packs")
@@ -66,12 +66,9 @@ fun ana1(appState: AppState) {
         return
     }
     Text("You're still missing:")
-//    val charizardPack = geneticApexCardSet.packs.find { somePack -> somePack.id == "CHARIZARD" }
-//    val mewtwoPack = geneticApexCardSet.packs.find { somePack -> somePack.id == "MEWTWO" }
-//    val pikachuPack = geneticApexCardSet.packs.find { somePack -> somePack.id == "PIKACHU" }
-    val totalCharizardCount = geneticApexCardSet.cards.filter { someCard -> someCard.packId == "CHARIZARD" }.size
-    val totalMewtwoCount = geneticApexCardSet.cards.filter { someCard -> someCard.packId == "MEWTWO" }.size
-    val totalPikachuCount = geneticApexCardSet.cards.filter { someCard -> someCard.packId == "PIKACHU" }.size
+    val totalCharizardCount = geneticApexCardSet.cards.filter { it.packId == "CHARIZARD" }.size
+    val totalMewtwoCount = geneticApexCardSet.cards.filter { it.packId == "MEWTWO" }.size
+    val totalPikachuCount = geneticApexCardSet.cards.filter { it.packId == "PIKACHU" }.size
     Text("${totalCharizardCount - ownedCharizardCount} cards from Charizard packs")
     Text("${totalMewtwoCount - ownedMewtwoCount} cards from Mewtwo packs")
     Text("${totalPikachuCount - ownedPikachuCount} cards from Pikachu packs")
