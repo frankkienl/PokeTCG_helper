@@ -34,6 +34,7 @@ fun HomeScreen(
 
     Scaffold(
         topBar = { HomeScreenTopBar(navController, appViewModel, homeScreenViewModel) },
+        drawerContent = { HomeDrawerContent() },
     ) {
         if (appState.cardSets.isEmpty()) {
             Text("Loading Card Sets...")
@@ -104,13 +105,16 @@ fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, h
             IconButton(onClick = { rememberCoroutineScope.launch { appViewModel.refreshOwnedCards() } }) {
                 Icon(Icons.Filled.Refresh, contentDescription = "Refresh")
             }
-            if (homeScreenUiState.amountInputMode) {
-                IconButton(onClick = { homeScreenViewModel.setAmountInputMode(false) }) {
-                    Icon(Icons.Filled.Add, contentDescription = "Number input mode")
-                }
-            } else {
-                IconButton(onClick = { homeScreenViewModel.setAmountInputMode(true) }) {
-                    Icon(Icons.Outlined.Add, contentDescription = "Number input mode")
+            if (appState.supabaseUserInfo!=null) {
+                //Amount mode only available when logged in
+                if (homeScreenUiState.amountInputMode) {
+                    IconButton(onClick = { homeScreenViewModel.setAmountInputMode(false) }) {
+                        Icon(Icons.Filled.Add, contentDescription = "Number input mode")
+                    }
+                } else {
+                    IconButton(onClick = { homeScreenViewModel.setAmountInputMode(true) }) {
+                        Icon(Icons.Outlined.Add, contentDescription = "Number input mode")
+                    }
                 }
             }
             IconButton(onClick = { homeScreenViewModel.showFilterDialog() }) {
