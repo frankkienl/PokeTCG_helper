@@ -1,16 +1,25 @@
 package nl.frankkie.poketcghelper.compose
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.AppViewModel
+import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeCardSetPack
+import org.jetbrains.compose.resources.ExperimentalResourceApi
+import org.jetbrains.compose.resources.decodeToImageBitmap
+import poketcg_helper.composeapp.generated.resources.Res
 
 @Composable
 fun AnalyticsScreen(navController: NavController, appViewModel: AppViewModel) {
@@ -34,7 +43,12 @@ fun AnalyticsScreen(navController: NavController, appViewModel: AppViewModel) {
         )
     }) { innerPadding ->
 
-        Column(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(innerPadding)
+                .verticalScroll(rememberScrollState())
+        ) {
             Text("Analytics Screen")
             Spacer(Modifier.height(16.dp))
             ana1(appState)
@@ -65,11 +79,61 @@ fun ana1(appState: AppState) {
     if (geneticApexCardSet == null) {
         return
     }
+    val packCharizard = geneticApexCardSet.packs.find { it.id == "CHARIZARD" }!!
+    val packMewtwo = geneticApexCardSet.packs.find { it.id == "MEWTWO" }!!
+    val packPikachu = geneticApexCardSet.packs.find { it.id == "PIKACHU" }!!
+
+    val cardsInPackCharizard = geneticApexCardSet.cards.filter { it.packId == "CHARIZARD" }
+    val cardsInPackMewtwo = geneticApexCardSet.cards.filter { it.packId == "MEWTWO" }
+    val cardsInPackPikachu = geneticApexCardSet.cards.filter { it.packId == "PIKACHU" }
+
     Text("You're still missing:")
-    val totalCharizardCount = geneticApexCardSet.cards.filter { it.packId == "CHARIZARD" }.size
-    val totalMewtwoCount = geneticApexCardSet.cards.filter { it.packId == "MEWTWO" }.size
-    val totalPikachuCount = geneticApexCardSet.cards.filter { it.packId == "PIKACHU" }.size
+    val totalCharizardCount = cardsInPackCharizard.size
+    val totalMewtwoCount = cardsInPackMewtwo.size
+    val totalPikachuCount = cardsInPackPikachu.size
     Text("${totalCharizardCount - ownedCharizardCount} cards from Charizard packs")
     Text("${totalMewtwoCount - ownedMewtwoCount} cards from Mewtwo packs")
     Text("${totalPikachuCount - ownedPikachuCount} cards from Pikachu packs")
+
+    // Progress bars
+    packProgressBars(geneticApexCardSet, packCharizard, totalCharizardCount, ownedCharizardCount)
+    packProgressBars(geneticApexCardSet, packMewtwo, totalMewtwoCount, ownedMewtwoCount)
+    packProgressBars(geneticApexCardSet, packPikachu, totalPikachuCount, ownedPikachuCount)
+
+}
+
+@OptIn(ExperimentalResourceApi::class)
+@Composable
+fun packProgressBars(cardSet: PokeCardSet, pack: PokeCardSetPack, totalCardsCount: Int, ownedCardCount: Int) {
+    var imageBitmap by remember {
+        mutableStateOf<ImageBitmap?>(null)
+    }
+    LaunchedEffect(cardSet, pack) {
+        val bytes = Res.readBytes("files/card_symbols/${cardSet.codeName}/${pack.imageUrlSymbol}")
+        imageBitmap = bytes.decodeToImageBitmap()
+    }
+
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        imageBitmap?.let {
+            Image(it, contentDescription = pack.name, modifier = Modifier.height(50.dp))
+        } ?: run {
+            Text(pack.name)
+        }
+        Spacer(Modifier.width(16.dp))
+        val progressFloat = mapFloat(ownedCardCount.toFloat(), 0f, totalCardsCount.toFloat(), 0f, 1f)
+        LinearProgressIndicator(
+            progress = progressFloat,
+            modifier = Modifier.width(200.dp)
+        )
+    }
+}
+
+
+fun mapLong(x: Long, in_min: Long, in_max: Long, out_min: Long, out_max: Long): Long {
+    //https://docs.arduino.cc/language-reference/en/functions/math/map/
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
+}
+
+fun mapFloat(x: Float, in_min: Float, in_max: Float, out_min: Float, out_max: Float): Float {
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
 }
