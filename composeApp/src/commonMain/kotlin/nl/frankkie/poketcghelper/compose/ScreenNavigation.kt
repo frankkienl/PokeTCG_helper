@@ -19,6 +19,9 @@ object Routes {
 
     @Serializable
     object LoginScreen
+
+    @Serializable
+    object AnalyticsScreen
 }
 
 @Composable
@@ -29,6 +32,9 @@ fun createNavGraph(navController: NavHostController, appViewModel: AppViewModel,
         }
         composable<Routes.LoginScreen> {
             LoginScreen(navController, appViewModel)
+        }
+        composable<Routes.AnalyticsScreen> {
+            AnalyticsScreen(navController, appViewModel)
         }
     }
 }

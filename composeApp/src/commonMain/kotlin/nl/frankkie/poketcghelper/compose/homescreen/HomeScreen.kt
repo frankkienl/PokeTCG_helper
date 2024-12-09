@@ -2,10 +2,7 @@ package nl.frankkie.poketcghelper.compose.homescreen
 
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountCircle
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Refresh
-import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.outlined.AccountCircle
 import androidx.compose.material.icons.outlined.Add
 import androidx.compose.runtime.*
@@ -31,10 +28,12 @@ fun HomeScreen(
     val appState = appViewModel.appState.collectAsState().value
     var cardAmountLoading by remember { mutableStateOf(false) }
     var filteredCards by remember { mutableStateOf<Map<PokeCardSet, List<PokeCard>>>(emptyMap()) }
+    val scaffoldState = rememberScaffoldState()
 
     Scaffold(
-        topBar = { HomeScreenTopBar(navController, appViewModel, homeScreenViewModel) },
-        drawerContent = { HomeDrawerContent() },
+        scaffoldState = scaffoldState,
+        topBar = { HomeScreenTopBar(navController, appViewModel, homeScreenViewModel, scaffoldState.drawerState) },
+        drawerContent = { HomeDrawerContent(navController, appViewModel) },
     ) {
         if (appState.cardSets.isEmpty()) {
             Text("Loading Card Sets...")
@@ -95,12 +94,25 @@ fun HomeScreen(
 }
 
 @Composable
-fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, homeScreenViewModel: HomeScreenViewModel) {
+fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, homeScreenViewModel: HomeScreenViewModel, drawerState: DrawerState) {
     val appState = appViewModel.appState.collectAsState().value
     val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
     val rememberCoroutineScope = rememberCoroutineScope()
     TopAppBar(
         title = { Text("Poke TCG Helper") },
+        navigationIcon = {
+            IconButton(onClick = {
+                rememberCoroutineScope.launch {
+                    if (drawerState.isClosed) {
+                        drawerState.open()
+                    } else {
+                        drawerState.close()
+                    }
+                }
+            }) {
+                Icon(Icons.Default.Menu, "Menu")
+            }
+        },
         actions = {
             IconButton(onClick = { rememberCoroutineScope.launch { appViewModel.refreshOwnedCards() } }) {
                 Icon(Icons.Filled.Refresh, contentDescription = "Refresh")
