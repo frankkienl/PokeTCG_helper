@@ -14,6 +14,7 @@ import io.github.jan.supabase.auth.user.UserInfo
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
 import io.github.jan.supabase.postgrest.postgrest
+import io.github.jan.supabase.postgrest.query.Columns
 import io.github.jan.supabase.serializer.KotlinXSerializer
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -148,7 +149,11 @@ class AppViewModel : ViewModel() {
             }
         }
         val db = _appState.value.supabaseClient?.postgrest ?: return
-        val listOfOwnedCards = db.from(dbTableUserOwnedCards).select().decodeList<UserOwnedCardRow>()
+        val listOfOwnedCards = db.from(dbTableUserOwnedCards).select(columns = Columns.ALL) {
+            filter {
+                eq("user_uid", _appState.value.supabaseUserInfo?.id ?: "")
+            }
+        }.decodeList<UserOwnedCardRow>()
         val ownedCards = listOfOwnedCards.map { dbRow ->
             val cardSet = _appState.value.cardSets.find { dbRow.card_set_id == it.codeName }
             //remove null safety !!
@@ -181,7 +186,7 @@ class AppViewModel : ViewModel() {
             return
         }
         val db = _appState.value.supabaseClient?.postgrest ?: return
-        val userId = _appState.value.supabaseUserInfo?.id?: ""
+        val userId = _appState.value.supabaseUserInfo?.id ?: ""
         val newRow = UserOwnedCardRow(
             id = null,
             user_uid = userId,
