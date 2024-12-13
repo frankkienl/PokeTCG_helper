@@ -44,7 +44,9 @@ fun PokeCardComposableNormalMode(
             },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(modifier = Modifier.heightIn(50.dp, 150.dp)) {
+        //Box(modifier = Modifier.heightIn(50.dp, 150.dp)) { // <-- THIS CAUSE NON-SMOOTH SCROLLING !!!
+        Box(modifier = Modifier.height(100.dp)) { // <-- THIS IS BETTER
+            //if cards image is not loaded yet, show placeholder image instead
             if (imageBitmap == null) {
                 cardPlaceholderImage?.let {
                     Image(it, contentDescription = "Loading ...")
@@ -77,10 +79,8 @@ fun PokeCardComposableNormalMode(
             }
             imageBitmap?.let {
                 if (isLoggedIn && !isOwned) {
-                    //Show blurred
-                    Image(
-                        it, null, colorFilter = ColorFilter.tint(Color(0xCCFFFFFF), blendMode = BlendMode.Color),
-                    )
+                    //Show blurred, card is not in collection
+                    Image(it, null, colorFilter = ColorFilter.tint(Color(0xCCFFFFFF), blendMode = BlendMode.Color))
                 } else {
                     //Show normally
                     Image(it, null)
@@ -114,7 +114,7 @@ fun PokeCardComposableAmountInputMode(
         modifier = Modifier.padding(top = 8.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(modifier = Modifier.heightIn(50.dp, 150.dp)) {
+        Box(modifier = Modifier.height(100.dp)) {
             if (imageBitmap == null) {
                 cardPlaceholderImage?.let {
                     Image(it, contentDescription = "Loading ...")
