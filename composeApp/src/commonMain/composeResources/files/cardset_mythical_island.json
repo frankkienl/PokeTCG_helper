@@ -1,0 +1,20 @@
+{
+  "codeName": "MYTHICAL_ISLAND",
+  "displayName": "Mythical Island",
+  "numberOfCards": 86,
+  "imageUrl": "",
+  "packs": [],
+  "cards": [
+    {
+      "number": 1,
+      "pokeName": "Exeggcute",
+      "pokeRarity": "D1",
+      "pokeType": "GRASS",
+      "imageUrl": ""
+    },
+    {
+      "number": 2,
+      "pokeName": "Exeggutor"
+    }
+  ]
+}
