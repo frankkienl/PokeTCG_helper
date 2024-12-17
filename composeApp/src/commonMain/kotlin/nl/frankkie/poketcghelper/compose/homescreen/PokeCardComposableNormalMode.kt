@@ -33,8 +33,22 @@ fun PokeCardComposableNormalMode(
         mutableStateOf<ImageBitmap?>(null)
     }
     LaunchedEffect(pokeCard) {
-        val bytes = Res.readBytes("files/card_images/${cardSet.codeName}/${pokeCard.imageUrl}")
-        imageBitmap = bytes.decodeToImageBitmap()
+        try {
+            // Try small version
+            val bytes = Res.readBytes("files/card_images_small/${cardSet.codeName}/${pokeCard.imageUrl}")
+            imageBitmap = bytes.decodeToImageBitmap()
+        } catch (e: Exception) {
+            println("PokeCardComposableNormalMode: Failed to load image (small) " + e.message)
+            try {
+                // Try large version
+                val bytes = Res.readBytes("files/card_images/${cardSet.codeName}/${pokeCard.imageUrl}")
+                imageBitmap = bytes.decodeToImageBitmap()
+            } catch (e: Exception) {
+                println("PokeCardComposableNormalMode: Failed to load image (large) " + e.message)
+                // Image doesn't work.
+                imageBitmap = null
+            }
+        }
     }
     Column(
         modifier = Modifier
@@ -107,8 +121,22 @@ fun PokeCardComposableAmountInputMode(
         mutableStateOf<ImageBitmap?>(null)
     }
     LaunchedEffect(pokeCard) {
-        val bytes = Res.readBytes("files/card_images/${cardSet.codeName}/${pokeCard.imageUrl}")
-        imageBitmap = bytes.decodeToImageBitmap()
+        try {
+            // Try small version
+            val bytes = Res.readBytes("files/card_images_small/${cardSet.codeName}/${pokeCard.imageUrl}")
+            imageBitmap = bytes.decodeToImageBitmap()
+        } catch (e: Exception) {
+            println("PokeCardComposableAmountInputMode: Failed to load image (small) " + e.message)
+            try {
+                // Try large version
+                val bytes = Res.readBytes("files/card_images/${cardSet.codeName}/${pokeCard.imageUrl}")
+                imageBitmap = bytes.decodeToImageBitmap()
+            } catch (e: Exception) {
+                println("PokeCardComposableAmountInputMode: Failed to load image (large) " + e.message)
+                // Image doesn't work.
+                imageBitmap = null
+            }
+        }
     }
     Column(
         modifier = Modifier.padding(top = 8.dp),

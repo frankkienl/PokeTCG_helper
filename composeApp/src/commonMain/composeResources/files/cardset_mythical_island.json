@@ -8,14 +8,590 @@
     {
       "number": 1,
       "pokeName": "Exeggcute",
-      "pokeRarity": "D1",
-      "pokeType": "GRASS",
-      "imageUrl": "1-Exeggcute-Mythical-Island.jpg"
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "1-Exeggcute-Mythical-Island.jpg",
+      "packId": null
     },
     {
       "number": 2,
       "pokeName": "Exeggutor",
-      "imageUrl": "2-Exeggutor-Mythical-Island.jpg"
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "2-Exeggutor-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 3,
+      "pokeName": "Celebi ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "3-Celebi-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 4,
+      "pokeName": "Snivy",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "4-Snivy-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 5,
+      "pokeName": "Servine",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "5-Servine-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 6,
+      "pokeName": "Serperior",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "6-Serperior-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 7,
+      "pokeName": "Morelull",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "7-Morelull-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 8,
+      "pokeName": "Shiinotic",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "8-Shiinotic-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 9,
+      "pokeName": "Dhelmise",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "9-Dhelmise-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 10,
+      "pokeName": "Ponyta",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "10-Ponyta-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 11,
+      "pokeName": "Rapidash",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "11-Rapidash-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 12,
+      "pokeName": "Magmar",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "12-Magmar-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 13,
+      "pokeName": "Larvesta",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "13-Larvesta-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 14,
+      "pokeName": "Volcarona",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "14-Volcarona-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 15,
+      "pokeName": "Salandit",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "15-Salandit-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 16,
+      "pokeName": "Salazzle",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "16-Salazzle-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 17,
+      "pokeName": "Magikarp",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "17-Magikarp-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 18,
+      "pokeName": "Gyarados ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "18-Gyarados-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 19,
+      "pokeName": "Vaporeon",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "19-Vaporeon-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 20,
+      "pokeName": "Finneon",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "20-Finneon-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 21,
+      "pokeName": "Lumineon",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "21-Lumineon-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 22,
+      "pokeName": "Chewtle",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "22-Chewtle-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 23,
+      "pokeName": "Drednaw",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "23-Drednaw-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 24,
+      "pokeName": "Cramorant",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "24-Cramorant-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 25,
+      "pokeName": "Pikachu",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "25-Pikachu-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 26,
+      "pokeName": "Raichu",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "26-Raichu-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 27,
+      "pokeName": "Electabuzz",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "27-Electabuzz-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 28,
+      "pokeName": "Joltik",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "28-Joltik-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 29,
+      "pokeName": "Galvantula",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "29-Galvantula-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 30,
+      "pokeName": "Dedenne",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "30-Dedenne-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 31,
+      "pokeName": "Mew",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "31-Mew-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 32,
+      "pokeName": "Mew ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "32-Mew-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 33,
+      "pokeName": "Sigilyph",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "33-Sigilyph-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 34,
+      "pokeName": "Elgyem",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "34-Elgyem-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 35,
+      "pokeName": "Beheeyem",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "35-Beheeyem-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 36,
+      "pokeName": "Flabebe",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "36-Flabebe-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 37,
+      "pokeName": "Floette",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "37-Floette-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 38,
+      "pokeName": "Florges",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "38-Florges-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 39,
+      "pokeName": "Swirlix",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "39-Swirlix-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 40,
+      "pokeName": "Slurpuff",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "40-Slurpuff-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 41,
+      "pokeName": "Mankey",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "41-Mankey-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 43,
+      "pokeName": "Geodude",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "43-Geodude-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 44,
+      "pokeName": "Graveler",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "44-Graveler-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 45,
+      "pokeName": "Golem",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "45-Golem-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 46,
+      "pokeName": "Aerodactyl ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "46-Aerodactyl-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 47,
+      "pokeName": "Marshadow",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "47-Marshadow-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 48,
+      "pokeName": "Stonjourner",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "48-Stonjourner-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 49,
+      "pokeName": "Koffing",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "49-Koffing-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 50,
+      "pokeName": "Weezing",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "50-Weezing-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 51,
+      "pokeName": "Purloin",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "51-Purloin-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 52,
+      "pokeName": "Liepard",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "52-Liepard-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 53,
+      "pokeName": "Venipede",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "53-Venipede-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 54,
+      "pokeName": "Whirlipede",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "54-Whirlipede-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 55,
+      "pokeName": "Scolipede",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "55-Scolipede-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 56,
+      "pokeName": "Druddigon",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "56-Druddigon-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 57,
+      "pokeName": "Pidgey",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "57-Pidgey-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 58,
+      "pokeName": "Pidgeotto",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "58-Pidgeotto-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 59,
+      "pokeName": "Pidgeot ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "59-Pidgeot-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 60,
+      "pokeName": "Tauros",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "60-Tauros-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 61,
+      "pokeName": "Eevee",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "61-Eevee-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 62,
+      "pokeName": "Chatot",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "62-Chatot-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 63,
+      "pokeName": "Old Amber",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "63-Old-Amber-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 64,
+      "pokeName": "Mythical Slab",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "64-Mythical-Slab-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 65,
+      "pokeName": "Pokemon Flute",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "65-Pokemon-Flute-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 66,
+      "pokeName": "Blue",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "66-Blue-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 67,
+      "pokeName": "Budding Expeditioner",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "67-Budding-Expeditioner-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 68,
+      "pokeName": "Leaf",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "68-Leaf-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 69,
+      "pokeName": "Exeggutor",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "69-Exeggutor-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 70,
+      "pokeName": "Serperior",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "70-Serperior-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 71,
+      "pokeName": "Salandit",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "71-Salandit-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 73,
+      "pokeName": "Dedenne",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "73-Dedenne-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 74,
+      "pokeName": "Marshadow",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "74-Marshadow-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 75,
+      "pokeName": "Celebi ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "75-Celebi-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 76,
+      "pokeName": "Gyarados ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "76-Gyarados-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 77,
+      "pokeName": "Mew ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "77-Mew-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 78,
+      "pokeName": "Aerodactyl ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "78-Aerodactyl-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 79,
+      "pokeName": "Pidgeot ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "79-Pidgeot-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 80,
+      "pokeName": "Budding Expeditioner",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "80-Budding-Expeditioner-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 81,
+      "pokeName": "Blue",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "81-Blue-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 82,
+      "pokeName": "Leaf",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "82-Leaf-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 83,
+      "pokeName": "Mew ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "83-Mew-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 84,
+      "pokeName": "Aerodactyl ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "84-Aerodactyl-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 85,
+      "pokeName": "Celebi ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "85-Celebi-ex-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
+      "number": 86,
+      "pokeName": "Mew ex",
+      "pokeRarity": "UNKNOWN",
+      "imageUrl": "86-Mew-ex-Mythical-Island.jpg",
+      "packId": null
     }
   ]
 }

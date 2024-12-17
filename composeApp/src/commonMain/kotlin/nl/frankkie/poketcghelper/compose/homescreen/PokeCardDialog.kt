@@ -38,9 +38,10 @@ fun PokeCardDialog(
     }
     LaunchedEffect(cardDialogData) {
         try {
-            val bytes = Res.readBytes("files/card_images2/${pokeCardSet.codeName}/${pokeCard.imageUrl}")
+            val bytes = Res.readBytes("files/card_images/${pokeCardSet.codeName}/${pokeCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
         } catch (missingResourceException: MissingResourceException) {
+            println("PokeCardDialog: Failed to load image " + missingResourceException.message)
             //Ignore; No image it is.
         }
     }
