@@ -58,7 +58,13 @@ fun GridOfCards(
                     var imageBitmap by remember { mutableStateOf<ImageBitmap?>(null) }
                     LaunchedEffect(cardSet) {
                         val bytes = Res.readBytes("files/card_symbols/${cardSet.codeName}/${cardSet.imageUrl}")
-                        imageBitmap = bytes.decodeToImageBitmap()
+                        try {
+                            imageBitmap = bytes.decodeToImageBitmap()
+                        } catch (e: Exception) {
+                            println("GridOfCards: Error reading CardSet logo image")
+                            e.printStackTrace()
+                            imageBitmap = null
+                        }
                     }
                     if (imageBitmap == null) {
                         Text(cardSet.displayName)
