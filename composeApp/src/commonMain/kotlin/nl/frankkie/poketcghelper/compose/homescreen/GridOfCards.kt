@@ -104,6 +104,12 @@ fun GridOfCards(
 }
 
 fun matchesCardFilter(card: PokeCard, cardSet: PokeCardSet, cardFilter: PokeCardFilter, appState: AppState): Boolean {
+    //SearchQuery
+    if (cardFilter.searchQuery.isNotBlank()) {
+        if (!card.pokeName.contains(cardFilter.searchQuery, ignoreCase = true)) {
+            return false
+        }
+    }
     //Owned
     if (cardFilter.ownedStatus.isNotEmpty()) {
         val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeCardSet.codeName) }

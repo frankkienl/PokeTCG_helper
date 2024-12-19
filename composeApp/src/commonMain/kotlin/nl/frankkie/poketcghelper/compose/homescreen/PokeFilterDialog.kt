@@ -6,6 +6,7 @@ import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Done
@@ -24,6 +25,7 @@ import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
 
 data class PokeCardFilter(
+    val searchQuery: String = "",
     val types: List<PokeType> = emptyList(),
     val rarities: List<PokeRarity> = emptyList(),
     val flairs: List<String> = emptyList(),
@@ -40,8 +42,14 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel, appState: AppStat
     ) {
         Card(modifier = Modifier.padding(8.dp).widthIn(250.dp), shape = RoundedCornerShape(8.dp)) {
             val scrollState = rememberScrollState()
-            Column(modifier = Modifier.padding(8.dp).scrollable(scrollState, orientation = Orientation.Vertical)) {
-                if (appState.supabaseUserInfo!=null) {
+            Column(modifier = Modifier.padding(8.dp).verticalScroll(scrollState)) {
+                Text("Search by name")
+                TextField(homeScreenUiState.cardFilter.searchQuery, {
+                    homeScreenViewModel.setCardFilter(homeScreenUiState.cardFilter.copy(searchQuery = it))
+                })
+                Spacer(Modifier.height(8.dp))
+
+                if (appState.supabaseUserInfo != null) {
                     Text("Owned")
                     FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         buildFilterOwned(homeScreenUiState, homeScreenViewModel, true)
@@ -60,7 +68,6 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel, appState: AppStat
                     buildFilterRarity(homeScreenUiState, homeScreenViewModel, PokeRarity.C)
                     buildFilterRarity(homeScreenUiState, homeScreenViewModel, PokeRarity.PROMO)
                 }
-                Spacer(modifier = Modifier.height(16.dp))
                 Text("Type")
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     buildFilterType(homeScreenUiState, homeScreenViewModel, PokeType.GRASS)
