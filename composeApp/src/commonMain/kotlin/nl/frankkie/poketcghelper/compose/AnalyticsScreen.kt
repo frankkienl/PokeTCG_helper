@@ -69,12 +69,15 @@ fun ana1(appState: AppState) {
     val ownedCharizardCount = appState.ownedCards.filter { it.pokeCard.packId == "CHARIZARD" && it.amount > 0 }.size
     val ownedMewtwoCount = appState.ownedCards.filter { it.pokeCard.packId == "MEWTWO" && it.amount > 0 }.size
     val ownedPikachuCount = appState.ownedCards.filter { it.pokeCard.packId == "PIKACHU" && it.amount > 0 }.size
+    val ownedMythicalIslandCount = appState.ownedCards.filter { it.pokeCardSet.codeName == "MYTHICAL_ISLAND" && it.amount > 0 }.size
     Text("You have $ownedCharizardCount cards from Charizard packs")
     Text("You have $ownedMewtwoCount cards from Mewtwo packs")
     Text("You have $ownedPikachuCount cards from Pikachu packs")
+    Text("You have $ownedMythicalIslandCount cards from Mythical Island")
 
     MyHorizontalDivider()
 
+    // GENETIC APEX
     val geneticApexCardSet = appState.cardSets.find { cardSet -> cardSet.codeName == "GENETIC_APEX" }
     if (geneticApexCardSet == null) {
         return
@@ -87,7 +90,7 @@ fun ana1(appState: AppState) {
     val cardsInPackMewtwo = geneticApexCardSet.cards.filter { it.packId == "MEWTWO" }
     val cardsInPackPikachu = geneticApexCardSet.cards.filter { it.packId == "PIKACHU" }
 
-    Text("You're still missing:")
+    Text("Genetic Apex\nYou're still missing:")
     val totalCharizardCount = cardsInPackCharizard.size
     val totalMewtwoCount = cardsInPackMewtwo.size
     val totalPikachuCount = cardsInPackPikachu.size
@@ -100,24 +103,39 @@ fun ana1(appState: AppState) {
     packProgressBars(geneticApexCardSet, packMewtwo, totalMewtwoCount, ownedMewtwoCount)
     packProgressBars(geneticApexCardSet, packPikachu, totalPikachuCount, ownedPikachuCount)
 
+    MyHorizontalDivider()
+
+    //MYTHICAL ISLAND
+    val mythicalIslandCardSet = appState.cardSets.find { cardSet -> cardSet.codeName == "MYTHICAL_ISLAND" }
+    if (mythicalIslandCardSet == null) {
+        return
+    }
+    val totalMythicalIslandCount = mythicalIslandCardSet.numberOfCards
+    Text("Mythical Island\nYou're still missing:")
+    Text("${totalMythicalIslandCount - ownedMythicalIslandCount} cards from Mythical Island")
+    packProgressBars(mythicalIslandCardSet, null, totalMythicalIslandCount, ownedMythicalIslandCount)
+
 }
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
-fun packProgressBars(cardSet: PokeCardSet, pack: PokeCardSetPack, totalCardsCount: Int, ownedCardCount: Int) {
+fun packProgressBars(cardSet: PokeCardSet, pack: PokeCardSetPack?, totalCardsCount: Int, ownedCardCount: Int) {
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
     }
     LaunchedEffect(cardSet, pack) {
-        val bytes = Res.readBytes("files/card_symbols/${cardSet.codeName}/${pack.imageUrlSymbol}")
+        val imagePath = if (pack!=null) {
+           "files/card_symbols/${cardSet.codeName}/${pack.imageUrlSymbol}"
+        } else {
+            "files/card_symbols/${cardSet.codeName}/${cardSet.imageUrl}"
+        }
+        val bytes = Res.readBytes(imagePath)
         imageBitmap = bytes.decodeToImageBitmap()
     }
 
     Row(verticalAlignment = Alignment.CenterVertically) {
         imageBitmap?.let {
-            Image(it, contentDescription = pack.name, modifier = Modifier.height(50.dp))
-        } ?: run {
-            Text(pack.name)
+            Image(it, contentDescription = null, modifier = Modifier.height(50.dp))
         }
         Spacer(Modifier.width(16.dp))
         val progressFloat = mapFloat(ownedCardCount.toFloat(), 0f, totalCardsCount.toFloat(), 0f, 1f)

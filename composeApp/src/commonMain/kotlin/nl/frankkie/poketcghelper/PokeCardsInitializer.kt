@@ -11,7 +11,7 @@ suspend fun initializeCards(): List<PokeCardSet> {
     val jsonStringGeneticApex = Res.readBytes("files/cardset_genetic_apex.json").decodeToString()
     val cardSetGeneticApex = initializeCardsFromJson(jsonStringGeneticApex)
     //Mythical Island
-    val jsonStringMythicalIsland = Res.readBytes("files/cardset_mythical_Island.json").decodeToString()
+    val jsonStringMythicalIsland = Res.readBytes("files/cardset_mythical_island.json").decodeToString()
     val cardSetMythicalIsland = initializeCardsFromJson(jsonStringMythicalIsland)
     //Promo A
     val jsonStringPromo = Res.readBytes("files/cardset_promo_a.json").decodeToString()
