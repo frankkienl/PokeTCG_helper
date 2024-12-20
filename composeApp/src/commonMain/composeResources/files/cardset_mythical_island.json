@@ -334,6 +334,14 @@
       "packId": null
     },
     {
+      "number": 42,
+      "pokeName": "Primeape",
+      "pokeRarity": "D1",
+      "pokeType": "FIGHTING",
+      "imageUrl": "42-Primeape-Mythical-Island.jpg",
+      "packId": null
+    },
+    {
       "number": 43,
       "pokeName": "Geodude",
       "pokeRarity": "D1",

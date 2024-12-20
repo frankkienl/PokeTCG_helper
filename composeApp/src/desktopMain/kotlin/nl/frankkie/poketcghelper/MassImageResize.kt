@@ -1,0 +1,42 @@
+package nl.frankkie.poketcghelper
+
+import java.awt.RenderingHints
+import java.awt.image.BufferedImage
+import java.io.File
+import javax.imageio.ImageIO
+
+
+const val IMAGES_RESIZE_PATH_SRC = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/card_images/MYTHICAL_ISLAND"
+const val IMAGES_RESIZE_PATH_DEST = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/card_images_small/MYTHICAL_ISLAND"
+
+fun main() {
+    val filesDir = File(IMAGES_RESIZE_PATH_SRC)
+    if (!filesDir.exists()) {return}
+
+    filesDir.listFiles()?.forEach { file ->
+        if (file.isFile && file.name.endsWith("-Mythical-Island.jpg")) {
+            processImage(file)
+        }
+    }
+}
+
+fun processImage(fileSrc: File) {
+    // https://www.baeldung.com/java-resize-image
+    val targetHeight = 200
+    val targetWidth = 143
+    println("Processing image: ${fileSrc.name}")
+    try {
+        val originalImage = ImageIO.read(fileSrc)
+        val resizedImage = BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_RGB)
+        val graphics2D = resizedImage.createGraphics()
+        graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+        graphics2D.drawImage(originalImage, 0, 0, targetWidth, targetHeight, null)
+        graphics2D.dispose()
+        val newFile = File(IMAGES_RESIZE_PATH_DEST, fileSrc.name)
+        ImageIO.write(resizedImage, "jpg", newFile)
+        println("done")
+    } catch (e: Exception) {
+        println("processImage: file: $fileSrc ; error: ${e.message}")
+        e.printStackTrace()
+    }
+}
