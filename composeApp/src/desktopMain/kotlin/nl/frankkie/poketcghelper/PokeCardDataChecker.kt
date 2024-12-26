@@ -5,12 +5,23 @@ import nl.frankkie.poketcghelper.model.PokeFlair
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
 
+suspend fun main() {
+    val cardSets = initializeCards()
+    cardSets.forEach {
+        doubleCheckData(it)
+    }
+
+    findRelatedCards(cardSets)
+}
+
 fun doubleCheckData(pokeCardSet: PokeCardSet) {
+    println("checking ${pokeCardSet.displayName}")
+    println("=================================")
     //Make sure there are no typo's in the data
     val pokeCardSetIds = pokeCardSet.packs.map { somePack -> somePack.id }
     pokeCardSet.cards.forEach { someCard ->
         //Pack id
-        if (someCard.packId!=null) {
+        if (someCard.packId != null) {
             if (!pokeCardSetIds.contains(someCard.packId)) {
                 println("---------------------------------")
                 println("Card contains non-existing Pack")
@@ -20,7 +31,7 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
             }
         }
         //Rarity
-        if (someCard.pokeRarity!=null) {
+        if (someCard.pokeRarity != null) {
             try {
                 //this will throw if pokeRarity-string does not match with an Enum value
                 PokeRarity.valueOf(someCard.pokeRarity)
@@ -33,7 +44,7 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
             }
         }
         //Type
-        if (someCard.pokeType!=null) {
+        if (someCard.pokeType != null) {
             try {
                 //this will throw if pokeRarity-string does not match with an Enum value
                 PokeType.valueOf(someCard.pokeType)
@@ -46,7 +57,7 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
             }
         }
         //Flair
-        if (someCard.pokeFlair!=null) {
+        if (someCard.pokeFlair != null) {
             try {
                 //this will throw if pokeRarity-string does not match with an Enum value
                 PokeFlair.valueOf(someCard.pokeFlair)
@@ -56,6 +67,18 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
                 println(someCard)
                 println("=================================")
                 throw Exception("Card contains non-existing Flair")
+            }
+        }
+        //Evolves from
+        if (someCard.pokeEvolvesFrom != null) {
+            val previousEvolutionName = someCard.pokeEvolvesFrom
+            val previousEvolutionCard = pokeCardSet.cards.find { otherCard -> otherCard.pokeEvolvesFrom == previousEvolutionName }
+            if (previousEvolutionCard == null) {
+                println("---------------------------------")
+                println("Card evolved from non-existing other card")
+                println(someCard)
+                println("=================================")
+                throw Exception("Card evolved from non-existing other card")
             }
         }
     }

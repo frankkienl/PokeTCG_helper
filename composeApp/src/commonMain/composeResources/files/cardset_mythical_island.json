@@ -6,6 +6,7 @@
   "packs": [],
   "cards": [
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 1,
       "pokeName": "Exeggcute",
       "pokeRarity": "D1",
@@ -14,6 +15,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 2,
       "pokeName": "Exeggutor",
       "pokeRarity": "D2",
@@ -22,6 +24,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 3,
       "pokeName": "Celebi ex",
       "pokeRarity": "D4",
@@ -30,6 +33,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 4,
       "pokeName": "Snivy",
       "pokeRarity": "D1",
@@ -38,6 +42,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 5,
       "pokeName": "Servine",
       "pokeRarity": "D2",
@@ -46,6 +51,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 6,
       "pokeName": "Serperior",
       "pokeRarity": "D3",
@@ -54,6 +60,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 7,
       "pokeName": "Morelull",
       "pokeRarity": "D1",
@@ -62,6 +69,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 8,
       "pokeName": "Shiinotic",
       "pokeRarity": "D2",
@@ -70,6 +78,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 9,
       "pokeName": "Dhelmise",
       "pokeRarity": "D2",
@@ -78,6 +87,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 10,
       "pokeName": "Ponyta",
       "pokeRarity": "D1",
@@ -86,6 +96,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 11,
       "pokeName": "Rapidash",
       "pokeRarity": "D2",
@@ -94,6 +105,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 12,
       "pokeName": "Magmar",
       "pokeRarity": "D2",
@@ -102,6 +114,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 13,
       "pokeName": "Larvesta",
       "pokeRarity": "D1",
@@ -110,6 +123,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 14,
       "pokeName": "Volcarona",
       "pokeRarity": "D3",
@@ -118,6 +132,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 15,
       "pokeName": "Salandit",
       "pokeRarity": "D1",
@@ -126,6 +141,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 16,
       "pokeName": "Salazzle",
       "pokeRarity": "D1",
@@ -134,6 +150,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 17,
       "pokeName": "Magikarp",
       "pokeRarity": "D1",
@@ -142,6 +159,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 18,
       "pokeName": "Gyarados ex",
       "pokeRarity": "D4",
@@ -150,6 +168,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 19,
       "pokeName": "Vaporeon",
       "pokeRarity": "D3",
@@ -158,6 +177,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 20,
       "pokeName": "Finneon",
       "pokeRarity": "D1",
@@ -166,6 +186,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 21,
       "pokeName": "Lumineon",
       "pokeRarity": "D2",
@@ -174,6 +195,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 22,
       "pokeName": "Chewtle",
       "pokeRarity": "D1",
@@ -182,6 +204,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 23,
       "pokeName": "Drednaw",
       "pokeRarity": "D2",
@@ -190,6 +213,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 24,
       "pokeName": "Cramorant",
       "pokeRarity": "D1",
@@ -198,6 +222,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 25,
       "pokeName": "Pikachu",
       "pokeRarity": "D1",
@@ -206,6 +231,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 26,
       "pokeName": "Raichu",
       "pokeRarity": "D3",
@@ -214,6 +240,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 27,
       "pokeName": "Electabuzz",
       "pokeRarity": "D2",
@@ -222,6 +249,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 28,
       "pokeName": "Joltik",
       "pokeRarity": "D1",
@@ -230,6 +258,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 29,
       "pokeName": "Galvantula",
       "pokeRarity": "D2",
@@ -238,6 +267,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 30,
       "pokeName": "Dedenne",
       "pokeRarity": "D1",
@@ -246,6 +276,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 31,
       "pokeName": "Mew",
       "pokeRarity": "D3",
@@ -254,6 +285,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 32,
       "pokeName": "Mew ex",
       "pokeRarity": "D4",
@@ -262,6 +294,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 33,
       "pokeName": "Sigilyph",
       "pokeRarity": "D2",
@@ -270,6 +303,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 34,
       "pokeName": "Elgyem",
       "pokeRarity": "D1",
@@ -278,6 +312,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 35,
       "pokeName": "Beheeyem",
       "pokeRarity": "D2",
@@ -286,6 +321,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 36,
       "pokeName": "Flabebe",
       "pokeRarity": "D1",
@@ -294,6 +330,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 37,
       "pokeName": "Floette",
       "pokeRarity": "D1",
@@ -302,6 +339,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 38,
       "pokeName": "Florges",
       "pokeRarity": "D2",
@@ -310,6 +348,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 39,
       "pokeName": "Swirlix",
       "pokeRarity": "D1",
@@ -318,6 +357,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 40,
       "pokeName": "Slurpuff",
       "pokeRarity": "D1",
@@ -326,6 +366,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 41,
       "pokeName": "Mankey",
       "pokeRarity": "D1",
@@ -334,6 +375,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 42,
       "pokeName": "Primeape",
       "pokeRarity": "D1",
@@ -342,6 +384,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 43,
       "pokeName": "Geodude",
       "pokeRarity": "D1",
@@ -350,6 +393,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 44,
       "pokeName": "Graveler",
       "pokeRarity": "D2",
@@ -358,6 +402,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 45,
       "pokeName": "Golem",
       "pokeRarity": "D3",
@@ -366,6 +411,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 46,
       "pokeName": "Aerodactyl ex",
       "pokeRarity": "D4",
@@ -374,6 +420,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 47,
       "pokeName": "Marshadow",
       "pokeRarity": "D3",
@@ -382,6 +429,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 48,
       "pokeName": "Stonjourner",
       "pokeRarity": "D2",
@@ -390,6 +438,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 49,
       "pokeName": "Koffing",
       "pokeRarity": "D1",
@@ -398,6 +447,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 50,
       "pokeName": "Weezing",
       "pokeRarity": "D2",
@@ -406,6 +456,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 51,
       "pokeName": "Purloin",
       "pokeRarity": "D1",
@@ -414,6 +465,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 52,
       "pokeName": "Liepard",
       "pokeRarity": "D1",
@@ -422,6 +474,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 53,
       "pokeName": "Venipede",
       "pokeRarity": "D1",
@@ -430,6 +483,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 54,
       "pokeName": "Whirlipede",
       "pokeRarity": "D1",
@@ -438,6 +492,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 55,
       "pokeName": "Scolipede",
       "pokeRarity": "D2",
@@ -446,6 +501,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 56,
       "pokeName": "Druddigon",
       "pokeRarity": "D2",
@@ -454,6 +510,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 57,
       "pokeName": "Pidgey",
       "pokeRarity": "D1",
@@ -462,6 +519,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 58,
       "pokeName": "Pidgeotto",
       "pokeRarity": "D1",
@@ -470,6 +528,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 59,
       "pokeName": "Pidgeot ex",
       "pokeRarity": "D4",
@@ -478,6 +537,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 60,
       "pokeName": "Tauros",
       "pokeRarity": "D3",
@@ -486,6 +546,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 61,
       "pokeName": "Eevee",
       "pokeRarity": "D1",
@@ -494,6 +555,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 62,
       "pokeName": "Chatot",
       "pokeRarity": "D1",
@@ -502,6 +564,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 63,
       "pokeName": "Old Amber",
       "pokeRarity": "D1",
@@ -510,6 +573,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 64,
       "pokeName": "Mythical Slab",
       "pokeRarity": "D2",
@@ -518,6 +582,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 65,
       "pokeName": "Pokemon Flute",
       "pokeRarity": "D2",
@@ -526,6 +591,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 66,
       "pokeName": "Blue",
       "pokeRarity": "D2",
@@ -534,6 +600,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 67,
       "pokeName": "Budding Expeditioner",
       "pokeRarity": "D2",
@@ -542,6 +609,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 68,
       "pokeName": "Leaf",
       "pokeRarity": "D2",
@@ -550,6 +618,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 69,
       "pokeName": "Exeggutor",
       "pokeRarity": "S1",
@@ -558,6 +627,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 70,
       "pokeName": "Serperior",
       "pokeRarity": "S1",
@@ -566,6 +636,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 71,
       "pokeName": "Salandit",
       "pokeRarity": "S1",
@@ -574,6 +645,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 72,
       "pokeName": "Vaporeon",
       "pokeRarity": "S1",
@@ -582,6 +654,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 73,
       "pokeName": "Dedenne",
       "pokeRarity": "S1",
@@ -590,6 +663,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 74,
       "pokeName": "Marshadow",
       "pokeRarity": "S1",
@@ -598,6 +672,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 75,
       "pokeName": "Celebi ex",
       "pokeRarity": "S2",
@@ -606,6 +681,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 76,
       "pokeName": "Gyarados ex",
       "pokeRarity": "S2",
@@ -614,6 +690,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 77,
       "pokeName": "Mew ex",
       "pokeRarity": "S2",
@@ -622,6 +699,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 78,
       "pokeName": "Aerodactyl ex",
       "pokeRarity": "S2",
@@ -630,6 +708,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 79,
       "pokeName": "Pidgeot ex",
       "pokeRarity": "S2",
@@ -638,6 +717,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 80,
       "pokeName": "Budding Expeditioner",
       "pokeRarity": "S2",
@@ -646,6 +726,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 81,
       "pokeName": "Blue",
       "pokeRarity": "S2",
@@ -654,6 +735,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 82,
       "pokeName": "Leaf",
       "pokeRarity": "S2",
@@ -662,6 +744,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 83,
       "pokeName": "Mew ex",
       "pokeRarity": "S2",
@@ -670,6 +753,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 84,
       "pokeName": "Aerodactyl ex",
       "pokeRarity": "S2",
@@ -678,6 +762,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 85,
       "pokeName": "Celebi ex",
       "pokeRarity": "S3",
@@ -686,6 +771,7 @@
       "packId": null
     },
     {
+      "cardSet": "MYTHICAL_ISLAND",
       "number": 86,
       "pokeName": "Mew ex",
       "pokeRarity": "C",

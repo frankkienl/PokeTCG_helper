@@ -25,6 +25,7 @@
   ],
   "cards": [
     {
+      "cardSet": "GENETIC_APEX",
       "number": 1,
       "pokeName": "Bulbasaur",
       "pokeRarity": "D1",
@@ -33,16 +34,20 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 2,
       "pokeName": "Ivysaur",
+      "pokeEvolvesFrom": "Bulbasaur",
       "pokeRarity": "D2",
       "pokeType": "GRASS",
       "imageUrl": "2-Ivysaur-Genetic-Apex.png",
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 3,
       "pokeName": "Venusaur",
+      "pokeEvolvesFrom": "Ivysaur",
       "pokeRarity": "D3",
       "pokeType": "GRASS",
       "pokeFlair": "HOLO",
@@ -50,14 +55,17 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 4,
       "pokeName": "Venusaur ex",
+      "pokeEvolvesFrom": "Ivysaur",
       "pokeRarity": "D4",
       "pokeType": "GRASS",
       "imageUrl": "4-Venusaur-ex-Genetic-Apex.png",
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 5,
       "pokeName": "Caterpie",
       "pokeRarity": "D1",
@@ -66,6 +74,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 6,
       "pokeName": "Metapod",
       "pokeRarity": "D1",
@@ -74,6 +83,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 7,
       "pokeName": "Butterfree",
       "pokeRarity": "D3",
@@ -83,6 +93,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 8,
       "pokeName": "Weedle",
       "pokeRarity": "D1",
@@ -91,6 +102,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 9,
       "pokeName": "Kakuna",
       "pokeRarity": "D1",
@@ -99,6 +111,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 10,
       "pokeName": "Beedrill",
       "pokeRarity": "D3",
@@ -107,6 +120,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 11,
       "pokeName": "Oddish",
       "pokeRarity": "D1",
@@ -115,6 +129,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 12,
       "pokeName": "Gloom",
       "pokeRarity": "D2",
@@ -123,6 +138,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 13,
       "pokeName": "Vileplume",
       "pokeRarity": "D3",
@@ -131,6 +147,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 14,
       "pokeName": "Paras",
       "pokeRarity": "D1",
@@ -139,6 +156,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 15,
       "pokeName": "Parasect",
       "pokeRarity": "D2",
@@ -147,6 +165,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 16,
       "pokeName": "Venonat",
       "pokeRarity": "D1",
@@ -155,6 +174,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 17,
       "pokeName": "Venomoth",
       "pokeRarity": "D2",
@@ -163,6 +183,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 18,
       "pokeName": "Bellsprout",
       "pokeRarity": "D1",
@@ -171,6 +192,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 19,
       "pokeName": "Weepinbell",
       "pokeRarity": "D2",
@@ -179,6 +201,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 20,
       "pokeName": "Victreebel",
       "pokeRarity": "D3",
@@ -188,6 +211,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 21,
       "pokeName": "Exeggcute",
       "pokeRarity": "D1",
@@ -196,6 +220,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 22,
       "pokeName": "Exeggutor",
       "pokeRarity": "D3",
@@ -205,6 +230,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 23,
       "pokeName": "Exeggutor ex",
       "pokeRarity": "D4",
@@ -213,6 +239,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 24,
       "pokeName": "Tangela",
       "pokeRarity": "D1",
@@ -221,6 +248,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 25,
       "pokeName": "Scyther",
       "pokeRarity": "D1",
@@ -229,6 +257,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 26,
       "pokeName": "Pinsir",
       "pokeRarity": "D2",
@@ -237,6 +266,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 27,
       "pokeName": "Cottonee",
       "pokeRarity": "D1",
@@ -245,6 +275,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 28,
       "pokeName": "Whimsicott",
       "pokeRarity": "D2",
@@ -253,6 +284,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 29,
       "pokeName": "Petilil",
       "pokeRarity": "D1",
@@ -261,6 +293,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 30,
       "pokeName": "Lilligant",
       "pokeRarity": "D2",
@@ -269,6 +302,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 31,
       "pokeName": "Skiddo",
       "pokeRarity": "D1",
@@ -277,6 +311,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 32,
       "pokeName": "Gogoat",
       "pokeRarity": "D1",
@@ -285,6 +320,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 33,
       "pokeName": "Charmander",
       "pokeRarity": "D1",
@@ -293,6 +329,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 34,
       "pokeName": "Charmeleon",
       "pokeRarity": "D2",
@@ -301,6 +338,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 35,
       "pokeName": "Charizard",
       "pokeRarity": "D3",
@@ -310,6 +348,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 36,
       "pokeName": "Charizard ex",
       "pokeRarity": "D4",
@@ -318,6 +357,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 37,
       "pokeName": "Vulpix",
       "pokeRarity": "D1",
@@ -326,6 +366,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 38,
       "pokeName": "Ninetales",
       "pokeRarity": "D2",
@@ -334,6 +375,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 39,
       "pokeName": "Growlithe",
       "pokeRarity": "D1",
@@ -342,6 +384,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 40,
       "pokeName": "Arcanine",
       "pokeRarity": "D3",
@@ -351,6 +394,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 41,
       "pokeName": "Arcanine ex",
       "pokeRarity": "D4",
@@ -359,6 +403,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 42,
       "pokeName": "Ponyta",
       "pokeRarity": "D1",
@@ -367,6 +412,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 43,
       "pokeName": "Rapidash",
       "pokeRarity": "D2",
@@ -375,6 +421,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 44,
       "pokeName": "Magmar",
       "pokeRarity": "D1",
@@ -383,6 +430,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 45,
       "pokeName": "Flareon",
       "pokeRarity": "D3",
@@ -391,6 +439,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 46,
       "pokeName": "Moltres",
       "pokeRarity": "D3",
@@ -400,6 +449,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 47,
       "pokeName": "Moltres ex",
       "pokeRarity": "D4",
@@ -408,6 +458,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 48,
       "pokeName": "Heatmor",
       "pokeRarity": "D1",
@@ -416,6 +467,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 49,
       "pokeName": "Salandit",
       "pokeRarity": "D1",
@@ -424,6 +476,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 50,
       "pokeName": "Salazzle",
       "pokeRarity": "D1",
@@ -432,6 +485,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 51,
       "pokeName": "Sizzlipede",
       "pokeRarity": "D1",
@@ -440,6 +494,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 52,
       "pokeName": "Centiskorch",
       "pokeRarity": "D2",
@@ -448,6 +503,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 53,
       "pokeName": "Squirtle",
       "pokeRarity": "D1",
@@ -456,6 +512,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 54,
       "pokeName": "Wartortle",
       "pokeRarity": "D2",
@@ -464,6 +521,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 55,
       "pokeName": "Blastoise",
       "pokeRarity": "D3",
@@ -473,6 +531,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 56,
       "pokeName": "Blastoise ex",
       "pokeRarity": "D4",
@@ -481,6 +540,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 57,
       "pokeName": "Psyduck",
       "pokeRarity": "D1",
@@ -489,6 +549,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 58,
       "pokeName": "Golduck",
       "pokeRarity": "D2",
@@ -497,6 +558,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 59,
       "pokeName": "Poliwag",
       "pokeRarity": "D1",
@@ -505,6 +567,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 60,
       "pokeName": "Poliwhirl",
       "pokeRarity": "D2",
@@ -513,6 +576,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 61,
       "pokeName": "Poliwrath",
       "pokeRarity": "D3",
@@ -522,6 +586,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 62,
       "pokeName": "Tentacool",
       "pokeRarity": "D1",
@@ -530,6 +595,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 63,
       "pokeName": "Tentacruel",
       "pokeRarity": "D2",
@@ -538,6 +604,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 64,
       "pokeName": "Seel",
       "pokeRarity": "D1",
@@ -546,6 +613,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 65,
       "pokeName": "Dewgong",
       "pokeRarity": "D2",
@@ -554,6 +622,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 66,
       "pokeName": "Shellder",
       "pokeRarity": "D1",
@@ -562,6 +631,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 67,
       "pokeName": "Cloyster",
       "pokeRarity": "D2",
@@ -570,6 +640,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 68,
       "pokeName": "Krabby",
       "pokeRarity": "D1",
@@ -578,6 +649,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 69,
       "pokeName": "Kingler",
       "pokeRarity": "D2",
@@ -586,6 +658,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 70,
       "pokeName": "Horsea",
       "pokeRarity": "D1",
@@ -594,6 +667,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 71,
       "pokeName": "Seadra",
       "pokeRarity": "D2",
@@ -602,6 +676,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 72,
       "pokeName": "Goldeen",
       "pokeRarity": "D1",
@@ -610,6 +685,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 73,
       "pokeName": "Seaking",
       "pokeRarity": "D1",
@@ -618,6 +694,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 74,
       "pokeName": "Staryu",
       "pokeRarity": "D1",
@@ -626,6 +703,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 75,
       "pokeName": "Starmie",
       "pokeRarity": "D2",
@@ -634,6 +712,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 76,
       "pokeName": "Starmie ex",
       "pokeRarity": "D4",
@@ -642,6 +721,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 77,
       "pokeName": "Magikarp",
       "pokeRarity": "D1",
@@ -650,6 +730,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 78,
       "pokeName": "Gyarados",
       "pokeRarity": "D3",
@@ -659,6 +740,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 79,
       "pokeName": "Lapras",
       "pokeRarity": "D3",
@@ -668,6 +750,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 80,
       "pokeName": "Vaporeon",
       "pokeRarity": "D3",
@@ -677,6 +760,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 81,
       "pokeName": "Omanyte",
       "pokeRarity": "D2",
@@ -685,6 +769,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 82,
       "pokeName": "Omastar",
       "pokeRarity": "D3",
@@ -694,6 +779,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 83,
       "pokeName": "Articuno",
       "pokeRarity": "D3",
@@ -703,6 +789,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 84,
       "pokeName": "Articuno ex",
       "pokeRarity": "D4",
@@ -711,6 +798,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 85,
       "pokeName": "Ducklett",
       "pokeRarity": "D1",
@@ -719,6 +807,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 86,
       "pokeName": "Swanna",
       "pokeRarity": "D2",
@@ -727,6 +816,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 87,
       "pokeName": "Froakie",
       "pokeRarity": "D1",
@@ -735,6 +825,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 88,
       "pokeName": "Frogadier",
       "pokeRarity": "D2",
@@ -743,6 +834,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 89,
       "pokeName": "Greninja",
       "pokeRarity": "D3",
@@ -752,6 +844,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 90,
       "pokeName": "Pyukumuku",
       "pokeRarity": "D1",
@@ -760,6 +853,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 91,
       "pokeName": "Bruxish",
       "pokeRarity": "D2",
@@ -768,6 +862,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 92,
       "pokeName": "Snom",
       "pokeRarity": "D1",
@@ -776,6 +871,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 93,
       "pokeName": "Frosmoth",
       "pokeRarity": "D2",
@@ -784,6 +880,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 94,
       "pokeName": "Pikachu",
       "pokeRarity": "D1",
@@ -792,6 +889,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 95,
       "pokeName": "Raichu",
       "pokeRarity": "D3",
@@ -801,6 +899,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 96,
       "pokeName": "Pikachu ex",
       "pokeRarity": "D4",
@@ -809,6 +908,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 97,
       "pokeName": "Magnemite",
       "pokeRarity": "D1",
@@ -817,6 +917,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 98,
       "pokeName": "Magneton",
       "pokeRarity": "D3",
@@ -826,6 +927,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 99,
       "pokeName": "Voltorb",
       "pokeRarity": "D1",
@@ -834,6 +936,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 100,
       "pokeName": "Electrode",
       "pokeRarity": "D2",
@@ -842,6 +945,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 101,
       "pokeName": "Electabuzz",
       "pokeRarity": "D1",
@@ -850,6 +954,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 102,
       "pokeName": "Jolteon",
       "pokeRarity": "D3",
@@ -859,6 +964,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 103,
       "pokeName": "Zapdos",
       "pokeRarity": "D3",
@@ -868,6 +974,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 104,
       "pokeName": "Zapdos ex",
       "pokeRarity": "D4",
@@ -876,6 +983,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 105,
       "pokeName": "Blitzle",
       "pokeRarity": "D1",
@@ -884,6 +992,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 106,
       "pokeName": "Zebstrika",
       "pokeRarity": "D2",
@@ -892,6 +1001,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 107,
       "pokeName": "Tynamo",
       "pokeRarity": "D1",
@@ -900,6 +1010,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 108,
       "pokeName": "Eelektrik",
       "pokeRarity": "D2",
@@ -908,6 +1019,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 109,
       "pokeName": "Eelektross",
       "pokeRarity": "D3",
@@ -917,6 +1029,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 110,
       "pokeName": "Helioptile",
       "pokeRarity": "D1",
@@ -925,6 +1038,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 111,
       "pokeName": "Heliolisk",
       "pokeRarity": "D1",
@@ -933,6 +1047,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 112,
       "pokeName": "Pincurchin",
       "pokeRarity": "D2",
@@ -941,6 +1056,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 113,
       "pokeName": "Clefairy",
       "pokeRarity": "D1",
@@ -949,6 +1065,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 114,
       "pokeName": "Clefable",
       "pokeRarity": "D2",
@@ -957,6 +1074,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 115,
       "pokeName": "Abra",
       "pokeRarity": "D1",
@@ -965,6 +1083,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 116,
       "pokeName": "Kadabra",
       "pokeRarity": "D2",
@@ -973,6 +1092,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 117,
       "pokeName": "Alakazam",
       "pokeRarity": "D3",
@@ -982,6 +1102,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 118,
       "pokeName": "Slowpoke",
       "pokeRarity": "D1",
@@ -990,6 +1111,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 119,
       "pokeName": "Slowbro",
       "pokeRarity": "D2",
@@ -998,6 +1120,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 120,
       "pokeName": "Gastly",
       "pokeRarity": "D1",
@@ -1006,6 +1129,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 121,
       "pokeName": "Haunter",
       "pokeRarity": "D2",
@@ -1014,6 +1138,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 122,
       "pokeName": "Gengar",
       "pokeRarity": "D3",
@@ -1023,6 +1148,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 123,
       "pokeName": "Gengar ex",
       "pokeRarity": "D4",
@@ -1031,6 +1157,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 124,
       "pokeName": "Drowzee",
       "pokeRarity": "D1",
@@ -1039,6 +1166,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 125,
       "pokeName": "Hypno",
       "pokeRarity": "D3",
@@ -1048,6 +1176,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 126,
       "pokeName": "Mr. Mime",
       "pokeRarity": "D2",
@@ -1056,6 +1185,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 127,
       "pokeName": "Jynx",
       "pokeRarity": "D1",
@@ -1064,6 +1194,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 128,
       "pokeName": "Mewtwo",
       "pokeRarity": "D3",
@@ -1073,6 +1204,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 129,
       "pokeName": "Mewtwo ex",
       "pokeRarity": "D4",
@@ -1081,6 +1213,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 130,
       "pokeName": "Ralts",
       "pokeRarity": "D1",
@@ -1089,6 +1222,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 131,
       "pokeName": "Kirlia",
       "pokeRarity": "D2",
@@ -1097,6 +1231,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 132,
       "pokeName": "Gardevoir",
       "pokeRarity": "D3",
@@ -1105,6 +1240,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 133,
       "pokeName": "Woobat",
       "pokeRarity": "D1",
@@ -1113,6 +1249,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 134,
       "pokeName": "Swoobat",
       "pokeRarity": "D1",
@@ -1121,6 +1258,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 135,
       "pokeName": "Golett",
       "pokeRarity": "D1",
@@ -1129,6 +1267,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 136,
       "pokeName": "Golurk",
       "pokeRarity": "D2",
@@ -1137,6 +1276,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 137,
       "pokeName": "Sandshrew",
       "pokeRarity": "D1",
@@ -1145,6 +1285,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 138,
       "pokeName": "Sandslash",
       "pokeRarity": "D2",
@@ -1153,6 +1294,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 139,
       "pokeName": "Diglett",
       "pokeRarity": "D1",
@@ -1161,6 +1303,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 140,
       "pokeName": "Dugtrio",
       "pokeRarity": "D2",
@@ -1169,6 +1312,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 141,
       "pokeName": "Mankey",
       "pokeRarity": "D1",
@@ -1177,6 +1321,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 142,
       "pokeName": "Primeape",
       "pokeRarity": "D2",
@@ -1185,6 +1330,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 143,
       "pokeName": "Machop",
       "pokeRarity": "D1",
@@ -1193,6 +1339,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 144,
       "pokeName": "Machoke",
       "pokeRarity": "D2",
@@ -1201,6 +1348,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 145,
       "pokeName": "Machamp",
       "pokeRarity": "D3",
@@ -1210,6 +1358,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 146,
       "pokeName": "Machamp ex",
       "pokeRarity": "D4",
@@ -1219,6 +1368,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 147,
       "pokeName": "Geodude",
       "pokeRarity": "D1",
@@ -1227,6 +1377,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 148,
       "pokeName": "Graveler",
       "pokeRarity": "D2",
@@ -1235,6 +1386,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 149,
       "pokeName": "Golem",
       "pokeRarity": "D3",
@@ -1244,6 +1396,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 150,
       "pokeName": "Onix",
       "pokeRarity": "D2",
@@ -1252,6 +1405,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 151,
       "pokeName": "Cubone",
       "pokeRarity": "D1",
@@ -1260,6 +1414,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 152,
       "pokeName": "Marowak",
       "pokeRarity": "D2",
@@ -1268,6 +1423,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 153,
       "pokeName": "Marowak ex",
       "pokeRarity": "D4",
@@ -1277,6 +1433,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 154,
       "pokeName": "Hitmonlee",
       "pokeRarity": "D1",
@@ -1285,6 +1442,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 155,
       "pokeName": "Hitmonchan",
       "pokeRarity": "D1",
@@ -1293,6 +1451,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 156,
       "pokeName": "Rhyhorn",
       "pokeRarity": "D1",
@@ -1301,6 +1460,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 157,
       "pokeName": "Rhydon",
       "pokeRarity": "D2",
@@ -1309,6 +1469,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 158,
       "pokeName": "Kabuto",
       "pokeRarity": "D2",
@@ -1317,6 +1478,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 159,
       "pokeName": "Kabutops",
       "pokeRarity": "D3",
@@ -1326,6 +1488,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 160,
       "pokeName": "Mienfoo",
       "pokeRarity": "D1",
@@ -1334,6 +1497,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 161,
       "pokeName": "Mienshao",
       "pokeRarity": "D2",
@@ -1342,6 +1506,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 162,
       "pokeName": "Clobbopus",
       "pokeRarity": "D1",
@@ -1350,6 +1515,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 163,
       "pokeName": "Grapploct",
       "pokeRarity": "D2",
@@ -1358,6 +1524,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 164,
       "pokeName": "Ekans",
       "pokeRarity": "D1",
@@ -1366,6 +1533,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 165,
       "pokeName": "Arbok",
       "pokeRarity": "D2",
@@ -1374,6 +1542,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 166,
       "pokeName": "Nidoran♀",
       "pokeRarity": "D1",
@@ -1382,6 +1551,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 167,
       "pokeName": "Nidorina",
       "pokeRarity": "D2",
@@ -1390,6 +1560,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 168,
       "pokeName": "Nidoqueen",
       "pokeRarity": "D3",
@@ -1399,6 +1570,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 169,
       "pokeName": "Nidoran♂",
       "pokeRarity": "D1",
@@ -1407,6 +1579,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 170,
       "pokeName": "Nidorino",
       "pokeRarity": "D2",
@@ -1415,6 +1588,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 171,
       "pokeName": "Nidoking",
       "pokeRarity": "D3",
@@ -1424,6 +1598,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 172,
       "pokeName": "Zubat",
       "pokeRarity": "D1",
@@ -1432,6 +1607,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 173,
       "pokeName": "Golbat",
       "pokeRarity": "D2",
@@ -1440,6 +1616,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 174,
       "pokeName": "Grimer",
       "pokeRarity": "D1",
@@ -1448,6 +1625,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 175,
       "pokeName": "Muk",
       "pokeRarity": "D3",
@@ -1457,6 +1635,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 176,
       "pokeName": "Koffing",
       "pokeRarity": "D1",
@@ -1465,6 +1644,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 177,
       "pokeName": "Weezing",
       "pokeRarity": "D3",
@@ -1474,6 +1654,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 178,
       "pokeName": "Mawile",
       "pokeRarity": "D1",
@@ -1482,6 +1663,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 179,
       "pokeName": "Pawniard",
       "pokeRarity": "D1",
@@ -1490,6 +1672,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 180,
       "pokeName": "Bisharp",
       "pokeRarity": "D2",
@@ -1498,6 +1681,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 181,
       "pokeName": "Meltan",
       "pokeRarity": "D1",
@@ -1506,6 +1690,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 182,
       "pokeName": "Melmetal",
       "pokeRarity": "D3",
@@ -1515,6 +1700,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 183,
       "pokeName": "Dratini",
       "pokeRarity": "D1",
@@ -1523,6 +1709,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 184,
       "pokeName": "Dragonair",
       "pokeRarity": "D2",
@@ -1531,6 +1718,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 185,
       "pokeName": "Dragonite",
       "pokeRarity": "D3",
@@ -1540,6 +1728,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 186,
       "pokeName": "Pidgey",
       "pokeRarity": "D1",
@@ -1548,6 +1737,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 187,
       "pokeName": "Pidgeotto",
       "pokeRarity": "D1",
@@ -1556,6 +1746,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 188,
       "pokeName": "Pidgeot",
       "pokeRarity": "D3",
@@ -1565,6 +1756,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 189,
       "pokeName": "Rattata",
       "pokeRarity": "D1",
@@ -1573,6 +1765,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 190,
       "pokeName": "Raticate",
       "pokeRarity": "D1",
@@ -1581,6 +1774,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 191,
       "pokeName": "Spearow",
       "pokeRarity": "D1",
@@ -1589,6 +1783,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 192,
       "pokeName": "Fearow",
       "pokeRarity": "D1",
@@ -1597,6 +1792,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 193,
       "pokeName": "Jigglypuff",
       "pokeRarity": "D1",
@@ -1605,6 +1801,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 194,
       "pokeName": "Wigglytuff",
       "pokeRarity": "D1",
@@ -1613,6 +1810,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 195,
       "pokeName": "Wigglytuff ex",
       "pokeRarity": "D4",
@@ -1622,6 +1820,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 196,
       "pokeName": "Meowth",
       "pokeRarity": "D1",
@@ -1630,6 +1829,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 197,
       "pokeName": "Persian",
       "pokeRarity": "D2",
@@ -1638,6 +1838,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 198,
       "pokeName": "Farfetchd",
       "pokeRarity": "D1",
@@ -1646,6 +1847,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 199,
       "pokeName": "Doduo",
       "pokeRarity": "D1",
@@ -1654,6 +1856,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 200,
       "pokeName": "Dodrio",
       "pokeRarity": "D2",
@@ -1662,6 +1865,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 201,
       "pokeName": "Lickitung",
       "pokeRarity": "D2",
@@ -1670,6 +1874,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 202,
       "pokeName": "Chansey",
       "pokeRarity": "D2",
@@ -1678,6 +1883,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 203,
       "pokeName": "Kangaskhan",
       "pokeRarity": "D3",
@@ -1687,6 +1893,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 204,
       "pokeName": "Tauros",
       "pokeRarity": "D1",
@@ -1695,6 +1902,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 205,
       "pokeName": "Ditto",
       "pokeRarity": "D3",
@@ -1704,6 +1912,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 206,
       "pokeName": "Eevee",
       "pokeRarity": "D1",
@@ -1712,6 +1921,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 207,
       "pokeName": "Eevee",
       "pokeRarity": "D1",
@@ -1720,6 +1930,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 208,
       "pokeName": "Eevee",
       "pokeRarity": "D1",
@@ -1728,6 +1939,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 209,
       "pokeName": "Porygon",
       "pokeRarity": "D1",
@@ -1736,6 +1948,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 210,
       "pokeName": "Aerodactyl",
       "pokeRarity": "D3",
@@ -1745,6 +1958,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 211,
       "pokeName": "Snorlax",
       "pokeRarity": "D3",
@@ -1754,6 +1968,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 212,
       "pokeName": "Minccino",
       "pokeRarity": "D1",
@@ -1762,6 +1977,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 213,
       "pokeName": "Cinccino",
       "pokeRarity": "D2",
@@ -1770,6 +1986,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 214,
       "pokeName": "Wooloo",
       "pokeRarity": "D1",
@@ -1778,6 +1995,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 215,
       "pokeName": "Dubwool",
       "pokeRarity": "D1",
@@ -1786,6 +2004,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 216,
       "pokeName": "Helix Fossil",
       "pokeRarity": "D1",
@@ -1794,6 +2013,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 217,
       "pokeName": "Dome Fossil",
       "pokeRarity": "D1",
@@ -1802,6 +2022,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 218,
       "pokeName": "Old Amber",
       "pokeRarity": "D1",
@@ -1810,6 +2031,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 219,
       "pokeName": "Erika",
       "pokeRarity": "D2",
@@ -1818,6 +2040,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 220,
       "pokeName": "Misty",
       "pokeRarity": "D2",
@@ -1826,6 +2049,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 221,
       "pokeName": "Blaine",
       "pokeRarity": "D2",
@@ -1834,6 +2058,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 222,
       "pokeName": "Koga",
       "pokeRarity": "D2",
@@ -1842,6 +2067,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 223,
       "pokeName": "Giovanni",
       "pokeRarity": "D2",
@@ -1850,6 +2076,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 224,
       "pokeName": "Brock",
       "pokeRarity": "D2",
@@ -1858,6 +2085,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 225,
       "pokeName": "Sabrina",
       "pokeRarity": "D2",
@@ -1866,6 +2094,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 226,
       "pokeName": "Lt. Surge",
       "pokeRarity": "D2",
@@ -1874,6 +2103,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 227,
       "pokeName": "Bulbasaur",
       "pokeRarity": "S1",
@@ -1883,6 +2113,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 228,
       "pokeName": "Gloom",
       "pokeRarity": "S1",
@@ -1892,6 +2123,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 229,
       "pokeName": "Pinsir",
       "pokeRarity": "S1",
@@ -1901,6 +2133,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 230,
       "pokeName": "Charmander",
       "pokeRarity": "S1",
@@ -1910,6 +2143,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 231,
       "pokeName": "Rapidash",
       "pokeRarity": "S1",
@@ -1919,6 +2153,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 232,
       "pokeName": "Squirtle",
       "pokeRarity": "S1",
@@ -1928,6 +2163,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 233,
       "pokeName": "Gyarados",
       "pokeRarity": "S1",
@@ -1937,6 +2173,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 234,
       "pokeName": "Lapras",
       "pokeRarity": "S1",
@@ -1946,6 +2183,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 235,
       "pokeName": "Electrode",
       "pokeRarity": "S1",
@@ -1955,6 +2193,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 236,
       "pokeName": "Alakazam",
       "pokeRarity": "S1",
@@ -1964,6 +2203,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 237,
       "pokeName": "Slowpoke",
       "pokeRarity": "S1",
@@ -1973,6 +2213,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 238,
       "pokeName": "Diglett",
       "pokeRarity": "S1",
@@ -1982,6 +2223,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 239,
       "pokeName": "Cubone",
       "pokeRarity": "S1",
@@ -1991,6 +2233,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 240,
       "pokeName": "Nidoqueen",
       "pokeRarity": "S1",
@@ -2000,6 +2243,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 241,
       "pokeName": "Nidoking",
       "pokeRarity": "S1",
@@ -2009,6 +2253,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 242,
       "pokeName": "Golbat",
       "pokeRarity": "S1",
@@ -2018,6 +2263,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 243,
       "pokeName": "Weezing",
       "pokeRarity": "S1",
@@ -2027,6 +2273,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 244,
       "pokeName": "Dragonite",
       "pokeRarity": "S1",
@@ -2036,6 +2283,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 245,
       "pokeName": "Pidgeot",
       "pokeRarity": "S1",
@@ -2045,6 +2293,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 246,
       "pokeName": "Meowth",
       "pokeRarity": "S1",
@@ -2054,6 +2303,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 247,
       "pokeName": "Ditto",
       "pokeRarity": "S1",
@@ -2063,6 +2313,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 248,
       "pokeName": "Eevee",
       "pokeRarity": "S1",
@@ -2072,6 +2323,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 249,
       "pokeName": "Porygon",
       "pokeRarity": "S1",
@@ -2081,6 +2333,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 250,
       "pokeName": "Snorlax",
       "pokeRarity": "S1",
@@ -2090,6 +2343,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 251,
       "pokeName": "Venusaur ex",
       "pokeRarity": "S2",
@@ -2099,6 +2353,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 252,
       "pokeName": "Exeggutor ex",
       "pokeRarity": "S2",
@@ -2108,6 +2363,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 253,
       "pokeName": "Charizard ex",
       "pokeRarity": "S2",
@@ -2117,6 +2373,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 254,
       "pokeName": "Arcanine ex",
       "pokeRarity": "S2",
@@ -2126,6 +2383,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 255,
       "pokeName": "Moltres ex",
       "pokeRarity": "S2",
@@ -2135,6 +2393,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 256,
       "pokeName": "Blastoise ex",
       "pokeRarity": "S2",
@@ -2144,6 +2403,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 257,
       "pokeName": "Starmie ex",
       "pokeRarity": "S2",
@@ -2153,6 +2413,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 258,
       "pokeName": "Articuno ex",
       "pokeRarity": "S2",
@@ -2162,6 +2423,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 259,
       "pokeName": "Pikachu ex",
       "pokeRarity": "S2",
@@ -2171,6 +2433,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 260,
       "pokeName": "Zapdos ex",
       "pokeRarity": "S2",
@@ -2180,6 +2443,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 261,
       "pokeName": "Gengar ex",
       "pokeRarity": "S2",
@@ -2189,6 +2453,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 262,
       "pokeName": "Mewtwo ex",
       "pokeRarity": "S2",
@@ -2198,6 +2463,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 263,
       "pokeName": "Machamp ex",
       "pokeRarity": "S2",
@@ -2207,6 +2473,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 264,
       "pokeName": "Marowak ex",
       "pokeRarity": "S2",
@@ -2216,6 +2483,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 265,
       "pokeName": "Wigglytuff ex",
       "pokeRarity": "S2",
@@ -2225,6 +2493,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 266,
       "pokeName": "Erika",
       "pokeRarity": "S2",
@@ -2234,6 +2503,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 267,
       "pokeName": "Misty",
       "pokeRarity": "S2",
@@ -2243,6 +2513,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 268,
       "pokeName": "Blaine",
       "pokeRarity": "S2",
@@ -2252,6 +2523,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 269,
       "pokeName": "Koga",
       "pokeRarity": "S2",
@@ -2261,6 +2533,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 270,
       "pokeName": "Giovanni",
       "pokeRarity": "S2",
@@ -2270,6 +2543,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 271,
       "pokeName": "Brock",
       "pokeRarity": "S2",
@@ -2279,6 +2553,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 272,
       "pokeName": "Sabrina",
       "pokeRarity": "S2",
@@ -2288,6 +2563,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 273,
       "pokeName": "Lt. Surge",
       "pokeRarity": "S2",
@@ -2297,6 +2573,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 274,
       "pokeName": "Moltres ex",
       "pokeRarity": "S2",
@@ -2306,6 +2583,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 275,
       "pokeName": "Articuno ex",
       "pokeRarity": "S2",
@@ -2315,6 +2593,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 276,
       "pokeName": "Zapdos ex",
       "pokeRarity": "S2",
@@ -2324,6 +2603,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 277,
       "pokeName": "Gengar ex",
       "pokeRarity": "S2",
@@ -2333,6 +2613,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 278,
       "pokeName": "Machamp ex",
       "pokeRarity": "S2",
@@ -2342,6 +2623,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 279,
       "pokeName": "Wigglytuff ex",
       "pokeRarity": "S2",
@@ -2351,6 +2633,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 280,
       "pokeName": "Charizard ex",
       "pokeRarity": "S3",
@@ -2360,6 +2643,7 @@
       "packId": "CHARIZARD"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 281,
       "pokeName": "Pikachu ex",
       "pokeRarity": "S3",
@@ -2369,6 +2653,7 @@
       "packId": "PIKACHU"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 282,
       "pokeName": "Mewtwo ex",
       "pokeRarity": "S3",
@@ -2378,6 +2663,7 @@
       "packId": "MEWTWO"
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 283,
       "pokeName": "Charizard ex",
       "pokeRarity": "C",
@@ -2387,6 +2673,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 284,
       "pokeName": "Pikachu ex",
       "pokeRarity": "C",
@@ -2396,6 +2683,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 285,
       "pokeName": "Mewtwo ex",
       "pokeRarity": "C",
@@ -2405,6 +2693,7 @@
       "packId": null
     },
     {
+      "cardSet": "GENETIC_APEX",
       "number": 286,
       "pokeName": "Mew",
       "pokeRarity": "S3",

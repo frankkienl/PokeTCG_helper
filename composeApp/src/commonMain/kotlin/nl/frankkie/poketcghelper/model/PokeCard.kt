@@ -24,11 +24,13 @@ data class PokeCardSetPack(
 data class PokeCard(
     val number: Int,
     val pokeName: String,
+    val pokeEvolvesFrom: String? = null,
     val pokeRarity: String? = null,
     val pokeType: String? = null,
     val pokeFlair: String? = null,
     val imageUrl: String,
-    val packId: String? = null
+    val packId: String? = null,
+    var cardSet: String? = null,
 )
 
 enum class PokeRarity(val codeName: String, val displayName: String, val imageUrl: String? = null, val symbolCount: Int? = null) {
@@ -41,7 +43,7 @@ enum class PokeRarity(val codeName: String, val displayName: String, val imageUr
     S2(codeName = "S2", displayName = "★\uFE0F ★\uFE0F", imageUrl = "star.png", symbolCount = 2), //6
     S3(codeName = "S3", displayName = "★\uFE0F ★\uFE0F ★\uFE0F", imageUrl = "star.png", symbolCount = 3), //7
     C(codeName = "C", displayName = "\uD83D\uDC51", imageUrl = "crown.png", symbolCount = 1), //8
-    PROMO(codeName="PROMO", displayName = "Promo", imageUrl = null, symbolCount = 0),
+    PROMO(codeName = "PROMO", displayName = "Promo", imageUrl = null, symbolCount = 0),
 }
 
 enum class PokeFlair(val codeName: String, val displayName: String) {

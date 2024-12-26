@@ -21,5 +21,6 @@ suspend fun initializeCards(): List<PokeCardSet> {
 }
 
 fun initializeCardsFromJson(jsonString: String): PokeCardSet {
-    return Json.decodeFromString<PokeCardSet>(jsonString)
+    val tempCardSet = Json.decodeFromString<PokeCardSet>(jsonString)
+    return tempCardSet
 }
