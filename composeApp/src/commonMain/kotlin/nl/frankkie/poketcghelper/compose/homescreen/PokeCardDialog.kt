@@ -4,7 +4,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
-import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
 import androidx.compose.material.TextButton
 import androidx.compose.runtime.*
@@ -14,6 +13,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
+import nl.frankkie.poketcghelper.compose.pokecard_parts.*
 import nl.frankkie.poketcghelper.model.*
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.MissingResourceException
@@ -77,30 +77,11 @@ fun PokeCardDialog(
                         Spacer(modifier = Modifier.height(12.dp))
                         PokeRarityComposable(pokeCard.pokeRarity)
                         Spacer(modifier = Modifier.height(12.dp))
-                        PokeFlairComposable(pokeCard.pokeFlair)
+                        PokePrintComposable(pokeCard.pokePrint)
                         Spacer(modifier = Modifier.height(12.dp))
                         PokePackComposable(pokeCardSet, pokeCard.packId)
 
-                        if (isLoggedIn) {
-                            Spacer(modifier = Modifier.height(8.dp))
-                            Text("Amount owned:")
-                            Row(verticalAlignment = Alignment.CenterVertically) {
-                                OutlinedButton(
-                                    enabled = !isAmountLoading,
-                                    onClick = { onChangeAmountOwned(amountOwned - 1) }) {
-                                    Text("-")
-                                }
-                                Text(
-                                    amountOwned.toString(),
-                                    modifier = Modifier.padding(8.dp)
-                                )
-                                OutlinedButton(
-                                    enabled = !isAmountLoading,
-                                    onClick = { onChangeAmountOwned(amountOwned + 1) }) {
-                                    Text("+")
-                                }
-                            }
-                        }
+                        PokeCardAmount(isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned)
                     }
                 }
                 Row {
@@ -116,108 +97,6 @@ fun PokeCardDialog(
 
 }
 
-@OptIn(ExperimentalResourceApi::class)
-@Composable
-fun PokeTypeComposable(pokeTypeString: String?) {
-    if (pokeTypeString == null) {
-        return
-    }
-    val pokeType = PokeType.valueOf(pokeTypeString)
-    if (pokeType.imageUrl == null) {
-        Text(pokeType.displayName)
-        return
-    }
-    var imageBitmap by remember {
-        mutableStateOf<ImageBitmap?>(null)
-    }
-    LaunchedEffect(pokeType) {
-        val bytes = Res.readBytes("files/card_symbols/${pokeType.imageUrl}")
-        imageBitmap = bytes.decodeToImageBitmap()
-    }
-
-    imageBitmap?.let {
-        Image(
-            it,
-            contentScale = ContentScale.FillHeight,
-            contentDescription = pokeType.displayName,
-            modifier = Modifier.height(30.dp)
-        )
-    } ?: run {
-        Text(pokeType.displayName)
-    }
-}
-
-@OptIn(ExperimentalResourceApi::class)
-@Composable
-fun PokeRarityComposable(pokeRarityString: String?) {
-    if (pokeRarityString == null) {
-        return
-    }
-    val pokeRarity = PokeRarity.valueOf(pokeRarityString)
-    if (pokeRarity == PokeRarity.UNKNOWN) {
-        return
-    }
-    //Get image
-    var imageBitmap by remember {
-        mutableStateOf<ImageBitmap?>(null)
-    }
-    LaunchedEffect(pokeRarity) {
-        if (pokeRarity.imageUrl != null) {
-            val bytes = Res.readBytes("files/card_symbols/${pokeRarity.imageUrl}")
-            imageBitmap = bytes.decodeToImageBitmap()
-        }
-    }
-    if (imageBitmap == null) {
-        Text(pokeRarity.displayName)
-    } else {
-        Row {
-            repeat(pokeRarity.symbolCount ?: 0) {
-                imageBitmap?.let {
-                    Image(
-                        it,
-                        contentScale = ContentScale.FillHeight,
-                        contentDescription = null,
-                        modifier = Modifier.height(30.dp)
-                    )
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun PokeFlairComposable(pokeFlairString: String?) {
-    if (pokeFlairString != null) {
-        val pokeFlair = PokeFlair.valueOf(pokeFlairString)
-        Text(pokeFlair.displayName)
-    }
-}
-
-@OptIn(ExperimentalResourceApi::class)
-@Composable
-fun PokePackComposable(pokeCardSet: PokeCardSet?, packId: String?) {
-    if (packId != null) {
-        if (pokeCardSet != null) {
-            pokeCardSet.packs.find { somePack -> somePack.id == packId }?.let { thePack ->
-                var imageBitmap by remember {
-                    mutableStateOf<ImageBitmap?>(null)
-                }
-                LaunchedEffect(pokeCardSet, packId) {
-                    val bytes = Res.readBytes("files/card_symbols/${pokeCardSet.codeName}/${thePack.imageUrlSymbol}")
-                    imageBitmap = bytes.decodeToImageBitmap()
-                }
-
-                imageBitmap?.let {
-                    Image(it, contentDescription = packId, modifier = Modifier.height(50.dp))
-                } ?: run {
-                    Text(packId)
-                }
-            }
-        } else {
-            Text(packId)
-        }
-    }
-}
 
 data class CardDialogData(
     val pokeCardSet: PokeCardSet,

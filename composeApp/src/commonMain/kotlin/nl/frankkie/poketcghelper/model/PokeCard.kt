@@ -24,11 +24,18 @@ data class PokeCardSetPack(
 data class PokeCard(
     val number: Int,
     val pokeName: String,
-    val pokeEvolvesFrom: String? = null,
-    val pokeRarity: String? = null,
-    val pokeType: String? = null,
-    val pokeFlair: String? = null,
     val imageUrl: String,
+    val pokeStage: Int? = 0,
+    val pokeEvolvesFrom: String? = null,
+    val pokeHp: Int? = null,
+    val pokeType: String? = null,
+    val pokeDesc: String? = null,
+    val pokeWeakness: String? = null,
+    val pokeRetreat: Int? = null,
+    val pokeIllustrator: String? = null,
+    val pokeRarity: String? = null,
+    val pokeFlavour: String? = null,
+    val pokePrint: String? = null,
     val packId: String? = null,
     var cardSet: String? = null,
 )
@@ -46,7 +53,7 @@ enum class PokeRarity(val codeName: String, val displayName: String, val imageUr
     PROMO(codeName = "PROMO", displayName = "Promo", imageUrl = null, symbolCount = 0),
 }
 
-enum class PokeFlair(val codeName: String, val displayName: String) {
+enum class PokePrint(val codeName: String, val displayName: String) {
     NONE(codeName = "NONE", "None"),
     HOLO(codeName = "HOLO", "Holo"),
     EX("EX", "EX"),
@@ -68,4 +75,10 @@ enum class PokeType(val codeName: String, val displayName: String, val imageUrl:
     COLORLESS(codeName = "COLORLESS", displayName = "Colorless", imageUrl = "colorless.png"),
     ITEM(codeName = "ITEM", displayName = "Item", imageUrl = null),
     SUPPORT(codeName = "SUPPORT", displayName = "Support", imageUrl = null),
+}
+
+enum class PokeStage(val number: Int, val codeName: String, val displayName: String) {
+    BASIC(0, "BASIC", "Basic"),
+    STAGE_1(1, "STAGE_1", "Stage 1"),
+    STAGE_2(2, "STAGE_2", "Stage 2"),
 }

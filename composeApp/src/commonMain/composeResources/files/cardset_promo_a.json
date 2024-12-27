@@ -67,7 +67,7 @@
       "pokeName": "Pikachu ex",
       "pokeRarity": "PROMO",
       "pokeType": "LIGHTNING",
-      "pokeFlair": "FULL_ART_EX",
+      "pokePrint": "FULL_ART_EX",
       "imageUrl": "8-Pikachu-ex.png"
     },
     {
@@ -76,7 +76,7 @@
       "pokeName": "Mewtwo",
       "pokeRarity": "PROMO",
       "pokeType": "PSYCHIC",
-      "pokeFlair": "FULL_ART",
+      "pokePrint": "FULL_ART",
       "imageUrl": "9-Mewtwo.png"
     },
     {
@@ -85,7 +85,7 @@
       "pokeName": "Chansey",
       "pokeRarity": "PROMO",
       "pokeType": "COLORLESS",
-      "pokeFlair": "HOLO",
+      "pokePrint": "HOLO",
       "imageUrl": "10-Chansey.png"
     },
     {
@@ -94,7 +94,7 @@
       "pokeName": "Meowth",
       "pokeRarity": "PROMO",
       "pokeType": "COLORLESS",
-      "pokeFlair": "HOLO",
+      "pokePrint": "HOLO",
       "imageUrl": "11-Meowth.png"
     },
     {
@@ -103,7 +103,7 @@
       "pokeName": "Butterfree",
       "pokeRarity": "PROMO",
       "pokeType": "GRASS",
-      "pokeFlair": "HOLO",
+      "pokePrint": "HOLO",
       "imageUrl": "12-Butterfree.png"
     },
     {
@@ -112,7 +112,7 @@
       "pokeName": "Lapras ex",
       "pokeRarity": "PROMO",
       "pokeType": "WATER",
-      "pokeFlair": "EX",
+      "pokePrint": "EX",
       "imageUrl": "13-Lapras-ex.png"
     },
     {
@@ -145,7 +145,7 @@
       "pokeName": "Venusaur",
       "pokeRarity": "PROMO",
       "pokeType": "GRASS",
-      "pokeFlair": "FULL_ART",
+      "pokePrint": "FULL_ART",
       "imageUrl": "17-Venusaur.png"
     },
     {
@@ -154,7 +154,7 @@
       "pokeName": "Greninja",
       "pokeRarity": "PROMO",
       "pokeType": "WATER",
-      "pokeFlair": "HOLO",
+      "pokePrint": "HOLO",
       "imageUrl": "18-Greninja.png"
     },
     {
@@ -187,7 +187,7 @@
       "pokeName": "Bulbasaur",
       "pokeRarity": "PROMO",
       "pokeType": "GRASS",
-      "pokeFlair": "HOLO",
+      "pokePrint": "HOLO",
       "imageUrl": "22-Bulbasaur.png"
     },
     {
@@ -196,7 +196,7 @@
       "pokeName": "Magnemite",
       "pokeRarity": "PROMO",
       "pokeType": "LIGHTNING",
-      "pokeFlair": "HOLO",
+      "pokePrint": "HOLO",
       "imageUrl": "23-Magnemite.png"
     }
   ]

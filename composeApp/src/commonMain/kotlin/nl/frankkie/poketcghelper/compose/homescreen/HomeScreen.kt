@@ -69,7 +69,7 @@ fun HomeScreen(
         if (homeScreenUiState.cardDialogData != null) {
             val theCardData = homeScreenUiState.cardDialogData
             val amountOwned = appState.ownedCards.find { (it.pokeCard == theCardData.pokeCard && it.pokeCardSet.codeName == theCardData.pokeCardSet.codeName) }?.amount ?: 0
-            PokeCardDialog(
+            PokeCardDialog2(
                 cardDialogData = homeScreenUiState.cardDialogData,
                 amountOwned = amountOwned,
                 isAmountLoading = cardAmountLoading,

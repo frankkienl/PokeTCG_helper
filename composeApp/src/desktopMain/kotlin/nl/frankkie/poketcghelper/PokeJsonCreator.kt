@@ -23,7 +23,7 @@ fun main() {
                 number = number,
                 pokeName = pokeName,
                 pokeRarity = "UNKNOWN",
-                pokeFlair = null,
+                pokePrint = null,
                 imageUrl = it,
                 packId = null
             )
@@ -55,7 +55,7 @@ fun main_genetic_apex() {
                 number = number,
                 pokeName = pokeName,
                 pokeRarity = "UNKNOWN",
-                pokeFlair = null,
+                pokePrint = null,
                 imageUrl = it,
                 packId = null
             )
