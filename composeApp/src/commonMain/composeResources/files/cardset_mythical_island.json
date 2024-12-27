@@ -6,238 +6,369 @@
   "packs": [],
   "cards": [
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 1,
       "pokeName": "Exeggcute",
-      "pokeRarity": "D1",
-      "pokeType": "GRASS",
       "imageUrl": "1-Exeggcute-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 50,
+      "pokeType": "GRASS",
+      "pokeDesc": "NO. 0102 Egg Pokemon HT: 1'4\" WT: 5.5 lbs.",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "Yuka Morii",
+      "pokeRarity": "D1",
+      "pokeFlavour": "Tough it may look like it's just a bunch of eggs, it's a proper Pokemon. Exeggcute communicates with others of its kind via telepathy, apparently.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 2,
       "pokeName": "Exeggutor",
-      "pokeRarity": "D2",
-      "pokeType": "GRASS",
       "imageUrl": "2-Exeggutor-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Exeggcute",
+      "pokeHp": 130,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 3,
+      "pokeRarity": "D2",
+      "pokeFlavour": "Each of Exeggutor's three heads is thinking different thoughts. The three don't seem to be very interested in one another.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 3,
       "pokeName": "Celebi ex",
-      "pokeRarity": "D4",
-      "pokeType": "GRASS",
       "imageUrl": "3-Celebi-ex-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 130,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "PLANETA CG Works",
+      "pokeRarity": "D4",
+      "pokePrint": "EX",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 4,
       "pokeName": "Snivy",
-      "pokeRarity": "D1",
-      "pokeType": "GRASS",
       "imageUrl": "4-Snivy-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 70,
+      "pokeType": "GRASS",
+      "pokeDesc": "NO. 0495 Grass Snake Pokemon HT 2\" WT: 17.9 lbs.",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "Kagemaru Himeno",
+      "pokeRarity": "D1",
+      "pokeFlavour": "Being exposed to sunlight makes its movements swifter. It uses vines more adeptly than its hands.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 5,
       "pokeName": "Servine",
-      "pokeRarity": "D2",
-      "pokeType": "GRASS",
       "imageUrl": "5-Servine-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Snivy",
+      "pokeHp": 80,
+      "pokeType": "GRASS",
+      "pokeDesc": "NO. 0496 Grass Snake Pokemon HT: 2'7\" WT: 35.3 lbs.",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "Shigenori Nogishi",
+      "pokeRarity": "D2",
+      "pokeFlavour": "It moves along the ground as if sliding. Its swift movements befuddle its foes, and it then attacks with a vine whip.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 6,
       "pokeName": "Serperior",
-      "pokeRarity": "D3",
-      "pokeType": "GRASS",
       "imageUrl": "6-Serperior-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Servine",
+      "pokeHp": 110,
+      "pokeType": "GRASS",
+      "pokeDesc": "NO. 497 Regal Pokemon HT: 10'10\" WT: 138.9 lbs.",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 2,
+      "pokeIllustrator": "Yoshioka",
+      "pokeRarity": "D3",
+      "pokeFlavour": "It only gives its all against strong opponents wo are not fazzed by the glare from Serperior's noble eyes.",
+      "pokePrint": "HOLO",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 7,
       "pokeName": "Morelull",
-      "pokeRarity": "D1",
-      "pokeType": "GRASS",
       "imageUrl": "7-Morelull-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 60,
+      "pokeType": "GRASS",
+      "pokeDesc": "NO. 755 Illuminating Pokemon HT: 8\" WT: 3.3 lbs.",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "Saya Tsuruta",
+      "pokeRarity": "D1",
+      "pokeFlavour": "Pokemon living in the forrest eat the delicious caps on Morelull's head. The caps regrow overnight.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 8,
       "pokeName": "Shiinotic",
-      "pokeRarity": "D2",
-      "pokeType": "GRASS",
       "imageUrl": "8-Shiinotic-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Morelull",
+      "pokeHp": 90,
+      "pokeType": "GRASS",
+      "pokeDesc": "NO. 0756 Illuminating Pokemon",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 2,
+      "pokeIllustrator": "Mizue",
+      "pokeRarity": "D2",
+      "pokeFlavour": "Its flickering spores lure in prey and put them to sleep. Once this Pokemon has its prey snoozing, it drains their vitality with its fingertips.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 9,
       "pokeName": "Dhelmise",
-      "pokeRarity": "D2",
-      "pokeType": "GRASS",
       "imageUrl": "9-Dhelmise-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 100,
+      "pokeType": "GRASS",
+      "pokeDesc": "NO. 0781 Sea Creeper Pokemon HT: 12'10\" WT: 463 lbs.",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 2,
+      "pokeIllustrator": "Hasuno",
+      "pokeRarity": "D2",
+      "pokeFlavour": "After a piece of seaweed merged with debris from a sunken ship, it was reborn as this ghost Pokemon.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 10,
       "pokeName": "Ponyta",
-      "pokeRarity": "D1",
-      "pokeType": "FIRE",
       "imageUrl": "10-Ponyta-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 60,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 11,
       "pokeName": "Rapidash",
-      "pokeRarity": "D2",
-      "pokeType": "FIRE",
       "imageUrl": "11-Rapidash-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Ponyta",
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 12,
       "pokeName": "Magmar",
-      "pokeRarity": "D2",
-      "pokeType": "FIRE",
       "imageUrl": "12-Magmar-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 80,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 2,
+      "pokeRarity": "D2",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 13,
       "pokeName": "Larvesta",
-      "pokeRarity": "D1",
-      "pokeType": "FIRE",
       "imageUrl": "13-Larvesta-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 80,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 2,
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 14,
       "pokeName": "Volcarona",
-      "pokeRarity": "D3",
-      "pokeType": "FIRE",
       "imageUrl": "14-Volcarona-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Larvesta",
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 2,
+      "pokeRarity": "D3",
+      "pokePrint": "HOLO",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 15,
       "pokeName": "Salandit",
-      "pokeRarity": "D1",
-      "pokeType": "FIRE",
       "imageUrl": "15-Salandit-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 60,
+      "pokeType": "FIRE",
+      "pokeDesc": "NO. 757 Toxic Lizard Pokemon HT: 2' WT: 10.6 lbs.",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1",
+      "pokeFlavour": "It taunts its prey and lures them into narrow, rocky areas where it then sprays them with toxic gas to make them dizzy and take them down.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 16,
       "pokeName": "Salazzle",
-      "pokeRarity": "D1",
-      "pokeType": "FIRE",
       "imageUrl": "16-Salazzle-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Salandit",
+      "pokeHp": 80,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 17,
       "pokeName": "Magikarp",
-      "pokeRarity": "D1",
-      "pokeType": "WATER",
       "imageUrl": "17-Magikarp-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 30,
+      "pokeType": "WATER",
+      "pokeDesc": "NO. 0129 Fish Pokemon HT: 2'11\" WT: 22 lbs.",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1",
+      "pokeFlavour": "An underpowered pathetic Pokemon. It may jump high on rare occasions but never more than 7 feet.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 18,
       "pokeName": "Gyarados ex",
-      "pokeRarity": "D4",
-      "pokeType": "WATER",
       "imageUrl": "18-Gyarados-ex-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Magikarp",
+      "pokeHp": 180,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 3,
+      "pokeIllustrator": "PLANETA CG Works",
+      "pokeRarity": "D4",
+      "pokePrint": "EX",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 19,
       "pokeName": "Vaporeon",
-      "pokeRarity": "D3",
-      "pokeType": "WATER",
       "imageUrl": "19-Vaporeon-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Eevee",
+      "pokeHp": 120,
+      "pokeType": "WATER",
+      "pokeDesc": "NO. 0134 Bubble Jet Pokemon HT: 3'3\" WT: 63.9 lbs.",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 2,
+      "pokeRarity": "D3",
+      "pokePrint": "HOLO",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 20,
       "pokeName": "Finneon",
-      "pokeRarity": "D1",
-      "pokeType": "WATER",
       "imageUrl": "20-Finneon-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 60,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeIllustrator": "sui",
+      "pokeRarity": "D1",
+      "pokeFlavour": "The line running down its side can store sunlight. It shines vividly at night.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 21,
       "pokeName": "Lumineon",
-      "pokeRarity": "D2",
-      "pokeType": "WATER",
       "imageUrl": "21-Lumineon-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Finneon",
+      "pokeHp": 80,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeIllustrator": "Sekio",
+      "pokeRarity": "D2",
+      "pokeFlavour": "With its shining light, it lures its prey close. However, the light also happens to attract ferocious fish Pokemon-its natural predators.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 22,
       "pokeName": "Chewtle",
-      "pokeRarity": "D1",
-      "pokeType": "WATER",
       "imageUrl": "22-Chewtle-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 80,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 2,
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 23,
       "pokeName": "Drednaw",
-      "pokeRarity": "D2",
-      "pokeType": "WATER",
       "imageUrl": "23-Drednaw-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Chewtle",
+      "pokeHp": 130,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 3,
+      "pokeRarity": "D2",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 24,
       "pokeName": "Cramorant",
-      "pokeRarity": "D1",
-      "pokeType": "WATER",
       "imageUrl": "24-Cramorant-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 80,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "Jerky",
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 25,
       "pokeName": "Pikachu",
-      "pokeRarity": "D1",
-      "pokeType": "LIGHTNING",
       "imageUrl": "25-Pikachu-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 0,
+      "pokeHp": 60,
+      "pokeType": "LIGHTNING",
+      "pokeDesc": "NO. 0025 Mouse Pokemon HT: 1'14\" WT: 13.2 lbs.",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "Nooyo Kimuro",
+      "pokeRarity": "D1",
+      "pokeFlavour": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 26,
       "pokeName": "Raichu",
-      "pokeRarity": "D3",
-      "pokeType": "LIGHTNING",
       "imageUrl": "26-Raichu-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Pikachu",
+      "pokeHp": 120,
+      "pokeType": "LIGHTNING",
+      "pokeDesc": "NO. 0026 Mouse Pokemon HT: 2'7\" WT: 66.1 lbs.",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 2,
+      "pokeIllustrator": "hod",
+      "pokeRarity": "D3",
+      "pokeFlavour": "Its tail discharges electricity into the ground, protecting it from getting shocked.",
+      "pokePrint": "HOLO",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -258,13 +389,17 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 29,
       "pokeName": "Galvantula",
-      "pokeRarity": "D2",
-      "pokeType": "LIGHTNING",
       "imageUrl": "29-Galvantula-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Joltik",
+      "pokeHp": 80,
+      "pokeType": "LIGHTNING",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -312,13 +447,16 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 35,
       "pokeName": "Beheeyem",
-      "pokeRarity": "D2",
-      "pokeType": "PSYCHIC",
       "imageUrl": "35-Beheeyem-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Elgyem",
+      "pokeHp": 90,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRarity": "D2",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -330,22 +468,29 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 37,
       "pokeName": "Floette",
-      "pokeRarity": "D1",
-      "pokeType": "PSYCHIC",
       "imageUrl": "37-Floette-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Flabebe",
+      "pokeHp": 70,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "METAL",
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 38,
       "pokeName": "Florges",
-      "pokeRarity": "D2",
-      "pokeType": "PSYCHIC",
       "imageUrl": "38-Florges-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Floette",
+      "pokeHp": 120,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "METAL",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -357,13 +502,16 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 40,
       "pokeName": "Slurpuff",
-      "pokeRarity": "D1",
-      "pokeType": "PSYCHIC",
       "imageUrl": "40-Slurpuff-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Swirlix",
+      "pokeHp": 100,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "METAL",
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -375,13 +523,17 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 42,
       "pokeName": "Primeape",
-      "pokeRarity": "D1",
-      "pokeType": "FIGHTING",
       "imageUrl": "42-Primeape-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Mankey",
+      "pokeHp": 80,
+      "pokeType": "FIGHTING",
+      "pokeWeakness": "PSYCHIC",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -393,22 +545,31 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 44,
       "pokeName": "Graveler",
-      "pokeRarity": "D2",
-      "pokeType": "FIGHTING",
       "imageUrl": "44-Graveler-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Geodude",
+      "pokeHp": 100,
+      "pokeType": "FIGHTING",
+      "pokeWeakness": "GRASS",
+      "pokeRetreat": 3,
+      "pokeRarity": "D2",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 45,
       "pokeName": "Golem",
-      "pokeRarity": "D3",
-      "pokeType": "FIGHTING",
       "imageUrl": "45-Golem-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Graveler",
+      "pokeHp": 160,
+      "pokeType": "FIGHTING",
+      "pokeWeakness": "GRASS",
+      "pokeRetreat": 3,
+      "pokeRarity": "D3",
+      "pokePrint": "HOLO",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -447,13 +608,17 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 50,
       "pokeName": "Weezing",
-      "pokeRarity": "D2",
-      "pokeType": "DARKNESS",
       "imageUrl": "50-Weezing-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Koffing",
+      "pokeHp": 110,
+      "pokeType": "DARKNESS",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 3,
+      "pokeRarity": "D2",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -465,13 +630,17 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 52,
       "pokeName": "Liepard",
-      "pokeRarity": "D1",
-      "pokeType": "DARKNESS",
       "imageUrl": "52-Liepard-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Purloin",
+      "pokeHp": 90,
+      "pokeType": "DARKNESS",
+      "pokeWeakness": "GRASS",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -483,22 +652,30 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 54,
       "pokeName": "Whirlipede",
-      "pokeRarity": "D1",
-      "pokeType": "DARKNESS",
       "imageUrl": "54-Whirlipede-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Venipede",
+      "pokeHp": 90,
+      "pokeType": "DARKNESS",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 2,
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 55,
       "pokeName": "Scolipede",
-      "pokeRarity": "D2",
-      "pokeType": "DARKNESS",
       "imageUrl": "55-Scolipede-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Whirlipede",
+      "pokeHp": 140,
+      "pokeType": "DARKNESS",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 2,
+      "pokeRarity": "D2",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -519,22 +696,32 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 58,
       "pokeName": "Pidgeotto",
-      "pokeRarity": "D1",
-      "pokeType": "COLORLESS",
       "imageUrl": "58-Pidgeotto-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Pidgey",
+      "pokeHp": 90,
+      "pokeType": "COLORLESS",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 59,
       "pokeName": "Pidgeot ex",
-      "pokeRarity": "D4",
-      "pokeType": "COLORLESS",
       "imageUrl": "59-Pidgeot-ex-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Pidgeotto",
+      "pokeHp": 170,
+      "pokeType": "COLORLESS",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "PLANETA CG Works",
+      "pokeRarity": "D4",
+      "pokePrint": "EX",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -645,13 +832,18 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 72,
       "pokeName": "Vaporeon",
-      "pokeRarity": "S1",
-      "pokeType": "WATER",
       "imageUrl": "72-Vaporeon-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Eevee",
+      "pokeHp": 120,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 2,
+      "pokeRarity": "S1",
+      "pokePrint": "HOLO",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -681,13 +873,19 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 76,
       "pokeName": "Gyarados ex",
-      "pokeRarity": "S2",
-      "pokeType": "WATER",
       "imageUrl": "76-Gyarados-ex-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Magikarp",
+      "pokeHp": 180,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 3,
+      "pokeIllustrator": "PLANETA CG Works",
+      "pokeRarity": "S2",
+      "pokePrint": "EX",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -699,22 +897,33 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 78,
       "pokeName": "Aerodactyl ex",
-      "pokeRarity": "S2",
-      "pokeType": "FIGHTING",
       "imageUrl": "78-Aerodactyl-ex-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Old Amber",
+      "pokeHp": 140,
+      "pokeType": "FIGHTING",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "PLANETA CG Works",
+      "pokeRarity": "S2",
+      "pokePrint": "EX",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 79,
       "pokeName": "Pidgeot ex",
-      "pokeRarity": "S2",
-      "pokeType": "COLORLESS",
       "imageUrl": "79-Pidgeot-ex-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Pidgeotto",
+      "pokeType": "COLORLESS",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeIllustrator": "PLANETA CG Works",
+      "pokeRarity": "S2",
+      "pokePrint": "EX",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",
@@ -753,13 +962,18 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
       "number": 84,
       "pokeName": "Aerodactyl ex",
-      "pokeRarity": "S2",
-      "pokeType": "FIGHTING",
       "imageUrl": "84-Aerodactyl-ex-Mythical-Island.jpg",
-      "packId": null
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Old Amber",
+      "pokeHp": 140,
+      "pokeType": "FIGHTING",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "S2",
+      "pokePrint": "EX",
+      "cardSet": "MYTHICAL_ISLAND"
     },
     {
       "cardSet": "MYTHICAL_ISLAND",

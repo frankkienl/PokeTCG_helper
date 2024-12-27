@@ -44,6 +44,7 @@ data class PokeCard(
         stringBuilder += "{\n"
         stringBuilder += "\"number\": $number,\n"
         stringBuilder += "\"pokeName\": \"$pokeName\",\n"
+        stringBuilder += "\"imageUrl\": \"$imageUrl\",\n"
         pokeStage?.let {
             stringBuilder += "\"pokeStage\": $pokeStage,\n"
         }
@@ -57,7 +58,7 @@ data class PokeCard(
             stringBuilder += "\"pokeType\": \"$pokeType\",\n"
         }
         pokeDesc?.let {
-            stringBuilder += "\"pokeDesc\": \"$pokeDesc\",\n"
+            stringBuilder += "\"pokeDesc\": \"${pokeDesc.replace("\"","\\\"")}\",\n"
         }
         pokeWeakness?.let {
             stringBuilder += "\"pokeWeakness\": \"$pokeWeakness\",\n"
@@ -72,7 +73,7 @@ data class PokeCard(
             stringBuilder += "\"pokeRarity\": \"$pokeRarity\",\n"
         }
         pokeFlavour?.let {
-            stringBuilder += "\"pokeFlavour\": \"$pokeFlavour\",\n"
+            stringBuilder += "\"pokeFlavour\": \"${pokeFlavour.replace("\"","\\\"")}\",\n"
         }
         pokePrint?.let {
             stringBuilder += "\"pokePrint\": \"$pokePrint\",\n"
@@ -84,7 +85,7 @@ data class PokeCard(
             stringBuilder += "\"cardSet\": \"$it\",\n"
         }
         stringBuilder = stringBuilder.removeSuffix(",\n")
-        stringBuilder += "\n}"
+        stringBuilder += "\n},"
         return stringBuilder
     }
 }

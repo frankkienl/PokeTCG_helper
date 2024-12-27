@@ -18,15 +18,22 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeCardSet
+import org.jetbrains.compose.resources.ExperimentalResourceApi
+import org.jetbrains.compose.resources.MissingResourceException
+import org.jetbrains.compose.resources.decodeToImageBitmap
+import poketcg_helper.composeapp.generated.resources.Res
 
 /*
  * Semi-hidden feature; Edit cards
  */
+@OptIn(ExperimentalResourceApi::class)
 @Composable
 fun CardEditScreen(
     navController: NavController,
@@ -38,6 +45,19 @@ fun CardEditScreen(
     val ogCardSet = appState.cardSets.find { someSet -> someSet.codeName == ogCardSetCodeName }?: return
     val ogCard = ogCardSet.cards.find { someCard -> someCard.number == ogCardNumber } ?: return
     var newCard by remember { mutableStateOf<PokeCard>(ogCard.copy()) }
+    val cardHeight = 512.dp
+    var imageBitmap by remember {
+        mutableStateOf<ImageBitmap?>(null)
+    }
+    LaunchedEffect(ogCard) {
+        try {
+            val bytes = Res.readBytes("files/card_images/${ogCardSet.codeName}/${ogCard.imageUrl}")
+            imageBitmap = bytes.decodeToImageBitmap()
+        } catch (missingResourceException: MissingResourceException) {
+            println("PokeCardDialog: Failed to load image " + missingResourceException.message)
+            //Ignore; No image it is.
+        }
+    }
     Scaffold(topBar = {
         TopAppBar(
             title = { Text("Poke TCG Helper - Edit card") },
@@ -48,34 +68,46 @@ fun CardEditScreen(
             },
         )
     }) {
-        Column(modifier = Modifier.scrollable(rememberScrollState(), Orientation.Vertical)) {
-            Text("Edit card")
-            SimpleEditableRow("number", ogCard.number.toString(), newCard.number.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.number;newCard = newCard.copy(number = newInt) })
-            SimpleEditableRow("pokeName", ogCard.pokeName, newCard.pokeName, { newCard = newCard.copy(pokeName = it ?: "") })
-            SimpleEditableRow("imageUrl", ogCard.imageUrl, newCard.imageUrl, { newCard = newCard.copy(imageUrl = it ?: "") })
-            SimpleEditableRow("pokeStage", ogCard.pokeStage.toString(), newCard.pokeStage.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.pokeStage;newCard = newCard.copy(pokeStage = newInt) })
-            SimpleEditableRow("pokeEvolvesFrom", ogCard.pokeEvolvesFrom, newCard.pokeEvolvesFrom, { newCard = newCard.copy(pokeEvolvesFrom = it) })
-            SimpleEditableRow("pokeHp", ogCard.pokeHp.toString(), newCard.pokeHp.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.pokeHp;newCard = newCard.copy(pokeHp = newInt) })
-            SimpleEditableRow("pokeType", ogCard.pokeType, newCard.pokeType, { newCard = newCard.copy(pokeType = it) })
-            SimpleEditableRow("pokeDesc", ogCard.pokeDesc, newCard.pokeDesc, { newCard = newCard.copy(pokeDesc = it) })
-            SimpleEditableRow("pokeWeakness", ogCard.pokeWeakness, newCard.pokeWeakness, { newCard = newCard.copy(pokeWeakness = it) })
-            SimpleEditableRow("pokeRetreat", ogCard.pokeRetreat.toString(), newCard.pokeRetreat.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.pokeRetreat;newCard = newCard.copy(pokeRetreat = newInt) })
-            SimpleEditableRow("pokeIllustrator", ogCard.pokeIllustrator, newCard.pokeIllustrator, { newCard = newCard.copy(pokeIllustrator = it) })
-            SimpleEditableRow("pokeRarity", ogCard.pokeRarity, newCard.pokeRarity, { newCard = newCard.copy(pokeRarity = it) })
-            SimpleEditableRow("pokeFlavour", ogCard.pokeFlavour, newCard.pokeFlavour, { newCard = newCard.copy(pokeFlavour = it) })
-            SimpleEditableRow("pokePrint", ogCard.pokePrint, newCard.pokePrint, { newCard = newCard.copy(pokePrint = it) })
-
-            Button(onClick = {
-                println(newCard.toJsonString())
-            }) {
-                Text("Print JSON to STDOUT")
+        Row {
+            Column {
+                imageBitmap?.let {
+                    Image(
+                        it,
+                        modifier = Modifier.height(cardHeight).padding(8.dp),
+                        contentScale = ContentScale.Fit,
+                        contentDescription = null
+                    )
+                }
             }
+            Column(modifier = Modifier.scrollable(rememberScrollState(), Orientation.Vertical)) {
+                Text("Edit card")
+                SimpleEditableRow("number", ogCard.number.toString(), newCard.number.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.number;newCard = newCard.copy(number = newInt) })
+                SimpleEditableRow("pokeName", ogCard.pokeName, newCard.pokeName, { newCard = newCard.copy(pokeName = it ?: "") })
+                SimpleEditableRow("imageUrl", ogCard.imageUrl, newCard.imageUrl, { newCard = newCard.copy(imageUrl = it ?: "") })
+                SimpleEditableRow("pokeStage", ogCard.pokeStage.toString(), newCard.pokeStage.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.pokeStage;newCard = newCard.copy(pokeStage = newInt) })
+                SimpleEditableRow("pokeEvolvesFrom", ogCard.pokeEvolvesFrom, newCard.pokeEvolvesFrom, { newCard = newCard.copy(pokeEvolvesFrom = it) })
+                SimpleEditableRow("pokeHp", ogCard.pokeHp.toString(), newCard.pokeHp.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.pokeHp;newCard = newCard.copy(pokeHp = newInt) })
+                SimpleEditableRow("pokeType", ogCard.pokeType, newCard.pokeType, { newCard = newCard.copy(pokeType = it) })
+                SimpleEditableRow("pokeDesc", ogCard.pokeDesc, newCard.pokeDesc, { newCard = newCard.copy(pokeDesc = it) })
+                SimpleEditableRow("pokeWeakness", ogCard.pokeWeakness, newCard.pokeWeakness, { newCard = newCard.copy(pokeWeakness = it) })
+                SimpleEditableRow("pokeRetreat", ogCard.pokeRetreat.toString(), newCard.pokeRetreat.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.pokeRetreat;newCard = newCard.copy(pokeRetreat = newInt) })
+                SimpleEditableRow("pokeIllustrator", ogCard.pokeIllustrator, newCard.pokeIllustrator, { newCard = newCard.copy(pokeIllustrator = it) })
+                SimpleEditableRow("pokeRarity", ogCard.pokeRarity, newCard.pokeRarity, { newCard = newCard.copy(pokeRarity = it) })
+                SimpleEditableRow("pokeFlavour", ogCard.pokeFlavour, newCard.pokeFlavour, { newCard = newCard.copy(pokeFlavour = it) })
+                SimpleEditableRow("pokePrint", ogCard.pokePrint, newCard.pokePrint, { newCard = newCard.copy(pokePrint = it) })
 
-            Spacer(modifier = Modifier.height(16.dp))
-            SelectionContainer {
-                Text(newCard.toJsonString())
+                Button(onClick = {
+                    println(newCard.toJsonString())
+                }) {
+                    Text("Print JSON to STDOUT")
+                }
+
+                Spacer(modifier = Modifier.height(16.dp))
+                SelectionContainer {
+                    Text(newCard.toJsonString())
+                }
+                Spacer(modifier = Modifier.height(16.dp))
             }
-            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }

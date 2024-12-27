@@ -98,13 +98,17 @@
       "imageUrl": "11-Meowth.png"
     },
     {
-      "cardSet": "PROMO_A",
       "number": 12,
       "pokeName": "Butterfree",
-      "pokeRarity": "PROMO",
+      "imageUrl": "12-Butterfree.png",
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Metapod",
+      "pokeHp": 120,
       "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRarity": "PROMO",
       "pokePrint": "HOLO",
-      "imageUrl": "12-Butterfree.png"
+      "cardSet": "PROMO_A"
     },
     {
       "cardSet": "PROMO_A",
@@ -140,30 +144,44 @@
       "imageUrl": "16-Mankey.png"
     },
     {
-      "cardSet": "PROMO_A",
       "number": 17,
       "pokeName": "Venusaur",
-      "pokeRarity": "PROMO",
+      "imageUrl": "17-Venusaur.png",
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Ivysaur",
+      "pokeHp": 160,
       "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 3,
+      "pokeRarity": "PROMO",
       "pokePrint": "FULL_ART",
-      "imageUrl": "17-Venusaur.png"
+      "cardSet": "PROMO_A"
     },
     {
-      "cardSet": "PROMO_A",
       "number": 18,
       "pokeName": "Greninja",
-      "pokeRarity": "PROMO",
+      "imageUrl": "18-Greninja.png",
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Frogadier",
       "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "PROMO",
       "pokePrint": "HOLO",
-      "imageUrl": "18-Greninja.png"
+      "cardSet": "PROMO_A"
     },
     {
-      "cardSet": "PROMO_A",
       "number": 19,
       "pokeName": "Haunter",
-      "pokeRarity": "PROMO",
+      "imageUrl": "19-Haunter.png",
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Gastly",
+      "pokeHp": 70,
       "pokeType": "PSYCHIC",
-      "imageUrl": "19-Haunter.png"
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 1,
+      "pokeRarity": "PROMO",
+      "cardSet": "PROMO_A"
     },
     {
       "cardSet": "PROMO_A",
