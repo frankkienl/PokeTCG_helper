@@ -185,7 +185,7 @@ fun PokeTextRow(
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             //Key
-            Text(key, modifier = Modifier.width(100.dp).fillMaxHeight().background(Color.LightGray).padding(start = 8.dp))
+            Text(key, modifier = Modifier.width(120.dp).fillMaxHeight().background(Color.LightGray).padding(start = 8.dp))
             //Value (text and image are both optional; But we expect at least one of them)
             Row(modifier = Modifier.weight(1f).padding(start = 8.dp), verticalAlignment = Alignment.CenterVertically) {
                 imageBitmap?.let {

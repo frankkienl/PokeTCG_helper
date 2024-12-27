@@ -6,6 +6,9 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ExitToApp
+import androidx.compose.material.icons.filled.ExitToApp
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -13,11 +16,15 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
+import io.ktor.http.*
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeCardAmount
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokePackComposable
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeRarityComposable
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeTextRow
+import nl.frankkie.poketcghelper.getCurrentPlatform
+import nl.frankkie.poketcghelper.isOpenInBrowserSupported
 import nl.frankkie.poketcghelper.model.*
+import nl.frankkie.poketcghelper.tryToOpenInBrowser
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.MissingResourceException
 import org.jetbrains.compose.resources.decodeToImageBitmap
@@ -96,6 +103,9 @@ fun PokeCardDialog2(
                     }
                     pokeCard.pokeStage?.let {
                         PokeTextRow("Stage", PokeStage.entries[it].displayName)
+                        if (pokeCard.pokeStage > 0) {
+                            PokeTextRow("Evolves from", pokeCard.pokeEvolvesFrom ?: "UNKNOWN")
+                        }
                     }
                     pokeCard.pokeType?.let {
                         val someType = PokeType.valueOf(it)
@@ -116,9 +126,26 @@ fun PokeCardDialog2(
                         val somePrint = PokePrint.valueOf(it)
                         PokeTextRow("Print", somePrint.displayName)
                     }
+
+                    //Bulbapedia
+                    if (isOpenInBrowserSupported(getCurrentPlatform())) {
+                        OutlinedButton(onClick = { openOnBulbapedia(pokeCard.pokeName, pokeCard.number) }) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Text("Open on Bulbapedia")
+                                Spacer(Modifier.width(8.dp))
+                                Icon(Icons.AutoMirrored.Filled.ExitToApp, contentDescription = null)
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+fun openOnBulbapedia(pokeName: String, pokeNumber: Int) {
+    var nameToOpen = pokeName.replace(" ", "_")
+    nameToOpen += "_(Genetic_Apex_${pokeNumber})"
+    tryToOpenInBrowser("https://bulbapedia.bulbagarden.net/wiki/${nameToOpen}")
 }
 
