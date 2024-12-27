@@ -1,7 +1,9 @@
 package nl.frankkie.poketcghelper.compose.homescreen
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
@@ -19,7 +21,7 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
 
-@OptIn(ExperimentalResourceApi::class)
+@OptIn(ExperimentalResourceApi::class, ExperimentalFoundationApi::class)
 @Composable
 fun PokeCardComposableNormalMode(
     cardSet: PokeCardSet,
@@ -27,7 +29,8 @@ fun PokeCardComposableNormalMode(
     isLoggedIn: Boolean,
     isOwned: Boolean,
     cardPlaceholderImage: ImageBitmap? = null,
-    onClick: (PokeCardSet, PokeCard) -> Unit
+    onClick: (PokeCardSet, PokeCard) -> Unit,
+    onLongClick: (PokeCardSet, PokeCard) -> Unit = { _, _ -> }
 ) {
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
@@ -58,8 +61,7 @@ fun PokeCardComposableNormalMode(
             },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        //Box(modifier = Modifier.heightIn(50.dp, 150.dp)) { // <-- THIS CAUSE NON-SMOOTH SCROLLING !!!
-        Box(modifier = Modifier.height(100.dp)) { // <-- THIS IS BETTER
+        Box(modifier = Modifier.height(100.dp)) {
             //if cards image is not loaded yet, show placeholder image instead
             if (imageBitmap == null) {
                 cardPlaceholderImage?.let {
@@ -101,7 +103,7 @@ fun PokeCardComposableNormalMode(
                 }
             }
         }
-        Text(pokeCard.number.toString())
+        Text(pokeCard.number.toString(), modifier = Modifier.combinedClickable(onClick = { onClick(cardSet, pokeCard) }, onLongClick = { onLongClick(cardSet, pokeCard) }))
         //Text(pokeCard.pokeName)
         Text(pokeCard.packId ?: "", fontSize = 10.sp)
     }

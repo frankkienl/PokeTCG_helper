@@ -4,10 +4,13 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.toRoute
 import kotlinx.serialization.Serializable
 import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.compose.homescreen.HomeScreen
+import nl.frankkie.poketcghelper.model.PokeCard
+import nl.frankkie.poketcghelper.model.PokeCardSet
 
 // Type-Safe navigation
 // https://developer.android.com/guide/navigation/design/type-safety
@@ -22,6 +25,9 @@ object Routes {
 
     @Serializable
     object AnalyticsScreen
+
+    @Serializable
+    data class CardEditScreen(val cardSetCodeName: String, val cardNumber: Int)
 }
 
 @Composable
@@ -35,6 +41,10 @@ fun createNavGraph(navController: NavHostController, appViewModel: AppViewModel,
         }
         composable<Routes.AnalyticsScreen> {
             AnalyticsScreen(navController, appViewModel)
+        }
+        composable<Routes.CardEditScreen> { backStackEntry ->
+            val data = backStackEntry.toRoute<Routes.CardEditScreen>()
+            CardEditScreen(navController, appViewModel, data.cardSetCodeName, data.cardNumber)
         }
     }
 }

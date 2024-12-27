@@ -31,6 +31,7 @@ fun GridOfCards(
     homeScreenViewModel: HomeScreenViewModel,
     filteredCards: Map<PokeCardSet, List<PokeCard>>,
     onCardClick: (PokeCardSet, PokeCard) -> Unit,
+    onCardLongClick: (PokeCardSet, PokeCard) -> Unit = { _, _ -> },
     cardAmountLoading: Boolean,
     onChangeAmountOwned: (PokeCardSet, PokeCard, Int) -> Unit,
 ) {
@@ -51,7 +52,6 @@ fun GridOfCards(
         modifier = Modifier.fillMaxSize(),
         columns = GridCells.Fixed(5),
     ) {
-
         cardSets.forEach { cardSet ->
             val filteredCardsForCardSet = filteredCards[cardSet] ?: emptyList()
             if (filteredCardsForCardSet.isNotEmpty()) {
@@ -100,7 +100,8 @@ fun GridOfCards(
                         cardPlaceholderImage = placeHolderImage,
                         onClick = { _set, _card ->
                             onCardClick(_set, _card)
-                        }
+                        },
+                        onLongClick = { _set, _card -> onCardLongClick(_set, _card) }
                     )
                 }
             }

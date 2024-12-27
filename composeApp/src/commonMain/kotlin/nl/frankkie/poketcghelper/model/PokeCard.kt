@@ -38,7 +38,56 @@ data class PokeCard(
     val pokePrint: String? = null,
     val packId: String? = null,
     var cardSet: String? = null,
-)
+) {
+    fun toJsonString(): String {
+        var stringBuilder = ""
+        stringBuilder += "{\n"
+        stringBuilder += "\"number\": $number,\n"
+        stringBuilder += "\"pokeName\": \"$pokeName\",\n"
+        pokeStage?.let {
+            stringBuilder += "\"pokeStage\": $pokeStage,\n"
+        }
+        pokeEvolvesFrom?.let {
+            stringBuilder += "\"pokeEvolvesFrom\": \"$pokeEvolvesFrom\",\n"
+        }
+        pokeHp?.let {
+            stringBuilder += "\"pokeHp\": $pokeHp,\n"
+        }
+        pokeType?.let {
+            stringBuilder += "\"pokeType\": \"$pokeType\",\n"
+        }
+        pokeDesc?.let {
+            stringBuilder += "\"pokeDesc\": \"$pokeDesc\",\n"
+        }
+        pokeWeakness?.let {
+            stringBuilder += "\"pokeWeakness\": \"$pokeWeakness\",\n"
+        }
+        pokeRetreat?.let {
+            stringBuilder += "\"pokeRetreat\": $pokeRetreat,\n"
+        }
+        pokeIllustrator?.let {
+            stringBuilder += "\"pokeIllustrator\": \"$it\",\n"
+        }
+        pokeRarity?.let {
+            stringBuilder += "\"pokeRarity\": \"$pokeRarity\",\n"
+        }
+        pokeFlavour?.let {
+            stringBuilder += "\"pokeFlavour\": \"$pokeFlavour\",\n"
+        }
+        pokePrint?.let {
+            stringBuilder += "\"pokePrint\": \"$pokePrint\",\n"
+        }
+        packId?.let {
+            stringBuilder += "\"packId\": \"$packId\",\n"
+        }
+        cardSet?.let {
+            stringBuilder += "\"cardSet\": \"$it\",\n"
+        }
+        stringBuilder = stringBuilder.removeSuffix(",\n")
+        stringBuilder += "\n}"
+        return stringBuilder
+    }
+}
 
 enum class PokeRarity(val codeName: String, val displayName: String, val imageUrl: String? = null, val symbolCount: Int? = null) {
     UNKNOWN(codeName = "UNKNOWN", displayName = "Unknown", imageUrl = null, symbolCount = 0), //0

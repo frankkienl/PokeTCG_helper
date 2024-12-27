@@ -25,7 +25,6 @@ import io.github.jan.supabase.auth.providers.builtin.Email
 import kotlinx.coroutines.launch
 
 /**
- * For future use;
  * If you log in,
  * you can save your list of owned cards,
  * and backup that up to the server.

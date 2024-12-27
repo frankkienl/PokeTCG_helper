@@ -57,6 +57,9 @@ fun HomeScreen(
                 onCardClick = { _cardSet, _card ->
                     homeScreenViewModel.showCardDialog(_cardSet, _card)
                 },
+                onCardLongClick = { _cardSet, _card ->
+                    navController.navigate(Routes.CardEditScreen(_cardSet.codeName, _card.number))
+                },
                 onChangeAmountOwned = { _cardSet, _card, _amount ->
                     rememberCoroutineScope.launch {
                         cardAmountLoading = true
@@ -117,7 +120,7 @@ fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, h
             IconButton(onClick = { rememberCoroutineScope.launch { appViewModel.refreshOwnedCards() } }) {
                 Icon(Icons.Filled.Refresh, contentDescription = "Refresh")
             }
-            if (appState.supabaseUserInfo!=null) {
+            if (appState.supabaseUserInfo != null) {
                 //Amount mode only available when logged in
                 if (homeScreenUiState.amountInputMode) {
                     IconButton(onClick = { homeScreenViewModel.setAmountInputMode(false) }) {

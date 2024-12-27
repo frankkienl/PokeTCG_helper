@@ -178,7 +178,8 @@ fun PokeTextRow(
     Card(
         modifier = Modifier
             .height(30.dp)
-            .width(350.dp)
+            .widthIn(350.dp)
+            .fillMaxWidth()
             .clip(RoundedCornerShape(30.dp))
             .border(1.dp, Color.Gray)
     ) {
