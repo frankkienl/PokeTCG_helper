@@ -8,15 +8,14 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ExitToApp
-import androidx.compose.material.icons.filled.ExitToApp
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
-import io.ktor.http.*
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeCardAmount
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokePackComposable
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeRarityComposable
@@ -42,7 +41,7 @@ fun PokeCardDialog2(
 ) {
     val pokeCard = cardDialogData.pokeCard
     val pokeCardSet = cardDialogData.pokeCardSet
-    val cardHeight = 350.dp
+    val cardHeight = 300.dp
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
     }
@@ -62,84 +61,126 @@ fun PokeCardDialog2(
                 .padding(8.dp),
             shape = RoundedCornerShape(8.dp),
         ) {
-            Row {
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    imageBitmap?.let {
-                        Image(
-                            it,
-                            modifier = Modifier.height(cardHeight).padding(8.dp),
-                            contentScale = ContentScale.Fit,
-                            contentDescription = null
-                        )
+            BoxWithConstraints {
+                println("maxWidth: $maxWidth; maxHeight: $maxHeight")
+                if (maxWidth <= 424.dp) {
+                    Column(
+                        modifier = Modifier.verticalScroll(rememberScrollState()),
+                        verticalArrangement = Arrangement.Center,
+                    ) {
+                        PokeCardDialog2_CardImagePart(imageBitmap, cardHeight, isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned, false)
+                        PokeCardDialog2_CardDetailsPart(pokeCard, pokeCardSet, false)
                     }
-                    PokeCardAmount(
-                        isLoggedIn = isLoggedIn,
-                        isAmountLoading = isAmountLoading,
-                        onChangeAmountOwned = onChangeAmountOwned,
-                        amountOwned = amountOwned,
-                    )
-                }
-                Column(
-                    modifier = Modifier.padding(8.dp).verticalScroll(rememberScrollState()),
-                    verticalArrangement = Arrangement.Center,
-                ) {
-                    Text(pokeCard.pokeName, style = MaterialTheme.typography.h4)
-                    PokeRarityComposable(pokeCard.pokeRarity)
-                    Spacer(modifier = Modifier.height(8.dp))
-                    pokeCard.pokeDesc?.let {
-                        Text(pokeCard.pokeDesc, style = MaterialTheme.typography.body2)
-                        Spacer(modifier = Modifier.height(8.dp))
-                    }
-                    pokeCard.pokeFlavour?.let {
-                        Text(pokeCard.pokeFlavour, style = MaterialTheme.typography.body2)
-                        Spacer(modifier = Modifier.height(8.dp))
-                    }
-                    pokeCard.packId?.let {
-                        PokePackComposable(pokeCardSet, pokeCard.packId)
-                        Spacer(modifier = Modifier.height(8.dp))
-                    }
-                    pokeCard.pokeIllustrator?.let {
-                        PokeTextRow("Illustrator", pokeCard.pokeIllustrator)
-                    }
-                    pokeCard.pokeStage?.let {
-                        PokeTextRow("Stage", PokeStage.entries[it].displayName)
-                        if (pokeCard.pokeStage > 0) {
-                            PokeTextRow("Evolves from", pokeCard.pokeEvolvesFrom ?: "UNKNOWN")
-                        }
-                    }
-                    pokeCard.pokeType?.let {
-                        val someType = PokeType.valueOf(it)
-                        PokeTextRow("Type", null, someType.imageUrl, someType.displayName)
-                    }
-                    pokeCard.pokeHp?.let {
-                        PokeTextRow("HP", it.toString())
-                    }
-                    pokeCard.pokeWeakness?.let {
-                        val someType = PokeType.valueOf(it)
-                        PokeTextRow("Weakness", "+20", someType.imageUrl, someType.displayName)
-                    }
-                    pokeCard.pokeRetreat?.let {
-                        val someType = PokeType.COLORLESS
-                        PokeTextRow("Retreat", "x${it}", someType.imageUrl, someType.displayName)
-                    }
-                    pokeCard.pokePrint?.let {
-                        val somePrint = PokePrint.valueOf(it)
-                        PokeTextRow("Print", somePrint.displayName)
-                    }
-
-                    //Bulbapedia
-                    if (isOpenInBrowserSupported(getCurrentPlatform())) {
-                        OutlinedButton(onClick = { openOnBulbapedia(pokeCard.pokeName, pokeCard.number) }) {
-                            Row(verticalAlignment = Alignment.CenterVertically) {
-                                Text("Open on Bulbapedia")
-                                Spacer(Modifier.width(8.dp))
-                                Icon(Icons.AutoMirrored.Filled.ExitToApp, contentDescription = null)
-                            }
-                        }
+                } else {
+                    Row {
+                        PokeCardDialog2_CardImagePart(imageBitmap, cardHeight, isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned, true)
+                        PokeCardDialog2_CardDetailsPart(pokeCard, pokeCardSet, true)
                     }
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun PokeCardDialog2_CardDetailsPart(pokeCard: PokeCard, pokeCardSet: PokeCardSet, isHorizontal: Boolean) {
+    Column(
+        modifier = if (isHorizontal) {
+            Modifier.padding(8.dp).verticalScroll(rememberScrollState())
+        } else {
+            Modifier.padding(8.dp)
+        },
+        verticalArrangement = Arrangement.Center,
+    ) {
+        Text(pokeCard.pokeName, style = MaterialTheme.typography.h4)
+        PokeRarityComposable(pokeCard.pokeRarity)
+        Spacer(modifier = Modifier.height(8.dp))
+        pokeCard.pokeDesc?.let {
+            Text(pokeCard.pokeDesc, style = MaterialTheme.typography.body2)
+            Spacer(modifier = Modifier.height(8.dp))
+        }
+        pokeCard.pokeFlavour?.let {
+            Text(pokeCard.pokeFlavour, style = MaterialTheme.typography.body2)
+            Spacer(modifier = Modifier.height(8.dp))
+        }
+        pokeCard.packId?.let {
+            PokePackComposable(pokeCardSet, pokeCard.packId)
+            Spacer(modifier = Modifier.height(8.dp))
+        }
+        pokeCard.pokeIllustrator?.let {
+            PokeTextRow("Illustrator", pokeCard.pokeIllustrator)
+        }
+        pokeCard.pokeStage?.let {
+            PokeTextRow("Stage", PokeStage.entries[it].displayName)
+            if (pokeCard.pokeStage > 0) {
+                PokeTextRow("Evolves from", pokeCard.pokeEvolvesFrom ?: "UNKNOWN")
+            }
+        }
+        pokeCard.pokeType?.let {
+            val someType = PokeType.valueOf(it)
+            PokeTextRow("Type", null, someType.imageUrl, someType.displayName)
+        }
+        pokeCard.pokeHp?.let {
+            PokeTextRow("HP", it.toString())
+        }
+        pokeCard.pokeWeakness?.let {
+            val someType = PokeType.valueOf(it)
+            PokeTextRow("Weakness", "+20", someType.imageUrl, someType.displayName)
+        }
+        pokeCard.pokeRetreat?.let {
+            val someType = PokeType.COLORLESS
+            PokeTextRow("Retreat", "x${it}", someType.imageUrl, someType.displayName)
+        }
+        pokeCard.pokePrint?.let {
+            val somePrint = PokePrint.valueOf(it)
+            PokeTextRow("Print", somePrint.displayName)
+        }
+
+        //Bulbapedia
+        if (isOpenInBrowserSupported(getCurrentPlatform())) {
+            OutlinedButton(onClick = { openOnBulbapedia(pokeCard.pokeName, pokeCard.number) }) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text("Open on Bulbapedia")
+                    Spacer(Modifier.width(8.dp))
+                    Icon(Icons.AutoMirrored.Filled.ExitToApp, contentDescription = null)
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun PokeCardDialog2_CardImagePart(
+    imageBitmap: ImageBitmap?,
+    cardHeight: Dp,
+    isLoggedIn: Boolean,
+    isAmountLoading: Boolean,
+    onChangeAmountOwned: (Int) -> Unit,
+    amountOwned: Int,
+    isHorizontal: Boolean
+) {
+    Column(
+        modifier = if (isHorizontal) {
+            Modifier
+        } else {
+            Modifier.fillMaxWidth()
+        },
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        imageBitmap?.let {
+            Image(
+                it,
+                modifier = Modifier.height(cardHeight).padding(8.dp),
+                contentScale = ContentScale.Fit,
+                contentDescription = null
+            )
+        }
+        PokeCardAmount(
+            isLoggedIn = isLoggedIn,
+            isAmountLoading = isAmountLoading,
+            onChangeAmountOwned = onChangeAmountOwned,
+            amountOwned = amountOwned,
+        )
     }
 }
 
