@@ -4,6 +4,7 @@ import nl.frankkie.poketcghelper.model.PokeCardSet
 import nl.frankkie.poketcghelper.model.PokePrint
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
+import kotlin.time.measureTime
 
 lateinit var cardSetNames: List<String>
 
@@ -17,7 +18,10 @@ suspend fun main() {
         doubleCheckData(it)
     }
 
-    findRelatedCards(cardSets)
+    val time = measureTime {
+        findRelatedCards(cardSets)
+    }
+    println("Related cards took $time")
 }
 
 fun doubleCheckData(pokeCardSet: PokeCardSet) {

@@ -1,0 +1,7537 @@
+[
+  {
+    "cardSet": "GENETIC_APEX",
+    "cards": [
+      {
+        "number": 1,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 227
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 2
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 3
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 4
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 251
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 2
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 3
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 4
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 251
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 17
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 227
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 22
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 3
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 4
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 251
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 17
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 2
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 227
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 22
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 3
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 4
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 251
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 17
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 2
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 227
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 22
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 5
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 6
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 7
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 12
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 6
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 7
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 12
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 5
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 7
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 12
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 6
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 5
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 8
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 9
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 10
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 9
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 10
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 8
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 10
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 9
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 8
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 11
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 12
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 13
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 12
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 228
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 13
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 13
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 12
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 228
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 14
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 15
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 15
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 14
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 16
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 17
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 18
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 19
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 20
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 19
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 20
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 18
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 20
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 19
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 18
+          }
+        ]
+      },
+      {
+        "number": 21,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 21
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 23
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 252
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 2
+          }
+        ]
+      },
+      {
+        "number": 22,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 23
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 252
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 2
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 69
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 21
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 1
+          }
+        ]
+      },
+      {
+        "number": 23,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 23
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 252
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 2
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 69
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 21
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 1
+          }
+        ]
+      },
+      {
+        "number": 24,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 24
+          }
+        ]
+      },
+      {
+        "number": 25,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 25
+          }
+        ]
+      },
+      {
+        "number": 26,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 26
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 229
+          }
+        ]
+      },
+      {
+        "number": 27,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 27
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 28
+          }
+        ]
+      },
+      {
+        "number": 28,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 28
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 27
+          }
+        ]
+      },
+      {
+        "number": 29,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 29
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 30
+          }
+        ]
+      },
+      {
+        "number": 30,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 30
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 29
+          }
+        ]
+      },
+      {
+        "number": 31,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 31
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 32
+          }
+        ]
+      },
+      {
+        "number": 32,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 32
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 31
+          }
+        ]
+      },
+      {
+        "number": 33,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 33
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 230
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 34
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 35
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 36
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 253
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 280
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 283
+          }
+        ]
+      },
+      {
+        "number": 34,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 34
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 35
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 36
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 253
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 280
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 283
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 33
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 230
+          }
+        ]
+      },
+      {
+        "number": 35,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 35
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 36
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 253
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 280
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 283
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 34
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 33
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 230
+          }
+        ]
+      },
+      {
+        "number": 36,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 35
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 36
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 253
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 280
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 283
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 34
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 33
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 230
+          }
+        ]
+      },
+      {
+        "number": 37,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 37
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 38
+          }
+        ]
+      },
+      {
+        "number": 38,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 38
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 37
+          }
+        ]
+      },
+      {
+        "number": 39,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 39
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 40
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 41
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 254
+          }
+        ]
+      },
+      {
+        "number": 40,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 40
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 41
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 254
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 39
+          }
+        ]
+      },
+      {
+        "number": 41,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 40
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 41
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 254
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 39
+          }
+        ]
+      },
+      {
+        "number": 42,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 42
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 10
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 43
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "number": 43,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 43
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 231
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 11
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 42
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 10
+          }
+        ]
+      },
+      {
+        "number": 44,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 44
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 12
+          }
+        ]
+      },
+      {
+        "number": 45,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          }
+        ]
+      },
+      {
+        "number": 46,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 46
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 47
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 255
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 274
+          }
+        ]
+      },
+      {
+        "number": 47,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 46
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 47
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 255
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 274
+          }
+        ]
+      },
+      {
+        "number": 48,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 48
+          }
+        ]
+      },
+      {
+        "number": 49,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 49
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 15
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 71
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 50
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "number": 50,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 50
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 16
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 49
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 15
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 71
+          }
+        ]
+      },
+      {
+        "number": 51,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 51
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 52
+          }
+        ]
+      },
+      {
+        "number": 52,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 52
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 51
+          }
+        ]
+      },
+      {
+        "number": 53,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 53
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 232
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 54
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 55
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 56
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 256
+          }
+        ]
+      },
+      {
+        "number": 54,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 54
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 55
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 56
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 256
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 53
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 232
+          }
+        ]
+      },
+      {
+        "number": 55,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 55
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 56
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 256
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 54
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 53
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 232
+          }
+        ]
+      },
+      {
+        "number": 56,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 55
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 56
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 256
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 54
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 53
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 232
+          }
+        ]
+      },
+      {
+        "number": 57,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 57
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 58
+          }
+        ]
+      },
+      {
+        "number": 58,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 58
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 57
+          }
+        ]
+      },
+      {
+        "number": 59,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 59
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 60
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 61
+          }
+        ]
+      },
+      {
+        "number": 60,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 60
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 61
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 59
+          }
+        ]
+      },
+      {
+        "number": 61,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 61
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 60
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 59
+          }
+        ]
+      },
+      {
+        "number": 62,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 62
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 63
+          }
+        ]
+      },
+      {
+        "number": 63,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 63
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 62
+          }
+        ]
+      },
+      {
+        "number": 64,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 64
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 65
+          }
+        ]
+      },
+      {
+        "number": 65,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 65
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 64
+          }
+        ]
+      },
+      {
+        "number": 66,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 66
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 67
+          }
+        ]
+      },
+      {
+        "number": 67,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 67
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 66
+          }
+        ]
+      },
+      {
+        "number": 68,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 68
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 69
+          }
+        ]
+      },
+      {
+        "number": 69,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 69
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 68
+          }
+        ]
+      },
+      {
+        "number": 70,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 70
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 71
+          }
+        ]
+      },
+      {
+        "number": 71,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 71
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 70
+          }
+        ]
+      },
+      {
+        "number": 72,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 72
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 73
+          }
+        ]
+      },
+      {
+        "number": 73,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 73
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 72
+          }
+        ]
+      },
+      {
+        "number": 74,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 74
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 75
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 76
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 257
+          }
+        ]
+      },
+      {
+        "number": 75,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 75
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 76
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 257
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 74
+          }
+        ]
+      },
+      {
+        "number": 76,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 75
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 76
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 257
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 74
+          }
+        ]
+      },
+      {
+        "number": 77,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 17
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 78
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 233
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 18
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 76
+          }
+        ]
+      },
+      {
+        "number": 78,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 78
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 233
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 18
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 76
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "number": 79,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 79
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 234
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 13
+          }
+        ]
+      },
+      {
+        "number": 80,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 80
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 19
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 72
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          }
+        ]
+      },
+      {
+        "number": 81,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 81
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 82
+          }
+        ]
+      },
+      {
+        "number": 82,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 82
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 81
+          }
+        ]
+      },
+      {
+        "number": 83,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 83
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 84
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 258
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 275
+          }
+        ]
+      },
+      {
+        "number": 84,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 83
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 84
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 258
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 275
+          }
+        ]
+      },
+      {
+        "number": 85,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 85
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 86
+          }
+        ]
+      },
+      {
+        "number": 86,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 86
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 85
+          }
+        ]
+      },
+      {
+        "number": 87,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 87
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 88
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 89
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 18
+          }
+        ]
+      },
+      {
+        "number": 88,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 88
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 89
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 18
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 87
+          }
+        ]
+      },
+      {
+        "number": 89,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 89
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 18
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 88
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 87
+          }
+        ]
+      },
+      {
+        "number": 90,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 90
+          }
+        ]
+      },
+      {
+        "number": 91,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 91
+          }
+        ]
+      },
+      {
+        "number": 92,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 92
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 93
+          }
+        ]
+      },
+      {
+        "number": 93,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 93
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 92
+          }
+        ]
+      },
+      {
+        "number": 94,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          }
+        ]
+      },
+      {
+        "number": 95,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          }
+        ]
+      },
+      {
+        "number": 96,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          }
+        ]
+      },
+      {
+        "number": 97,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 97
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 23
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 98
+          }
+        ]
+      },
+      {
+        "number": 98,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 98
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 97
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 23
+          }
+        ]
+      },
+      {
+        "number": 99,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 99
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 100
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 235
+          }
+        ]
+      },
+      {
+        "number": 100,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 100
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 235
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 99
+          }
+        ]
+      },
+      {
+        "number": 101,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 101
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 27
+          }
+        ]
+      },
+      {
+        "number": 102,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 102
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          }
+        ]
+      },
+      {
+        "number": 103,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 103
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 104
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 260
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 276
+          }
+        ]
+      },
+      {
+        "number": 104,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 103
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 104
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 260
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 276
+          }
+        ]
+      },
+      {
+        "number": 105,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 105
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 106
+          }
+        ]
+      },
+      {
+        "number": 106,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 106
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 105
+          }
+        ]
+      },
+      {
+        "number": 107,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 107
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 108
+          }
+        ]
+      },
+      {
+        "number": 108,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 108
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 107
+          }
+        ]
+      },
+      {
+        "number": 109,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 109
+          }
+        ]
+      },
+      {
+        "number": 110,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 110
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 111
+          }
+        ]
+      },
+      {
+        "number": 111,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 111
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 110
+          }
+        ]
+      },
+      {
+        "number": 112,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 112
+          }
+        ]
+      },
+      {
+        "number": 113,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 113
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 15
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 114
+          }
+        ]
+      },
+      {
+        "number": 114,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 114
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 113
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 15
+          }
+        ]
+      },
+      {
+        "number": 115,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 115
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 116
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 236
+          }
+        ]
+      },
+      {
+        "number": 116,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 116
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 236
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 115
+          }
+        ]
+      },
+      {
+        "number": 117,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 117
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 236
+          }
+        ]
+      },
+      {
+        "number": 118,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 118
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 237
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 119
+          }
+        ]
+      },
+      {
+        "number": 119,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 119
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 118
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 237
+          }
+        ]
+      },
+      {
+        "number": 120,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 120
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 121
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 19
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 122
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 123
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 261
+          }
+        ]
+      },
+      {
+        "number": 121,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 121
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 19
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 122
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 123
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 261
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 120
+          }
+        ]
+      },
+      {
+        "number": 122,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 122
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 123
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 261
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 277
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 121
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 19
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 120
+          }
+        ]
+      },
+      {
+        "number": 123,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 122
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 123
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 261
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 277
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 121
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 19
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 120
+          }
+        ]
+      },
+      {
+        "number": 124,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 124
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 125
+          }
+        ]
+      },
+      {
+        "number": 125,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 125
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 124
+          }
+        ]
+      },
+      {
+        "number": 126,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 126
+          }
+        ]
+      },
+      {
+        "number": 127,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 127
+          }
+        ]
+      },
+      {
+        "number": 128,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 128
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 129
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 262
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 282
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 285
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 9
+          }
+        ]
+      },
+      {
+        "number": 129,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 128
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 129
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 262
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 282
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 285
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 9
+          }
+        ]
+      },
+      {
+        "number": 130,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 130
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 131
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 132
+          }
+        ]
+      },
+      {
+        "number": 131,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 131
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 132
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 130
+          }
+        ]
+      },
+      {
+        "number": 132,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 132
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 131
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 130
+          }
+        ]
+      },
+      {
+        "number": 133,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 133
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 134
+          }
+        ]
+      },
+      {
+        "number": 134,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 134
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 133
+          }
+        ]
+      },
+      {
+        "number": 135,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 135
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 136
+          }
+        ]
+      },
+      {
+        "number": 136,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 136
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 135
+          }
+        ]
+      },
+      {
+        "number": 137,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 137
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 138
+          }
+        ]
+      },
+      {
+        "number": 138,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 138
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 137
+          }
+        ]
+      },
+      {
+        "number": 139,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 139
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 238
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 140
+          }
+        ]
+      },
+      {
+        "number": 140,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 140
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 139
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 238
+          }
+        ]
+      },
+      {
+        "number": 141,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 141
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 41
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 16
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 42
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 142
+          }
+        ]
+      },
+      {
+        "number": 142,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 142
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 42
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 141
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 41
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "number": 143,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 143
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 144
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 145
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 146
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 278
+          }
+        ]
+      },
+      {
+        "number": 144,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 144
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 145
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 146
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 278
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 143
+          }
+        ]
+      },
+      {
+        "number": 145,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 145
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 146
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 263
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 278
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 144
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 143
+          }
+        ]
+      },
+      {
+        "number": 146,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 145
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 146
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 263
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 278
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 144
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 143
+          }
+        ]
+      },
+      {
+        "number": 147,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 147
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 43
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 148
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 44
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 45
+          }
+        ]
+      },
+      {
+        "number": 148,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 148
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 44
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 149
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 147
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 43
+          }
+        ]
+      },
+      {
+        "number": 149,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 149
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 148
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 44
+          }
+        ]
+      },
+      {
+        "number": 150,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 150
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 20
+          }
+        ]
+      },
+      {
+        "number": 151,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 151
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 239
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 152
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 153
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 264
+          }
+        ]
+      },
+      {
+        "number": 152,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 152
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 153
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 264
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 151
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 239
+          }
+        ]
+      },
+      {
+        "number": 153,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 152
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 153
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 264
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 151
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 239
+          }
+        ]
+      },
+      {
+        "number": 154,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 154
+          }
+        ]
+      },
+      {
+        "number": 155,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 155
+          }
+        ]
+      },
+      {
+        "number": 156,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 156
+          }
+        ]
+      },
+      {
+        "number": 157,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 157
+          }
+        ]
+      },
+      {
+        "number": 158,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 158
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 159
+          }
+        ]
+      },
+      {
+        "number": 159,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 159
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 158
+          }
+        ]
+      },
+      {
+        "number": 160,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 160
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 161
+          }
+        ]
+      },
+      {
+        "number": 161,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 161
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 160
+          }
+        ]
+      },
+      {
+        "number": 162,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 162
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 163
+          }
+        ]
+      },
+      {
+        "number": 163,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 163
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 162
+          }
+        ]
+      },
+      {
+        "number": 164,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 164
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 165
+          }
+        ]
+      },
+      {
+        "number": 165,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 165
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 164
+          }
+        ]
+      },
+      {
+        "number": 166,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 166
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 167
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 168
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 240
+          }
+        ]
+      },
+      {
+        "number": 167,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 167
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 168
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 240
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 166
+          }
+        ]
+      },
+      {
+        "number": 168,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 168
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 240
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 167
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 166
+          }
+        ]
+      },
+      {
+        "number": 169,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 169
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 170
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 171
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 241
+          }
+        ]
+      },
+      {
+        "number": 170,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 170
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 171
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 241
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 169
+          }
+        ]
+      },
+      {
+        "number": 171,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 171
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 241
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 170
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 169
+          }
+        ]
+      },
+      {
+        "number": 172,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 172
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 173
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 242
+          }
+        ]
+      },
+      {
+        "number": 173,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 173
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 242
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 172
+          }
+        ]
+      },
+      {
+        "number": 174,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 174
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 175
+          }
+        ]
+      },
+      {
+        "number": 175,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 175
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 174
+          }
+        ]
+      },
+      {
+        "number": 176,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 176
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 49
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 177
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 243
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 50
+          }
+        ]
+      },
+      {
+        "number": 177,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 177
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 243
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 50
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 176
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 49
+          }
+        ]
+      },
+      {
+        "number": 178,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 178
+          }
+        ]
+      },
+      {
+        "number": 179,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 179
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 180
+          }
+        ]
+      },
+      {
+        "number": 180,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 180
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 179
+          }
+        ]
+      },
+      {
+        "number": 181,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 181
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 182
+          }
+        ]
+      },
+      {
+        "number": 182,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 182
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 181
+          }
+        ]
+      },
+      {
+        "number": 183,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 183
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 184
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 185
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 244
+          }
+        ]
+      },
+      {
+        "number": 184,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 184
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 185
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 244
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 183
+          }
+        ]
+      },
+      {
+        "number": 185,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 185
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 244
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 184
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 183
+          }
+        ]
+      },
+      {
+        "number": 186,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 186
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 57
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 187
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 58
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 188
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 245
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 59
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 79
+          }
+        ]
+      },
+      {
+        "number": 187,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 187
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 58
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 188
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 245
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 59
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 79
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 186
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 57
+          }
+        ]
+      },
+      {
+        "number": 188,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 188
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 245
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 59
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 79
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 187
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 58
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 186
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 57
+          }
+        ]
+      },
+      {
+        "number": 189,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 189
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 190
+          }
+        ]
+      },
+      {
+        "number": 190,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 190
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 189
+          }
+        ]
+      },
+      {
+        "number": 191,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 191
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 192
+          }
+        ]
+      },
+      {
+        "number": 192,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 192
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 191
+          }
+        ]
+      },
+      {
+        "number": 193,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 193
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 21
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 194
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 195
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 265
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 279
+          }
+        ]
+      },
+      {
+        "number": 194,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 194
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 195
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 265
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 279
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 193
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 21
+          }
+        ]
+      },
+      {
+        "number": 195,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 194
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 195
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 265
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 279
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 193
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 21
+          }
+        ]
+      },
+      {
+        "number": 196,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 196
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 246
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 11
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 197
+          }
+        ]
+      },
+      {
+        "number": 197,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 197
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 196
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 246
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "number": 198,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 198
+          }
+        ]
+      },
+      {
+        "number": 199,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 199
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 200
+          }
+        ]
+      },
+      {
+        "number": 200,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 200
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 199
+          }
+        ]
+      },
+      {
+        "number": 201,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 201
+          }
+        ]
+      },
+      {
+        "number": 202,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 202
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 10
+          }
+        ]
+      },
+      {
+        "number": 203,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 203
+          }
+        ]
+      },
+      {
+        "number": 204,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 204
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 60
+          }
+        ]
+      },
+      {
+        "number": 205,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 205
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 247
+          }
+        ]
+      },
+      {
+        "number": 206,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 80
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 102
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 19
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 72
+          }
+        ]
+      },
+      {
+        "number": 207,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 80
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 102
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 19
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 72
+          }
+        ]
+      },
+      {
+        "number": 208,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 80
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 102
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 19
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 72
+          }
+        ]
+      },
+      {
+        "number": 209,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 209
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 249
+          }
+        ]
+      },
+      {
+        "number": 210,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 210
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 46
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 78
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 84
+          }
+        ]
+      },
+      {
+        "number": 211,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 211
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 250
+          }
+        ]
+      },
+      {
+        "number": 212,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 212
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 213
+          }
+        ]
+      },
+      {
+        "number": 213,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 213
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 212
+          }
+        ]
+      },
+      {
+        "number": 214,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 214
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 215
+          }
+        ]
+      },
+      {
+        "number": 215,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 215
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 214
+          }
+        ]
+      },
+      {
+        "number": 227,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 227
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 2
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 3
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 4
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 251
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "number": 228,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 12
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 228
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 13
+          }
+        ]
+      },
+      {
+        "number": 229,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 26
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 229
+          }
+        ]
+      },
+      {
+        "number": 230,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 33
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 230
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 34
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 35
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 36
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 253
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 280
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 283
+          }
+        ]
+      },
+      {
+        "number": 231,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 43
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 231
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "number": 232,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 53
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 232
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 54
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 55
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 56
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 256
+          }
+        ]
+      },
+      {
+        "number": 233,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 78
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 233
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 18
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 76
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "number": 234,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 79
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 234
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 13
+          }
+        ]
+      },
+      {
+        "number": 235,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 100
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 235
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 99
+          }
+        ]
+      },
+      {
+        "number": 236,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 117
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 236
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 116
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 115
+          }
+        ]
+      },
+      {
+        "number": 237,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 118
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 237
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 119
+          }
+        ]
+      },
+      {
+        "number": 238,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 139
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 238
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 140
+          }
+        ]
+      },
+      {
+        "number": 239,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 151
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 239
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 152
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 153
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 264
+          }
+        ]
+      },
+      {
+        "number": 240,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 168
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 240
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 167
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 166
+          }
+        ]
+      },
+      {
+        "number": 241,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 171
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 241
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 170
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 169
+          }
+        ]
+      },
+      {
+        "number": 242,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 173
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 242
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 172
+          }
+        ]
+      },
+      {
+        "number": 243,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 177
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 243
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 50
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 176
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 49
+          }
+        ]
+      },
+      {
+        "number": 244,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 185
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 244
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 184
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 183
+          }
+        ]
+      },
+      {
+        "number": 245,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 188
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 245
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 59
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 79
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 187
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 58
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 186
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 57
+          }
+        ]
+      },
+      {
+        "number": 246,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 196
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 246
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 11
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 197
+          }
+        ]
+      },
+      {
+        "number": 247,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 205
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 247
+          }
+        ]
+      },
+      {
+        "number": 248,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 80
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 102
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 19
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 72
+          }
+        ]
+      },
+      {
+        "number": 249,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 209
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 249
+          }
+        ]
+      },
+      {
+        "number": 250,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 211
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 250
+          }
+        ]
+      },
+      {
+        "number": 251,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 3
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 4
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 251
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 17
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 2
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 227
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 22
+          }
+        ]
+      },
+      {
+        "number": 252,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 23
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 252
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 2
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 69
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 21
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 1
+          }
+        ]
+      },
+      {
+        "number": 253,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 35
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 36
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 253
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 280
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 283
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 34
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 33
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 230
+          }
+        ]
+      },
+      {
+        "number": 254,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 40
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 41
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 254
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 39
+          }
+        ]
+      },
+      {
+        "number": 255,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 46
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 47
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 255
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 274
+          }
+        ]
+      },
+      {
+        "number": 256,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 55
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 56
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 256
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 54
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 53
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 232
+          }
+        ]
+      },
+      {
+        "number": 257,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 75
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 76
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 257
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 74
+          }
+        ]
+      },
+      {
+        "number": 258,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 83
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 84
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 258
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 275
+          }
+        ]
+      },
+      {
+        "number": 259,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          }
+        ]
+      },
+      {
+        "number": 260,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 103
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 104
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 260
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 276
+          }
+        ]
+      },
+      {
+        "number": 261,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 122
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 123
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 261
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 277
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 121
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 19
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 120
+          }
+        ]
+      },
+      {
+        "number": 262,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 128
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 129
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 262
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 282
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 285
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 9
+          }
+        ]
+      },
+      {
+        "number": 263,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 145
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 146
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 263
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 278
+          }
+        ]
+      },
+      {
+        "number": 264,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 152
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 153
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 264
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 151
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 239
+          }
+        ]
+      },
+      {
+        "number": 265,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 194
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 195
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 265
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 279
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 193
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 21
+          }
+        ]
+      },
+      {
+        "number": 274,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 46
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 47
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 255
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 274
+          }
+        ]
+      },
+      {
+        "number": 275,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 83
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 84
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 258
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 275
+          }
+        ]
+      },
+      {
+        "number": 276,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 103
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 104
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 260
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 276
+          }
+        ]
+      },
+      {
+        "number": 277,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 122
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 123
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 261
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 277
+          }
+        ]
+      },
+      {
+        "number": 278,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 145
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 146
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 263
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 278
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 144
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 143
+          }
+        ]
+      },
+      {
+        "number": 279,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 194
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 195
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 265
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 279
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 193
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 21
+          }
+        ]
+      },
+      {
+        "number": 280,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 35
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 36
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 253
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 280
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 283
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 34
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 33
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 230
+          }
+        ]
+      },
+      {
+        "number": 281,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          }
+        ]
+      },
+      {
+        "number": 282,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 128
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 129
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 262
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 282
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 285
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 9
+          }
+        ]
+      },
+      {
+        "number": 283,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 35
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 36
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 253
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 280
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 283
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 34
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 33
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 230
+          }
+        ]
+      },
+      {
+        "number": 284,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          }
+        ]
+      },
+      {
+        "number": 285,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 128
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 129
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 262
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 282
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 285
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 9
+          }
+        ]
+      },
+      {
+        "number": 286,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 286
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 31
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 32
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 83
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 86
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "cardSet": "MYTHICAL_ISLAND",
+    "cards": [
+      {
+        "number": 1,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 21
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 23
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 252
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 2
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 23
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 252
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 2
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 69
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 21
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 1
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 3
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 75
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 85
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 4
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 5
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 6
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 5
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 6
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 4
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 6
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 70
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 5
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 4
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 7
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 8
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 8
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 7
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 9
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 42
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 10
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 43
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 43
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 231
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 11
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 42
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 10
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 44
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 12
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 13
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 14
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 14
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 13
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 49
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 15
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 71
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 50
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 50
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 16
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 49
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 15
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 71
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 17
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 78
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 233
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 18
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 76
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 78
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 233
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 18
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 76
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 80
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 19
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 72
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 20
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 21
+          }
+        ]
+      },
+      {
+        "number": 21,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 21
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 20
+          }
+        ]
+      },
+      {
+        "number": 22,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 22
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 23
+          }
+        ]
+      },
+      {
+        "number": 23,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 23
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 22
+          }
+        ]
+      },
+      {
+        "number": 24,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 24
+          }
+        ]
+      },
+      {
+        "number": 25,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          }
+        ]
+      },
+      {
+        "number": 26,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          }
+        ]
+      },
+      {
+        "number": 27,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 101
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 27
+          }
+        ]
+      },
+      {
+        "number": 28,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 28
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 29
+          }
+        ]
+      },
+      {
+        "number": 29,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 29
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 28
+          }
+        ]
+      },
+      {
+        "number": 30,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 30
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 73
+          }
+        ]
+      },
+      {
+        "number": 31,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 286
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 31
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 32
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 83
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 86
+          }
+        ]
+      },
+      {
+        "number": 32,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 286
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 31
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 32
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 83
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 86
+          }
+        ]
+      },
+      {
+        "number": 33,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "number": 34,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 34
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 35
+          }
+        ]
+      },
+      {
+        "number": 35,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 35
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 34
+          }
+        ]
+      },
+      {
+        "number": 36,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 36
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 37
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 38
+          }
+        ]
+      },
+      {
+        "number": 37,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 37
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 38
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 36
+          }
+        ]
+      },
+      {
+        "number": 38,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 38
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 37
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 36
+          }
+        ]
+      },
+      {
+        "number": 39,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 39
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 40
+          }
+        ]
+      },
+      {
+        "number": 40,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 40
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 39
+          }
+        ]
+      },
+      {
+        "number": 41,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 141
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 41
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 16
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 42
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 142
+          }
+        ]
+      },
+      {
+        "number": 42,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 142
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 42
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 141
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 41
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "number": 43,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 147
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 43
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 148
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 44
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 45
+          }
+        ]
+      },
+      {
+        "number": 44,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 148
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 44
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 149
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 147
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 43
+          }
+        ]
+      },
+      {
+        "number": 45,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 149
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 148
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 44
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 147
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 43
+          }
+        ]
+      },
+      {
+        "number": 46,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 210
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 46
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 78
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 84
+          }
+        ]
+      },
+      {
+        "number": 47,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 47
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 74
+          }
+        ]
+      },
+      {
+        "number": 48,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 48
+          }
+        ]
+      },
+      {
+        "number": 49,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 176
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 49
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 177
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 243
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 50
+          }
+        ]
+      },
+      {
+        "number": 50,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 177
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 243
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 50
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 176
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 49
+          }
+        ]
+      },
+      {
+        "number": 51,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 51
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 52
+          }
+        ]
+      },
+      {
+        "number": 52,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 52
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 51
+          }
+        ]
+      },
+      {
+        "number": 53,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 53
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 54
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 55
+          }
+        ]
+      },
+      {
+        "number": 54,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 54
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 55
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 53
+          }
+        ]
+      },
+      {
+        "number": 55,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 55
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 54
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 53
+          }
+        ]
+      },
+      {
+        "number": 56,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 56
+          }
+        ]
+      },
+      {
+        "number": 57,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 186
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 57
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 187
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 58
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 188
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 245
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 59
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 79
+          }
+        ]
+      },
+      {
+        "number": 58,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 187
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 58
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 188
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 245
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 59
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 79
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 186
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 57
+          }
+        ]
+      },
+      {
+        "number": 59,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 188
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 245
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 59
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 79
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 187
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 58
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 186
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 57
+          }
+        ]
+      },
+      {
+        "number": 60,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 204
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 60
+          }
+        ]
+      },
+      {
+        "number": 61,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 45
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 80
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 102
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 19
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 72
+          }
+        ]
+      },
+      {
+        "number": 62,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 62
+          }
+        ]
+      },
+      {
+        "number": 69,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 23
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 252
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 2
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 69
+          }
+        ]
+      },
+      {
+        "number": 70,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 6
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 70
+          }
+        ]
+      },
+      {
+        "number": 71,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 49
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 15
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 71
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 50
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "number": 72,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 80
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 19
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 72
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 206
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 207
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 208
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 248
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 61
+          }
+        ]
+      },
+      {
+        "number": 73,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 30
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 73
+          }
+        ]
+      },
+      {
+        "number": 74,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 47
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 74
+          }
+        ]
+      },
+      {
+        "number": 75,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 3
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 75
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 85
+          }
+        ]
+      },
+      {
+        "number": 76,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 78
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 233
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 18
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 76
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "number": 77,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 286
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 31
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 32
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 83
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 86
+          }
+        ]
+      },
+      {
+        "number": 78,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 210
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 46
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 78
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 84
+          }
+        ]
+      },
+      {
+        "number": 79,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 188
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 245
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 59
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 79
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 187
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 58
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 186
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 57
+          }
+        ]
+      },
+      {
+        "number": 83,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 286
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 31
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 32
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 83
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 86
+          }
+        ]
+      },
+      {
+        "number": 84,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 210
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 46
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 78
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 84
+          }
+        ]
+      },
+      {
+        "number": 85,
+        "relatedCards": [
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 3
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 75
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 85
+          }
+        ]
+      },
+      {
+        "number": 86,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 286
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 31
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 32
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 77
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 83
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 86
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "cardSet": "PROMO_A",
+    "cards": [
+      {
+        "number": 8,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 128
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 129
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 262
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 282
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 285
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 9
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 202
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 10
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 196
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 246
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 11
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 197
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 7
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 12
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 6
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 5
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 79
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 234
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 13
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 94
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 96
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 259
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 281
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 284
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 25
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 8
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 14
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 95
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 26
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 113
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 15
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 114
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 141
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 41
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 16
+          },
+          {
+            "cardSet": "MYTHICAL_ISLAND",
+            "number": 42
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 142
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 3
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 4
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 251
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 17
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 2
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 227
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 22
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 89
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 18
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 88
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 87
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 121
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 19
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 122
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 123
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 261
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 120
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 150
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 20
+          }
+        ]
+      },
+      {
+        "number": 21,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 193
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 21
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 194
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 195
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 265
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 279
+          }
+        ]
+      },
+      {
+        "number": 22,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 1
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 227
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 22
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 2
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 3
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 4
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 251
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "number": 23,
+        "relatedCards": [
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 97
+          },
+          {
+            "cardSet": "PROMO_A",
+            "number": 23
+          },
+          {
+            "cardSet": "GENETIC_APEX",
+            "number": 98
+          }
+        ]
+      }
+    ]
+  }
+]
