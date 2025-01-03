@@ -5,6 +5,7 @@ import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeEvolutionLine
 import nl.frankkie.poketcghelper.model.PokeType
 
 
@@ -40,7 +41,10 @@ fun findRelatedCards(cardSets: List<PokeCardSet>) {
         ===================================
     """.trimIndent()
     )
-    printJson(cardSets, mapOfCardsWithRelatedCards)
+    printJsonForRelatedCards(cardSets, mapOfCardsWithRelatedCards)
+
+    //Find evolutions for analytics
+    val evolutionLines = findEvolutionsForAnalytics(mapOfCardsWithSameName, mapOfCardsWithEvolutions)
 }
 
 private fun findSameNameCards(cards: List<PokeCard>): Map<PokeCard, Set<PokeCard>> {
@@ -103,7 +107,7 @@ private fun findPreviousEvolution(cards: List<PokeCard>, card: PokeCard): Set<Po
     return cards.filter { someCard -> someCard.pokeName.removeSuffix(" ex") == card.pokeEvolvesFrom?.removeSuffix(" ex") }.toSet()
 }
 
-private fun printJson(cardSets: List<PokeCardSet>, map: Map<PokeCard, Set<PokeCard>>) {
+private fun printJsonForRelatedCards(cardSets: List<PokeCardSet>, map: Map<PokeCard, Set<PokeCard>>) {
     val relatedCardsPerSet = cardSets.map { cardSet ->
         val cardsInThisSet = map.entries.filter { entry -> cardSet.cards.contains(entry.key) }.sortedBy { entry -> entry.key.number }
         val temp = cardsInThisSet.map { entry ->
@@ -113,13 +117,70 @@ private fun printJson(cardSets: List<PokeCardSet>, map: Map<PokeCard, Set<PokeCa
     }
     val prettyJson = Json { prettyPrint = true }
     val jsonString = prettyJson.encodeToString(relatedCardsPerSet)
-    println(jsonString)
+    //println(jsonString)
 }
 
 @Serializable
 data class PokeRelatedCardSet(val cardSet: String, val cards: List<PokeRelatedCards>)
+
 @Serializable
 data class PokeRelatedCards(val number: Int, val relatedCards: List<PokeRelatedCard>)
+
 @Serializable
 data class PokeRelatedCard(val cardSet: String, val number: Int)
+
 fun PokeCard.toPokeRelatedCard(): PokeRelatedCard = PokeRelatedCard(this.cardSet ?: "", this.number)
+
+private fun findEvolutionsForAnalytics(
+    mapOfCardsWithSameName: Map<PokeCard, Set<PokeCard>>,
+    mapOfCardsWithEvolutions: Map<PokeCard, Set<PokeCard>>
+): Map<String, PokeEvolutionLine> {
+    val sameNames: MutableMap<String, Set<PokeCard>> = mutableMapOf()
+    mapOfCardsWithSameName.forEach { (card, otherCards) ->
+        val pokeName = card.pokeName
+        sameNames[pokeName] = otherCards
+    }
+    val evolutionLines: MutableMap<String, PokeEvolutionLine> = mutableMapOf()
+
+    mapOfCardsWithEvolutions.forEach { (card, otherCards) ->
+        if (card.pokeStage != null) {
+            if (card.pokeStage == 2) { //End evolution
+                if (evolutionLines.keys.firstOrNull { it.contains(card.pokeName.removeSuffix(" ex")) } != null) { //not already in list
+                    val tempLineNames = mutableListOf(card.pokeName.removeSuffix(" ex"))
+                    val tempPokeEvolutionLineCards: MutableList<Set<PokeCard>> = mutableListOf(mapOfCardsWithSameName[card]!!)
+                }
+            }
+            if (card.pokeStage == 1) { //Possible end, possible middle evolution
+                if (evolutionLines.keys.firstOrNull { it.contains(card.pokeName.removeSuffix(" ex")) } != null) { //not already in list
+                    if (otherCards.firstOrNull { it.pokeEvolvesFrom?.contains(card.pokeName.removeSuffix(" ex")) == true } != null) { //Check if not middle evo
+                        val tempLineNames = mutableListOf(card.pokeName.removeSuffix(" ex"))
+                        val tempPokeEvolutionLineCards: MutableList<Set<PokeCard>> = mutableListOf(mapOfCardsWithSameName[card]!!)
+                    }
+                }
+            }
+        }
+    }
+
+    mapOfCardsWithEvolutions.forEach { (card, otherCards) ->
+        if (card.pokeStage != null && card.pokeStage == 0) {
+            //basic stage
+            val tempLineNames = mutableListOf(card.pokeName)
+            val tempPokeEvolutionLineCards: MutableList<Set<PokeCard>> = mutableListOf(mapOfCardsWithSameName[card]!!)
+            //find stage 1 (and 2)
+            val stage1 = otherCards.firstOrNull { someCard -> someCard.pokeStage == 1 }
+            if (stage1 != null) {
+                tempLineNames.add(stage1.pokeName)
+                tempPokeEvolutionLineCards.add(mapOfCardsWithSameName[stage1]!!)
+            }
+            val stage2 = otherCards.firstOrNull { someCard -> someCard.pokeStage == 2 }
+            if (stage2 != null) {
+                tempLineNames.add(stage2.pokeName)
+                tempPokeEvolutionLineCards.add(mapOfCardsWithSameName[stage2]!!)
+            }
+            val evolutionLine = PokeEvolutionLine(tempLineNames.toList(), tempPokeEvolutionLineCards.toList())
+            evolutionLines[evolutionLine.names.joinToString()] = evolutionLine
+            println("Found line: ${evolutionLine.names.joinToString()}")
+        }
+    }
+    return evolutionLines.toMap()
+}

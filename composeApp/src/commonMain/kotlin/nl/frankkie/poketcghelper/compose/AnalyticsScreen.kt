@@ -115,6 +115,8 @@ fun ana1(appState: AppState) {
     Text("${totalMythicalIslandCount - ownedMythicalIslandCount} cards from Mythical Island")
     packProgressBars(mythicalIslandCardSet, null, totalMythicalIslandCount, ownedMythicalIslandCount)
 
+    // Evolutions
+    // TODO: analytics voor evolutions
 }
 
 @OptIn(ExperimentalResourceApi::class)
@@ -146,12 +148,7 @@ fun packProgressBars(cardSet: PokeCardSet, pack: PokeCardSetPack?, totalCardsCou
     }
 }
 
-
-fun mapLong(x: Long, in_min: Long, in_max: Long, out_min: Long, out_max: Long): Long {
-    //https://docs.arduino.cc/language-reference/en/functions/math/map/
-    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
-}
-
 fun mapFloat(x: Float, in_min: Float, in_max: Float, out_min: Float, out_max: Float): Float {
+    //https://docs.arduino.cc/language-reference/en/functions/math/map/
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
 }
