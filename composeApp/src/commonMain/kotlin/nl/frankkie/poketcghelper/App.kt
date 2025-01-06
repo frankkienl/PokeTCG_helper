@@ -89,7 +89,7 @@ fun App(
 
     val appState = appViewModel.appState.collectAsState().value
     MaterialTheme {
-        createNavGraph(navController, appViewModel, appState)
+        createNavGraph(navController, appViewModel)
     }
 }
 

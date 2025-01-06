@@ -6,11 +6,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
 import kotlinx.serialization.Serializable
-import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.compose.homescreen.HomeScreen
-import nl.frankkie.poketcghelper.model.PokeCard
-import nl.frankkie.poketcghelper.model.PokeCardSet
 
 // Type-Safe navigation
 // https://developer.android.com/guide/navigation/design/type-safety
@@ -31,7 +28,7 @@ object Routes {
 }
 
 @Composable
-fun createNavGraph(navController: NavHostController, appViewModel: AppViewModel, appState: AppState) {
+fun createNavGraph(navController: NavHostController, appViewModel: AppViewModel) {
     NavHost(navController, startDestination = Routes.HomeScreen) {
         composable<Routes.HomeScreen> {
             HomeScreen(navController, appViewModel)

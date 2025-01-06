@@ -97,7 +97,12 @@ fun HomeScreen(
 }
 
 @Composable
-fun HomeScreenTopBar(navController: NavController, appViewModel: AppViewModel, homeScreenViewModel: HomeScreenViewModel, drawerState: DrawerState) {
+fun HomeScreenTopBar(
+    navController: NavController,
+    appViewModel: AppViewModel,
+    homeScreenViewModel: HomeScreenViewModel,
+    drawerState: DrawerState
+) {
     val appState = appViewModel.appState.collectAsState().value
     val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
     val rememberCoroutineScope = rememberCoroutineScope()
