@@ -131,6 +131,8 @@ android {
 
 dependencies {
     implementation(libs.navigation.compose)
+    implementation(libs.androidx.ui.graphics.android)
+    implementation(libs.androidx.foundation.android)
     debugImplementation(compose.uiTooling)
 }
 
