@@ -156,6 +156,13 @@
       "pokeRarity": "UNKNOWN"
     },
     {
+        "number": 16,
+        "pokeName": "Wormadam",
+        "imageUrl": "16-Wormadam-Space-Time.webp",
+        "pokeStage": 0,
+        "pokeRarity": "UNKNOWN"
+    },
+    {
       "number": 17,
       "pokeName": "Combee",
       "imageUrl": "17-Combee-Space-Time.webp",
@@ -180,6 +187,13 @@
       "number": 20,
       "pokeName": "Leafeon",
       "imageUrl": "20-Leafeon-Space-Time.webp",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 21,
+      "pokeName": "Mow Rotom",
+      "imageUrl": "21-Mow-Rotom-Space-Time.webp",
       "pokeStage": 0,
       "pokeRarity": "UNKNOWN"
     },
