@@ -16,8 +16,11 @@ suspend fun initializeCards(): List<PokeCardSet> {
     //Promo A
     val jsonStringPromo = Res.readBytes("files/cardset_promo_a.json").decodeToString()
     val cardSetPromo = initializeCardsFromJson(jsonStringPromo)
+    //Space-Time
+    val jsonStringSpaceTime = Res.readBytes("files/cardset_space_time.json").decodeToString()
+    val cardSetSpaceTime = initializeCardsFromJson(jsonStringSpaceTime)
     //Done
-    return listOf(cardSetGeneticApex, cardSetMythicalIsland, cardSetPromo)
+    return listOf(cardSetGeneticApex, cardSetMythicalIsland, cardSetPromo, cardSetSpaceTime)
 }
 
 fun initializeCardsFromJson(jsonString: String): PokeCardSet {

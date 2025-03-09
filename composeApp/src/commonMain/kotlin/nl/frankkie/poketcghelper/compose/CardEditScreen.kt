@@ -1,12 +1,9 @@
 package nl.frankkie.poketcghelper.compose
 
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.compose.foundation.*
 import androidx.compose.foundation.gestures.Orientation
 import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.selection.SelectionContainer
@@ -42,7 +39,7 @@ fun CardEditScreen(
     ogCardNumber: Int
 ) {
     val appState = appViewModel.appState.collectAsState().value
-    val ogCardSet = appState.cardSets.find { someSet -> someSet.codeName == ogCardSetCodeName }?: return
+    val ogCardSet = appState.cardSets.find { someSet -> someSet.codeName == ogCardSetCodeName } ?: return
     val ogCard = ogCardSet.cards.find { someCard -> someCard.number == ogCardNumber } ?: return
     var newCard by remember { mutableStateOf<PokeCard>(ogCard.copy()) }
     val cardHeight = 512.dp
@@ -79,7 +76,11 @@ fun CardEditScreen(
                     )
                 }
             }
-            Column(modifier = Modifier.scrollable(rememberScrollState(), Orientation.Vertical)) {
+            Column(
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .verticalScroll(rememberScrollState())
+            ) {
                 Text("Edit card")
                 SimpleEditableRow("number", ogCard.number.toString(), newCard.number.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.number;newCard = newCard.copy(number = newInt) })
                 SimpleEditableRow("pokeName", ogCard.pokeName, newCard.pokeName, { newCard = newCard.copy(pokeName = it ?: "") })
@@ -96,10 +97,20 @@ fun CardEditScreen(
                 SimpleEditableRow("pokeFlavour", ogCard.pokeFlavour, newCard.pokeFlavour, { newCard = newCard.copy(pokeFlavour = it) })
                 SimpleEditableRow("pokePrint", ogCard.pokePrint, newCard.pokePrint, { newCard = newCard.copy(pokePrint = it) })
 
-                Button(onClick = {
-                    println(newCard.toJsonString())
-                }) {
-                    Text("Print JSON to STDOUT")
+                Row {
+                    Button(onClick = {
+                        println(newCard.toJsonString())
+                    }) {
+                        Text("Print JSON to STDOUT")
+                    }
+
+                    Button(onClick = {
+                        println(newCard.toJsonString())
+                        navController.popBackStack()
+                        navController.navigate(Routes.CardEditScreen(ogCardSetCodeName, ogCardNumber + 1))
+                    }) {
+                        Text("Print JSON and go to next card")
+                    }
                 }
 
                 Spacer(modifier = Modifier.height(16.dp))
@@ -136,7 +147,13 @@ fun SimpleEditableRow(key: String, ogValue: String?, newValue: String?, onValueC
                         onValueChange("")
                     }
                 })
-                BasicTextField(newValue ?: "", onValueChange)
+                // https://github.com/JetBrains/compose-multiplatform/blob/master/tutorials/Tab_Navigation/README.md#known-problems
+                BasicTextField(
+                    modifier = Modifier.padding(top = 4.dp),
+                    value = newValue ?: "",
+                    onValueChange = onValueChange,
+                    singleLine = true, //Needed for Tab navigation; Tab navigation doesn't work with multiline.
+                )
             }
         }
     }

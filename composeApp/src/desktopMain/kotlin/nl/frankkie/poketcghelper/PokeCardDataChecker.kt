@@ -18,10 +18,10 @@ suspend fun main() {
         doubleCheckData(it)
     }
 
-    val time = measureTime {
-        findRelatedCards(cardSets)
-    }
-    println("Related cards took $time")
+//    val time = measureTime {
+//        findRelatedCards(cardSets)
+//    }
+//    println("Related cards took $time")
 }
 
 fun doubleCheckData(pokeCardSet: PokeCardSet) {
