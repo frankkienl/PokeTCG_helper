@@ -104,77 +104,126 @@
       "pokeName": "Roselia",
       "imageUrl": "8-Roselia-Space-Time.webp",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 70,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 9,
       "pokeName": "Roserade",
       "imageUrl": "9-Roserade-Space-Time.webp",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Roselia",
+      "pokeHp": 100,
+      "pokeType": "GRASS",
+      "pokeDesc": "",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 2,
+      "pokeRarity": "D2"
     },
     {
       "number": 10,
       "pokeName": "Turtwig",
       "imageUrl": "10-Turtwig-Space-Time.webp",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 80,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 2,
+      "pokeRarity": "D1"
     },
     {
       "number": 11,
       "pokeName": "Grotle",
       "imageUrl": "11-Grotle-Space-Time.webp",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Turtwig",
+      "pokeHp": 100,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 3,
+      "pokeRarity": "D2"
     },
     {
       "number": 12,
       "pokeName": "Torterra",
       "imageUrl": "12-Torterra-Space-Time.webp",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Grotle",
+      "pokeHp": 160,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 4,
+      "pokeRarity": "D3"
     },
     {
       "number": 13,
       "pokeName": "Kricketot",
       "imageUrl": "13-Kricketot-Space-Time.webp",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 14,
       "pokeName": "Kricketune",
       "imageUrl": "14-Kricketune-Space-Time.webp",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 90,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 15,
       "pokeName": "Burmy",
       "imageUrl": "15-Burmy-Space-Time.webp",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
-        "number": 16,
-        "pokeName": "Wormadam",
-        "imageUrl": "16-Wormadam-Space-Time.webp",
-        "pokeStage": 0,
-        "pokeRarity": "UNKNOWN"
+      "number": 16,
+      "pokeName": "Wormadam",
+      "imageUrl": "16-Wormadam-Space-Time.webp",
+      "pokeStage": 0,
+      "pokeHp": 120,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 2,
+      "pokeRarity": "D1"
     },
     {
       "number": 17,
       "pokeName": "Combee",
       "imageUrl": "17-Combee-Space-Time.webp",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 50,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "FIRE"
     },
     {
       "number": 18,
       "pokeName": "Vespiquen",
       "imageUrl": "18-Vespiquen-Space-Time.webp",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Combee",
+      "pokeHp": 100,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 2,
+      "pokeRarity": "D2"
     },
     {
       "number": 19,
