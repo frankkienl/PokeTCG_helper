@@ -20,8 +20,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.AppViewModel
-import nl.frankkie.poketcghelper.model.PokeCardSet
-import nl.frankkie.poketcghelper.model.PokeCardSetPack
+import nl.frankkie.poketcghelper.model.PokeExpansion
+import nl.frankkie.poketcghelper.model.PokeExpansionPack
 import nl.frankkie.poketcghelper.model.PokeRarity
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
@@ -94,7 +94,7 @@ fun ana1(appState: AppState) {
     val ownedMewtwoCountNonRare = appState.ownedCards.filter { it.pokeCard.packId == "MEWTWO" && it.amount > 0 && isOfRarityDiamond(it.pokeCard.pokeRarity) }.size
     val ownedPikachuCountNonRare = appState.ownedCards.filter { it.pokeCard.packId == "PIKACHU" && it.amount > 0 && isOfRarityDiamond(it.pokeCard.pokeRarity) }.size
 
-    val ownedMythicalIslandCount = appState.ownedCards.filter { it.pokeCardSet.codeName == "MYTHICAL_ISLAND" && it.amount > 0 }.size
+    val ownedMythicalIslandCount = appState.ownedCards.filter { it.pokeExpansion.codeName == "MYTHICAL_ISLAND" && it.amount > 0 }.size
 
     val uniqueCardsCount = appState.ownedCards.filter { it.amount > 0 }.size
     var totalCardsCount = 0
@@ -151,8 +151,8 @@ fun isOfRarityDiamond(rarityString: String?): Boolean {
 @OptIn(ExperimentalResourceApi::class)
 @Composable
 fun packProgressBars(
-    cardSet: PokeCardSet,
-    pack: PokeCardSetPack?,
+    expansion: PokeExpansion,
+    pack: PokeExpansionPack?,
     totalCardsCount: Int,
     ownedCardCount: Int,
     ownedNonRareCount: Int
@@ -160,11 +160,11 @@ fun packProgressBars(
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
     }
-    LaunchedEffect(cardSet, pack) {
+    LaunchedEffect(expansion, pack) {
         val imagePath = if (pack != null) {
-            "files/card_symbols/${cardSet.codeName}/${pack.imageUrlSymbol}"
+            "files/expansions/${expansion.symbol}/expansion_symbols/${pack.imageUrlSymbol}"
         } else {
-            "files/card_symbols/${cardSet.codeName}/${cardSet.imageUrl}"
+            "files/expansions/${expansion.symbol}/expansion_symbols/${expansion.imageUrl}"
         }
         val bytes = Res.readBytes(imagePath)
         imageBitmap = bytes.decodeToImageBitmap()

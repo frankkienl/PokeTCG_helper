@@ -4,12 +4,12 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import nl.frankkie.poketcghelper.model.PokeCard
-import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokeEvolutionLine
 import nl.frankkie.poketcghelper.model.PokeType
 
 
-fun findRelatedCards(cardSets: List<PokeCardSet>) {
+fun findRelatedCards(cardSets: List<PokeExpansion>) {
     println("Looking for related cards")
     val allCards: List<PokeCard> = cardSets.flatMap { aCardSet -> aCardSet.cards }
     println("Found ${allCards.size} cards, from ${cardSets.size} cardSets")
@@ -107,7 +107,7 @@ private fun findPreviousEvolution(cards: List<PokeCard>, card: PokeCard): Set<Po
     return cards.filter { someCard -> someCard.pokeName.removeSuffix(" ex") == card.pokeEvolvesFrom?.removeSuffix(" ex") }.toSet()
 }
 
-private fun printJsonForRelatedCards(cardSets: List<PokeCardSet>, map: Map<PokeCard, Set<PokeCard>>) {
+private fun printJsonForRelatedCards(cardSets: List<PokeExpansion>, map: Map<PokeCard, Set<PokeCard>>) {
     val relatedCardsPerSet = cardSets.map { cardSet ->
         val cardsInThisSet = map.entries.filter { entry -> cardSet.cards.contains(entry.key) }.sortedBy { entry -> entry.key.number }
         val temp = cardsInThisSet.map { entry ->
@@ -129,7 +129,7 @@ data class PokeRelatedCards(val number: Int, val relatedCards: List<PokeRelatedC
 @Serializable
 data class PokeRelatedCard(val cardSet: String, val number: Int)
 
-fun PokeCard.toPokeRelatedCard(): PokeRelatedCard = PokeRelatedCard(this.cardSet ?: "", this.number)
+fun PokeCard.toPokeRelatedCard(): PokeRelatedCard = PokeRelatedCard(this.expansion ?: "", this.number)
 
 private fun findEvolutionsForAnalytics(
     mapOfCardsWithSameName: Map<PokeCard, Set<PokeCard>>,

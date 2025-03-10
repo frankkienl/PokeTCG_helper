@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
 import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.model.PokeCard
-import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
 import org.jetbrains.compose.resources.ExperimentalResourceApi
@@ -29,11 +29,11 @@ import poketcg_helper.composeapp.generated.resources.Res
 fun GridOfCards(
     appState: AppState,
     homeScreenViewModel: HomeScreenViewModel,
-    filteredCards: Map<PokeCardSet, List<PokeCard>>,
-    onCardClick: (PokeCardSet, PokeCard) -> Unit,
-    onCardLongClick: (PokeCardSet, PokeCard) -> Unit = { _, _ -> },
+    filteredCards: Map<PokeExpansion, List<PokeCard>>,
+    onCardClick: (PokeExpansion, PokeCard) -> Unit,
+    onCardLongClick: (PokeExpansion, PokeCard) -> Unit = { _, _ -> },
     cardAmountLoading: Boolean,
-    onChangeAmountOwned: (PokeCardSet, PokeCard, Int) -> Unit,
+    onChangeAmountOwned: (PokeExpansion, PokeCard, Int) -> Unit,
 ) {
     val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
     val cardSets = appState.cardSets
@@ -60,7 +60,7 @@ fun GridOfCards(
                     //Cardset logo
                     var imageBitmap by remember { mutableStateOf<ImageBitmap?>(null) }
                     LaunchedEffect(cardSet) {
-                        val bytes = Res.readBytes("files/card_symbols/${cardSet.codeName}/${cardSet.imageUrl}")
+                        val bytes = Res.readBytes("files/expansions/${cardSet.symbol}/expansion_symbols/${cardSet.imageUrl}")
                         try {
                             imageBitmap = bytes.decodeToImageBitmap()
                         } catch (e: Exception) {
@@ -79,12 +79,12 @@ fun GridOfCards(
                 }
             }
             items(filteredCardsForCardSet) { card ->
-                val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeCardSet.codeName) }
+                val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeExpansion.codeName) }
                 val isOwned = ownedCard != null && ownedCard.amount > 0
                 val amountOwned = ownedCard?.amount ?: 0
                 if (homeScreenUiState.amountInputMode && isLoggedIn) {
                     PokeCardComposableAmountInputMode(
-                        cardSet = cardSet,
+                        pokeExpansion = cardSet,
                         pokeCard = card,
                         amountOwned = amountOwned,
                         cardAmountLoading = cardAmountLoading,
@@ -93,7 +93,7 @@ fun GridOfCards(
                     )
                 } else {
                     PokeCardComposableNormalMode(
-                        cardSet = cardSet,
+                        pokeExpansion = cardSet,
                         pokeCard = card,
                         isLoggedIn = appState.supabaseUserInfo != null,
                         isOwned = isOwned,
@@ -109,7 +109,7 @@ fun GridOfCards(
     }
 }
 
-fun matchesCardFilter(card: PokeCard, cardSet: PokeCardSet, cardFilter: PokeCardFilter, appState: AppState): Boolean {
+fun matchesCardFilter(card: PokeCard, cardSet: PokeExpansion, cardFilter: PokeCardFilter, appState: AppState): Boolean {
     //SearchQuery
     if (cardFilter.searchQuery.isNotBlank()) {
         if (!card.pokeName.contains(cardFilter.searchQuery, ignoreCase = true)) {
@@ -118,7 +118,7 @@ fun matchesCardFilter(card: PokeCard, cardSet: PokeCardSet, cardFilter: PokeCard
     }
     //Owned
     if (cardFilter.ownedStatus.isNotEmpty()) {
-        val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeCardSet.codeName) }
+        val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeExpansion.codeName) }
         val isOwned = ownedCard != null && ownedCard.amount > 0
         //val amountOwned = ownedCard?.amount ?: 0
         if (!cardFilter.ownedStatus.contains(isOwned)) {

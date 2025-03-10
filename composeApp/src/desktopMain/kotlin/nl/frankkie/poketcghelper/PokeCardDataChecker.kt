@@ -1,10 +1,9 @@
 package nl.frankkie.poketcghelper
 
-import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokePrint
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
-import kotlin.time.measureTime
 
 lateinit var cardSetNames: List<String>
 
@@ -24,12 +23,12 @@ suspend fun main() {
 //    println("Related cards took $time")
 }
 
-fun doubleCheckData(pokeCardSet: PokeCardSet) {
-    println("checking ${pokeCardSet.displayName}")
+fun doubleCheckData(pokeExpansion: PokeExpansion) {
+    println("checking ${pokeExpansion.displayName}")
     println("=================================")
     //Make sure there are no typo's in the data
-    val pokeCardSetIds = pokeCardSet.packs.map { somePack -> somePack.id }
-    pokeCardSet.cards.forEach { someCard ->
+    val pokeCardSetIds = pokeExpansion.packs.map { somePack -> somePack.id }
+    pokeExpansion.cards.forEach { someCard ->
         //Pack id
         if (someCard.packId != null) {
             if (!pokeCardSetIds.contains(someCard.packId)) {
@@ -41,8 +40,8 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
             }
         }
         //CardSet
-        if (someCard.cardSet != null) {
-            if (!cardSetNames.contains(someCard.cardSet)) {
+        if (someCard.expansion != null) {
+            if (!cardSetNames.contains(someCard.expansion)) {
                 println("---------------------------------")
                 println("Card contains non-existing CardSet")
                 println(someCard)
@@ -138,7 +137,7 @@ fun doubleCheckData(pokeCardSet: PokeCardSet) {
         //Evolves from
         if (someCard.pokeEvolvesFrom != null) {
             val previousEvolutionName = someCard.pokeEvolvesFrom
-            val previousEvolutionCard = pokeCardSet.cards.find { otherCard -> otherCard.pokeEvolvesFrom == previousEvolutionName }
+            val previousEvolutionCard = pokeExpansion.cards.find { otherCard -> otherCard.pokeEvolvesFrom == previousEvolutionName }
             if (previousEvolutionCard == null) {
                 println("---------------------------------")
                 println("Card evolved from non-existing other card")

@@ -1,4 +1,5 @@
 {
+  "symbol": "PROMO_A",
   "codeName": "PROMO_A",
   "displayName": "Promo-A",
   "numberOfCards": 23,
@@ -6,7 +7,7 @@
   "packs": [],
   "cards": [
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 1,
       "pokeName": "Potion",
       "pokeRarity": "PROMO",
@@ -14,7 +15,7 @@
       "imageUrl": "1-Potion.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 2,
       "pokeName": "X Speed",
       "pokeRarity": "PROMO",
@@ -22,7 +23,7 @@
       "imageUrl": "2-X-Speed.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 3,
       "pokeName": "Poke Ball",
       "pokeRarity": "PROMO",
@@ -30,7 +31,7 @@
       "imageUrl": "3-Poke-Ball.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 4,
       "pokeName": "Professor's Research",
       "pokeRarity": "PROMO",
@@ -38,7 +39,7 @@
       "imageUrl": "4-Professors-Research-Oak.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 5,
       "pokeName": "Hand Scope",
       "pokeRarity": "PROMO",
@@ -46,7 +47,7 @@
       "imageUrl": "5-Hand-Scope.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 6,
       "pokeName": "Pokedex",
       "pokeRarity": "PROMO",
@@ -54,7 +55,7 @@
       "imageUrl": "6-Pokedex.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 7,
       "pokeName": "Red Card",
       "pokeRarity": "PROMO",
@@ -62,7 +63,7 @@
       "imageUrl": "7-Red-Card.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 8,
       "pokeName": "Pikachu ex",
       "pokeRarity": "PROMO",
@@ -71,7 +72,7 @@
       "imageUrl": "8-Pikachu-ex.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 9,
       "pokeName": "Mewtwo",
       "pokeRarity": "PROMO",
@@ -80,7 +81,7 @@
       "imageUrl": "9-Mewtwo.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 10,
       "pokeName": "Chansey",
       "pokeRarity": "PROMO",
@@ -89,7 +90,7 @@
       "imageUrl": "10-Chansey.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 11,
       "pokeName": "Meowth",
       "pokeRarity": "PROMO",
@@ -108,10 +109,10 @@
       "pokeWeakness": "FIRE",
       "pokeRarity": "PROMO",
       "pokePrint": "HOLO",
-      "cardSet": "PROMO_A"
+      "expansion": "PROMO_A"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 13,
       "pokeName": "Lapras ex",
       "pokeRarity": "PROMO",
@@ -120,7 +121,7 @@
       "imageUrl": "13-Lapras-ex.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 14,
       "pokeName": "Pikachu",
       "pokeRarity": "PROMO",
@@ -128,7 +129,7 @@
       "imageUrl": "14-Pikachu.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 15,
       "pokeName": "Clefairy",
       "pokeRarity": "PROMO",
@@ -136,7 +137,7 @@
       "imageUrl": "15-Clefairy.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 16,
       "pokeName": "Mankey",
       "pokeRarity": "PROMO",
@@ -155,7 +156,7 @@
       "pokeRetreat": 3,
       "pokeRarity": "PROMO",
       "pokePrint": "FULL_ART",
-      "cardSet": "PROMO_A"
+      "expansion": "PROMO_A"
     },
     {
       "number": 18,
@@ -168,7 +169,7 @@
       "pokeRetreat": 1,
       "pokeRarity": "PROMO",
       "pokePrint": "HOLO",
-      "cardSet": "PROMO_A"
+      "expansion": "PROMO_A"
     },
     {
       "number": 19,
@@ -181,10 +182,10 @@
       "pokeWeakness": "DARKNESS",
       "pokeRetreat": 1,
       "pokeRarity": "PROMO",
-      "cardSet": "PROMO_A"
+      "expansion": "PROMO_A"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 20,
       "pokeName": "Onix",
       "pokeRarity": "PROMO",
@@ -192,7 +193,7 @@
       "imageUrl": "20-Onix.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 21,
       "pokeName": "Jigglypuff",
       "pokeRarity": "PROMO",
@@ -200,7 +201,7 @@
       "imageUrl": "21-Jigglypuff.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 22,
       "pokeName": "Bulbasaur",
       "pokeRarity": "PROMO",
@@ -209,7 +210,7 @@
       "imageUrl": "22-Bulbasaur.png"
     },
     {
-      "cardSet": "PROMO_A",
+      "expansion": "PROMO_A",
       "number": 23,
       "pokeName": "Magnemite",
       "pokeRarity": "PROMO",

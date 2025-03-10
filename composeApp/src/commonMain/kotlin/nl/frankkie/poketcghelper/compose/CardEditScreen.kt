@@ -1,8 +1,6 @@
 package nl.frankkie.poketcghelper.compose
 
 import androidx.compose.foundation.*
-import androidx.compose.foundation.gestures.Orientation
-import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
@@ -21,7 +19,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.model.PokeCard
-import nl.frankkie.poketcghelper.model.PokeCardSet
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.MissingResourceException
 import org.jetbrains.compose.resources.decodeToImageBitmap
@@ -35,12 +32,12 @@ import poketcg_helper.composeapp.generated.resources.Res
 fun CardEditScreen(
     navController: NavController,
     appViewModel: AppViewModel,
-    ogCardSetCodeName: String,
+    ogExpansionCodeName: String,
     ogCardNumber: Int
 ) {
     val appState = appViewModel.appState.collectAsState().value
-    val ogCardSet = appState.cardSets.find { someSet -> someSet.codeName == ogCardSetCodeName } ?: return
-    val ogCard = ogCardSet.cards.find { someCard -> someCard.number == ogCardNumber } ?: return
+    val ogExpansion = appState.cardSets.find { someExpansion -> someExpansion.codeName == ogExpansionCodeName } ?: return
+    val ogCard = ogExpansion.cards.find { someCard -> someCard.number == ogCardNumber } ?: return
     var newCard by remember { mutableStateOf<PokeCard>(ogCard.copy()) }
     val cardHeight = 512.dp
     var imageBitmap by remember {
@@ -48,7 +45,7 @@ fun CardEditScreen(
     }
     LaunchedEffect(ogCard) {
         try {
-            val bytes = Res.readBytes("files/card_images/${ogCardSet.codeName}/${ogCard.imageUrl}")
+            val bytes = Res.readBytes("files/expansions/${ogExpansion.symbol}/card_images/${ogCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
         } catch (missingResourceException: MissingResourceException) {
             println("PokeCardDialog: Failed to load image " + missingResourceException.message)
@@ -107,7 +104,7 @@ fun CardEditScreen(
                     Button(onClick = {
                         println(newCard.toJsonString())
                         navController.popBackStack()
-                        navController.navigate(Routes.CardEditScreen(ogCardSetCodeName, ogCardNumber + 1))
+                        navController.navigate(Routes.CardEditScreen(ogExpansionCodeName, ogCardNumber + 1))
                     }) {
                         Text("Print JSON and go to next card")
                     }

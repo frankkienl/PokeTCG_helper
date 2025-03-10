@@ -32,13 +32,13 @@ fun PokeCardDialog(
 ) {
     val cardHeight = 350.dp
     val pokeCard = cardDialogData.pokeCard
-    val pokeCardSet = cardDialogData.pokeCardSet
+    val pokeExpansion = cardDialogData.pokeExpansion
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
     }
     LaunchedEffect(cardDialogData) {
         try {
-            val bytes = Res.readBytes("files/card_images/${pokeCardSet.codeName}/${pokeCard.imageUrl}")
+            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
         } catch (missingResourceException: MissingResourceException) {
             println("PokeCardDialog: Failed to load image " + missingResourceException.message)
@@ -79,7 +79,7 @@ fun PokeCardDialog(
                         Spacer(modifier = Modifier.height(12.dp))
                         PokePrintComposable(pokeCard.pokePrint)
                         Spacer(modifier = Modifier.height(12.dp))
-                        PokePackComposable(pokeCardSet, pokeCard.packId)
+                        PokePackComposable(pokeExpansion, pokeCard.packId)
 
                         PokeCardAmount(isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned)
                     }
@@ -99,6 +99,6 @@ fun PokeCardDialog(
 
 
 data class CardDialogData(
-    val pokeCardSet: PokeCardSet,
+    val pokeExpansion: PokeExpansion,
     val pokeCard: PokeCard
 )

@@ -1,4 +1,5 @@
 {
+  "symbol": "A1a",
   "codeName": "MYTHICAL_ISLAND",
   "displayName": "Mythical Island",
   "numberOfCards": 86,
@@ -18,7 +19,7 @@
       "pokeIllustrator": "Yuka Morii",
       "pokeRarity": "D1",
       "pokeFlavour": "Tough it may look like it's just a bunch of eggs, it's a proper Pokemon. Exeggcute communicates with others of its kind via telepathy, apparently.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 2,
@@ -32,7 +33,7 @@
       "pokeRetreat": 3,
       "pokeRarity": "D2",
       "pokeFlavour": "Each of Exeggutor's three heads is thinking different thoughts. The three don't seem to be very interested in one another.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 3,
@@ -46,7 +47,7 @@
       "pokeIllustrator": "PLANETA CG Works",
       "pokeRarity": "D4",
       "pokePrint": "EX",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 4,
@@ -61,7 +62,7 @@
       "pokeIllustrator": "Kagemaru Himeno",
       "pokeRarity": "D1",
       "pokeFlavour": "Being exposed to sunlight makes its movements swifter. It uses vines more adeptly than its hands.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 5,
@@ -77,7 +78,7 @@
       "pokeIllustrator": "Shigenori Nogishi",
       "pokeRarity": "D2",
       "pokeFlavour": "It moves along the ground as if sliding. Its swift movements befuddle its foes, and it then attacks with a vine whip.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 6,
@@ -94,7 +95,7 @@
       "pokeRarity": "D3",
       "pokeFlavour": "It only gives its all against strong opponents wo are not fazzed by the glare from Serperior's noble eyes.",
       "pokePrint": "HOLO",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 7,
@@ -109,7 +110,7 @@
       "pokeIllustrator": "Saya Tsuruta",
       "pokeRarity": "D1",
       "pokeFlavour": "Pokemon living in the forrest eat the delicious caps on Morelull's head. The caps regrow overnight.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 8,
@@ -125,7 +126,7 @@
       "pokeIllustrator": "Mizue",
       "pokeRarity": "D2",
       "pokeFlavour": "Its flickering spores lure in prey and put them to sleep. Once this Pokemon has its prey snoozing, it drains their vitality with its fingertips.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 9,
@@ -140,7 +141,7 @@
       "pokeIllustrator": "Hasuno",
       "pokeRarity": "D2",
       "pokeFlavour": "After a piece of seaweed merged with debris from a sunken ship, it was reborn as this ghost Pokemon.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 10,
@@ -152,7 +153,7 @@
       "pokeWeakness": "WATER",
       "pokeRetreat": 1,
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 11,
@@ -164,7 +165,7 @@
       "pokeWeakness": "WATER",
       "pokeRetreat": 1,
       "pokeRarity": "D2",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 12,
@@ -176,7 +177,7 @@
       "pokeWeakness": "WATER",
       "pokeRetreat": 2,
       "pokeRarity": "D2",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 13,
@@ -188,7 +189,7 @@
       "pokeWeakness": "WATER",
       "pokeRetreat": 2,
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 14,
@@ -201,7 +202,7 @@
       "pokeRetreat": 2,
       "pokeRarity": "D3",
       "pokePrint": "HOLO",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 15,
@@ -215,7 +216,7 @@
       "pokeRetreat": 1,
       "pokeRarity": "D1",
       "pokeFlavour": "It taunts its prey and lures them into narrow, rocky areas where it then sprays them with toxic gas to make them dizzy and take them down.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 16,
@@ -227,7 +228,7 @@
       "pokeType": "FIRE",
       "pokeWeakness": "WATER",
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 17,
@@ -241,7 +242,7 @@
       "pokeRetreat": 1,
       "pokeRarity": "D1",
       "pokeFlavour": "An underpowered pathetic Pokemon. It may jump high on rare occasions but never more than 7 feet.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 18,
@@ -256,7 +257,7 @@
       "pokeIllustrator": "PLANETA CG Works",
       "pokeRarity": "D4",
       "pokePrint": "EX",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 19,
@@ -271,7 +272,7 @@
       "pokeRetreat": 2,
       "pokeRarity": "D3",
       "pokePrint": "HOLO",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 20,
@@ -284,7 +285,7 @@
       "pokeIllustrator": "sui",
       "pokeRarity": "D1",
       "pokeFlavour": "The line running down its side can store sunlight. It shines vividly at night.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 21,
@@ -298,7 +299,7 @@
       "pokeIllustrator": "Sekio",
       "pokeRarity": "D2",
       "pokeFlavour": "With its shining light, it lures its prey close. However, the light also happens to attract ferocious fish Pokemon-its natural predators.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 22,
@@ -310,7 +311,7 @@
       "pokeWeakness": "LIGHTNING",
       "pokeRetreat": 2,
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 23,
@@ -323,7 +324,7 @@
       "pokeWeakness": "LIGHTNING",
       "pokeRetreat": 3,
       "pokeRarity": "D2",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 24,
@@ -336,7 +337,7 @@
       "pokeRetreat": 1,
       "pokeIllustrator": "Jerky",
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 25,
@@ -351,7 +352,7 @@
       "pokeIllustrator": "Nooyo Kimuro",
       "pokeRarity": "D1",
       "pokeFlavour": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 26,
@@ -368,10 +369,10 @@
       "pokeRarity": "D3",
       "pokeFlavour": "Its tail discharges electricity into the ground, protecting it from getting shocked.",
       "pokePrint": "HOLO",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 27,
       "pokeName": "Electabuzz",
       "pokeRarity": "D2",
@@ -380,7 +381,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 28,
       "pokeName": "Joltik",
       "pokeRarity": "D1",
@@ -399,10 +400,10 @@
       "pokeWeakness": "FIGHTING",
       "pokeRetreat": 1,
       "pokeRarity": "D2",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 30,
       "pokeName": "Dedenne",
       "pokeRarity": "D1",
@@ -411,7 +412,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 31,
       "pokeName": "Mew",
       "pokeRarity": "D3",
@@ -420,7 +421,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 32,
       "pokeName": "Mew ex",
       "pokeRarity": "D4",
@@ -429,7 +430,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 33,
       "pokeName": "Sigilyph",
       "pokeRarity": "D2",
@@ -438,7 +439,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 34,
       "pokeName": "Elgyem",
       "pokeRarity": "D1",
@@ -456,10 +457,10 @@
       "pokeType": "PSYCHIC",
       "pokeWeakness": "DARKNESS",
       "pokeRarity": "D2",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 36,
       "pokeName": "Flabebe",
       "pokeRarity": "D1",
@@ -477,7 +478,7 @@
       "pokeType": "PSYCHIC",
       "pokeWeakness": "METAL",
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 38,
@@ -490,10 +491,10 @@
       "pokeWeakness": "METAL",
       "pokeRetreat": 1,
       "pokeRarity": "D2",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 39,
       "pokeName": "Swirlix",
       "pokeRarity": "D1",
@@ -511,10 +512,10 @@
       "pokeType": "PSYCHIC",
       "pokeWeakness": "METAL",
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 41,
       "pokeName": "Mankey",
       "pokeRarity": "D1",
@@ -533,10 +534,10 @@
       "pokeWeakness": "PSYCHIC",
       "pokeRetreat": 1,
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 43,
       "pokeName": "Geodude",
       "pokeRarity": "D1",
@@ -555,7 +556,7 @@
       "pokeWeakness": "GRASS",
       "pokeRetreat": 3,
       "pokeRarity": "D2",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 45,
@@ -569,10 +570,10 @@
       "pokeRetreat": 3,
       "pokeRarity": "D3",
       "pokePrint": "HOLO",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 46,
       "pokeName": "Aerodactyl ex",
       "pokeRarity": "D4",
@@ -581,7 +582,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 47,
       "pokeName": "Marshadow",
       "pokeRarity": "D3",
@@ -590,7 +591,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 48,
       "pokeName": "Stonjourner",
       "pokeRarity": "D2",
@@ -599,7 +600,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 49,
       "pokeName": "Koffing",
       "pokeRarity": "D1",
@@ -618,10 +619,10 @@
       "pokeWeakness": "FIGHTING",
       "pokeRetreat": 3,
       "pokeRarity": "D2",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 51,
       "pokeName": "Purloin",
       "pokeRarity": "D1",
@@ -640,10 +641,10 @@
       "pokeWeakness": "GRASS",
       "pokeRetreat": 1,
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 53,
       "pokeName": "Venipede",
       "pokeRarity": "D1",
@@ -662,7 +663,7 @@
       "pokeWeakness": "FIGHTING",
       "pokeRetreat": 2,
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 55,
@@ -675,10 +676,10 @@
       "pokeWeakness": "FIGHTING",
       "pokeRetreat": 2,
       "pokeRarity": "D2",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 56,
       "pokeName": "Druddigon",
       "pokeRarity": "D2",
@@ -687,7 +688,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 57,
       "pokeName": "Pidgey",
       "pokeRarity": "D1",
@@ -706,7 +707,7 @@
       "pokeWeakness": "LIGHTNING",
       "pokeRetreat": 1,
       "pokeRarity": "D1",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 59,
@@ -721,10 +722,10 @@
       "pokeIllustrator": "PLANETA CG Works",
       "pokeRarity": "D4",
       "pokePrint": "EX",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 60,
       "pokeName": "Tauros",
       "pokeRarity": "D3",
@@ -733,7 +734,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 61,
       "pokeName": "Eevee",
       "pokeRarity": "D1",
@@ -742,7 +743,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 62,
       "pokeName": "Chatot",
       "pokeRarity": "D1",
@@ -751,7 +752,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 63,
       "pokeName": "Old Amber",
       "pokeRarity": "D1",
@@ -760,7 +761,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 64,
       "pokeName": "Mythical Slab",
       "pokeRarity": "D2",
@@ -769,7 +770,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 65,
       "pokeName": "Pokemon Flute",
       "pokeRarity": "D2",
@@ -778,7 +779,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 66,
       "pokeName": "Blue",
       "pokeRarity": "D2",
@@ -787,7 +788,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 67,
       "pokeName": "Budding Expeditioner",
       "pokeRarity": "D2",
@@ -796,7 +797,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 68,
       "pokeName": "Leaf",
       "pokeRarity": "D2",
@@ -805,7 +806,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 69,
       "pokeName": "Exeggutor",
       "pokeRarity": "S1",
@@ -814,7 +815,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 70,
       "pokeName": "Serperior",
       "pokeRarity": "S1",
@@ -823,7 +824,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 71,
       "pokeName": "Salandit",
       "pokeRarity": "S1",
@@ -843,10 +844,10 @@
       "pokeRetreat": 2,
       "pokeRarity": "S1",
       "pokePrint": "HOLO",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 73,
       "pokeName": "Dedenne",
       "pokeRarity": "S1",
@@ -855,7 +856,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 74,
       "pokeName": "Marshadow",
       "pokeRarity": "S1",
@@ -864,7 +865,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 75,
       "pokeName": "Celebi ex",
       "pokeRarity": "S2",
@@ -885,10 +886,10 @@
       "pokeIllustrator": "PLANETA CG Works",
       "pokeRarity": "S2",
       "pokePrint": "EX",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 77,
       "pokeName": "Mew ex",
       "pokeRarity": "S2",
@@ -909,7 +910,7 @@
       "pokeIllustrator": "PLANETA CG Works",
       "pokeRarity": "S2",
       "pokePrint": "EX",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
       "number": 79,
@@ -923,10 +924,10 @@
       "pokeIllustrator": "PLANETA CG Works",
       "pokeRarity": "S2",
       "pokePrint": "EX",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 80,
       "pokeName": "Budding Expeditioner",
       "pokeRarity": "S2",
@@ -935,7 +936,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 81,
       "pokeName": "Blue",
       "pokeRarity": "S2",
@@ -944,7 +945,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 82,
       "pokeName": "Leaf",
       "pokeRarity": "S2",
@@ -953,7 +954,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 83,
       "pokeName": "Mew ex",
       "pokeRarity": "S2",
@@ -973,10 +974,10 @@
       "pokeRetreat": 1,
       "pokeRarity": "S2",
       "pokePrint": "EX",
-      "cardSet": "MYTHICAL_ISLAND"
+      "expansion": "MYTHICAL_ISLAND"
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 85,
       "pokeName": "Celebi ex",
       "pokeRarity": "S3",
@@ -985,7 +986,7 @@
       "packId": null
     },
     {
-      "cardSet": "MYTHICAL_ISLAND",
+      "expansion": "MYTHICAL_ISLAND",
       "number": 86,
       "pokeName": "Mew ex",
       "pokeRarity": "C",

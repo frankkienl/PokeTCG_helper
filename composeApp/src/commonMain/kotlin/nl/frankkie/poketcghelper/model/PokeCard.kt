@@ -3,17 +3,18 @@ package nl.frankkie.poketcghelper.model
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class PokeCardSet(
+data class PokeExpansion(
+    val symbol: String,
     val codeName: String,
     val displayName: String,
     val numberOfCards: Int,
     val imageUrl: String,
-    val packs: List<PokeCardSetPack>,
+    val packs: List<PokeExpansionPack>,
     val cards: List<PokeCard>
 )
 
 @Serializable
-data class PokeCardSetPack(
+data class PokeExpansionPack(
     val id: String,
     val name: String,
     var imageUrl: String,
@@ -37,7 +38,7 @@ data class PokeCard(
     val pokeFlavour: String? = null,
     val pokePrint: String? = null,
     val packId: String? = null,
-    var cardSet: String? = null,
+    var expansion: String? = null,
 ) {
     fun toJsonString(): String {
         var stringBuilder = ""
@@ -79,10 +80,10 @@ data class PokeCard(
             stringBuilder += "\"pokePrint\": \"$pokePrint\",\n"
         }
         packId?.let {
-            stringBuilder += "\"packId\": \"$packId\",\n"
+            stringBuilder += "\"pokePackId\": \"$packId\",\n"
         }
-        cardSet?.let {
-            stringBuilder += "\"cardSet\": \"$it\",\n"
+        expansion?.let {
+            stringBuilder += "\"pokeExpansion\": \"$it\",\n"
         }
         stringBuilder = stringBuilder.removeSuffix(",\n")
         stringBuilder += "\n},"

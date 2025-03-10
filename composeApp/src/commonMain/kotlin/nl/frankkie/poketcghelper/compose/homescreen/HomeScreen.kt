@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.compose.*
 import nl.frankkie.poketcghelper.model.PokeCard
-import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeExpansion
 
 @Composable
 fun HomeScreen(
@@ -27,7 +27,7 @@ fun HomeScreen(
     val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
     val appState = appViewModel.appState.collectAsState().value
     var cardAmountLoading by remember { mutableStateOf(false) }
-    var filteredCards by remember { mutableStateOf<Map<PokeCardSet, List<PokeCard>>>(emptyMap()) }
+    var filteredCards by remember { mutableStateOf<Map<PokeExpansion, List<PokeCard>>>(emptyMap()) }
     val scaffoldState = rememberScaffoldState()
 
     Scaffold(
@@ -40,7 +40,7 @@ fun HomeScreen(
         } else {
             val cardSets = appState.cardSets
             val cardFilter = homeScreenUiState.cardFilter
-            val tempMap = mutableMapOf<PokeCardSet, List<PokeCard>>()
+            val tempMap = mutableMapOf<PokeExpansion, List<PokeCard>>()
             cardSets.forEach { cardSet ->
                 val cards = cardSet.cards.filter { someCard ->
                     matchesCardFilter(someCard, cardSet, cardFilter, appState)
@@ -71,7 +71,7 @@ fun HomeScreen(
         }
         if (homeScreenUiState.cardDialogData != null) {
             val theCardData = homeScreenUiState.cardDialogData
-            val amountOwned = appState.ownedCards.find { (it.pokeCard == theCardData.pokeCard && it.pokeCardSet.codeName == theCardData.pokeCardSet.codeName) }?.amount ?: 0
+            val amountOwned = appState.ownedCards.find { (it.pokeCard == theCardData.pokeCard && it.pokeExpansion.codeName == theCardData.pokeExpansion.codeName) }?.amount ?: 0
             PokeCardDialog2(
                 cardDialogData = homeScreenUiState.cardDialogData,
                 amountOwned = amountOwned,
@@ -80,7 +80,7 @@ fun HomeScreen(
                 onChangeAmountOwned = { amount ->
                     rememberCoroutineScope.launch {
                         cardAmountLoading = true
-                        appViewModel.changeOwnedCardAmount(theCardData.pokeCardSet, theCardData.pokeCard, amount)
+                        appViewModel.changeOwnedCardAmount(theCardData.pokeExpansion, theCardData.pokeCard, amount)
                         cardAmountLoading = false
                     }
                 },
@@ -161,7 +161,7 @@ class HomeScreenViewModel : ViewModel() {
     )
     val uiState = _uiState.asStateFlow()
 
-    fun showCardDialog(cardSet: PokeCardSet, card: PokeCard) {
+    fun showCardDialog(cardSet: PokeExpansion, card: PokeCard) {
         _uiState.value = _uiState.value.copy(
             cardDialogData = CardDialogData(cardSet, card)
         )

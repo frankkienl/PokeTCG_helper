@@ -25,7 +25,7 @@ import kotlinx.serialization.json.Json
 import nl.frankkie.poketcghelper.compose.createNavGraph
 import nl.frankkie.poketcghelper.model.OwnedCard
 import nl.frankkie.poketcghelper.model.PokeCard
-import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.supabase.UserOwnedCardRow
 import nl.frankkie.poketcghelper.supabase.dbTableUserOwnedCards
 import nl.frankkie.poketcghelper.supabase.supabaseApiKey
@@ -100,7 +100,7 @@ class AppViewModel : ViewModel() {
     val appState = _appState.asStateFlow()
 
 
-    fun setCardSets(cardSets: List<PokeCardSet>) {
+    fun setCardSets(cardSets: List<PokeExpansion>) {
         _appState.value = _appState.value.copy(
             cardSets = cardSets
         )
@@ -159,7 +159,7 @@ class AppViewModel : ViewModel() {
             //remove null safety !!
             val card = cardSet!!.cards.find { dbRow.card_number == it.number }!!
             OwnedCard(
-                pokeCardSet = cardSet,
+                pokeExpansion = cardSet,
                 pokeCard = card,
                 amount = dbRow.card_amount,
                 remarks = dbRow.card_remarks.toList()
@@ -171,7 +171,7 @@ class AppViewModel : ViewModel() {
         )
     }
 
-    suspend fun changeOwnedCardAmount(pokeCardSet: PokeCardSet, pokeCard: PokeCard, amount: Int) {
+    suspend fun changeOwnedCardAmount(pokeExpansion: PokeExpansion, pokeCard: PokeCard, amount: Int) {
         println("changeOwnedCardAmount")
         if (_appState.value.supabaseClient == null) {
             println("changeOwnedCardAmount: supabaseClient == null")
@@ -191,7 +191,7 @@ class AppViewModel : ViewModel() {
             id = null,
             user_uid = userId,
             created_at = Clock.System.now(),
-            card_set_id = pokeCardSet.codeName,
+            card_set_id = pokeExpansion.codeName,
             card_number = pokeCard.number,
             card_amount = amount,
             card_remarks = emptyArray()
@@ -201,7 +201,7 @@ class AppViewModel : ViewModel() {
             oldRow = db.from(dbTableUserOwnedCards).select {
                 filter {
                     eq("user_uid", userId)
-                    eq("card_set_id", pokeCardSet.codeName)
+                    eq("card_set_id", pokeExpansion.codeName)
                     eq("card_number", pokeCard.number)
                 }
             }.decodeSingle()
@@ -246,7 +246,7 @@ class AppViewModel : ViewModel() {
 }
 
 data class AppState(
-    val cardSets: List<PokeCardSet> = emptyList(),
+    val cardSets: List<PokeExpansion> = emptyList(),
     val supabaseClient: SupabaseClient? = null,
     val supabaseUserInfo: UserInfo? = null,
     val ownedCards: List<OwnedCard> = emptyList(),

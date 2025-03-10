@@ -24,13 +24,13 @@ import poketcg_helper.composeapp.generated.resources.Res
 @OptIn(ExperimentalResourceApi::class, ExperimentalFoundationApi::class)
 @Composable
 fun PokeCardComposableNormalMode(
-    cardSet: PokeCardSet,
+    pokeExpansion: PokeExpansion,
     pokeCard: PokeCard,
     isLoggedIn: Boolean,
     isOwned: Boolean,
     cardPlaceholderImage: ImageBitmap? = null,
-    onClick: (PokeCardSet, PokeCard) -> Unit,
-    onLongClick: (PokeCardSet, PokeCard) -> Unit = { _, _ -> }
+    onClick: (PokeExpansion, PokeCard) -> Unit,
+    onLongClick: (PokeExpansion, PokeCard) -> Unit = { _, _ -> }
 ) {
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
@@ -38,13 +38,13 @@ fun PokeCardComposableNormalMode(
     LaunchedEffect(pokeCard) {
         try {
             // Try small version
-            val bytes = Res.readBytes("files/card_images_small/${cardSet.codeName}/${pokeCard.imageUrl}")
+            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
         } catch (e: Exception) {
             println("PokeCardComposableNormalMode: Failed to load image (small) " + e.message)
             try {
                 // Try large version
-                val bytes = Res.readBytes("files/card_images/${cardSet.codeName}/${pokeCard.imageUrl}")
+                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
                 imageBitmap = bytes.decodeToImageBitmap()
             } catch (e: Exception) {
                 println("PokeCardComposableNormalMode: Failed to load image (large) " + e.message)
@@ -57,7 +57,7 @@ fun PokeCardComposableNormalMode(
         modifier = Modifier
             .padding(top = 8.dp)
             .clickable {
-                onClick(cardSet, pokeCard)
+                onClick(pokeExpansion, pokeCard)
             },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -103,7 +103,7 @@ fun PokeCardComposableNormalMode(
                 }
             }
         }
-        Text(pokeCard.number.toString(), modifier = Modifier.combinedClickable(onClick = { onClick(cardSet, pokeCard) }, onLongClick = { onLongClick(cardSet, pokeCard) }))
+        Text(pokeCard.number.toString(), modifier = Modifier.combinedClickable(onClick = { onClick(pokeExpansion, pokeCard) }, onLongClick = { onLongClick(pokeExpansion, pokeCard) }))
         //Text(pokeCard.pokeName)
         Text(pokeCard.packId ?: "", fontSize = 10.sp)
     }
@@ -112,12 +112,12 @@ fun PokeCardComposableNormalMode(
 @OptIn(ExperimentalResourceApi::class)
 @Composable
 fun PokeCardComposableAmountInputMode(
-    cardSet: PokeCardSet,
+    pokeExpansion: PokeExpansion,
     pokeCard: PokeCard,
     amountOwned: Int,
     cardAmountLoading: Boolean,
     cardPlaceholderImage: ImageBitmap? = null,
-    onChangeAmountOwned: (PokeCardSet, PokeCard, Int) -> Unit
+    onChangeAmountOwned: (PokeExpansion, PokeCard, Int) -> Unit
 ) {
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
@@ -125,13 +125,13 @@ fun PokeCardComposableAmountInputMode(
     LaunchedEffect(pokeCard) {
         try {
             // Try small version
-            val bytes = Res.readBytes("files/card_images_small/${cardSet.codeName}/${pokeCard.imageUrl}")
+            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
         } catch (e: Exception) {
             println("PokeCardComposableAmountInputMode: Failed to load image (small) " + e.message)
             try {
                 // Try large version
-                val bytes = Res.readBytes("files/card_images/${cardSet.codeName}/${pokeCard.imageUrl}")
+                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
                 imageBitmap = bytes.decodeToImageBitmap()
             } catch (e: Exception) {
                 println("PokeCardComposableAmountInputMode: Failed to load image (large) " + e.message)
@@ -199,7 +199,7 @@ fun PokeCardComposableAmountInputMode(
                         if (newAmount < 0) {
                             newAmount = 0
                         } // prevent negative numbers
-                        onChangeAmountOwned(cardSet, pokeCard, newAmount)
+                        onChangeAmountOwned(pokeExpansion, pokeCard, newAmount)
                     }) {
                     Text("-")
                 }
@@ -209,7 +209,7 @@ fun PokeCardComposableAmountInputMode(
                 )
                 OutlinedButton(
                     enabled = !cardAmountLoading,
-                    onClick = { onChangeAmountOwned(cardSet, pokeCard, amountOwned + 1) }) {
+                    onClick = { onChangeAmountOwned(pokeExpansion, pokeCard, amountOwned + 1) }) {
                     Text("+")
                 }
             }
@@ -217,7 +217,7 @@ fun PokeCardComposableAmountInputMode(
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 OutlinedButton(
                     enabled = !cardAmountLoading,
-                    onClick = { onChangeAmountOwned(cardSet, pokeCard, amountOwned + 1) }) {
+                    onClick = { onChangeAmountOwned(pokeExpansion, pokeCard, amountOwned + 1) }) {
                     Text("+")
                 }
                 Text(
@@ -231,7 +231,7 @@ fun PokeCardComposableAmountInputMode(
                         if (newAmount < 0) {
                             newAmount = 0
                         } // prevent negative numbers
-                        onChangeAmountOwned(cardSet, pokeCard, newAmount)
+                        onChangeAmountOwned(pokeExpansion, pokeCard, newAmount)
                     }) {
                     Text("-")
                 }

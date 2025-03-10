@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
-import nl.frankkie.poketcghelper.model.PokeCardSet
+import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokePrint
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
@@ -103,15 +103,15 @@ fun PokePrintComposable(pokePrintString: String?) {
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
-fun PokePackComposable(pokeCardSet: PokeCardSet?, packId: String?) {
+fun PokePackComposable(pokeExpansion: PokeExpansion?, packId: String?) {
     if (packId != null) {
-        if (pokeCardSet != null) {
-            pokeCardSet.packs.find { somePack -> somePack.id == packId }?.let { thePack ->
+        if (pokeExpansion != null) {
+            pokeExpansion.packs.find { somePack -> somePack.id == packId }?.let { thePack ->
                 var imageBitmap by remember {
                     mutableStateOf<ImageBitmap?>(null)
                 }
-                LaunchedEffect(pokeCardSet, packId) {
-                    val bytes = Res.readBytes("files/card_symbols/${pokeCardSet.codeName}/${thePack.imageUrlSymbol}")
+                LaunchedEffect(pokeExpansion, packId) {
+                    val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/expansion_symbols/${thePack.imageUrlSymbol}")
                     imageBitmap = bytes.decodeToImageBitmap()
                 }
 

@@ -1,7 +1,7 @@
 package nl.frankkie.poketcghelper.model
 
 data class OwnedCard(
-    val pokeCardSet: PokeCardSet,
+    val pokeExpansion: PokeExpansion,
     val pokeCard: PokeCard,
     val amount: Int,
     val remarks: List<String>,

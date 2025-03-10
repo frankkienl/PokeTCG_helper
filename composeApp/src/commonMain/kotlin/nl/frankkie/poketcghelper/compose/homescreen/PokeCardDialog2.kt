@@ -40,14 +40,14 @@ fun PokeCardDialog2(
     onDismissRequest: () -> Unit
 ) {
     val pokeCard = cardDialogData.pokeCard
-    val pokeCardSet = cardDialogData.pokeCardSet
+    val pokeExpansion = cardDialogData.pokeExpansion
     val cardHeight = 300.dp
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
     }
     LaunchedEffect(pokeCard) {
         try {
-            val bytes = Res.readBytes("files/card_images/${pokeCardSet.codeName}/${pokeCard.imageUrl}")
+            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
         } catch (missingResourceException: MissingResourceException) {
             println("PokeCardDialog: Failed to load image " + missingResourceException.message)
@@ -69,12 +69,12 @@ fun PokeCardDialog2(
                         verticalArrangement = Arrangement.Center,
                     ) {
                         PokeCardDialog2_CardImagePart(imageBitmap, cardHeight, isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned, false)
-                        PokeCardDialog2_CardDetailsPart(pokeCard, pokeCardSet, false)
+                        PokeCardDialog2_CardDetailsPart(pokeCard, pokeExpansion, false)
                     }
                 } else {
                     Row {
                         PokeCardDialog2_CardImagePart(imageBitmap, cardHeight, isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned, true)
-                        PokeCardDialog2_CardDetailsPart(pokeCard, pokeCardSet, true)
+                        PokeCardDialog2_CardDetailsPart(pokeCard, pokeExpansion, true)
                     }
                 }
             }
@@ -83,7 +83,7 @@ fun PokeCardDialog2(
 }
 
 @Composable
-private fun PokeCardDialog2_CardDetailsPart(pokeCard: PokeCard, pokeCardSet: PokeCardSet, isHorizontal: Boolean) {
+private fun PokeCardDialog2_CardDetailsPart(pokeCard: PokeCard, pokeExpansion: PokeExpansion, isHorizontal: Boolean) {
     Column(
         modifier = if (isHorizontal) {
             Modifier.padding(8.dp).verticalScroll(rememberScrollState())
@@ -104,7 +104,7 @@ private fun PokeCardDialog2_CardDetailsPart(pokeCard: PokeCard, pokeCardSet: Pok
             Spacer(modifier = Modifier.height(8.dp))
         }
         pokeCard.packId?.let {
-            PokePackComposable(pokeCardSet, pokeCard.packId)
+            PokePackComposable(pokeExpansion, pokeCard.packId)
             Spacer(modifier = Modifier.height(8.dp))
         }
         pokeCard.pokeIllustrator?.let {
