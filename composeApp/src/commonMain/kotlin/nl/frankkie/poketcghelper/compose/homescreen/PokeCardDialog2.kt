@@ -47,11 +47,20 @@ fun PokeCardDialog2(
     }
     LaunchedEffect(pokeCard) {
         try {
+            // Try small version
             val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
-        } catch (missingResourceException: MissingResourceException) {
-            println("PokeCardDialog: Failed to load image " + missingResourceException.message)
-            //Ignore; No image it is.
+        } catch (e: Exception) {
+            println("PokeCardDialog2: Failed to load image (small) " + e.message)
+            try {
+                // Try large version
+                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
+                imageBitmap = bytes.decodeToImageBitmap()
+            } catch (e: Exception) {
+                println("PokeCardDialog2: Failed to load image (large) " + e.message)
+                // Image doesn't work.
+                imageBitmap = null
+            }
         }
     }
     Dialog(onDismissRequest = onDismissRequest) {
@@ -138,7 +147,7 @@ private fun PokeCardDialog2_CardDetailsPart(pokeCard: PokeCard, pokeExpansion: P
 
         //Bulbapedia
         if (isOpenInBrowserSupported(getCurrentPlatform())) {
-            OutlinedButton(onClick = { openOnBulbapedia(pokeCard.pokeName, pokeCard.number) }) {
+            OutlinedButton(onClick = { openOnBulbapedia(pokeCard, pokeExpansion) }) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text("Open on Bulbapedia")
                     Spacer(Modifier.width(8.dp))
@@ -184,9 +193,11 @@ private fun PokeCardDialog2_CardImagePart(
     }
 }
 
-fun openOnBulbapedia(pokeName: String, pokeNumber: Int) {
-    var nameToOpen = pokeName.replace(" ", "_")
-    nameToOpen += "_(Genetic_Apex_${pokeNumber})"
+fun openOnBulbapedia(pokeCard: PokeCard, pokeExpansion: PokeExpansion) {
+    val pokeName = pokeCard.pokeName
+    val pokeNumber = pokeCard.number
+    val pokeExpansionDisplayName = pokeExpansion.displayName
+    val nameToOpen = "${pokeName}_(${pokeExpansionDisplayName}_${pokeNumber})".replace(" ", "_")
     tryToOpenInBrowser("https://bulbapedia.bulbagarden.net/wiki/${nameToOpen}")
 }
 

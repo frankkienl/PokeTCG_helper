@@ -36,13 +36,22 @@ fun PokeCardDialog(
     var imageBitmap by remember {
         mutableStateOf<ImageBitmap?>(null)
     }
-    LaunchedEffect(cardDialogData) {
+    LaunchedEffect(pokeCard) {
         try {
+            // Try small version
             val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
-        } catch (missingResourceException: MissingResourceException) {
-            println("PokeCardDialog: Failed to load image " + missingResourceException.message)
-            //Ignore; No image it is.
+        } catch (e: Exception) {
+            println("PokeCardDialog: Failed to load image (small) " + e.message)
+            try {
+                // Try large version
+                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
+                imageBitmap = bytes.decodeToImageBitmap()
+            } catch (e: Exception) {
+                println("PokeCardDialog: Failed to load image (large) " + e.message)
+                // Image doesn't work.
+                imageBitmap = null
+            }
         }
     }
     Dialog(onDismissRequest = onDismissRequest) {
