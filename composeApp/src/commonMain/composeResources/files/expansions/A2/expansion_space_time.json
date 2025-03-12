@@ -231,21 +231,34 @@
       "pokeName": "Carnivine",
       "imageUrl": "19-Carnivine-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 90,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2"
     },
     {
       "number": 20,
       "pokeName": "Leafeon",
       "imageUrl": "20-Leafeon-Space-Time.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Eevee",
+      "pokeHp": 90,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D3"
     },
     {
       "number": 21,
       "pokeName": "Mow Rotom",
       "imageUrl": "21-Mow-Rotom-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 80,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 22,
