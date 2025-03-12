@@ -6,15 +6,22 @@ import java.io.File
 import javax.imageio.ImageIO
 
 
-const val IMAGES_RESIZE_PATH_SRC = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/card_images/MYTHICAL_ISLAND"
-const val IMAGES_RESIZE_PATH_DEST = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/card_images_small/MYTHICAL_ISLAND"
+//const val IMAGES_RESIZE_PATH_SRC = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/card_images/MYTHICAL_ISLAND"
+//const val IMAGES_RESIZE_PATH_DEST = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/card_images_small/MYTHICAL_ISLAND"
+
+const val IMAGES_RESIZE_PATH_SRC_A2 = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/expansions/A2/card_images"
+const val IMAGES_RESIZE_PATH_DEST_A2 = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/expansions/A2/card_images_small"
+
+const val IMAGES_RESIZE_PATH_SRC_A2a = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/expansions/A2a/card_images"
+const val IMAGES_RESIZE_PATH_DEST_A2a = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/expansions/A2a/card_images_small"
+
 
 fun main() {
-    val filesDir = File(IMAGES_RESIZE_PATH_SRC)
+    val filesDir = File(IMAGES_RESIZE_PATH_SRC_A2)
     if (!filesDir.exists()) {return}
 
     filesDir.listFiles()?.forEach { file ->
-        if (file.isFile && file.name.endsWith("-Mythical-Island.jpg")) {
+        if (file.isFile && file.name.endsWith(".jpg")) {
             processImage(file)
         }
     }
@@ -32,7 +39,7 @@ fun processImage(fileSrc: File) {
         graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
         graphics2D.drawImage(originalImage, 0, 0, targetWidth, targetHeight, null)
         graphics2D.dispose()
-        val newFile = File(IMAGES_RESIZE_PATH_DEST, fileSrc.name)
+        val newFile = File(IMAGES_RESIZE_PATH_DEST_A2, fileSrc.name)
         ImageIO.write(resizedImage, "jpg", newFile)
         println("done")
     } catch (e: Exception) {

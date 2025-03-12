@@ -47,17 +47,17 @@ fun PokeCardDialog2(
     }
     LaunchedEffect(pokeCard) {
         try {
-            // Try small version
-            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
+            // Try large version
+            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
             imageBitmap = bytes.decodeToImageBitmap()
         } catch (e: Exception) {
-            println("PokeCardDialog2: Failed to load image (small) " + e.message)
+            println("PokeCardDialog2: Failed to load image (large) " + e.message)
             try {
-                // Try large version
-                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
+                // Try small version
+                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
                 imageBitmap = bytes.decodeToImageBitmap()
             } catch (e: Exception) {
-                println("PokeCardDialog2: Failed to load image (large) " + e.message)
+                println("PokeCardDialog2: Failed to load image (small) " + e.message)
                 // Image doesn't work.
                 imageBitmap = null
             }

@@ -2,8 +2,646 @@
   "symbol": "A2a",
   "codeName": "TRIUMPHANT_LIGHT",
   "displayName": "Triumphant Light",
-  "numberOfCards": 0,
+  "numberOfCards": 96,
   "imageUrl": "triumphant_light.png",
   "packs": [],
-  "cards": []
+  "cards": [
+    {
+      "number": 1,
+      "pokeName": "Heracross",
+      "imageUrl": "1-Heracross-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 2,
+      "pokeName": "Burmy",
+      "imageUrl": "2-Burmy-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 3,
+      "pokeName": "Mothim",
+      "imageUrl": "3-Mothim-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 4,
+      "pokeName": "Combee",
+      "imageUrl": "4-Combee-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 5,
+      "pokeName": "Vespiquen",
+      "imageUrl": "5-Vespiquen-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 6,
+      "pokeName": "Cherubi",
+      "imageUrl": "6-Cherubi-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 7,
+      "pokeName": "Cherrim",
+      "imageUrl": "7-Cherrim-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 8,
+      "pokeName": "Cherrim",
+      "imageUrl": "8-Cherrim-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 9,
+      "pokeName": "Carnivine",
+      "imageUrl": "9-Carnivine-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 10,
+      "pokeName": "Leafeon ex",
+      "imageUrl": "10-Leafeon-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 11,
+      "pokeName": "Houndour",
+      "imageUrl": "11-Houndour-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 12,
+      "pokeName": "Houndoom",
+      "imageUrl": "12-Houndoom-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 13,
+      "pokeName": "Heatran",
+      "imageUrl": "13-Heatran-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 14,
+      "pokeName": "Marill",
+      "imageUrl": "14-Marill-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 15,
+      "pokeName": "Azumarill",
+      "imageUrl": "15-Azumarill-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 16,
+      "pokeName": "Barboach",
+      "imageUrl": "16-Barboach-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 17,
+      "pokeName": "Whiscash",
+      "imageUrl": "17-Whiscash-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 18,
+      "pokeName": "Snorunt",
+      "imageUrl": "18-Snorunt-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 19,
+      "pokeName": "Froslass",
+      "imageUrl": "19-Froslass-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 20,
+      "pokeName": "Snover",
+      "imageUrl": "20-Snover-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 21,
+      "pokeName": "Abomasnow",
+      "imageUrl": "21-Abomasnow-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 22,
+      "pokeName": "Glaceon ex ",
+      "imageUrl": "22-Glaceon-ex--Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 23,
+      "pokeName": "Palkia",
+      "imageUrl": "23-Palkia-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 24,
+      "pokeName": "Phione",
+      "imageUrl": "24-Phione-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 25,
+      "pokeName": "Pikachu",
+      "imageUrl": "25-Pikachu-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 26,
+      "pokeName": "Raichu",
+      "imageUrl": "26-Raichu-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 27,
+      "pokeName": "Electrike",
+      "imageUrl": "27-Electrike-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 28,
+      "pokeName": "Manectric",
+      "imageUrl": "28-Manectric-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 29,
+      "pokeName": "Clefairy",
+      "imageUrl": "29-Clefairy-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 30,
+      "pokeName": "Clefable",
+      "imageUrl": "30-Clefable-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 31,
+      "pokeName": "Gastly",
+      "imageUrl": "31-Gastly-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 32,
+      "pokeName": "Haunter",
+      "imageUrl": "32-Haunter-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 33,
+      "pokeName": "Gengar",
+      "imageUrl": "33-Gengar-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 34,
+      "pokeName": "Unown",
+      "imageUrl": "34-Unown-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 35,
+      "pokeName": "Rotom",
+      "imageUrl": "35-Rotom-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 36,
+      "pokeName": "Sudowoodo",
+      "imageUrl": "36-Sudowoodo-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 37,
+      "pokeName": "Phanpy",
+      "imageUrl": "37-Phanpy-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 38,
+      "pokeName": "Donphan",
+      "imageUrl": "38-Donphan-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 39,
+      "pokeName": "Larvitar",
+      "imageUrl": "39-Larvitar-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 40,
+      "pokeName": "Pupitar",
+      "imageUrl": "40-Pupitar-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 41,
+      "pokeName": "Tyranitar",
+      "imageUrl": "41-Tyranitar-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 42,
+      "pokeName": "Nosepass",
+      "imageUrl": "42-Nosepass-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 43,
+      "pokeName": "Meditite",
+      "imageUrl": "43-Meditite-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 44,
+      "pokeName": "Medicham",
+      "imageUrl": "44-Medicham-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 44,
+      "pokeName": "Magneton",
+      "imageUrl": "44-Magneton-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 45,
+      "pokeName": "Gible",
+      "imageUrl": "45-Gible-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 46,
+      "pokeName": "Gabite",
+      "imageUrl": "46-Gabite-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 47,
+      "pokeName": "Garchomp ex",
+      "imageUrl": "47-Garchomp-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 48,
+      "pokeName": "Zubat",
+      "imageUrl": "48-Zubat-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 49,
+      "pokeName": "Golbat",
+      "imageUrl": "49-Golbat-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 50,
+      "pokeName": "Crobat",
+      "imageUrl": "50-Crobat-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 51,
+      "pokeName": "Croagunk",
+      "imageUrl": "51-Croagunk-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 52,
+      "pokeName": "Toxicroak",
+      "imageUrl": "52-Toxicroak-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 53,
+      "pokeName": "Magnemite",
+      "imageUrl": "53-Magnemite-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 54,
+      "pokeName": "Magnezone",
+      "imageUrl": "54-Magnezone-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 55,
+      "pokeName": "Mawile",
+      "imageUrl": "55-Mawile-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 56,
+      "pokeName": "Probopass ex",
+      "imageUrl": "56-Probopass-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 57,
+      "pokeName": "Bronzor",
+      "imageUrl": "57-Bronzor-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 58,
+      "pokeName": "Bronzong",
+      "imageUrl": "58-Bronzong-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 59,
+      "pokeName": "Dialga",
+      "imageUrl": "59-Dialga-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 60,
+      "pokeName": "Giratina",
+      "imageUrl": "60-Giratina-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 61,
+      "pokeName": "Eevee",
+      "imageUrl": "61-Eevee-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 62,
+      "pokeName": "Snorlax",
+      "imageUrl": "62-Snorlax-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 63,
+      "pokeName": "Hoothoot",
+      "imageUrl": "63-Hoothoot-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 64,
+      "pokeName": "Noctowl",
+      "imageUrl": "64-Noctowl-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 65,
+      "pokeName": "Starly",
+      "imageUrl": "65-Starly-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 66,
+      "pokeName": "Staravia",
+      "imageUrl": "66-Staravia-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 67,
+      "pokeName": "Staraptor",
+      "imageUrl": "67-Staraptor-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 68,
+      "pokeName": "Shaymin",
+      "imageUrl": "68-Shaymin-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 69,
+      "pokeName": "Arceus",
+      "imageUrl": "69-Arceus-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 70,
+      "pokeName": "Arceus ex",
+      "imageUrl": "70-Arceus-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 71,
+      "pokeName": "Leafeon ex",
+      "imageUrl": "71-Leafeon-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 73,
+      "pokeName": "Houndoom",
+      "imageUrl": "73-Houndoom-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 74,
+      "pokeName": "Marill",
+      "imageUrl": "74-Marill-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 76,
+      "pokeName": "Glaceon ex",
+      "imageUrl": "76-Glaceon-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 78,
+      "pokeName": "Unown",
+      "imageUrl": "78-Unown-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 79,
+      "pokeName": "Sudowoodo",
+      "imageUrl": "79-Sudowoodo-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 80,
+      "pokeName": "Garchomp ex",
+      "imageUrl": "80-Garchomp-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 82,
+      "pokeName": "Magnemite",
+      "imageUrl": "82-Magnemite-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 83,
+      "pokeName": "Probopass ex",
+      "imageUrl": "83-Probopass-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 85,
+      "pokeName": "Shaymin",
+      "imageUrl": "85-Shaymin-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 86,
+      "pokeName": "Arceus ex",
+      "imageUrl": "86-Arceus-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 88,
+      "pokeName": "Arceus ex",
+      "imageUrl": "88-Arceus-ex-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 89,
+      "pokeName": "Irida",
+      "imageUrl": "89-Irida-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 90,
+      "pokeName": "Celestic Town Elder",
+      "imageUrl": "90-Celestic-Town-Elder-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 91,
+      "pokeName": "Barry",
+      "imageUrl": "91-Barry-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 92,
+      "pokeName": "Adaman",
+      "imageUrl": "92-Adaman-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 93,
+      "pokeName": "Irida",
+      "imageUrl": "93-Irida-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 94,
+      "pokeName": "Celestic Town Elder",
+      "imageUrl": "94-Celestic-Town-Elder-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 95,
+      "pokeName": "Barry",
+      "imageUrl": "95-Barry-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    },
+    {
+      "number": 96,
+      "pokeName": "Adaman",
+      "imageUrl": "96-Adaman-Triumphant-Light.jpg",
+      "pokeStage": 0,
+      "pokeRarity": "UNKNOWN"
+    }
+  ]
 }
