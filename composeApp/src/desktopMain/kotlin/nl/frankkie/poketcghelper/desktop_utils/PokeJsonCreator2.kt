@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper
+package nl.frankkie.poketcghelper.desktop_utils
 
 import nl.frankkie.poketcghelper.model.PokeCard
 import java.io.File

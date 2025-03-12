@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper
+package nl.frankkie.poketcghelper.platform_dependant
 
 import java.awt.Desktop
 import java.net.URI
@@ -14,8 +14,4 @@ actual fun openInBrowser(url: String) {
         "nix" in osName || "nux" in osName -> Runtime.getRuntime().exec("xdg-open $uri")
         else -> throw RuntimeException("cannot open $uri")
     }
-}
-
-actual fun getCurrentPlatform(): Platform {
-    return Platform.Desktop
 }

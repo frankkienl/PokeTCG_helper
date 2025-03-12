@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper
+package nl.frankkie.poketcghelper.platform_dependant
 
 fun tryToOpenInBrowser(url: String) {
     if (isOpenInBrowserSupported(getCurrentPlatform())) {
@@ -10,22 +10,12 @@ fun tryToOpenInBrowser(url: String) {
 
 expect fun openInBrowser(url: String)
 
-enum class Platform {
-    Desktop,
-    Native,
-    Android,
-    WasmJS,
-    Unknown
-}
-
 fun isOpenInBrowserSupported(platform: Platform): Boolean {
     return when (platform) {
         Platform.Desktop -> true
         Platform.WasmJS -> true
         Platform.Native -> false
-        Platform.Android -> false
+        Platform.Android -> true
         Platform.Unknown -> false
     }
 }
-
-expect fun getCurrentPlatform(): Platform

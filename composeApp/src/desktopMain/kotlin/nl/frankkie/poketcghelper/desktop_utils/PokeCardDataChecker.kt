@@ -1,5 +1,6 @@
-package nl.frankkie.poketcghelper
+package nl.frankkie.poketcghelper.desktop_utils
 
+import nl.frankkie.poketcghelper.initializeCards
 import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokePrint
 import nl.frankkie.poketcghelper.model.PokeRarity

@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper
+package nl.frankkie.poketcghelper.desktop_utils
 
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString

@@ -20,12 +20,11 @@ import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeCardAmount
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokePackComposable
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeRarityComposable
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeTextRow
-import nl.frankkie.poketcghelper.getCurrentPlatform
-import nl.frankkie.poketcghelper.isOpenInBrowserSupported
+import nl.frankkie.poketcghelper.platform_dependant.getCurrentPlatform
+import nl.frankkie.poketcghelper.platform_dependant.isOpenInBrowserSupported
 import nl.frankkie.poketcghelper.model.*
-import nl.frankkie.poketcghelper.tryToOpenInBrowser
+import nl.frankkie.poketcghelper.platform_dependant.tryToOpenInBrowser
 import org.jetbrains.compose.resources.ExperimentalResourceApi
-import org.jetbrains.compose.resources.MissingResourceException
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
 
