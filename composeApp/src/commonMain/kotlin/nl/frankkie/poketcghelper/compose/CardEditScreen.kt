@@ -36,7 +36,7 @@ fun CardEditScreen(
     ogCardNumber: Int
 ) {
     val appState = appViewModel.appState.collectAsState().value
-    val ogExpansion = appState.cardSets.find { someExpansion -> someExpansion.codeName == ogExpansionCodeName } ?: return
+    val ogExpansion = appState.pokeExpansions.find { someExpansion -> someExpansion.codeName == ogExpansionCodeName } ?: return
     val ogCard = ogExpansion.cards.find { someCard -> someCard.number == ogCardNumber } ?: return
     var newCard by remember { mutableStateOf<PokeCard>(ogCard.copy()) }
     val cardHeight = 512.dp

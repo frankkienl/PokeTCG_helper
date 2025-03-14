@@ -35,10 +35,10 @@ fun HomeScreen(
         topBar = { HomeScreenTopBar(navController, appViewModel, homeScreenViewModel, scaffoldState.drawerState) },
         drawerContent = { HomeDrawerContent(navController, appViewModel) },
     ) {
-        if (appState.cardSets.isEmpty()) {
+        if (appState.pokeExpansions.isEmpty()) {
             Text("Loading Card Sets...")
         } else {
-            val cardSets = appState.cardSets
+            val cardSets = appState.pokeExpansions
             val cardFilter = homeScreenUiState.cardFilter
             val tempMap = mutableMapOf<PokeExpansion, List<PokeCard>>()
             cardSets.forEach { cardSet ->

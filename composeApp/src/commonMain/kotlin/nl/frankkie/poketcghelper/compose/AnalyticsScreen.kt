@@ -69,7 +69,7 @@ fun ana1(appState: AppState) {
     }
 
     // GENETIC APEX
-    val geneticApexCardSet = appState.cardSets.find { cardSet -> cardSet.codeName == "GENETIC_APEX" }
+    val geneticApexCardSet = appState.pokeExpansions.find { cardSet -> cardSet.codeName == "GENETIC_APEX" }
     if (geneticApexCardSet == null) {
         return
     }
@@ -126,7 +126,7 @@ fun ana1(appState: AppState) {
     MyHorizontalDivider()
 
     //MYTHICAL ISLAND
-    val mythicalIslandCardSet = appState.cardSets.find { cardSet -> cardSet.codeName == "MYTHICAL_ISLAND" }
+    val mythicalIslandCardSet = appState.pokeExpansions.find { cardSet -> cardSet.codeName == "MYTHICAL_ISLAND" }
     if (mythicalIslandCardSet == null) {
         return
     }

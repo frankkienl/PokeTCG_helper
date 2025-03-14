@@ -81,7 +81,7 @@ fun App(
     }
 
     LaunchedEffect(null) {
-        if (appViewModel.appState.value.cardSets.isEmpty()) {
+        if (appViewModel.appState.value.pokeExpansions.isEmpty()) {
             val cardSets = initializeCards()
             appViewModel.setCardSets(cardSets)
         }
@@ -102,7 +102,7 @@ class AppViewModel : ViewModel() {
 
     fun setCardSets(cardSets: List<PokeExpansion>) {
         _appState.value = _appState.value.copy(
-            cardSets = cardSets
+            pokeExpansions = cardSets
         )
     }
 
@@ -140,10 +140,10 @@ class AppViewModel : ViewModel() {
             println("refreshOwnedCards: supabaseUserInfo == null")
             return
         }
-        if (_appState.value.cardSets.isEmpty()) {
+        if (_appState.value.pokeExpansions.isEmpty()) {
             println("refreshOwnedCards: cardSets is empty")
             delay(500L)
-            if (_appState.value.cardSets.isEmpty()) {
+            if (_appState.value.pokeExpansions.isEmpty()) {
                 println("refreshOwnedCards: cardSets is still empty")
                 return
             }
@@ -155,7 +155,7 @@ class AppViewModel : ViewModel() {
             }
         }.decodeList<UserOwnedCardRow>()
         val ownedCards = listOfOwnedCards.map { dbRow ->
-            val cardSet = _appState.value.cardSets.find { dbRow.card_set_id == it.codeName }
+            val cardSet = _appState.value.pokeExpansions.find { dbRow.card_set_id == it.codeName }
             //remove null safety !!
             val card = cardSet!!.cards.find { dbRow.card_number == it.number }!!
             OwnedCard(
@@ -181,7 +181,7 @@ class AppViewModel : ViewModel() {
             println("changeOwnedCardAmount: supabaseUserInfo == null")
             return
         }
-        if (_appState.value.cardSets.isEmpty()) {
+        if (_appState.value.pokeExpansions.isEmpty()) {
             println("changeOwnedCardAmount: cardSets is empty")
             return
         }
@@ -246,7 +246,7 @@ class AppViewModel : ViewModel() {
 }
 
 data class AppState(
-    val cardSets: List<PokeExpansion> = emptyList(),
+    val pokeExpansions: List<PokeExpansion> = emptyList(),
     val supabaseClient: SupabaseClient? = null,
     val supabaseUserInfo: UserInfo? = null,
     val ownedCards: List<OwnedCard> = emptyList(),

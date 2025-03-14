@@ -36,13 +36,13 @@ fun GridOfCards(
     onChangeAmountOwned: (PokeExpansion, PokeCard, Int) -> Unit,
 ) {
     val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
-    val cardSets = appState.cardSets
+    val expansions = appState.pokeExpansions
     val isLoggedIn = appState.supabaseUserInfo != null
     //Placeholder image
     var placeHolderImage by remember {
         mutableStateOf<ImageBitmap?>(null)
     }
-    LaunchedEffect(cardSets) {
+    LaunchedEffect(expansions) {
         val bytes = Res.readBytes("files/card_symbols/card_back.png")
         placeHolderImage = bytes.decodeToImageBitmap()
     }
@@ -52,15 +52,18 @@ fun GridOfCards(
         modifier = Modifier.fillMaxSize(),
         columns = GridCells.Fixed(5),
     ) {
-        cardSets.forEach { cardSet ->
-            val filteredCardsForCardSet = filteredCards[cardSet] ?: emptyList()
-            if (filteredCardsForCardSet.isNotEmpty()) {
+        expansions.forEach { expansion ->
+            if (!homeScreenUiState.cardFilter.expansions.isEmpty() && !homeScreenUiState.cardFilter.expansions.contains(expansion)) {
+                return@forEach
+            }
+            val filteredCardsForExpansion = filteredCards[expansion] ?: emptyList()
+            if (filteredCardsForExpansion.isNotEmpty()) {
                 //No need to show header, if there's no cards shown in this set.
                 item(span = { GridItemSpan(5) }) {
                     //Cardset logo
                     var imageBitmap by remember { mutableStateOf<ImageBitmap?>(null) }
-                    LaunchedEffect(cardSet) {
-                        val bytes = Res.readBytes("files/expansions/${cardSet.symbol}/expansion_symbols/${cardSet.imageUrl}")
+                    LaunchedEffect(expansion) {
+                        val bytes = Res.readBytes("files/expansions/${expansion.symbol}/expansion_symbols/${expansion.imageUrl}")
                         try {
                             imageBitmap = bytes.decodeToImageBitmap()
                         } catch (e: Exception) {
@@ -71,20 +74,20 @@ fun GridOfCards(
                     }
                     Box(modifier = Modifier.height(80.dp), contentAlignment = Alignment.Center) {
                         if (imageBitmap == null) {
-                            Text(cardSet.displayName)
+                            Text(expansion.displayName)
                         } else {
-                            imageBitmap?.let { Image(it, contentDescription = cardSet.displayName, modifier = Modifier.padding(8.dp)) }
+                            imageBitmap?.let { Image(it, contentDescription = expansion.displayName, modifier = Modifier.padding(8.dp)) }
                         }
                     }
                 }
             }
-            items(filteredCardsForCardSet) { card ->
-                val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeExpansion.codeName) }
+            items(filteredCardsForExpansion) { card ->
+                val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && expansion.codeName == it.pokeExpansion.codeName) }
                 val isOwned = ownedCard != null && ownedCard.amount > 0
                 val amountOwned = ownedCard?.amount ?: 0
                 if (homeScreenUiState.amountInputMode && isLoggedIn) {
                     PokeCardComposableAmountInputMode(
-                        pokeExpansion = cardSet,
+                        pokeExpansion = expansion,
                         pokeCard = card,
                         amountOwned = amountOwned,
                         cardAmountLoading = cardAmountLoading,
@@ -93,7 +96,7 @@ fun GridOfCards(
                     )
                 } else {
                     PokeCardComposableNormalMode(
-                        pokeExpansion = cardSet,
+                        pokeExpansion = expansion,
                         pokeCard = card,
                         isLoggedIn = appState.supabaseUserInfo != null,
                         isOwned = isOwned,

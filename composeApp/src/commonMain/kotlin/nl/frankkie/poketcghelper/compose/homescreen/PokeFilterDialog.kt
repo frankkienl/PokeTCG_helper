@@ -1,8 +1,6 @@
 package nl.frankkie.poketcghelper.compose.homescreen
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.gestures.Orientation
-import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -18,6 +16,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import nl.frankkie.poketcghelper.AppState
+import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
 import org.jetbrains.compose.resources.ExperimentalResourceApi
@@ -25,6 +24,7 @@ import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
 
 data class PokeCardFilter(
+    val expansions: List<PokeExpansion> = emptyList(),
     val searchQuery: String = "",
     val types: List<PokeType> = emptyList(),
     val rarities: List<PokeRarity> = emptyList(),
@@ -43,6 +43,12 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel, appState: AppStat
         Card(modifier = Modifier.padding(8.dp).widthIn(250.dp), shape = RoundedCornerShape(8.dp)) {
             val scrollState = rememberScrollState()
             Column(modifier = Modifier.padding(8.dp).verticalScroll(scrollState)) {
+                Text("Filter by expansion")
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    appState.pokeExpansions.forEach { set ->
+                        buildFilterExpansion(homeScreenUiState, homeScreenViewModel, set)
+                    }
+                }
                 Text("Search by name")
                 TextField(homeScreenUiState.cardFilter.searchQuery, {
                     homeScreenViewModel.setCardFilter(homeScreenUiState.cardFilter.copy(searchQuery = it))
@@ -85,6 +91,39 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel, appState: AppStat
                 }
             }
         }
+    }
+}
+
+@Composable
+@OptIn(ExperimentalMaterialApi::class)
+fun buildFilterExpansion(homeScreenUiState: HomeScreenUiState, homeScreenViewModel: HomeScreenViewModel, expansion: PokeExpansion) {
+    val selected = homeScreenUiState.cardFilter.expansions.contains(expansion)
+    FilterChip(
+        selected = selected,
+        onClick = { clickedFilterExpansion(homeScreenViewModel, expansion) },
+        content = { Text(expansion.displayName) },
+        leadingIcon = if (selected) {
+            {
+                Icon(
+                    imageVector = Icons.Filled.Done,
+                    contentDescription = "Selected icon",
+                    modifier = Modifier.size(16.dp)
+                )
+            }
+        } else {
+            null
+        },
+    )
+}
+
+fun clickedFilterExpansion(homeScreenViewModel: HomeScreenViewModel, expansion: PokeExpansion) {
+    homeScreenViewModel.uiState.value.cardFilter.let {
+        val newFilterExpansion = if (it.expansions.contains(expansion)) {
+            it.copy(expansions = it.expansions - expansion)
+        } else {
+            it.copy(expansions = it.expansions + expansion)
+        }
+        homeScreenViewModel.setCardFilter(newFilterExpansion)
     }
 }
 
