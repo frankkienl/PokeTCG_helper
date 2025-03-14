@@ -13,8 +13,8 @@ fun main() {
         return
     }
     val listOfCards: List<PokeCard?>? = imagesDir.list()?.map {
-        if (it.endsWith("-Triumphant-Light.webp")) {
-            val temp = it.removeSuffix("-Triumphant-Light.webp")
+        if (it.endsWith("-Triumphant-Light.jpg")) {
+            val temp = it.removeSuffix("-Triumphant-Light.jpg")
             val number = temp.substring(0, it.indexOf("-")).toInt()
             val pokeName = temp
                 .substring(it.indexOf("-") + 1)

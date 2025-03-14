@@ -16,13 +16,31 @@ const val IMAGES_RESIZE_PATH_SRC_A2a = "/Users/frankbouwens/priv/PokeTCG_helper/
 const val IMAGES_RESIZE_PATH_DEST_A2a = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/expansions/A2a/card_images_small"
 
 
-fun main() {
+fun main_normal() {
     val filesDir = File(IMAGES_RESIZE_PATH_SRC_A2)
-    if (!filesDir.exists()) {return}
+    if (!filesDir.exists()) {
+        return
+    }
 
     filesDir.listFiles()?.forEach { file ->
         if (file.isFile && file.name.endsWith(".jpg")) {
             processImage(file)
+        }
+    }
+}
+
+fun main() {
+    val filesDir = File(IMAGES_RESIZE_PATH_SRC_A2a)
+    if (!filesDir.exists()) {
+        return
+    }
+
+    filesDir.listFiles()?.forEach { file ->
+        if (file.isFile && file.name.endsWith(".jpg")) {
+            val tempNr = file.name.substring(0, file.name.indexOf("-")).toInt()
+            if (tempNr >= 55) {
+                processImage(file)
+            }
         }
     }
 }
@@ -39,7 +57,7 @@ fun processImage(fileSrc: File) {
         graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
         graphics2D.drawImage(originalImage, 0, 0, targetWidth, targetHeight, null)
         graphics2D.dispose()
-        val newFile = File(IMAGES_RESIZE_PATH_DEST_A2, fileSrc.name)
+        val newFile = File(IMAGES_RESIZE_PATH_DEST_A2a, fileSrc.name)
         ImageIO.write(resizedImage, "jpg", newFile)
         println("done")
     } catch (e: Exception) {
