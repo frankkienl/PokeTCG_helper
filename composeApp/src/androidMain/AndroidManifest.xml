@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <!-- needed for screen capture (aka Media Projection) //-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <!--    <uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+
+    <!-- needed for overlay //-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,6 +32,12 @@
 
         <!-- for ML Kit -->
         <activity android:name=".android.MyMLKitActivity" />
+
+        <!-- for screen capture (aka Media Projection) -->
+        <service
+            android:name=".android.MyMediaProjectionService"
+            android:exported="true"
+            android:permission="android.permission.BIND_FOREGROUND_SERVICE" />
     </application>
 
 </manifest>

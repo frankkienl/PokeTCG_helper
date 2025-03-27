@@ -61,6 +61,8 @@ kotlin {
             implementation(libs.androidx.activity.compose)
             //
             implementation(libs.ktor.client.cio)
+            //
+            implementation(libs.mlkit.text.recognition)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
