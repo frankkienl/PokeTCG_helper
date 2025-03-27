@@ -12,9 +12,12 @@ val IMAGES_CONVERT_PATH_DEST_A2 = "/Users/frankbouwens/priv/PokeTCG_helper/compo
 val IMAGES_CONVERT_PATH_SRC_A2a = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/expansions/A2a/card_images"
 val IMAGES_CONVERT_PATH_DEST_A2a = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/expansions/A2a/card_images"
 
+val IMAGES_CONVERT_PATH_SRC_A2b = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/expansions/A2b/card_images"
+val IMAGES_CONVERT_PATH_DEST_A2b = "/Users/frankbouwens/priv/PokeTCG_helper/composeApp/src/commonMain/composeResources/files/expansions/A2b/card_images"
+
 
 fun main() {
-    val filesDir = File(IMAGES_CONVERT_PATH_SRC_A2)
+    val filesDir = File(IMAGES_CONVERT_PATH_SRC_A2b)
     if (!filesDir.exists()) {return}
 
     filesDir.listFiles()?.forEach { file ->
@@ -27,7 +30,7 @@ fun main() {
 fun processImage(magickPath: String, file: File) {
     println("Processing image: ${file.name}")
     try {
-        val newFile = File(IMAGES_CONVERT_PATH_DEST_A2, file.name.replace(".webp", ".jpg"))
+        val newFile = File(IMAGES_CONVERT_PATH_DEST_A2b, file.name.replace(".webp", ".jpg"))
         val process = ProcessBuilder(MAGICK_PATH, file.absolutePath, newFile.absolutePath).start()
         process.waitFor()
         println("done")

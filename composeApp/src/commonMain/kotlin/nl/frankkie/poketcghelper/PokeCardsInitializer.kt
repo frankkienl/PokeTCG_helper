@@ -9,24 +9,34 @@ import poketcg_helper.composeapp.generated.resources.Res
 suspend fun initializeCards(): List<PokeExpansion> {
     //Genetic Apex
     val jsonStringGeneticApex = Res.readBytes("files/expansions/A1/expansion_genetic_apex.json").decodeToString()
-    val cardSetGeneticApex = initializeCardsFromJson(jsonStringGeneticApex)
+    val expansionGeneticApex = initializeCardsFromJson(jsonStringGeneticApex)
     //Mythical Island
     val jsonStringMythicalIsland = Res.readBytes("files/expansions/A1a/expansion_mythical_island.json").decodeToString()
-    val cardSetMythicalIsland = initializeCardsFromJson(jsonStringMythicalIsland)
+    val expansionMythicalIsland = initializeCardsFromJson(jsonStringMythicalIsland)
     //Promo A
     val jsonStringPromo = Res.readBytes("files/expansions/PROMO_A/expansion_promo_a.json").decodeToString()
-    val cardSetPromo = initializeCardsFromJson(jsonStringPromo)
+    val expansionPromo = initializeCardsFromJson(jsonStringPromo)
     //Space-Time
     val jsonStringSpaceTime = Res.readBytes("files/expansions/A2/expansion_space_time.json").decodeToString()
-    val cardSetSpaceTime = initializeCardsFromJson(jsonStringSpaceTime)
+    val expansionSpaceTime = initializeCardsFromJson(jsonStringSpaceTime)
     //Triumphant Light
     val jsonStringTriumphantLight = Res.readBytes("files/expansions/A2a/expansion_triumphant_light.json").decodeToString()
-    val cardSetTriumphantLight = initializeCardsFromJson(jsonStringTriumphantLight)
+    val expansionTriumphantLight = initializeCardsFromJson(jsonStringTriumphantLight)
+    //Shining Revelry
+    val jsonStringShiningRevelry = Res.readBytes("files/expansions/A2b/expansion_shining_revelry.json").decodeToString()
+    val expansionShiningRevelry = initializeCardsFromJson(jsonStringShiningRevelry)
     //Done
-    return listOf(cardSetGeneticApex, cardSetMythicalIsland, cardSetPromo, cardSetSpaceTime, cardSetTriumphantLight)
+    return listOf(
+        expansionGeneticApex,
+        expansionMythicalIsland,
+        expansionSpaceTime,
+        expansionTriumphantLight,
+        expansionShiningRevelry,
+        expansionPromo
+    )
 }
 
 fun initializeCardsFromJson(jsonString: String): PokeExpansion {
-    val tempCardSet = Json.decodeFromString<PokeExpansion>(jsonString)
-    return tempCardSet
+    val tempExpansion = Json.decodeFromString<PokeExpansion>(jsonString)
+    return tempExpansion
 }
