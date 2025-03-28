@@ -37,13 +37,6 @@ fun LoginScreen(
 ) {
     val appState = appViewModel.appState.collectAsState().value
 
-    if (appState.supabaseUserInfo != null) {
-        //User is already logged in
-        println("LoginScreen: already logged in, exit screen; ${appState.supabaseUserInfo}")
-        navHostController.popBackStack()
-        return
-    }
-
     val myCoroutineScope = rememberCoroutineScope()
     var isLoading by remember { mutableStateOf(false) }
     var hasError by remember { mutableStateOf(false) }
@@ -60,6 +53,18 @@ fun LoginScreen(
         )
     }) {
         Column {
+            //Check if user is already logged in
+            if (appState.supabaseUserInfo != null) {
+                //User is already logged in
+                println("LoginScreen: already logged in; ${appState.supabaseUserInfo}")
+                //In case the screen does show up; add a back button
+                Text("You are already logged in")
+                Button(onClick = { navHostController.popBackStack() }) {
+                    Text("Back to main screen")
+                }
+                return@Scaffold
+            }
+
             Text("Login form")
             Spacer(Modifier.height(16.dp))
 
@@ -94,8 +99,8 @@ fun LoginScreen(
                         Icons.Filled.Check
                     else Icons.Filled.CheckCircle
                     val description = if (passwordVisible) "Hide password" else "Show password"
-                    IconButton(onClick = {passwordVisible = !passwordVisible}){
-                        Icon(imageVector  = image, description)
+                    IconButton(onClick = { passwordVisible = !passwordVisible }) {
+                        Icon(imageVector = image, description)
                     }
                 }
             )
@@ -160,9 +165,21 @@ fun LoginScreen(
                 onClick = {
                     isLoading = true
                     myCoroutineScope.launch {
-                        appState.supabaseClient?.auth?.signInWith(Email) {
-                            email = userEmail
-                            password = userPassword
+                        try {
+                            appState.supabaseClient?.auth?.signInWith(Email) {
+                                email = userEmail
+                                password = userPassword
+                            }
+                            //If we get here, we are logged in
+                            navHostController.popBackStack() //Go back to main screen
+                        } catch (e: Exception) {
+                            if (e is AuthRestException) {
+                                println("LoginScreen: Log in failed")
+                                println(e.message)
+                                isLoading = false
+                                hasError = true
+                                errorMessage = e.message
+                            }
                         }
                     }
                 },
