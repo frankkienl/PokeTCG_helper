@@ -11,259 +11,448 @@
       "pokeName": "Weedle",
       "imageUrl": "1-Weedle-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 50,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 2,
       "pokeName": "Kakuna",
       "imageUrl": "2-Kakuna-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeEvolvesFrom": "Weedle",
+      "pokeHp": 80,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 2,
+      "pokeRarity": "D2"
     },
     {
       "number": 3,
       "pokeName": "Beedrill ex",
       "imageUrl": "3-Beedrill-ex-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeEvolvesFrom": "Kakuna",
+      "pokeHp": 170,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D4"
     },
     {
       "number": 4,
       "pokeName": "Pinsir",
       "imageUrl": "4-Pinsir-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 2,
+      "pokeRarity": "D1"
     },
     {
       "number": 5,
       "pokeName": "Sprigatito",
       "imageUrl": "5-Sprigatito-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRarity": "D1"
     },
     {
       "number": 6,
       "pokeName": "Floragato",
       "imageUrl": "6-Floragato-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2"
     },
     {
       "number": 7,
       "pokeName": "Meowscarada",
       "imageUrl": "7-Meowscarada-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 2,
+      "pokeHp": 140,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 1,
+      "pokeRarity": "D3"
     },
     {
       "number": 8,
       "pokeName": "Charmander",
       "imageUrl": "8-Charmander-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 9,
       "pokeName": "Charmeleon",
       "imageUrl": "9-Charmeleon-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 90,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 2,
+      "pokeRarity": "D2"
     },
     {
       "number": 10,
       "pokeName": "Charizard ex",
       "imageUrl": "10-Charizard-ex-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Charmeleon",
+      "pokeHp": 180,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 3,
+      "pokeRarity": "D4"
     },
     {
       "number": 11,
       "pokeName": "Magmar",
       "imageUrl": "11-Magmar-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 70,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 12,
       "pokeName": "Magmortar",
       "imageUrl": "12-Magmortar-Shining-Revelry.jpg",
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Magmar",
+      "pokeHp": 120,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 3,
+      "pokeRarity": "D3"
+    },
+    {
+      "number": 13,
+      "pokeName": "Paldean Tauros",
+      "imageUrl": "13-Paldean-Tauros-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 110,
+      "pokeType": "FIRE",
+      "pokeWeakness": "WATER",
+      "pokeRetreat": 2,
+      "pokeRarity": "D2"
+    },
+    {
+      "number": 14,
+      "pokeName": "Tentacool",
+      "imageUrl": "14-Tentacool-Shining-Revelry.jpg",
+      "pokeStage": 0,
+      "pokeHp": 70,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 15,
       "pokeName": "Tentacruel",
       "imageUrl": "15-Tentacruel-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Tentacool",
+      "pokeHp": 100,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2"
     },
     {
       "number": 16,
       "pokeName": "Buizel",
       "imageUrl": "16-Buizel-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 70,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 17,
       "pokeName": "Floatzel",
       "imageUrl": "17-Floatzel-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Buizel",
+      "pokeHp": 90,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2"
     },
     {
       "number": 18,
       "pokeName": "Wiglett",
       "imageUrl": "18-Wiglett-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 19,
       "pokeName": "Wugtrio ex",
       "imageUrl": "19-Wugtrio-ex-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Wiglett",
+      "pokeHp": 140,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D4"
     },
     {
       "number": 20,
       "pokeName": "Dondozo",
       "imageUrl": "20-Dondozo-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 120,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 3,
+      "pokeRarity": "D3"
     },
     {
       "number": 21,
       "pokeName": "Tatsugiri",
       "imageUrl": "21-Tatsugiri-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 70,
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2"
     },
     {
       "number": 22,
       "pokeName": "Pikachu ex",
       "imageUrl": "22-Pikachu-ex-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 120,
+      "pokeType": "LIGHTNING",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D4"
     },
     {
       "number": 23,
       "pokeName": "Voltorb",
       "imageUrl": "23-Voltorb-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 70,
+      "pokeType": "LIGHTNING",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 24,
       "pokeName": "Electrode",
       "imageUrl": "24-Electrode-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 90,
+      "pokeType": "LIGHTNING",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2"
     },
     {
       "number": 25,
       "pokeName": "Pachirisu",
       "imageUrl": "25-Pachirisu-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 70,
+      "pokeType": "LIGHTNING",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2"
     },
     {
       "number": 26,
       "pokeName": "Pawmi",
       "imageUrl": "26-Pawmi-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "LIGHTNING",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 27,
       "pokeName": "Pawmo",
       "imageUrl": "27-Pawmo-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Pawmi",
+      "pokeHp": 90,
+      "pokeType": "LIGHTNING",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2"
     },
     {
       "number": 28,
       "pokeName": "Pawmot",
       "imageUrl": "28-Pawmot-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Pawmo",
+      "pokeHp": 140,
+      "pokeType": "LIGHTNING",
+      "pokeWeakness": "FIGHTING",
+      "pokeRetreat": 0,
+      "pokeRarity": "D3"
     },
     {
       "number": 29,
       "pokeName": "Abra",
       "imageUrl": "29-Abra-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 30,
       "pokeName": "Kadabra",
       "imageUrl": "30-Kadabra-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Abra",
+      "pokeHp": 80,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 1,
+      "pokeRarity": "D2"
     },
     {
       "number": 31,
       "pokeName": "Alakazam",
       "imageUrl": "31-Alakazam-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Kadabra",
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 1,
+      "pokeRarity": "D3"
     },
     {
       "number": 32,
       "pokeName": "Mr. Mime",
       "imageUrl": "32-Mr_-Mime-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 33,
       "pokeName": "Drifloon",
       "imageUrl": "33-Drifloon-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
+    },
+    {
+      "number": 34,
+      "pokeName": "Drifblim",
+      "imageUrl": "34-Drifblim-Shining-Revelry.jpg",
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Drifbloom",
+      "pokeHp": 90,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 0,
+      "pokeRarity": "D2"
     },
     {
       "number": 35,
       "pokeName": "Giratina ex",
       "imageUrl": "35-Giratina-ex-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 150,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 2,
+      "pokeRarity": "D4"
     },
     {
       "number": 36,
       "pokeName": "Gimmighoul",
       "imageUrl": "36-Gimmighoul-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 37,
       "pokeName": "Machop",
       "imageUrl": "37-Machop-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 60,
+      "pokeType": "FIGHTING",
+      "pokeWeakness": "PSYCHIC",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 38,
       "pokeName": "Machoke",
       "imageUrl": "38-Machoke-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 100,
+      "pokeType": "FIGHTING",
+      "pokeWeakness": "PSYCHIC",
+      "pokeRetreat": 2,
+      "pokeRarity": "D1"
     },
     {
       "number": 39,
       "pokeName": "Machamp",
       "imageUrl": "39-Machamp-Shining-Revelry.jpg",
-      "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Machoke",
+      "pokeHp": 150,
+      "pokeType": "FIGHTING",
+      "pokeWeakness": "PSYCHIC",
+      "pokeRetreat": 2,
+      "pokeRarity": "D3"
     },
     {
       "number": 40,
       "pokeName": "Hitmonlee",
       "imageUrl": "40-Hitmonlee-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeHp": 80,
+      "pokeType": "FIGHTING",
+      "pokeWeakness": "PSYCHIC",
+      "pokeRetreat": 1,
+      "pokeRarity": "D1"
     },
     {
       "number": 41,
@@ -662,105 +851,105 @@
       "pokeName": "Weedle",
       "imageUrl": "97-Weedle-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 98,
       "pokeName": "Kakuna",
       "imageUrl": "98-Kakuna-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 99,
       "pokeName": "Charmander",
       "imageUrl": "99-Charmander-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 100,
       "pokeName": "Charmeleon",
       "imageUrl": "100-Charmeleon-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 101,
       "pokeName": "Wiglett",
       "imageUrl": "101-Wiglett-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 102,
       "pokeName": "Dondozo",
       "imageUrl": "102-Dondozo-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 103,
       "pokeName": "Pachirisu",
       "imageUrl": "103-Pachirisu-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 104,
       "pokeName": "Riolu",
       "imageUrl": "104-Riolu-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 105,
       "pokeName": "Varoom",
       "imageUrl": "105-Varoom-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 106,
       "pokeName": "Revavroom",
       "imageUrl": "106-Revavroom-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY1"
     },
     {
       "number": 107,
       "pokeName": "Beedrill ex",
       "imageUrl": "107-Beedrill-ex-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY2"
     },
     {
       "number": 108,
       "pokeName": "Charizard ex",
       "imageUrl": "108-Charizard-ex-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY2"
     },
     {
       "number": 109,
       "pokeName": "Wugtrio ex",
       "imageUrl": "109-Wugtrio-ex-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY2"
     },
     {
       "number": 110,
       "pokeName": "Lucario ex",
       "imageUrl": "110-Lucario-ex-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "SHINY2"
     },
     {
       "number": 111,
       "pokeName": "Poke ball",
       "imageUrl": "111-Poke-ball-Shining-Revelry.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "C"
     }
   ]
 }

@@ -72,6 +72,8 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel, appState: AppStat
                     buildFilterRarity(homeScreenUiState, homeScreenViewModel, PokeRarity.S2)
                     buildFilterRarity(homeScreenUiState, homeScreenViewModel, PokeRarity.S3)
                     buildFilterRarity(homeScreenUiState, homeScreenViewModel, PokeRarity.C)
+                    buildFilterRarity(homeScreenUiState, homeScreenViewModel, PokeRarity.SHINY1)
+                    buildFilterRarity(homeScreenUiState, homeScreenViewModel, PokeRarity.SHINY2)
                     buildFilterRarity(homeScreenUiState, homeScreenViewModel, PokeRarity.PROMO)
                 }
                 Text("Type")

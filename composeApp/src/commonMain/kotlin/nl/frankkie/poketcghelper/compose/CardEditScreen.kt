@@ -4,6 +4,9 @@ import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
+import androidx.compose.foundation.text.input.TextFieldLineLimits
+import androidx.compose.foundation.text.input.rememberTextFieldState
+import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
 import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -19,6 +22,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.model.PokeCard
+import nl.frankkie.poketcghelper.model.PokeRarity
+import nl.frankkie.poketcghelper.model.PokeType
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.MissingResourceException
 import org.jetbrains.compose.resources.decodeToImageBitmap
@@ -85,12 +90,12 @@ fun CardEditScreen(
                 SimpleEditableRow("pokeStage", ogCard.pokeStage.toString(), newCard.pokeStage.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.pokeStage;newCard = newCard.copy(pokeStage = newInt) })
                 SimpleEditableRow("pokeEvolvesFrom", ogCard.pokeEvolvesFrom, newCard.pokeEvolvesFrom, { newCard = newCard.copy(pokeEvolvesFrom = it) })
                 SimpleEditableRow("pokeHp", ogCard.pokeHp.toString(), newCard.pokeHp.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.pokeHp;newCard = newCard.copy(pokeHp = newInt) })
-                SimpleEditableRow("pokeType", ogCard.pokeType, newCard.pokeType, { newCard = newCard.copy(pokeType = it) })
+                SpecificEditableRow("pokeType", ogCard.pokeType, newCard.pokeType, PokeType.entries.map { it.codeName }, { newCard = newCard.copy(pokeType = it) })
                 SimpleEditableRow("pokeDesc", ogCard.pokeDesc, newCard.pokeDesc, { newCard = newCard.copy(pokeDesc = it) })
-                SimpleEditableRow("pokeWeakness", ogCard.pokeWeakness, newCard.pokeWeakness, { newCard = newCard.copy(pokeWeakness = it) })
+                SpecificEditableRow("pokeWeakness", ogCard.pokeWeakness, newCard.pokeWeakness, PokeType.entries.map { it.codeName }, { newCard = newCard.copy(pokeWeakness = it) })
                 SimpleEditableRow("pokeRetreat", ogCard.pokeRetreat.toString(), newCard.pokeRetreat.toString(), { val newInt = it?.toIntOrNull() ?: ogCard.pokeRetreat;newCard = newCard.copy(pokeRetreat = newInt) })
                 SimpleEditableRow("pokeIllustrator", ogCard.pokeIllustrator, newCard.pokeIllustrator, { newCard = newCard.copy(pokeIllustrator = it) })
-                SimpleEditableRow("pokeRarity", ogCard.pokeRarity, newCard.pokeRarity, { newCard = newCard.copy(pokeRarity = it) })
+                SpecificEditableRow("pokeRarity", ogCard.pokeRarity, newCard.pokeRarity, PokeRarity.entries.map { it.codeName }, { newCard = newCard.copy(pokeRarity = it) })
                 SimpleEditableRow("pokeFlavour", ogCard.pokeFlavour, newCard.pokeFlavour, { newCard = newCard.copy(pokeFlavour = it) })
                 SimpleEditableRow("pokePrint", ogCard.pokePrint, newCard.pokePrint, { newCard = newCard.copy(pokePrint = it) })
 
@@ -151,6 +156,75 @@ fun SimpleEditableRow(key: String, ogValue: String?, newValue: String?, onValueC
                     onValueChange = onValueChange,
                     singleLine = true, //Needed for Tab navigation; Tab navigation doesn't work with multiline.
                 )
+            }
+        }
+    }
+}
+
+@Composable
+@OptIn(ExperimentalMaterialApi::class)
+fun SpecificEditableRow(
+    key: String,
+    ogValue: String?,
+    newValue: String?,
+    possibleValues: List<String>,
+    onValueChange: (String?) -> Unit
+) {
+    Card(
+        modifier = Modifier
+            .height(30.dp)
+            .widthIn(350.dp)
+            .fillMaxWidth()
+            .clip(shape = RoundedCornerShape(30.dp))
+            .border(width = 1.dp, color = Color.Gray)
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            //Key
+            Text(key, modifier = Modifier.width(150.dp).fillMaxHeight().background(Color.LightGray).padding(start = 8.dp))
+            //OgValue
+            Text(ogValue.toString(), modifier = Modifier.width(150.dp).fillMaxHeight())
+            //Value, we expect a value from a list of possible values
+            Row {
+                Checkbox(checked = newValue == null, onCheckedChange = { newValue ->
+                    if (newValue) {
+                        onValueChange(null)
+                    } else {
+                        onValueChange("")
+                    }
+                })
+                var isExpanded by remember { mutableStateOf(false) }
+                val textFieldState = rememberTextFieldState()
+                // https://composables.com/material3/exposeddropdownmenubox
+                ExposedDropdownMenuBox(
+                    expanded = isExpanded,
+                    onExpandedChange = { isExpanded = !isExpanded },
+                ) {
+                    TextField(
+                        value = newValue ?: "null",
+                        readOnly = true,
+                        onValueChange = { onValueChange(it) },
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text(newValue ?: "null") },
+                        trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = isExpanded) },
+                        colors = ExposedDropdownMenuDefaults.textFieldColors()
+                    )
+                    ExposedDropdownMenu(
+                        expanded = isExpanded,
+                        onDismissRequest = { isExpanded = false },
+                    ) {
+                        possibleValues.forEach { possibleValue ->
+                            DropdownMenuItem(
+                                onClick = {
+                                    textFieldState.setTextAndPlaceCursorAtEnd(possibleValue)
+                                    onValueChange(possibleValue)
+                                    isExpanded = false
+                                },
+                            ) {
+                                Text(possibleValue)
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -101,6 +101,8 @@ enum class PokeRarity(val codeName: String, val displayName: String, val imageUr
     S2(codeName = "S2", displayName = "★\uFE0F ★\uFE0F", imageUrl = "star.png", symbolCount = 2), //6
     S3(codeName = "S3", displayName = "★\uFE0F ★\uFE0F ★\uFE0F", imageUrl = "star.png", symbolCount = 3), //7
     C(codeName = "C", displayName = "\uD83D\uDC51", imageUrl = "crown.png", symbolCount = 1), //8
+    SHINY1(codeName = "SHINY1", displayName = "✨", imageUrl = "shiny.png", symbolCount = 1),
+    SHINY2(codeName = "SHINY2", displayName = "✨ ✨", imageUrl = "shiny.png", symbolCount = 2),
     PROMO(codeName = "PROMO", displayName = "Promo", imageUrl = null, symbolCount = 0),
 }
 
