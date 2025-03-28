@@ -4,7 +4,6 @@ import android.content.Intent
 import android.net.Uri
 
 actual fun openInBrowser(url: String) {
-    //throw NotImplementedError("openInBrowser is not implemented yet")
     openInBrowserAndroid(url)
 }
 

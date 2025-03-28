@@ -31,7 +31,10 @@
         </activity>
 
         <!-- for ML Kit -->
-        <activity android:name=".android.MyMLKitActivity" />
+        <activity android:name=".android.MyRemoteClientActivity" />
+
+        <!-- for overlay -->
+        <service android:name=".android.MyOverlayService" />
 
         <!-- for screen capture (aka Media Projection) -->
         <service
