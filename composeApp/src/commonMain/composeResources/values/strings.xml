@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ComposeApp</string>
+    <string name="hello_world">Hello, World!</string>
+    <string name="welcome_message">Welcome to PokeTCG App!</string>
+    <string name="goodbye_message">Goodbye from PokeTCG App!</string>
+
+    <string name="android_notification_channel_name">Foreground Service</string>
+    <string name="android_notification_channel_description">Foreground Service for Media Projection (Screen recording)</string>
+</resources>

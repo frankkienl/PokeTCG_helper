@@ -23,6 +23,11 @@ import kotlinx.coroutines.launch
 import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.compose.MyHorizontalDivider
 import nl.frankkie.poketcghelper.compose.Routes
+import nl.frankkie.poketcghelper.platform_dependant.Platform
+import nl.frankkie.poketcghelper.platform_dependant.getCurrentPlatform
+import nl.frankkie.poketcghelper.platform_dependant.isRemoteControlClientSupported
+import nl.frankkie.poketcghelper.platform_dependant.isRemoteControlHostSupported
+import nl.frankkie.poketcghelper.platform_dependant.tryToOpenRemoteControlClient
 
 @Composable
 fun HomeDrawerContent(navController: NavController, appViewModel: AppViewModel) {
@@ -60,6 +65,42 @@ fun HomeDrawerContent(navController: NavController, appViewModel: AppViewModel) 
                 Spacer(Modifier.width(8.dp))
                 Text("Analytics")
             }
+
+            MyHorizontalDivider()
         }
+
+        //Android Remote Control
+        if (isRemoteControlClientSupported(getCurrentPlatform())) {
+            Row(
+                modifier = Modifier
+                    .heightIn(60.dp)
+                    .fillMaxWidth()
+                    .clickable {
+                        tryToOpenRemoteControlClient()
+                    },
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(Icons.Default.Info, contentDescription = "Info")
+                Spacer(Modifier.width(8.dp))
+                Text("Remote Control Client")
+            }
+        }
+
+        if (isRemoteControlHostSupported(getCurrentPlatform())) {
+            Row(
+                modifier = Modifier
+                    .heightIn(60.dp)
+                    .fillMaxWidth()
+                    .clickable {
+
+                    },
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(Icons.Default.Info, contentDescription = "Info")
+                Spacer(Modifier.width(8.dp))
+                Text("Remote Control Host")
+            }
+        }
+
     }
 }

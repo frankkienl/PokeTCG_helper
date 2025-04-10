@@ -8,7 +8,6 @@ actual fun openRemoteControlHost() {
 }
 
 actual fun openRemoteControlClient() {
-    // Not yet implemented
     appContext?.let { safeContext ->
         val intent = Intent(safeContext, MyRemoteClientActivity::class.java)
         safeContext.startActivity(intent)

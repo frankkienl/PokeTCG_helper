@@ -3,9 +3,17 @@ package nl.frankkie.poketcghelper.android
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.media.projection.MediaProjectionManager
+import android.os.Build
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.result.contract.ActivityResultContracts.RequestMultiplePermissions
+import androidx.activity.result.contract.ActivityResultContracts.RequestPermission
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -18,9 +26,39 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import kotlin.jvm.java
 
+lateinit var requestPermissionLauncher: ActivityResultLauncher<Array<String>>
+lateinit var screenCaptureLauncher: ActivityResultLauncher<Intent>
+
 class MyRemoteClientActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        requestPermissionLauncher = registerForActivityResult(RequestMultiplePermissions()) { permissions ->
+            val allPermissionsGranted = permissions.entries.all { it.value }
+            if (allPermissionsGranted) {
+                startScreenRecordingService()
+            } else {
+                Toast.makeText(this, "Permissions required", Toast.LENGTH_LONG).show()
+                val intent = Intent(
+                    android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                    android.net.Uri.parse("package:$packageName")
+                )
+                startActivity(intent)
+            }
+        }
+
+        screenCaptureLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            if (result.resultCode == RESULT_OK) {
+                // Do something with the media projection
+                val intent = Intent(this, MyMediaProjectionService::class.java)
+                intent.putExtra("resultCode", result.resultCode)
+                intent.putExtra("result", result.data)
+                startForegroundService(intent)
+            } else {
+                Toast.makeText(this, "Screen capture permission denied", Toast.LENGTH_LONG).show()
+            }
+        }
+
 
         setContent {
             Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
@@ -112,12 +150,40 @@ class MyRemoteClientActivity : ComponentActivity() {
     }
 
     fun startScreenRecordingService() {
-        val success = checkPermissions()
-        if (!success) return
+        //check permission
+        val hasPermissionNotifications = ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+        val hasPermissionFGS_MP = ContextCompat.checkSelfPermission(this, Manifest.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION)
+        val hasPermissionSystemAlertWindow = ContextCompat.checkSelfPermission(this, Manifest.permission.SYSTEM_ALERT_WINDOW)
+        if (hasPermissionNotifications != PackageManager.PERMISSION_GRANTED
+            || hasPermissionFGS_MP != PackageManager.PERMISSION_GRANTED) {
+            Log.v(TAG, "Permissions not granted by the user.")
 
-        val intent = Intent(this, MyMediaProjectionService::class.java)
-        startForegroundService(intent)
-        startScreenRecordingService()
+            if (Build.VERSION.SDK_INT >= 34) {
+                requestPermissionLauncher.launch(
+                    arrayOf(
+                        Manifest.permission.POST_NOTIFICATIONS,
+                        Manifest.permission.SYSTEM_ALERT_WINDOW,
+                        Manifest.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION,
+                    )
+                )
+            } else {
+                requestPermissionLauncher.launch(
+                    arrayOf(
+                        Manifest.permission.POST_NOTIFICATIONS,
+                        Manifest.permission.SYSTEM_ALERT_WINDOW,
+                    )
+                )
+            }
+
+            return
+        } else {
+            //permission checked
+            Log.v(TAG, "startScreenRecordingService: permission granted")
+            //
+            val mpm = getSystemService(MediaProjectionManager::class.java)
+            val mpmIntent = mpm.createScreenCaptureIntent()
+            screenCaptureLauncher.launch(mpmIntent)
+        }
     }
 
     fun stopScreenRecordingService() {
@@ -125,13 +191,8 @@ class MyRemoteClientActivity : ComponentActivity() {
         stopService(intent)
     }
 
-    fun checkPermissions(): Boolean {
-        //val hasPermissionSystemAlertWindow = ContextCompat.checkSelfPermission(this, Manifest.permission.SYSTEM_ALERT_WINDOW)
-        val hasPermissionNotifications = ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
-        if (hasPermissionNotifications != PackageManager.PERMISSION_GRANTED) {
 
-        }
-        return false
+    companion object {
+        const val TAG = "MyRemoteClientActivity"
     }
-
 }
