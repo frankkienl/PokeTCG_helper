@@ -57,6 +57,11 @@ kotlin {
         val desktopMain by getting
         
         androidMain.dependencies {
+            //
+            implementation(libs.androidx.core.ktx)
+            implementation(libs.androidx.activity)
+            implementation(libs.androidx.fragment)
+            //
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
             //

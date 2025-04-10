@@ -1,6 +1,8 @@
 package nl.frankkie.poketcghelper.android
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -13,6 +15,7 @@ import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
 import kotlin.jvm.java
 
 class MyRemoteClientActivity : ComponentActivity() {
@@ -29,6 +32,12 @@ class MyRemoteClientActivity : ComponentActivity() {
                 }) {
                     Text("Start Overlay")
                 }
+                Button(onClick = {
+                    startScreenRecordingService()
+                }) {
+                    Text("Start Screen Recording")
+                }
+
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
                     text = """
@@ -39,7 +48,7 @@ class MyRemoteClientActivity : ComponentActivity() {
                     
                     You could also use this without a PC, 
                     but then you have to manually press the buttons,
-                    and swipe the cards.
+                    and swipe the cards. The overlay will tell you what to do.
                     
                     Remote control can:
                     - Automatically scan cards in the game. 
@@ -55,13 +64,10 @@ class MyRemoteClientActivity : ComponentActivity() {
                     - Enable USB debugging on your phone.
                     - Start the Remote Control Host on your PC.
                     - Start the Remote Control Client on your phone.
-                    - Press the 'Start Overlay' button.
-                    - The overlay will show up on top of the Pokemon TCG Pocket app.
+                    - Press the 'Start Screen Recording' button.
+                    - This app will see the contents of the Pokemon TCG Pocket app.
                     - You can now control the game from your PC.
                     
-                    The Overlay will need some permissions.
-                    'Display over other apps', or 'Draw over other apps'.
-                                       
                     At some point you will have to approve screen-recording;
                     Also known as 'Media Projection' or 'Casting'.
                     
@@ -69,6 +75,16 @@ class MyRemoteClientActivity : ComponentActivity() {
                     to read the text on the screen, to figure out which cards you have.
                     Of which actions to take.
                     
+                    ---
+                    
+                    Using Overlay is optional.
+                    
+                    The Overlay will need some permissions.
+                    'Display over other apps', or 'Draw over other apps'.
+                    
+                    When not connect to ADB, you can do the actions manually.
+                    The overlay will tell you what to do.
+                                                                     
                     ---                        
                     
                 """.trimIndent()
@@ -79,7 +95,43 @@ class MyRemoteClientActivity : ComponentActivity() {
     }
 
     fun startOverlay() {
-        val serviceIntent = Intent(this, MyOverlayService::class.java)
-        startService(serviceIntent)
+        //check permission
+        val hasPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.SYSTEM_ALERT_WINDOW)
+        if (hasPermission != PackageManager.PERMISSION_GRANTED) {
+            //request permission
+            val intent = Intent(
+                android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                android.net.Uri.parse("package:$packageName")
+            )
+            startActivity(intent)
+        } else {
+            //start overlay service
+            val serviceIntent = Intent(this, MyOverlayService::class.java)
+            startService(serviceIntent)
+        }
     }
+
+    fun startScreenRecordingService() {
+        val success = checkPermissions()
+        if (!success) return
+
+        val intent = Intent(this, MyMediaProjectionService::class.java)
+        startForegroundService(intent)
+        startScreenRecordingService()
+    }
+
+    fun stopScreenRecordingService() {
+        val intent = Intent(this, MyMediaProjectionService::class.java)
+        stopService(intent)
+    }
+
+    fun checkPermissions(): Boolean {
+        //val hasPermissionSystemAlertWindow = ContextCompat.checkSelfPermission(this, Manifest.permission.SYSTEM_ALERT_WINDOW)
+        val hasPermissionNotifications = ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+        if (hasPermissionNotifications != PackageManager.PERMISSION_GRANTED) {
+
+        }
+        return false
+    }
+
 }
