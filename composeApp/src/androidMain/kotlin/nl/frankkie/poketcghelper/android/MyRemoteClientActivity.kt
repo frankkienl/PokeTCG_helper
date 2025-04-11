@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.media.projection.MediaProjectionManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -13,7 +14,6 @@ import androidx.activity.compose.setContent
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.result.contract.ActivityResultContracts.RequestMultiplePermissions
-import androidx.activity.result.contract.ActivityResultContracts.RequestPermission
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -24,10 +24,12 @@ import androidx.compose.material.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
-import kotlin.jvm.java
+import android.provider.Settings
+
 
 lateinit var requestPermissionLauncher: ActivityResultLauncher<Array<String>>
 lateinit var screenCaptureLauncher: ActivityResultLauncher<Intent>
+lateinit var systemAlertWindowLauncher: ActivityResultLauncher<Intent>
 
 class MyRemoteClientActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,11 +41,20 @@ class MyRemoteClientActivity : ComponentActivity() {
                 startScreenRecordingService()
             } else {
                 Toast.makeText(this, "Permissions required", Toast.LENGTH_LONG).show()
-                val intent = Intent(
-                    android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                    android.net.Uri.parse("package:$packageName")
-                )
-                startActivity(intent)
+
+                val hasPermissionFGS_MP = ContextCompat.checkSelfPermission(this, Manifest.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION)
+                val hasPermissionNotifications = ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+                val hasPermissionSystemAlertWindow = ContextCompat.checkSelfPermission(this, Manifest.permission.SYSTEM_ALERT_WINDOW)
+                val hasPermissionRecordAudio = ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
+
+                if (hasPermissionSystemAlertWindow != PackageManager.PERMISSION_GRANTED) {
+                    //request permission
+                    val intent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:$packageName"))
+                    systemAlertWindowLauncher.launch(intent)
+                } else {
+                    val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:$packageName"))
+                    startActivity(intent)
+                }
             }
         }
 
@@ -57,6 +68,11 @@ class MyRemoteClientActivity : ComponentActivity() {
             } else {
                 Toast.makeText(this, "Screen capture permission denied", Toast.LENGTH_LONG).show()
             }
+        }
+
+        systemAlertWindowLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            Log.v(TAG, "Back from system alert window permission request")
+            startScreenRecordingService()
         }
 
 
@@ -151,11 +167,14 @@ class MyRemoteClientActivity : ComponentActivity() {
 
     fun startScreenRecordingService() {
         //check permission
+        //val hasPermissionFGS_MP = ContextCompat.checkSelfPermission(this, Manifest.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION)
         val hasPermissionNotifications = ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
-        val hasPermissionFGS_MP = ContextCompat.checkSelfPermission(this, Manifest.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION)
         val hasPermissionSystemAlertWindow = ContextCompat.checkSelfPermission(this, Manifest.permission.SYSTEM_ALERT_WINDOW)
+        val hasPermissionRecordAudio = ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
         if (hasPermissionNotifications != PackageManager.PERMISSION_GRANTED
-            || hasPermissionFGS_MP != PackageManager.PERMISSION_GRANTED) {
+            //|| hasPermissionSystemAlertWindow != PackageManager.PERMISSION_GRANTED
+            || hasPermissionRecordAudio != PackageManager.PERMISSION_GRANTED
+        ) {
             Log.v(TAG, "Permissions not granted by the user.")
 
             if (Build.VERSION.SDK_INT >= 34) {
@@ -163,6 +182,7 @@ class MyRemoteClientActivity : ComponentActivity() {
                     arrayOf(
                         Manifest.permission.POST_NOTIFICATIONS,
                         Manifest.permission.SYSTEM_ALERT_WINDOW,
+                        Manifest.permission.RECORD_AUDIO,
                         Manifest.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION,
                     )
                 )
@@ -171,6 +191,7 @@ class MyRemoteClientActivity : ComponentActivity() {
                     arrayOf(
                         Manifest.permission.POST_NOTIFICATIONS,
                         Manifest.permission.SYSTEM_ALERT_WINDOW,
+                        Manifest.permission.RECORD_AUDIO,
                     )
                 )
             }
