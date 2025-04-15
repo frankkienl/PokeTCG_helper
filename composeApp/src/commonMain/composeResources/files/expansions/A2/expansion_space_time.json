@@ -63,7 +63,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 1,
-      "pokeRarity": "D1"
+      "pokeRarity": "D1",
+      "packId": "DIALGA"
     },
     {
       "number": 5,
@@ -75,7 +76,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 3,
-      "pokeRarity": "D2"
+      "pokeRarity": "D2",
+      "packId": "DIALGA"
     },
     {
       "number": 6,
@@ -86,7 +88,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "LIGHTNING",
       "pokeRetreat": 1,
-      "pokeRarity": "D1"
+      "pokeRarity": "D1",
+      "packId": "DIALGA"
     },
     {
       "number": 7,
@@ -98,7 +101,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "LIGHTNING",
       "pokeRetreat": 1,
-      "pokeRarity": "D4"
+      "pokeRarity": "D4",
+      "packId": "DIALGA"
     },
     {
       "number": 8,
@@ -133,7 +137,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 2,
-      "pokeRarity": "D1"
+      "pokeRarity": "D1",
+      "packId": "PALKIA"
     },
     {
       "number": 11,
@@ -145,7 +150,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 3,
-      "pokeRarity": "D2"
+      "pokeRarity": "D2",
+      "packId": "PALKIA"
     },
     {
       "number": 12,
@@ -157,7 +163,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 4,
-      "pokeRarity": "D3"
+      "pokeRarity": "D3",
+      "packId": "PALKIA"
     },
     {
       "number": 13,
@@ -168,7 +175,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 1,
-      "pokeRarity": "D1"
+      "pokeRarity": "D1",
+      "packId": "PALKIA"
     },
     {
       "number": 14,
@@ -179,7 +187,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 1,
-      "pokeRarity": "D1"
+      "pokeRarity": "D1",
+      "packId": "PALKIA"
     },
     {
       "number": 15,
@@ -212,7 +221,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 1,
-      "pokeRarity": "D1"
+      "pokeRarity": "D1",
+      "packId": "DIALGA"
     },
     {
       "number": 18,
@@ -224,7 +234,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 2,
-      "pokeRarity": "D2"
+      "pokeRarity": "D2",
+      "packId": "DIALGA"
     },
     {
       "number": 19,
@@ -235,7 +246,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 1,
-      "pokeRarity": "D2"
+      "pokeRarity": "D2",
+      "packId": "PALKIA"
     },
     {
       "number": 20,
@@ -247,7 +259,8 @@
       "pokeType": "GRASS",
       "pokeWeakness": "FIRE",
       "pokeRetreat": 1,
-      "pokeRarity": "D3"
+      "pokeRarity": "D3",
+      "packId": "DIALGA"
     },
     {
       "number": 21,
@@ -265,21 +278,24 @@
       "pokeName": "Shaymin",
       "imageUrl": "22-Shaymin-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 23,
       "pokeName": "Magmar",
       "imageUrl": "23-Magmar-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 24,
       "pokeName": "Magmortar",
       "imageUrl": "24-Magmortar-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 25,
@@ -300,21 +316,24 @@
       "pokeName": "Chimchar",
       "imageUrl": "27-Chimchar-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 28,
       "pokeName": "Monferno",
       "imageUrl": "28-Monferno-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 29,
       "pokeName": "Infernape ex",
       "imageUrl": "29-Infernape-ex-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 30,
@@ -328,49 +347,56 @@
       "pokeName": "Swinub",
       "imageUrl": "31-Swinub-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 32,
       "pokeName": "Piloswine",
       "imageUrl": "32-Piloswine-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 33,
       "pokeName": "Mamoswine",
       "imageUrl": "33-Mamoswine-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 34,
       "pokeName": "Regice",
       "imageUrl": "34-Regice-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 35,
       "pokeName": "Piplup",
       "imageUrl": "35-Piplup-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 36,
       "pokeName": "Prinplup",
       "imageUrl": "36-Prinplup-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 37,
       "pokeName": "Empoleon",
       "imageUrl": "37-Empoleon-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 38,
@@ -391,14 +417,16 @@
       "pokeName": "Shellos",
       "imageUrl": "40-Shellos-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 41,
       "pokeName": "Gastrodon",
       "imageUrl": "41-Gastrodon-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 42,
@@ -433,7 +461,8 @@
       "pokeName": "Glaceon",
       "imageUrl": "46-Glaceon-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 47,
@@ -454,14 +483,16 @@
       "pokeName": "Palkia ex",
       "imageUrl": "49-Palkia-ex-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 50,
       "pokeName": "Manaphy",
       "imageUrl": "50-Manaphy-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 51,
@@ -503,49 +534,56 @@
       "pokeName": "Electabuzz",
       "imageUrl": "56-Electabuzz-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 57,
       "pokeName": "Electivire",
       "imageUrl": "57-Electivire-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 58,
       "pokeName": "Shinx",
       "imageUrl": "58-Shinx-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 59,
       "pokeName": "Luxio",
       "imageUrl": "59-Luxio-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 60,
       "pokeName": "Luxray",
       "imageUrl": "60-Luxray-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 61,
       "pokeName": "Pachirisu ex",
       "imageUrl": "61-Pachirisu-ex-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 62,
       "pokeName": "Rotom",
       "imageUrl": "62-Rotom-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 63,
@@ -573,63 +611,72 @@
       "pokeName": "Misdreavus",
       "imageUrl": "66-Misdreavus-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 67,
       "pokeName": "Mismagius ex",
       "imageUrl": "67-Mismagius-ex-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 68,
       "pokeName": "Ralts",
       "imageUrl": "68-Ralts-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 69,
       "pokeName": "Kirlia",
       "imageUrl": "69-Kirlia-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 70,
       "pokeName": "Duskull",
       "imageUrl": "70-Duskull-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 71,
       "pokeName": "Dusclops",
       "imageUrl": "71-Dusclops-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 72,
       "pokeName": "Dusknoir",
       "imageUrl": "72-Dusknoir-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 73,
       "pokeName": "Drifloon",
       "imageUrl": "73-Drifloon-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 74,
       "pokeName": "Drifblim",
       "imageUrl": "74-Drifblim-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 75,
@@ -657,56 +704,64 @@
       "pokeName": "Giratina",
       "imageUrl": "78-Giratina-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 79,
       "pokeName": "Cresselia",
       "imageUrl": "79-Cresselia-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 80,
       "pokeName": "Rhyhorn",
       "imageUrl": "80-Rhyhorn-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 81,
       "pokeName": "Rhydon",
       "imageUrl": "81-Rhydon-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 82,
       "pokeName": "Rhyperior",
       "imageUrl": "82-Rhyperior-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 83,
       "pokeName": "Gligar",
       "imageUrl": "83-Gligar-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 84,
       "pokeName": "Gliscor",
       "imageUrl": "84-Gliscor-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 85,
       "pokeName": "Hitmontop",
       "imageUrl": "85-Hitmontop-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 86,
@@ -727,84 +782,96 @@
         "pokeName": "Cranidos",
         "imageUrl": "88-Cranidos-Space-Time.jpg",
         "pokeStage": 0,
-        "pokeRarity": "UNKNOWN"
+        "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 89,
       "pokeName": "Rampardos",
       "imageUrl": "89-Rampardos-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 90,
       "pokeName": "Wormadam",
       "imageUrl": "90-Wormadam-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 91,
       "pokeName": "Riolu",
       "imageUrl": "91-Riolu-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 92,
       "pokeName": "Lucario",
       "imageUrl": "92-Lucario-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 93,
       "pokeName": "Hippopotas",
       "imageUrl": "93-Hippopotas-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 94,
       "pokeName": "Hippowdon",
       "imageUrl": "94-Hippowdon-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 95,
       "pokeName": "Gallade ex",
       "imageUrl": "95-Gallade-ex-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 96,
       "pokeName": "Murkrow",
       "imageUrl": "96-Murkrow-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 97,
       "pokeName": "Honchkrow",
       "imageUrl": "97-Honchkrow-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 98,
       "pokeName": "Sneasel",
       "imageUrl": "98-Sneasel-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 99,
       "pokeName": "Weavile ex",
       "imageUrl": "99-Weavile-ex-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 100,
@@ -825,21 +892,24 @@
       "pokeName": "Stunky",
       "imageUrl": "102-Stunky-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 103,
       "pokeName": "Skuntank",
       "imageUrl": "103-Skuntank-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 104,
       "pokeName": "Spiritomb",
       "imageUrl": "104-Spiritomb-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 105,
@@ -860,28 +930,32 @@
       "pokeName": "Croagunk",
       "imageUrl": "107-Croagunk-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 108,
       "pokeName": "Toxicroak",
       "imageUrl": "108-Toxicroak-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 109,
       "pokeName": "Darkrai",
       "imageUrl": "109-Darkrai-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 110,
       "pokeName": "Darkrai ex",
       "imageUrl": "110-Darkrai-ex-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 111,
@@ -895,35 +969,40 @@
       "pokeName": "Registeel",
       "imageUrl": "112-Registeel-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 113,
       "pokeName": "Shieldon",
       "imageUrl": "113-Shieldon-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 114,
       "pokeName": "Bastiodon",
       "imageUrl": "114-Bastiodon-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 115,
       "pokeName": "Wormadam",
       "imageUrl": "115-Wormadam-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "PALKIA"
     },
     {
       "number": 117,
       "pokeName": "Bronzor",
       "imageUrl": "117-Bronzor-Space-Time.jpg",
       "pokeStage": 0,
-      "pokeRarity": "UNKNOWN"
+      "pokeRarity": "UNKNOWN",
+      "packId": "DIALGA"
     },
     {
       "number": 118,
