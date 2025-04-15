@@ -8,14 +8,14 @@
     {
       "id": "DIALGA",
       "name": "Dialga",
-      "imageUrl": "207-Dialga-ex-Space-Time.webp",
-      "imageUrlSymbol": "207-Dialga-ex-Space-Time.webp"
+      "imageUrl": "Dialga.png",
+      "imageUrlSymbol": "Dialga.png"
     },
     {
       "id": "PALKIA",
       "name": "Palkia",
-      "imageUrl": "206-Palkia-ex-Space-Time.webp",
-      "imageUrlSymbol": "206-Palkia-ex-Space-Time.webp"
+      "imageUrl": "Palkia.png",
+      "imageUrlSymbol": "Palkia.png"
     }
   ],
   "cards": [

@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.model.PokeExpansion
+import nl.frankkie.poketcghelper.model.PokeExpansionPack
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
 import org.jetbrains.compose.resources.ExperimentalResourceApi
@@ -25,6 +26,7 @@ import poketcg_helper.composeapp.generated.resources.Res
 
 data class PokeCardFilter(
     val expansions: List<PokeExpansion> = emptyList(),
+    val expansionPacks: List<PokeExpansionPack> = emptyList(),
     val searchQuery: String = "",
     val types: List<PokeType> = emptyList(),
     val rarities: List<PokeRarity> = emptyList(),
@@ -43,17 +45,18 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel, appState: AppStat
         Card(modifier = Modifier.padding(8.dp).widthIn(250.dp), shape = RoundedCornerShape(8.dp)) {
             val scrollState = rememberScrollState()
             Column(modifier = Modifier.padding(8.dp).verticalScroll(scrollState)) {
-                Text("Filter by expansion")
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    appState.pokeExpansions.forEach { set ->
-                        buildFilterExpansion(homeScreenUiState, homeScreenViewModel, set)
-                    }
-                }
                 Text("Search by name")
                 TextField(homeScreenUiState.cardFilter.searchQuery, {
                     homeScreenViewModel.setCardFilter(homeScreenUiState.cardFilter.copy(searchQuery = it))
                 })
                 Spacer(Modifier.height(8.dp))
+
+                Text("Filter by expansion")
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    appState.pokeExpansions.forEach { set ->
+                        buildFilterExpansion2(homeScreenUiState, homeScreenViewModel, set)
+                    }
+                }
 
                 if (appState.supabaseUserInfo != null) {
                     Text("Owned")
@@ -97,14 +100,33 @@ fun PokeFilterDialog(homeScreenViewModel: HomeScreenViewModel, appState: AppStat
 }
 
 @Composable
-@OptIn(ExperimentalMaterialApi::class)
-fun buildFilterExpansion(homeScreenUiState: HomeScreenUiState, homeScreenViewModel: HomeScreenViewModel, expansion: PokeExpansion) {
-    val selected = homeScreenUiState.cardFilter.expansions.contains(expansion)
+@OptIn(ExperimentalMaterialApi::class, ExperimentalLayoutApi::class, ExperimentalResourceApi::class)
+fun buildFilterExpansion2(homeScreenUiState: HomeScreenUiState, homeScreenViewModel: HomeScreenViewModel, expansion: PokeExpansion) {
+    val expansionSelected = homeScreenUiState.cardFilter.expansions.contains(expansion)
+    var imageBitmapExpansion by remember {
+        mutableStateOf<ImageBitmap?>(null)
+    }
+    LaunchedEffect(expansion) {
+        val bytes = Res.readBytes("files/expansions/${expansion.symbol}/expansion_symbols/${expansion.imageUrl}")
+        imageBitmapExpansion = bytes.decodeToImageBitmap()
+    }
     FilterChip(
-        selected = selected,
+        selected = expansionSelected,
         onClick = { clickedFilterExpansion(homeScreenViewModel, expansion) },
-        content = { Text(expansion.displayName) },
-        leadingIcon = if (selected) {
+        content = {
+            Row(horizontalArrangement = Arrangement.spacedBy(4.dp), verticalAlignment = Alignment.CenterVertically) {
+                Text(expansion.displayName)
+                imageBitmapExpansion?.let {
+                    Image(
+                        it,
+                        contentScale = ContentScale.FillWidth,
+                        contentDescription = null,
+                        modifier = Modifier.width(64.dp)
+                    )
+                }
+            }
+        },
+        selectedIcon = if (expansionSelected) {
             {
                 Icon(
                     imageVector = Icons.Filled.Done,
@@ -116,6 +138,57 @@ fun buildFilterExpansion(homeScreenUiState: HomeScreenUiState, homeScreenViewMod
             null
         },
     )
+
+    if (expansionSelected) {
+        // Show the expansion packs
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            expansion.packs.forEach { pack ->
+                var imageBitmapPack by remember {
+                    mutableStateOf<ImageBitmap?>(null)
+                }
+                LaunchedEffect(pack) {
+                    val bytes = Res.readBytes("files/expansions/${expansion.symbol}/expansion_symbols/${pack.imageUrlSymbol}")
+                    imageBitmapPack = bytes.decodeToImageBitmap()
+                }
+                val packSelected = homeScreenUiState.cardFilter.expansionPacks.contains(pack)
+                FilterChip(
+                    selected = packSelected,
+                    selectedIcon = if (packSelected) {
+                        {
+                            Icon(
+                                imageVector = Icons.Filled.Done,
+                                contentDescription = "Selected icon",
+                                modifier = Modifier.size(16.dp)
+                            )
+                        }
+                    } else {
+                        null
+                    },
+                    onClick = {
+                        val newFilterExpansionPack = if (homeScreenUiState.cardFilter.expansionPacks.contains(pack)) {
+                            homeScreenUiState.cardFilter.copy(expansionPacks = homeScreenUiState.cardFilter.expansionPacks - pack)
+                        } else {
+                            homeScreenUiState.cardFilter.copy(expansionPacks = homeScreenUiState.cardFilter.expansionPacks + pack)
+                        }
+                        homeScreenViewModel.setCardFilter(newFilterExpansionPack)
+                    },
+                    content = {
+                        Row(horizontalArrangement = Arrangement.spacedBy(4.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Text(pack.name)
+                            imageBitmapPack?.let {
+                                Image(
+                                    it,
+                                    contentScale = ContentScale.FillWidth,
+                                    contentDescription = null,
+                                    modifier = Modifier.width(64.dp)
+                                )
+                            }
+                        }
+                    },
+                )
+            }
+        }
+    }
 }
 
 fun clickedFilterExpansion(homeScreenViewModel: HomeScreenViewModel, expansion: PokeExpansion) {
