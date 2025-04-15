@@ -112,16 +112,30 @@ fun GridOfCards(
     }
 }
 
-fun matchesCardFilter(card: PokeCard, cardSet: PokeExpansion, cardFilter: PokeCardFilter, appState: AppState): Boolean {
+fun matchesCardFilter(
+    card: PokeCard,
+    expansion: PokeExpansion,
+    cardFilter: PokeCardFilter,
+    appState: AppState
+): Boolean {
     //SearchQuery
     if (cardFilter.searchQuery.isNotBlank()) {
         if (!card.pokeName.contains(cardFilter.searchQuery, ignoreCase = true)) {
             return false
         }
     }
+    //ExpansionPack selected
+    if (cardFilter.expansionPacks.isNotEmpty()) {
+        if (card.packId != null) { //when null, the card is not part of a pack (like promo-a)
+            val cardPack = expansion.packs.find { it.id == card.packId }
+            if (!cardFilter.expansionPacks.contains(cardPack)) {
+                return false
+            }
+        }
+    }
     //Owned
     if (cardFilter.ownedStatus.isNotEmpty()) {
-        val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && cardSet.codeName == it.pokeExpansion.codeName) }
+        val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && expansion.codeName == it.pokeExpansion.codeName) }
         val isOwned = ownedCard != null && ownedCard.amount > 0
         //val amountOwned = ownedCard?.amount ?: 0
         if (!cardFilter.ownedStatus.contains(isOwned)) {

@@ -38,10 +38,10 @@ fun HomeScreen(
         if (appState.pokeExpansions.isEmpty()) {
             Text("Loading Card Sets...")
         } else {
-            val cardSets = appState.pokeExpansions
+            val cardExpansions = appState.pokeExpansions
             val cardFilter = homeScreenUiState.cardFilter
             val tempMap = mutableMapOf<PokeExpansion, List<PokeCard>>()
-            cardSets.forEach { cardSet ->
+            cardExpansions.forEach { cardSet ->
                 val cards = cardSet.cards.filter { someCard ->
                     matchesCardFilter(someCard, cardSet, cardFilter, appState)
                 }
