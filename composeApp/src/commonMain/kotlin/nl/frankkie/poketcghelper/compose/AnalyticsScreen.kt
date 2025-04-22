@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.AppViewModel
+import nl.frankkie.poketcghelper.model.OwnedCard
 import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokeExpansionPack
 import nl.frankkie.poketcghelper.model.PokeRarity
@@ -57,13 +58,59 @@ fun AnalyticsScreen(navController: NavController, appViewModel: AppViewModel) {
         ) {
             Text("Analytics Screen")
             Spacer(Modifier.height(16.dp))
-            ana1(appState)
+            //Ana1(appState)
+
+            appState.pokeExpansions.forEach { expansion ->
+                SimpleAnaForExpansion(expansion, appState.ownedCards)
+                MyHorizontalDivider()
+            }
+        }
+    }
+}
+
+
+@Composable
+fun SimpleAnaForExpansion(expansion: PokeExpansion, ownedCards: List<OwnedCard>) {
+
+    val expansionCards = expansion.cards
+    val expansionOwnedCards = ownedCards.filter { it.pokeExpansion.codeName == expansion.codeName }
+    val expansionNonRareCards = expansion.cards.filter { isOfRarityDiamond(it.pokeRarity) }
+    val expansionOwnedNonRareCards = expansionOwnedCards.filter { isOfRarityDiamond(it.pokeCard.pokeRarity) }
+
+    Column(modifier = Modifier.padding(8.dp)) {
+        SimpleImage(
+            Modifier.height(50.dp),
+            imagePath = "files/expansions/${expansion.symbol}/expansion_symbols/${expansion.imageUrl}",
+            contentDescription = expansion.displayName
+        )
+        Text("${expansion.displayName} (${expansion.symbol})")
+        Text("You have ${expansionOwnedCards.size} cards out of ${expansionCards.size} (${expansionOwnedCards.size.toFloat() / expansionCards.size.toFloat() * 100}%)")
+        Text("You have ${expansionOwnedNonRareCards.size} non-rare cards out of ${expansionNonRareCards.size} (${expansionOwnedNonRareCards.size.toFloat() / expansionNonRareCards.size.toFloat() * 100}%)")
+
+        if (expansion.packs.isNotEmpty()) {
+            expansion.packs.forEach { pack ->
+                val packCards = expansion.cards.filter { it.packId == pack.id }
+                val packNonRareCards = packCards.filter { isOfRarityDiamond(it.pokeRarity) }
+                val ownedPackCards = expansionOwnedCards.filter { it.pokeCard.packId == pack.id }
+                val ownedPackNonRareCards = expansionOwnedNonRareCards.filter { it.pokeCard.packId == pack.id }
+                Row {
+                    SimpleImage(
+                        Modifier.height(50.dp),
+                        imagePath = "files/expansions/${expansion.symbol}/expansion_symbols/${pack.imageUrlSymbol}",
+                        contentDescription = pack.name
+                    )
+                    Column {
+                        Text("You have ${ownedPackCards.size} cards from ${pack.name} out of ${packCards.size} (${ownedPackCards.size.toFloat() / packCards.size.toFloat() * 100}%)")
+                        Text("You have ${ownedPackNonRareCards.size} non-rare cards from ${pack.name} out of ${packNonRareCards.size} (${ownedPackNonRareCards.size.toFloat() / packNonRareCards.size.toFloat() * 100}%)")
+                    }
+                }
+            }
         }
     }
 }
 
 @Composable
-fun ana1(appState: AppState) {
+fun Ana1(appState: AppState) {
     if (appState.supabaseUserInfo == null) {
         return
     }
@@ -189,7 +236,6 @@ fun mapFloat(x: Float, in_min: Float, in_max: Float, out_min: Float, out_max: Fl
     //https://docs.arduino.cc/language-reference/en/functions/math/map/
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
 }
-
 
 
 @Composable
