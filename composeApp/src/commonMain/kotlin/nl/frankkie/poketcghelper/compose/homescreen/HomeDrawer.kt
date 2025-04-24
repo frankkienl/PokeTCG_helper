@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
@@ -67,6 +68,23 @@ fun HomeDrawerContent(navController: NavController, appViewModel: AppViewModel) 
             }
 
             MyHorizontalDivider()
+
+            //TODO: finish this screen, before showing in drawer
+            if (false) {
+                Row(
+                    modifier = Modifier
+                        .heightIn(60.dp)
+                        .fillMaxWidth()
+                        .clickable {
+                            navController.navigate(Routes.FriendCardListScreen)
+                        },
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(Icons.Default.Person, contentDescription = "Friend")
+                    Spacer(Modifier.width(8.dp))
+                    Text("Friend card list")
+                }
+            }
         }
 
         //Android Remote Control

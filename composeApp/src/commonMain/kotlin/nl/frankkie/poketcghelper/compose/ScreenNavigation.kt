@@ -25,6 +25,9 @@ object Routes {
 
     @Serializable
     data class CardEditScreen(val cardSetCodeName: String, val cardNumber: Int)
+
+    @Serializable
+    object FriendCardListScreen
 }
 
 @Composable
@@ -42,6 +45,9 @@ fun createNavGraph(navController: NavHostController, appViewModel: AppViewModel)
         composable<Routes.CardEditScreen> { backStackEntry ->
             val data = backStackEntry.toRoute<Routes.CardEditScreen>()
             CardEditScreen(navController, appViewModel, data.cardSetCodeName, data.cardNumber)
+        }
+        composable<Routes.FriendCardListScreen> {
+            FriendCardListScreen(navController, appViewModel)
         }
     }
 }
