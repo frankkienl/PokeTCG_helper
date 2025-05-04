@@ -25,6 +25,9 @@ suspend fun initializeCards(): List<PokeExpansion> {
     //Shining Revelry
     val jsonStringShiningRevelry = Res.readBytes("files/expansions/A2b/expansion_shining_revelry.json").decodeToString()
     val expansionShiningRevelry = initializeCardsFromJson(jsonStringShiningRevelry)
+    //Celestial Guardians
+    val jsonStringCelestialGuardians = Res.readBytes("files/expansions/A3/expansion_celestial_guardians.json").decodeToString()
+    val expansionCelestialGuardians = initializeCardsFromJson(jsonStringCelestialGuardians)
     //Done
     return listOf(
         expansionGeneticApex,
@@ -32,6 +35,7 @@ suspend fun initializeCards(): List<PokeExpansion> {
         expansionSpaceTime,
         expansionTriumphantLight,
         expansionShiningRevelry,
+        expansionCelestialGuardians,
         expansionPromo
     )
 }

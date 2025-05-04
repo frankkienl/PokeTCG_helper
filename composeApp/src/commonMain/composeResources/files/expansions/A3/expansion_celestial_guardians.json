@@ -1,0 +1,1696 @@
+{
+  "symbol": "A3",
+  "codeName": "CELESTIAL_GUARDIANS",
+  "displayName": "Celestial Guardians",
+  "numberOfCards": 239,
+  "imageUrl": "A3_Set_Logo_EN.png",
+  "packs": [
+    {
+      "id": "SOLGALEO",
+      "name": "Solgaleo",
+      "imageUrl": "A3_Pack_Logo_Solgaleo_EN.png",
+      "imageUrlSymbol": "A3_Pack_Logo_Solgaleo_EN.png"
+    },
+    {
+      "id": "LUNALA",
+      "name": "Lunala",
+      "imageUrl": "A3_Pack_Logo_Lunala_EN.png",
+      "imageUrlSymbol": "A3_Pack_Logo_Lunala_EN.png"
+    }
+  ],
+  "cards": [
+    {
+      "number": "1",
+      "pokeName": "Exeggcute",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "2",
+      "pokeName": "Alolan Exeggutor",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "3",
+      "pokeName": "Surskit",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": ""
+    },
+    {
+      "number": "4",
+      "pokeName": "Masquerain",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": ""
+    },
+    {
+      "number": "5",
+      "pokeName": "Maractus",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "6",
+      "pokeName": "Karrablast",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": ""
+    },
+    {
+      "number": "7",
+      "pokeName": "Phantump",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "8",
+      "pokeName": "Trevenant",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "9",
+      "pokeName": "Rowlet",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "10",
+      "pokeName": "Rowlet",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "11",
+      "pokeName": "Dartrix",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "12",
+      "pokeName": "Decidueye ex",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "13",
+      "pokeName": "Grubbin",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "14",
+      "pokeName": "Fomantis",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": ""
+    },
+    {
+      "number": "15",
+      "pokeName": "Lurantis",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": ""
+    },
+    {
+      "number": "16",
+      "pokeName": "Morelull",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "17",
+      "pokeName": "Shiinotic",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "18",
+      "pokeName": "Bounsweet",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "19",
+      "pokeName": "Steenee",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "20",
+      "pokeName": "Tsareena",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "21",
+      "pokeName": "Wimpod",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "22",
+      "pokeName": "Golisopod",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "23",
+      "pokeName": "Dhelmise ex",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "24",
+      "pokeName": "Tapu Bulu",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "25",
+      "pokeName": "Growlithe",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": ""
+    },
+    {
+      "number": "26",
+      "pokeName": "Arcanine",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": ""
+    },
+    {
+      "number": "27",
+      "pokeName": "Alolan Marowak",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "28",
+      "pokeName": "Fletchinder",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "29",
+      "pokeName": "Talonflame",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "30",
+      "pokeName": "Litten",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "31",
+      "pokeName": "Litten",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "32",
+      "pokeName": "Torracat",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "33",
+      "pokeName": "Incineroar ex",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "34",
+      "pokeName": "Oricorio",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "35",
+      "pokeName": "Salandit",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": ""
+    },
+    {
+      "number": "36",
+      "pokeName": "Salazzle",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": ""
+    },
+    {
+      "number": "37",
+      "pokeName": "Turtonator",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "38",
+      "pokeName": "Alolan Sandshrew",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": ""
+    },
+    {
+      "number": "39",
+      "pokeName": "Alolan Sandslash",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": ""
+    },
+    {
+      "number": "40",
+      "pokeName": "Alolan Vulpix",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "41",
+      "pokeName": "Alolan Ninetales",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "42",
+      "pokeName": "Shellder",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "43",
+      "pokeName": "Cloyster",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "44",
+      "pokeName": "Lapras",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": ""
+    },
+    {
+      "number": "45",
+      "pokeName": "Popplio",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "46",
+      "pokeName": "Popplio",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "47",
+      "pokeName": "Brionne",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "48",
+      "pokeName": "Primarina",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "49",
+      "pokeName": "Crabominable ex",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "50",
+      "pokeName": "Wishiwashi",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "51",
+      "pokeName": "Wishiwashi ex",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "52",
+      "pokeName": "Dewpider",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "53",
+      "pokeName": "Araquanid",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "54",
+      "pokeName": "Pyukumuku",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "55",
+      "pokeName": "Bruxish",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": ""
+    },
+    {
+      "number": "56",
+      "pokeName": "Tapu Fini",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "57",
+      "pokeName": "Pikachu",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "58",
+      "pokeName": "Alolan Raichu ex",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "59",
+      "pokeName": "Alolan Geodude",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "60",
+      "pokeName": "Alolan Graveler",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "61",
+      "pokeName": "Alolan Golem",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "62",
+      "pokeName": "Helioptile",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": ""
+    },
+    {
+      "number": "63",
+      "pokeName": "Heliolisk",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": ""
+    },
+    {
+      "number": "64",
+      "pokeName": "Charjabug",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "65",
+      "pokeName": "Vikavolt",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "66",
+      "pokeName": "Oricorio",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "67",
+      "pokeName": "Togedemaru",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "68",
+      "pokeName": "Tapu Koko",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "69",
+      "pokeName": "Mr. Mime",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "70",
+      "pokeName": "Sableye",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": ""
+    },
+    {
+      "number": "71",
+      "pokeName": "Spoink",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": ""
+    },
+    {
+      "number": "72",
+      "pokeName": "Grumpig",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": ""
+    },
+    {
+      "number": "73",
+      "pokeName": "Lunatone",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "74",
+      "pokeName": "Shuppet",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": ""
+    },
+    {
+      "number": "75",
+      "pokeName": "Banette",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": ""
+    },
+    {
+      "number": "76",
+      "pokeName": "Oricorio",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "77",
+      "pokeName": "Oricorio",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "78",
+      "pokeName": "Cutiefly",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "79",
+      "pokeName": "Ribombee",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "80",
+      "pokeName": "Comfey",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "81",
+      "pokeName": "Sandygast",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "82",
+      "pokeName": "Palossand",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "83",
+      "pokeName": "Mimikyu",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "84",
+      "pokeName": "Tapu Lele",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "85",
+      "pokeName": "Cosmog",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": ""
+    },
+    {
+      "number": "86",
+      "pokeName": "Cosmoem",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": ""
+    },
+    {
+      "number": "87",
+      "pokeName": "Lunala ex",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "88",
+      "pokeName": "Necrozma",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "89",
+      "pokeName": "Cubone",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "90",
+      "pokeName": "Makuhita",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": ""
+    },
+    {
+      "number": "91",
+      "pokeName": "Hariyama",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": ""
+    },
+    {
+      "number": "92",
+      "pokeName": "Solrock",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "93",
+      "pokeName": "Drilbur",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": ""
+    },
+    {
+      "number": "94",
+      "pokeName": "Timburr",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "95",
+      "pokeName": "Gurdurr",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "96",
+      "pokeName": "Conkeldurr",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "97",
+      "pokeName": "Crabrawler",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "98",
+      "pokeName": "Rockruff",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "99",
+      "pokeName": "Rockruff",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "100",
+      "pokeName": "Lycanroc",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "101",
+      "pokeName": "Lycanroc",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "102",
+      "pokeName": "Mudbray",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "103",
+      "pokeName": "Mudsdale",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "104",
+      "pokeName": "Passimian ex",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "105",
+      "pokeName": "Minior",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "106",
+      "pokeName": "Alolan Rattata",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "107",
+      "pokeName": "Alolan Raticate",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "108",
+      "pokeName": "Alolan Meowth",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "109",
+      "pokeName": "Alolan Persian",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "110",
+      "pokeName": "Alolan Grimer",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "111",
+      "pokeName": "Alolan Muk ex",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "112",
+      "pokeName": "Absol",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "113",
+      "pokeName": "Trubbish",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": ""
+    },
+    {
+      "number": "114",
+      "pokeName": "Garbodor",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": ""
+    },
+    {
+      "number": "115",
+      "pokeName": "Mareanie",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "116",
+      "pokeName": "Toxapex",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "117",
+      "pokeName": "Alolan Diglett",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "118",
+      "pokeName": "Alolan Dugtrio",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "119",
+      "pokeName": "Excadrill",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "120",
+      "pokeName": "Escavalier",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "121",
+      "pokeName": "Klefki",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "122",
+      "pokeName": "Solgaleo ex",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "123",
+      "pokeName": "Magearna",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "124",
+      "pokeName": "Drampa",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "125",
+      "pokeName": "Jangmo-o",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "126",
+      "pokeName": "Hakamo-o",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "127",
+      "pokeName": "Kommo-o",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "128",
+      "pokeName": "Tauros",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "129",
+      "pokeName": "Skitty",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "130",
+      "pokeName": "Delcatty",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "131",
+      "pokeName": "Fletchling",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "132",
+      "pokeName": "Hawlucha",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "133",
+      "pokeName": "Pikipek",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "134",
+      "pokeName": "Trumbeak",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "135",
+      "pokeName": "Toucannon",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "136",
+      "pokeName": "Yungoos",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "137",
+      "pokeName": "Gumshoos",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "138",
+      "pokeName": "Stufful",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "139",
+      "pokeName": "Bewear",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "140",
+      "pokeName": "Oranguru",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "141",
+      "pokeName": "Komala",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "142",
+      "pokeName": "Big Malasada",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "143",
+      "pokeName": "Fishing Net",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "144",
+      "pokeName": "Rare Candy",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    },
+    {
+      "number": "145",
+      "pokeName": "Rotom Dex",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "146",
+      "pokeName": "Poison Barb",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "147",
+      "pokeName": "Leaf Cape",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "148",
+      "pokeName": "Acerola",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "149",
+      "pokeName": "Ilima",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "150",
+      "pokeName": "Kiawe",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "151",
+      "pokeName": "Guzma",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "152",
+      "pokeName": "Lana",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "153",
+      "pokeName": "Sophocles",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "154",
+      "pokeName": "Mallow",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "155",
+      "pokeName": "Lillie",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "156",
+      "pokeName": "Alolan Exeggutor",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "157",
+      "pokeName": "Morelull",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "158",
+      "pokeName": "Tsareena",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "159",
+      "pokeName": "Tapu Bulu",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "160",
+      "pokeName": "Alolan Marowak",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "161",
+      "pokeName": "Turtonator",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "162",
+      "pokeName": "Alolan Vulpix",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "163",
+      "pokeName": "Pyukumuku",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "164",
+      "pokeName": "Tapu Fini",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "165",
+      "pokeName": "Oricorio",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "166",
+      "pokeName": "Tapu Koko",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "167",
+      "pokeName": "Cutiefly",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "168",
+      "pokeName": "Comfey",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "169",
+      "pokeName": "Sandygast",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "170",
+      "pokeName": "Tapu Lele",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "171",
+      "pokeName": "Cosmog",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "172",
+      "pokeName": "Rockruff",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "173",
+      "pokeName": "Mudsdale",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "174",
+      "pokeName": "Minior",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "175",
+      "pokeName": "Magearna",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "176",
+      "pokeName": "Drampa",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "177",
+      "pokeName": "Pikipek",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "178",
+      "pokeName": "Bewear",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "179",
+      "pokeName": "Komala",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "180",
+      "pokeName": "Decidueye ex",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "181",
+      "pokeName": "Dhelmise ex",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "182",
+      "pokeName": "Incineroar ex",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "183",
+      "pokeName": "Crabominable ex",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "184",
+      "pokeName": "Wishiwashi ex",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "185",
+      "pokeName": "Alolan Raichu ex",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "186",
+      "pokeName": "Lunala ex",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "187",
+      "pokeName": "Passimian ex",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "188",
+      "pokeName": "Alolan Muk ex",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "189",
+      "pokeName": "Solgaleo ex",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "190",
+      "pokeName": "Acerola",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "191",
+      "pokeName": "Ilima",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "192",
+      "pokeName": "Kiawe",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "193",
+      "pokeName": "Guzma",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "194",
+      "pokeName": "Lana",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "195",
+      "pokeName": "Sophocles",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "196",
+      "pokeName": "Mallow",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "197",
+      "pokeName": "Lillie",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "198",
+      "pokeName": "Decidueye ex",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "199",
+      "pokeName": "Dhelmise ex",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "200",
+      "pokeName": "Incineroar ex",
+      "imageUrl": "",
+      "pokeType": "FIRE",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "201",
+      "pokeName": "Crabominable ex",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "202",
+      "pokeName": "Wishiwashi ex",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "203",
+      "pokeName": "Alolan Raichu ex",
+      "imageUrl": "",
+      "pokeType": "LIGHTNING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "204",
+      "pokeName": "Lunala ex",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "205",
+      "pokeName": "Passimian ex",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "206",
+      "pokeName": "Alolan Muk ex",
+      "imageUrl": "",
+      "pokeType": "DARKNESS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "207",
+      "pokeName": "Solgaleo ex",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "208",
+      "pokeName": "Guzma",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "209",
+      "pokeName": "Lillie",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "210",
+      "pokeName": "Bulbasaur",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "211",
+      "pokeName": "Ivysaur",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "212",
+      "pokeName": "Venusaur",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "213",
+      "pokeName": "Exeggcute",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "214",
+      "pokeName": "Exeggutor",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "215",
+      "pokeName": "Squirtle",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "216",
+      "pokeName": "Wartortle",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "217",
+      "pokeName": "Blastoise",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "218",
+      "pokeName": "Staryu",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "219",
+      "pokeName": "Starmie",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "220",
+      "pokeName": "Gastly",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "221",
+      "pokeName": "Haunter",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "222",
+      "pokeName": "Gengar",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "223",
+      "pokeName": "Machop",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "224",
+      "pokeName": "Machoke",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "225",
+      "pokeName": "Machamp",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "226",
+      "pokeName": "Cubone",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "227",
+      "pokeName": "Marowak",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "228",
+      "pokeName": "Jigglypuff",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "229",
+      "pokeName": "Wigglytuff",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "230",
+      "pokeName": "Venusaur ex",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "231",
+      "pokeName": "Exeggutor ex",
+      "imageUrl": "",
+      "pokeType": "GRASS",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "232",
+      "pokeName": "Blastoise ex",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "233",
+      "pokeName": "Starmie ex",
+      "imageUrl": "",
+      "pokeType": "WATER",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "234",
+      "pokeName": "Gengar ex",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "235",
+      "pokeName": "Machamp ex",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "236",
+      "pokeName": "Marowak ex",
+      "imageUrl": "",
+      "pokeType": "FIGHTING",
+      "packId": "LUNALA"
+    },
+    {
+      "number": "237",
+      "pokeName": "Wigglytuff ex",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": "SOLGALEO"
+    },
+    {
+      "number": "238",
+      "pokeName": "Lunala ex",
+      "imageUrl": "",
+      "pokeType": "PSYCHIC",
+      "packId": ""
+    },
+    {
+      "number": "239",
+      "pokeName": "Solgaleo ex",
+      "imageUrl": "",
+      "pokeType": "",
+      "packId": ""
+    }
+  ]
+}
