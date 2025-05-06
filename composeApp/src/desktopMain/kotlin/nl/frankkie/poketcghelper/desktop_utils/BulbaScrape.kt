@@ -29,39 +29,7 @@ fun processData() {
             val pokeName = parts[1].split("|")[2].trim()
             // type
             val type = parts[2].trim()
-            val typeText = when {
-                type == "{{TCG Icon|Grass}}" -> {
-                    "GRASS"
-                }
-
-                type == "{{TCG Icon|Fire}}" -> {
-                    "FIRE"
-                }
-
-                type == "{{TCG Icon|Water}}" -> {
-                    "WATER"
-                }
-
-                type == "{{TCG Icon|Lightning}}" -> {
-                    "LIGHTNING"
-                }
-
-                type == "{{TCG Icon|Psychic}}" -> {
-                    "PSYCHIC"
-                }
-
-                type == "{{TCG Icon|Fighting}}" -> {
-                    "FIGHTING"
-                }
-
-                type == "{{TCG Icon|Darkness}}" -> {
-                    "DARKNESS"
-                }
-
-                else -> {
-                    ""
-                }
-            }
+            val typeText = type.substring(type.indexOf("|") + 1, type.indexOf("}")).uppercase()
             // rarity
             val rarity = parts[3].trim()
             val rarityText = when {
@@ -91,6 +59,18 @@ fun processData() {
 
                 rarity == "{{Rar/TCGP|Star|3}}" -> {
                     "S3"
+                }
+
+                rarity == "{{Rar/TCGP|Shiny|1}}" -> {
+                    "SHINY1"
+                }
+
+                rarity == "{{Rar/TCGP|Shiny|2}}" -> {
+                    "SHINY2"
+                }
+
+                rarity == "{{Rar/TCGP|Crown}}" -> {
+                    "C"
                 }
 
                 else -> {
@@ -127,6 +107,7 @@ fun processData() {
                     "imageUrl": "",
                     "pokeType": "$typeText",
                     "packId": "$packText",
+                    "pokeRarity": "$rarityText",
                 },
             """.trimIndent()
             )
