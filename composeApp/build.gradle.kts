@@ -140,6 +140,7 @@ dependencies {
     implementation(libs.navigation.compose)
     implementation(libs.androidx.ui.graphics.android)
     implementation(libs.androidx.foundation.android)
+    implementation("io.ktor:ktor-client-logging:3.0.2")
     debugImplementation(compose.uiTooling)
 }
 
