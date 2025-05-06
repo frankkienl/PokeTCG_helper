@@ -31,11 +31,15 @@ suspend fun bulbaScrap2() {
     val jsonStringCelestialGuardians = Res.readBytes("files/expansions/A3/expansion_celestial_guardians.json").decodeToString()
     val expansionCelestialGuardians = initializeCardsFromJson(jsonStringCelestialGuardians)
 
-    val skip = 239
+    val skip = 0
 
     expansionCelestialGuardians.cards.forEach { card ->
 
         if (card.number < skip) {
+            return@forEach
+        }
+
+        if (!card.pokeName.contains(" ")) {
             return@forEach
         }
 
@@ -54,7 +58,7 @@ suspend fun bulbaScrap2() {
         val evoStage = "\\|stage=(.+)\n".toRegex().find(body)?.groupValues?.get(1)
 
         // image
-        val imageFileName = "${card.pokeName.replace(" ", "_")}CelestialGuardians${card.number}.png"
+        val imageFileName = "${card.pokeName.replace(" ", "")}CelestialGuardians${card.number}.png"
         val responseImg = ktorClient.request("$bulbaImageUrl$imageFileName")
         val bodyImg: String = responseImg.body()
         val actualImageUrl = "(https://archives\\.bulbagarden\\.net/media/upload/.+/$imageFileName)".toRegex().find(bodyImg)?.groupValues?.get(1)
@@ -86,11 +90,12 @@ suspend fun fixImageUrls() {
     val jsonStringCelestialGuardians = Res.readBytes("files/expansions/A3/expansion_celestial_guardians.json").decodeToString()
     val expansionCelestialGuardians = initializeCardsFromJson(jsonStringCelestialGuardians)
     expansionCelestialGuardians.cards.forEach { card ->
-        val imageFileName = "${card.pokeName.replace(" ", "_")}CelestialGuardians${card.number}.png"
+        val imageFileName = "${card.pokeName.replace(" ", "")}CelestialGuardians${card.number}.png"
         card.copy(
             imageUrl = imageFileName,
         )
-        println("""
+        println(
+            """
             {
                 "number": ${card.number},
                 "pokeName": "${card.pokeName}",
@@ -108,6 +113,7 @@ suspend fun fixImageUrls() {
                 "pokePrint": "${card.pokePrint}",
                 "packId": "${card.packId}",
             },
-        """.trimIndent())
+        """.trimIndent()
+        )
     }
 }

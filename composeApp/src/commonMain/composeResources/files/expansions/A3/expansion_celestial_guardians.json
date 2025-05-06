@@ -39,7 +39,7 @@
     {
       "number": 2,
       "pokeName": "Alolan Exeggutor",
-      "imageUrl": "Alolan_ExeggutorCelestialGuardians2.png",
+      "imageUrl": "AlolanExeggutorCelestialGuardians2.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -209,7 +209,7 @@
     {
       "number": 12,
       "pokeName": "Decidueye ex",
-      "imageUrl": "Decidueye_exCelestialGuardians12.png",
+      "imageUrl": "DecidueyeexCelestialGuardians12.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -396,7 +396,7 @@
     {
       "number": 23,
       "pokeName": "Dhelmise ex",
-      "imageUrl": "Dhelmise_exCelestialGuardians23.png",
+      "imageUrl": "DhelmiseexCelestialGuardians23.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -413,7 +413,7 @@
     {
       "number": 24,
       "pokeName": "Tapu Bulu",
-      "imageUrl": "Tapu_BuluCelestialGuardians24.png",
+      "imageUrl": "TapuBuluCelestialGuardians24.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -464,7 +464,7 @@
     {
       "number": 27,
       "pokeName": "Alolan Marowak",
-      "imageUrl": "Alolan_MarowakCelestialGuardians27.png",
+      "imageUrl": "AlolanMarowakCelestialGuardians27.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -566,7 +566,7 @@
     {
       "number": 33,
       "pokeName": "Incineroar ex",
-      "imageUrl": "Incineroar_exCelestialGuardians33.png",
+      "imageUrl": "IncineroarexCelestialGuardians33.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -651,7 +651,7 @@
     {
       "number": 38,
       "pokeName": "Alolan Sandshrew",
-      "imageUrl": "Alolan_SandshrewCelestialGuardians38.png",
+      "imageUrl": "AlolanSandshrewCelestialGuardians38.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -668,7 +668,7 @@
     {
       "number": 39,
       "pokeName": "Alolan Sandslash",
-      "imageUrl": "Alolan_SandslashCelestialGuardians39.png",
+      "imageUrl": "AlolanSandslashCelestialGuardians39.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -685,7 +685,7 @@
     {
       "number": 40,
       "pokeName": "Alolan Vulpix",
-      "imageUrl": "Alolan_VulpixCelestialGuardians40.png",
+      "imageUrl": "AlolanVulpixCelestialGuardians40.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -702,7 +702,7 @@
     {
       "number": 41,
       "pokeName": "Alolan Ninetales",
-      "imageUrl": "Alolan_NinetalesCelestialGuardians41.png",
+      "imageUrl": "AlolanNinetalesCelestialGuardians41.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -838,7 +838,7 @@
     {
       "number": 49,
       "pokeName": "Crabominable ex",
-      "imageUrl": "Crabominable_exCelestialGuardians49.png",
+      "imageUrl": "CrabominableexCelestialGuardians49.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -872,7 +872,7 @@
     {
       "number": 51,
       "pokeName": "Wishiwashi ex",
-      "imageUrl": "Wishiwashi_exCelestialGuardians51.png",
+      "imageUrl": "WishiwashiexCelestialGuardians51.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -957,7 +957,7 @@
     {
       "number": 56,
       "pokeName": "Tapu Fini",
-      "imageUrl": "Tapu_FiniCelestialGuardians56.png",
+      "imageUrl": "TapuFiniCelestialGuardians56.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -991,7 +991,7 @@
     {
       "number": 58,
       "pokeName": "Alolan Raichu ex",
-      "imageUrl": "Alolan_Raichu_exCelestialGuardians58.png",
+      "imageUrl": "AlolanRaichuexCelestialGuardians58.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1008,7 +1008,7 @@
     {
       "number": 59,
       "pokeName": "Alolan Geodude",
-      "imageUrl": "Alolan_GeodudeCelestialGuardians59.png",
+      "imageUrl": "AlolanGeodudeCelestialGuardians59.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1025,7 +1025,7 @@
     {
       "number": 60,
       "pokeName": "Alolan Graveler",
-      "imageUrl": "Alolan_GravelerCelestialGuardians60.png",
+      "imageUrl": "AlolanGravelerCelestialGuardians60.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1042,7 +1042,7 @@
     {
       "number": 61,
       "pokeName": "Alolan Golem",
-      "imageUrl": "Alolan_GolemCelestialGuardians61.png",
+      "imageUrl": "AlolanGolemCelestialGuardians61.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1161,7 +1161,7 @@
     {
       "number": 68,
       "pokeName": "Tapu Koko",
-      "imageUrl": "Tapu_KokoCelestialGuardians68.png",
+      "imageUrl": "TapuKokoCelestialGuardians68.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1178,7 +1178,7 @@
     {
       "number": 69,
       "pokeName": "Mr. Mime",
-      "imageUrl": "Mr._MimeCelestialGuardians69.png",
+      "imageUrl": "MrMimeCelestialGuardians69.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1433,7 +1433,7 @@
     {
       "number": 84,
       "pokeName": "Tapu Lele",
-      "imageUrl": "Tapu_LeleCelestialGuardians84.png",
+      "imageUrl": "TapuLeleCelestialGuardians84.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1484,7 +1484,7 @@
     {
       "number": 87,
       "pokeName": "Lunala ex",
-      "imageUrl": "Lunala_exCelestialGuardians87.png",
+      "imageUrl": "LunalaexCelestialGuardians87.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1773,7 +1773,7 @@
     {
       "number": 104,
       "pokeName": "Passimian ex",
-      "imageUrl": "Passimian_exCelestialGuardians104.png",
+      "imageUrl": "PassimianexCelestialGuardians104.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1807,7 +1807,7 @@
     {
       "number": 106,
       "pokeName": "Alolan Rattata",
-      "imageUrl": "Alolan_RattataCelestialGuardians106.png",
+      "imageUrl": "AlolanRattataCelestialGuardians106.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1824,7 +1824,7 @@
     {
       "number": 107,
       "pokeName": "Alolan Raticate",
-      "imageUrl": "Alolan_RaticateCelestialGuardians107.png",
+      "imageUrl": "AlolanRaticateCelestialGuardians107.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1841,7 +1841,7 @@
     {
       "number": 108,
       "pokeName": "Alolan Meowth",
-      "imageUrl": "Alolan_MeowthCelestialGuardians108.png",
+      "imageUrl": "AlolanMeowthCelestialGuardians108.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1858,7 +1858,7 @@
     {
       "number": 109,
       "pokeName": "Alolan Persian",
-      "imageUrl": "Alolan_PersianCelestialGuardians109.png",
+      "imageUrl": "AlolanPersianCelestialGuardians109.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1875,7 +1875,7 @@
     {
       "number": 110,
       "pokeName": "Alolan Grimer",
-      "imageUrl": "Alolan_GrimerCelestialGuardians110.png",
+      "imageUrl": "AlolanGrimerCelestialGuardians110.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1892,7 +1892,7 @@
     {
       "number": 111,
       "pokeName": "Alolan Muk ex",
-      "imageUrl": "Alolan_Muk_exCelestialGuardians111.png",
+      "imageUrl": "AlolanMukexCelestialGuardians111.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -1994,7 +1994,7 @@
     {
       "number": 117,
       "pokeName": "Alolan Diglett",
-      "imageUrl": "Alolan_DiglettCelestialGuardians117.png",
+      "imageUrl": "AlolanDiglettCelestialGuardians117.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2011,7 +2011,7 @@
     {
       "number": 118,
       "pokeName": "Alolan Dugtrio",
-      "imageUrl": "Alolan_DugtrioCelestialGuardians118.png",
+      "imageUrl": "AlolanDugtrioCelestialGuardians118.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2079,7 +2079,7 @@
     {
       "number": 122,
       "pokeName": "Solgaleo ex",
-      "imageUrl": "Solgaleo_exCelestialGuardians122.png",
+      "imageUrl": "SolgaleoexCelestialGuardians122.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2419,7 +2419,7 @@
     {
       "number": 142,
       "pokeName": "Big Malasada",
-      "imageUrl": "Big_MalasadaCelestialGuardians142.png",
+      "imageUrl": "BigMalasadaCelestialGuardians142.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2436,7 +2436,7 @@
     {
       "number": 143,
       "pokeName": "Fishing Net",
-      "imageUrl": "Fishing_NetCelestialGuardians143.png",
+      "imageUrl": "FishingNetCelestialGuardians143.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2453,7 +2453,7 @@
     {
       "number": 144,
       "pokeName": "Rare Candy",
-      "imageUrl": "Rare_CandyCelestialGuardians144.png",
+      "imageUrl": "RareCandyCelestialGuardians144.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2470,7 +2470,7 @@
     {
       "number": 145,
       "pokeName": "Rotom Dex",
-      "imageUrl": "Rotom_DexCelestialGuardians145.png",
+      "imageUrl": "RotomDexCelestialGuardians145.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2487,7 +2487,7 @@
     {
       "number": 146,
       "pokeName": "Poison Barb",
-      "imageUrl": "Poison_BarbCelestialGuardians146.png",
+      "imageUrl": "PoisonBarbCelestialGuardians146.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2504,7 +2504,7 @@
     {
       "number": 147,
       "pokeName": "Leaf Cape",
-      "imageUrl": "Leaf_CapeCelestialGuardians147.png",
+      "imageUrl": "LeafCapeCelestialGuardians147.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2657,7 +2657,7 @@
     {
       "number": 156,
       "pokeName": "Alolan Exeggutor",
-      "imageUrl": "Alolan_ExeggutorCelestialGuardians156.png",
+      "imageUrl": "AlolanExeggutorCelestialGuardians156.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2708,7 +2708,7 @@
     {
       "number": 159,
       "pokeName": "Tapu Bulu",
-      "imageUrl": "Tapu_BuluCelestialGuardians159.png",
+      "imageUrl": "TapuBuluCelestialGuardians159.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2725,7 +2725,7 @@
     {
       "number": 160,
       "pokeName": "Alolan Marowak",
-      "imageUrl": "Alolan_MarowakCelestialGuardians160.png",
+      "imageUrl": "AlolanMarowakCelestialGuardians160.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2759,7 +2759,7 @@
     {
       "number": 162,
       "pokeName": "Alolan Vulpix",
-      "imageUrl": "Alolan_VulpixCelestialGuardians162.png",
+      "imageUrl": "AlolanVulpixCelestialGuardians162.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2793,7 +2793,7 @@
     {
       "number": 164,
       "pokeName": "Tapu Fini",
-      "imageUrl": "Tapu_FiniCelestialGuardians164.png",
+      "imageUrl": "TapuFiniCelestialGuardians164.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2827,7 +2827,7 @@
     {
       "number": 166,
       "pokeName": "Tapu Koko",
-      "imageUrl": "Tapu_KokoCelestialGuardians166.png",
+      "imageUrl": "TapuKokoCelestialGuardians166.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -2895,7 +2895,7 @@
     {
       "number": 170,
       "pokeName": "Tapu Lele",
-      "imageUrl": "Tapu_LeleCelestialGuardians170.png",
+      "imageUrl": "TapuLeleCelestialGuardians170.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3065,7 +3065,7 @@
     {
       "number": 180,
       "pokeName": "Decidueye ex",
-      "imageUrl": "Decidueye_exCelestialGuardians180.png",
+      "imageUrl": "DecidueyeexCelestialGuardians180.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3082,7 +3082,7 @@
     {
       "number": 181,
       "pokeName": "Dhelmise ex",
-      "imageUrl": "Dhelmise_exCelestialGuardians181.png",
+      "imageUrl": "DhelmiseexCelestialGuardians181.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3099,7 +3099,7 @@
     {
       "number": 182,
       "pokeName": "Incineroar ex",
-      "imageUrl": "Incineroar_exCelestialGuardians182.png",
+      "imageUrl": "IncineroarexCelestialGuardians182.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3116,7 +3116,7 @@
     {
       "number": 183,
       "pokeName": "Crabominable ex",
-      "imageUrl": "Crabominable_exCelestialGuardians183.png",
+      "imageUrl": "CrabominableexCelestialGuardians183.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3133,7 +3133,7 @@
     {
       "number": 184,
       "pokeName": "Wishiwashi ex",
-      "imageUrl": "Wishiwashi_exCelestialGuardians184.png",
+      "imageUrl": "WishiwashiexCelestialGuardians184.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3150,7 +3150,7 @@
     {
       "number": 185,
       "pokeName": "Alolan Raichu ex",
-      "imageUrl": "Alolan_Raichu_exCelestialGuardians185.png",
+      "imageUrl": "AlolanRaichuexCelestialGuardians185.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3167,7 +3167,7 @@
     {
       "number": 186,
       "pokeName": "Lunala ex",
-      "imageUrl": "Lunala_exCelestialGuardians186.png",
+      "imageUrl": "LunalaexCelestialGuardians186.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3184,7 +3184,7 @@
     {
       "number": 187,
       "pokeName": "Passimian ex",
-      "imageUrl": "Passimian_exCelestialGuardians187.png",
+      "imageUrl": "PassimianexCelestialGuardians187.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3201,7 +3201,7 @@
     {
       "number": 188,
       "pokeName": "Alolan Muk ex",
-      "imageUrl": "Alolan_Muk_exCelestialGuardians188.png",
+      "imageUrl": "AlolanMukexCelestialGuardians188.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3218,7 +3218,7 @@
     {
       "number": 189,
       "pokeName": "Solgaleo ex",
-      "imageUrl": "Solgaleo_exCelestialGuardians189.png",
+      "imageUrl": "SolgaleoexCelestialGuardians189.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3371,7 +3371,7 @@
     {
       "number": 198,
       "pokeName": "Decidueye ex",
-      "imageUrl": "Decidueye_exCelestialGuardians198.png",
+      "imageUrl": "DecidueyeexCelestialGuardians198.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3388,7 +3388,7 @@
     {
       "number": 199,
       "pokeName": "Dhelmise ex",
-      "imageUrl": "Dhelmise_exCelestialGuardians199.png",
+      "imageUrl": "DhelmiseexCelestialGuardians199.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3405,7 +3405,7 @@
     {
       "number": 200,
       "pokeName": "Incineroar ex",
-      "imageUrl": "Incineroar_exCelestialGuardians200.png",
+      "imageUrl": "IncineroarexCelestialGuardians200.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3422,7 +3422,7 @@
     {
       "number": 201,
       "pokeName": "Crabominable ex",
-      "imageUrl": "Crabominable_exCelestialGuardians201.png",
+      "imageUrl": "CrabominableexCelestialGuardians201.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3439,7 +3439,7 @@
     {
       "number": 202,
       "pokeName": "Wishiwashi ex",
-      "imageUrl": "Wishiwashi_exCelestialGuardians202.png",
+      "imageUrl": "WishiwashiexCelestialGuardians202.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3456,7 +3456,7 @@
     {
       "number": 203,
       "pokeName": "Alolan Raichu ex",
-      "imageUrl": "Alolan_Raichu_exCelestialGuardians203.png",
+      "imageUrl": "AlolanRaichuexCelestialGuardians203.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3473,7 +3473,7 @@
     {
       "number": 204,
       "pokeName": "Lunala ex",
-      "imageUrl": "Lunala_exCelestialGuardians204.png",
+      "imageUrl": "LunalaexCelestialGuardians204.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3490,7 +3490,7 @@
     {
       "number": 205,
       "pokeName": "Passimian ex",
-      "imageUrl": "Passimian_exCelestialGuardians205.png",
+      "imageUrl": "PassimianexCelestialGuardians205.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3507,7 +3507,7 @@
     {
       "number": 206,
       "pokeName": "Alolan Muk ex",
-      "imageUrl": "Alolan_Muk_exCelestialGuardians206.png",
+      "imageUrl": "AlolanMukexCelestialGuardians206.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3524,7 +3524,7 @@
     {
       "number": 207,
       "pokeName": "Solgaleo ex",
-      "imageUrl": "Solgaleo_exCelestialGuardians207.png",
+      "imageUrl": "SolgaleoexCelestialGuardians207.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3915,7 +3915,7 @@
     {
       "number": 230,
       "pokeName": "Venusaur ex",
-      "imageUrl": "Venusaur_exCelestialGuardians230.png",
+      "imageUrl": "VenusaurexCelestialGuardians230.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3932,7 +3932,7 @@
     {
       "number": 231,
       "pokeName": "Exeggutor ex",
-      "imageUrl": "Exeggutor_exCelestialGuardians231.png",
+      "imageUrl": "ExeggutorexCelestialGuardians231.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3949,7 +3949,7 @@
     {
       "number": 232,
       "pokeName": "Blastoise ex",
-      "imageUrl": "Blastoise_exCelestialGuardians232.png",
+      "imageUrl": "BlastoiseexCelestialGuardians232.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3966,7 +3966,7 @@
     {
       "number": 233,
       "pokeName": "Starmie ex",
-      "imageUrl": "Starmie_exCelestialGuardians233.png",
+      "imageUrl": "StarmieexCelestialGuardians233.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3983,7 +3983,7 @@
     {
       "number": 234,
       "pokeName": "Gengar ex",
-      "imageUrl": "Gengar_exCelestialGuardians234.png",
+      "imageUrl": "GengarexCelestialGuardians234.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -4000,7 +4000,7 @@
     {
       "number": 235,
       "pokeName": "Machamp ex",
-      "imageUrl": "Machamp_exCelestialGuardians235.png",
+      "imageUrl": "MachampexCelestialGuardians235.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -4017,7 +4017,7 @@
     {
       "number": 236,
       "pokeName": "Marowak ex",
-      "imageUrl": "Marowak_exCelestialGuardians236.png",
+      "imageUrl": "MarowakexCelestialGuardians236.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -4034,7 +4034,7 @@
     {
       "number": 237,
       "pokeName": "Wigglytuff ex",
-      "imageUrl": "Wigglytuff_exCelestialGuardians237.png",
+      "imageUrl": "WigglytuffexCelestialGuardians237.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -4051,7 +4051,7 @@
     {
       "number": 238,
       "pokeName": "Lunala ex",
-      "imageUrl": "Lunala_exCelestialGuardians238.png",
+      "imageUrl": "LunalaexCelestialGuardians238.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -4068,7 +4068,7 @@
     {
       "number": 239,
       "pokeName": "Solgaleo ex",
-      "imageUrl": "Solgaleo_exCelestialGuardians239.png",
+      "imageUrl": "SolgaleoexCelestialGuardians239.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
