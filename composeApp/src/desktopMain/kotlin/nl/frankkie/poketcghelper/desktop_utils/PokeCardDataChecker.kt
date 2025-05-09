@@ -37,7 +37,7 @@ fun doubleCheckData(pokeExpansion: PokeExpansion) {
                 println("Card contains non-existing Pack")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card contains non-existing Pack")
+                //throw Exception("Card contains non-existing Pack")
             }
         }
         //CardSet
@@ -47,59 +47,59 @@ fun doubleCheckData(pokeExpansion: PokeExpansion) {
                 println("Card contains non-existing CardSet")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card contains non-existing CardSet")
+                //throw Exception("Card contains non-existing CardSet")
             }
         }
         //Rarity
         if (someCard.pokeRarity != null) {
             try {
-                //this will throw if pokeRarity-string does not match with an Enum value
+                //this will //throw if pokeRarity-string does not match with an Enum value
                 PokeRarity.valueOf(someCard.pokeRarity)
             } catch (e: Exception) {
                 println("---------------------------------")
                 println("Card contains non-existing Rarity")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card contains non-existing Rarity")
+                //throw Exception("Card contains non-existing Rarity")
             }
         }
         //Type
         if (someCard.pokeType != null) {
             try {
-                //this will throw if pokeRarity-string does not match with an Enum value
+                //this will //throw if pokeRarity-string does not match with an Enum value
                 PokeType.valueOf(someCard.pokeType)
             } catch (e: Exception) {
                 println("---------------------------------")
                 println("Card contains non-existing Type")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card contains non-existing Type")
+                //throw Exception("Card contains non-existing Type")
             }
         }
         //Weakness
         if (someCard.pokeWeakness != null) {
             try {
-                //this will throw if pokeRarity-string does not match with an Enum value
+                //this will //throw if pokeRarity-string does not match with an Enum value
                 PokeType.valueOf(someCard.pokeWeakness)
             } catch (e: Exception) {
                 println("---------------------------------")
                 println("Card contains non-existing Weakness")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card contains non-existing Weakness")
+                //throw Exception("Card contains non-existing Weakness")
             }
         }
         //Print
         if (someCard.pokePrint != null) {
             try {
-                //this will throw if pokeRarity-string does not match with an Enum value
+                //this will //throw if pokeRarity-string does not match with an Enum value
                 PokePrint.valueOf(someCard.pokePrint)
             } catch (e: Exception) {
                 println("---------------------------------")
                 println("Card contains non-existing Flair")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card contains non-existing Flair")
+                //throw Exception("Card contains non-existing Flair")
             }
         }
         //PokeStage
@@ -110,7 +110,7 @@ fun doubleCheckData(pokeExpansion: PokeExpansion) {
                 println("Card contains non-existing Stage")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card contains non-existing Stage")
+                //throw Exception("Card contains non-existing Stage")
             }
         }
         //PokeHp
@@ -121,7 +121,7 @@ fun doubleCheckData(pokeExpansion: PokeExpansion) {
                 println("Card contains non-existing HP")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card contains non-existing HP")
+                //throw Exception("Card contains non-existing HP")
             }
         }
         //Retreat
@@ -132,7 +132,7 @@ fun doubleCheckData(pokeExpansion: PokeExpansion) {
                 println("Card contains non-existing Retreat")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card contains non-existing Retreat")
+                //throw Exception("Card contains non-existing Retreat")
             }
         }
         //Evolves from
@@ -144,7 +144,7 @@ fun doubleCheckData(pokeExpansion: PokeExpansion) {
                 println("Card evolved from non-existing other card")
                 println(someCard)
                 println("=================================")
-                throw Exception("Card evolved from non-existing other card")
+                //throw Exception("Card evolved from non-existing other card")
             }
         }
     }

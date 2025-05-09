@@ -68,7 +68,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 4,
@@ -85,7 +85,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 5,
@@ -119,7 +119,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 7,
@@ -255,7 +255,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 15,
@@ -272,7 +272,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 16,
@@ -442,7 +442,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 26,
@@ -459,7 +459,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 27,
@@ -612,7 +612,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 36,
@@ -629,7 +629,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 37,
@@ -663,7 +663,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 39,
@@ -680,7 +680,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 40,
@@ -765,7 +765,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 45,
@@ -952,7 +952,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 56,
@@ -1071,7 +1071,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 63,
@@ -1088,7 +1088,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 64,
@@ -1207,7 +1207,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 71,
@@ -1224,7 +1224,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 72,
@@ -1241,7 +1241,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 73,
@@ -1275,7 +1275,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 75,
@@ -1292,7 +1292,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 76,
@@ -1462,7 +1462,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 86,
@@ -1479,7 +1479,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 87,
@@ -1547,7 +1547,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 91,
@@ -1564,7 +1564,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 92,
@@ -1598,7 +1598,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 94,
@@ -1938,7 +1938,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 114,
@@ -1955,7 +1955,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 115,
@@ -2006,7 +2006,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 118,
@@ -2023,7 +2023,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 119,
@@ -2040,7 +2040,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 120,
@@ -2057,7 +2057,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 121,
@@ -2193,7 +2193,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 129,
@@ -2210,7 +2210,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 130,
@@ -2227,7 +2227,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 131,
@@ -2278,7 +2278,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 134,
@@ -2295,7 +2295,7 @@
       "pokeRarity": "D1",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 135,
@@ -2312,7 +2312,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 136,
@@ -2431,7 +2431,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 143,
@@ -2465,7 +2465,7 @@
       "pokeRarity": "D2",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 145,
@@ -2491,7 +2491,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "POKÉMON TOOL",
+      "pokeType": "ITEM",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -2508,7 +2508,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "POKÉMON TOOL",
+      "pokeType": "ITEM",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -2525,7 +2525,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -2542,7 +2542,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -2559,7 +2559,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -2576,7 +2576,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -2593,7 +2593,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -2610,7 +2610,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -2627,7 +2627,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -2644,7 +2644,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3239,7 +3239,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3256,7 +3256,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3273,7 +3273,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3290,7 +3290,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3307,7 +3307,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3324,7 +3324,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3341,7 +3341,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3358,7 +3358,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3545,7 +3545,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -3562,7 +3562,7 @@
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
-      "pokeType": "SUPPORTER",
+      "pokeType": "SUPPORT",
       "pokeDesc": null,
       "pokeWeakness": null,
       "pokeRetreat": null,
@@ -4063,7 +4063,7 @@
       "pokeRarity": "C",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     },
     {
       "number": 239,
@@ -4080,7 +4080,7 @@
       "pokeRarity": "C",
       "pokeFlavour": null,
       "pokePrint": null,
-      "packId": ""
+      "packId": null
     }
   ]
 }
