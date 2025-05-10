@@ -54,8 +54,9 @@ fun CreateNavGraph(navController: NavHostController, appViewModel: AppViewModel)
         composable<Routes.FriendsListScreen> {
             FriendsListScreen(navController, appViewModel)
         }
-        composable<Routes.FriendDetailScreen> {
-            FriendDetailScreen(navController, appViewModel)
+        composable<Routes.FriendDetailScreen> { backStackEntry ->
+            val data = backStackEntry.toRoute<Routes.FriendDetailScreen>()
+            FriendDetailScreen(navController, appViewModel, data.friend_uid, data.friend_email)
         }
     }
 }

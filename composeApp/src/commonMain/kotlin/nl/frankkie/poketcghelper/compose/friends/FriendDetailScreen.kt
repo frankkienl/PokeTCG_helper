@@ -15,16 +15,30 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
+import io.github.jan.supabase.SupabaseClient
+import io.github.jan.supabase.postgrest.postgrest
+import io.github.jan.supabase.postgrest.query.Columns
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import nl.frankkie.poketcghelper.AppViewModel
+import nl.frankkie.poketcghelper.supabase.UserOwnedCardRow
+import nl.frankkie.poketcghelper.supabase.dbTableUserOwnedCards
 
 @Composable
 fun FriendDetailScreen(
     navController: NavController,
     appViewModel: AppViewModel,
+    friend_uid: String,
+    friend_email: String,
+    friendDetailScreenViewModel: FriendDetailScreenViewModel = viewModel { FriendDetailScreenViewModel(friend_uid, friend_email) }
 ) {
     val appState = appViewModel.appState.collectAsState().value
     if (appState.supabaseUserInfo == null) {
@@ -33,7 +47,19 @@ fun FriendDetailScreen(
         navController.popBackStack()
         return
     }
-
+    val coroutineScope = rememberCoroutineScope()
+    val uiState = friendDetailScreenViewModel.uiState.collectAsState().value
+    LaunchedEffect(null) {
+        //Refresh friend details
+        val supabaseClient = appState.supabaseClient
+        val userUid = appState.supabaseUserInfo.id
+        if (supabaseClient == null || userUid == null) {
+            println("FriendDetailScreen: supabaseClient is null, exit screen;")
+            navController.popBackStack()
+            return@LaunchedEffect
+        }
+        friendDetailScreenViewModel.refreshFriendDetails(supabaseClient, friend_uid)
+    }
     Scaffold(topBar = {
         TopAppBar(
             title = { Text("Poke TCG Helper - Friend detail screen") },
@@ -51,8 +77,78 @@ fun FriendDetailScreen(
                 .padding(innerPadding)
                 .verticalScroll(rememberScrollState())
         ) {
-            Text("Friends detail Screen")
+            Text("Friend detail screen - $friend_email")
             Spacer(Modifier.height(16.dp))
+
+            if (uiState.isLoading) {
+                Text("Loading friend details...")
+            } else {
+                if (uiState.errorMessage != null) {
+                    Text("Error: ${uiState.errorMessage}")
+                } else {
+                    Text("Friend UID: ${uiState.friend_uid}")
+                    Text("Friend email: ${uiState.friend_email}")
+                    Text("Friend owned cards: ${uiState.friendOwnedCards.size}")
+                }
+            }
         }
     }
 }
+
+class FriendDetailScreenViewModel(
+    val friend_uid: String,
+    val friend_email: String
+) : ViewModel() {
+    private val _uiState = MutableStateFlow(
+        FriendDetailsScreenState(friend_uid, friend_email)
+    )
+    val uiState = _uiState.asStateFlow()
+
+    fun setLoading(isLoading: Boolean) {
+        _uiState.value = _uiState.value.copy(
+            isLoading = isLoading,
+            errorMessage = null
+        )
+    }
+
+    fun setErrorMessage(errorMessage: String?) {
+        _uiState.value = _uiState.value.copy(
+            isLoading = false,
+            errorMessage = errorMessage
+        )
+    }
+
+    fun clearErrorMessage() {
+        _uiState.value = _uiState.value.copy(
+            errorMessage = null
+        )
+    }
+
+    fun setFriendOwnedCards(friendOwnedCards: List<UserOwnedCardRow>) {
+        _uiState.value = _uiState.value.copy(
+            friendOwnedCards = friendOwnedCards,
+            isLoading = false
+        )
+    }
+
+    suspend fun refreshFriendDetails(supabaseClient: SupabaseClient, friendUid: String) {
+        println("refreshFriendDetails")
+        setLoading(true)
+        val db = supabaseClient.postgrest
+        val listOfFriendOwnedCards = db.from(dbTableUserOwnedCards).select(columns = Columns.ALL) {
+            filter {
+                eq("user_uid", friend_uid)
+            }
+        }.decodeList<UserOwnedCardRow>()
+        setFriendOwnedCards(listOfFriendOwnedCards)
+        println("refreshFriendDetails: ${listOfFriendOwnedCards.size} cards")
+    }
+}
+
+data class FriendDetailsScreenState(
+    val friend_uid: String,
+    val friend_email: String,
+    val isLoading: Boolean = false,
+    val errorMessage: String? = null,
+    val friendOwnedCards: List<UserOwnedCardRow> = emptyList(),
+)

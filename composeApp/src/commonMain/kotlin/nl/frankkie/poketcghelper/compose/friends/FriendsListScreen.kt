@@ -59,6 +59,8 @@ fun FriendsListScreen(
         val supabaseClient = appState.supabaseClient
         val userUid = appState.supabaseUserInfo.id
         if (supabaseClient == null || userUid == null) {
+            println("FriendsListScreen: supabaseClient is null, exit screen;")
+            navController.popBackStack()
             return@LaunchedEffect
         }
         friendsListScreenViewModel.refreshFriendList(supabaseClient, userUid)
@@ -101,6 +103,7 @@ fun FriendsListScreen(
                 Text("Error: ${uiState.errorMessage}")
             } else {
                 Column {
+                    Text("Your friends: ${uiState.friendsList.size}")
                     // Display the list of friends
                     for (friend in uiState.friendsList) {
                         ListItem(modifier = Modifier.clickable {
