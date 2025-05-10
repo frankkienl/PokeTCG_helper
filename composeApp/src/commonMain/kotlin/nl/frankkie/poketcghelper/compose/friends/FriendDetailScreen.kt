@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper.compose
+package nl.frankkie.poketcghelper.compose.friends
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -22,7 +22,7 @@ import androidx.navigation.NavController
 import nl.frankkie.poketcghelper.AppViewModel
 
 @Composable
-fun FriendCardListScreen(
+fun FriendDetailScreen(
     navController: NavController,
     appViewModel: AppViewModel,
 ) {
@@ -33,14 +33,15 @@ fun FriendCardListScreen(
         navController.popBackStack()
         return
     }
+
     Scaffold(topBar = {
         TopAppBar(
-            title = { Text("Poke TCG Helper - Friend card list") },
+            title = { Text("Poke TCG Helper - Friend detail screen") },
             navigationIcon = {
                 IconButton(
                     onClick = { navController.popBackStack() },
                     content = { Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back") })
-            },
+            }
         )
     }) { innerPadding ->
 
@@ -50,9 +51,8 @@ fun FriendCardListScreen(
                 .padding(innerPadding)
                 .verticalScroll(rememberScrollState())
         ) {
-            Text("Friend card list Screen")
+            Text("Friends detail Screen")
             Spacer(Modifier.height(16.dp))
-            Text("This screen is not implemented yet.")
         }
     }
 }

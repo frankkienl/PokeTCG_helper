@@ -22,7 +22,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.datetime.Clock
 import kotlinx.serialization.json.Json
-import nl.frankkie.poketcghelper.compose.createNavGraph
+import nl.frankkie.poketcghelper.compose.CreateNavGraph
 import nl.frankkie.poketcghelper.model.OwnedCard
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeExpansion
@@ -89,7 +89,7 @@ fun App(
 
     val appState = appViewModel.appState.collectAsState().value
     MaterialTheme {
-        createNavGraph(navController, appViewModel)
+        CreateNavGraph(navController, appViewModel)
     }
 }
 

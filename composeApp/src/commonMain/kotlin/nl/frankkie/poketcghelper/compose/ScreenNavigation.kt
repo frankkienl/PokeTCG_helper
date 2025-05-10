@@ -7,6 +7,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
 import kotlinx.serialization.Serializable
 import nl.frankkie.poketcghelper.AppViewModel
+import nl.frankkie.poketcghelper.compose.friends.FriendDetailScreen
+import nl.frankkie.poketcghelper.compose.friends.FriendsListScreen
 import nl.frankkie.poketcghelper.compose.homescreen.HomeScreen
 
 // Type-Safe navigation
@@ -27,11 +29,14 @@ object Routes {
     data class CardEditScreen(val cardSetCodeName: String, val cardNumber: Int)
 
     @Serializable
-    object FriendCardListScreen
+    object FriendsListScreen
+
+    @Serializable
+    data class FriendDetailScreen(val friend_uid: String, val friend_email: String)
 }
 
 @Composable
-fun createNavGraph(navController: NavHostController, appViewModel: AppViewModel) {
+fun CreateNavGraph(navController: NavHostController, appViewModel: AppViewModel) {
     NavHost(navController, startDestination = Routes.HomeScreen) {
         composable<Routes.HomeScreen> {
             HomeScreen(navController, appViewModel)
@@ -46,8 +51,11 @@ fun createNavGraph(navController: NavHostController, appViewModel: AppViewModel)
             val data = backStackEntry.toRoute<Routes.CardEditScreen>()
             CardEditScreen(navController, appViewModel, data.cardSetCodeName, data.cardNumber)
         }
-        composable<Routes.FriendCardListScreen> {
-            FriendCardListScreen(navController, appViewModel)
+        composable<Routes.FriendsListScreen> {
+            FriendsListScreen(navController, appViewModel)
+        }
+        composable<Routes.FriendDetailScreen> {
+            FriendDetailScreen(navController, appViewModel)
         }
     }
 }
