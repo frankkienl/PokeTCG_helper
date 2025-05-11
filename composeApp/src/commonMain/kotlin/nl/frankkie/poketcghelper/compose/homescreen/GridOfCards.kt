@@ -1,14 +1,20 @@
 package nl.frankkie.poketcghelper.compose.homescreen
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -23,6 +29,7 @@ import nl.frankkie.poketcghelper.model.PokeType
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
+import kotlin.math.exp
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
@@ -52,6 +59,13 @@ fun GridOfCards(
         modifier = Modifier.fillMaxSize(),
         columns = GridCells.Fixed(5),
     ) {
+        if (homeScreenUiState.friendEmail != null) {
+            item(span = { GridItemSpan(5) }) {
+                Box(modifier = Modifier.padding(8.dp), contentAlignment = Alignment.Center) {
+                    Text("Comparing cards with ${homeScreenUiState.friendEmail}", style = MaterialTheme.typography.h6)
+                }
+            }
+        }
         expansions.forEach { expansion ->
             if (!homeScreenUiState.cardFilter.expansions.isEmpty() && !homeScreenUiState.cardFilter.expansions.contains(expansion)) {
                 return@forEach
@@ -85,27 +99,33 @@ fun GridOfCards(
                 val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && expansion.codeName == it.pokeExpansion.codeName) }
                 val isOwned = ownedCard != null && ownedCard.amount > 0
                 val amountOwned = ownedCard?.amount ?: 0
-                if (homeScreenUiState.amountInputMode && isLoggedIn) {
-                    PokeCardComposableAmountInputMode(
-                        pokeExpansion = expansion,
-                        pokeCard = card,
-                        amountOwned = amountOwned,
-                        cardAmountLoading = cardAmountLoading,
-                        cardPlaceholderImage = placeHolderImage,
-                        onChangeAmountOwned = onChangeAmountOwned,
-                    )
-                } else {
-                    PokeCardComposableNormalMode(
-                        pokeExpansion = expansion,
-                        pokeCard = card,
-                        isLoggedIn = appState.supabaseUserInfo != null,
-                        isOwned = isOwned,
-                        cardPlaceholderImage = placeHolderImage,
-                        onClick = { _set, _card ->
-                            onCardClick(_set, _card)
-                        },
-                        onLongClick = { _set, _card -> onCardLongClick(_set, _card) }
-                    )
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    if (homeScreenUiState.friendUid != null) {
+                        val friendAmountOwned = homeScreenUiState.friendOwnedCards.find { (card.number == it.card_number && expansion.codeName == it.card_set_id) }?.card_amount ?: 0
+                        Text("$amountOwned / $friendAmountOwned")
+                    }
+                    if (homeScreenUiState.amountInputMode && isLoggedIn) {
+                        PokeCardComposableAmountInputMode(
+                            pokeExpansion = expansion,
+                            pokeCard = card,
+                            amountOwned = amountOwned,
+                            cardAmountLoading = cardAmountLoading,
+                            cardPlaceholderImage = placeHolderImage,
+                            onChangeAmountOwned = onChangeAmountOwned,
+                        )
+                    } else {
+                        PokeCardComposableNormalMode(
+                            pokeExpansion = expansion,
+                            pokeCard = card,
+                            isLoggedIn = appState.supabaseUserInfo != null,
+                            isOwned = isOwned,
+                            cardPlaceholderImage = placeHolderImage,
+                            onClick = { _set, _card ->
+                                onCardClick(_set, _card)
+                            },
+                            onLongClick = { _set, _card -> onCardLongClick(_set, _card) }
+                        )
+                    }
                 }
             }
         }

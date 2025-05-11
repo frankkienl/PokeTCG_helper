@@ -9,6 +9,9 @@ import androidx.compose.runtime.*
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
+import io.github.jan.supabase.SupabaseClient
+import io.github.jan.supabase.postgrest.postgrest
+import io.github.jan.supabase.postgrest.query.Columns
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -16,6 +19,8 @@ import nl.frankkie.poketcghelper.AppViewModel
 import nl.frankkie.poketcghelper.compose.*
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeExpansion
+import nl.frankkie.poketcghelper.supabase.UserOwnedCardRow
+import nl.frankkie.poketcghelper.supabase.dbTableUserOwnedCards
 
 @Composable
 fun HomeScreen(
@@ -93,6 +98,26 @@ fun HomeScreen(
         if (homeScreenUiState.showLogoutDialog) {
             HomeScreenLogoutDialog(appViewModel, homeScreenViewModel)
         }
+        if (homeScreenUiState.showFriendDialog) {
+            HomeFriendDialog(
+                appViewModel = appViewModel,
+                onClose = { homeScreenViewModel.showFriendDialog(false) },
+                onFriendSelected = { newFriendUid, newFriendEmail ->
+                    homeScreenViewModel.setFriend(newFriendUid, newFriendEmail)
+                    rememberCoroutineScope.launch {
+                        if (newFriendUid == null) {
+                            // No friend selected, clear friend cards
+                            homeScreenViewModel.setFriendOwnedCards(emptyList())
+                        } else {
+                            //Refresh friend cards
+                            appViewModel.appState.value.supabaseClient?.let { safaSupabaseClient ->
+                                homeScreenViewModel.refreshFriendCards(safaSupabaseClient, newFriendUid)
+                            }
+                        }
+                    }
+                },
+            )
+        }
     }
 }
 
@@ -144,6 +169,38 @@ class HomeScreenViewModel : ViewModel() {
         )
     }
 
+    fun showFriendDialog(isVisible: Boolean) {
+        _uiState.value = _uiState.value.copy(
+            showFriendDialog = isVisible,
+        )
+    }
+
+    fun setFriend(friendUid: String?, friendEmail: String?) {
+        _uiState.value = _uiState.value.copy(
+            friendUid = friendUid,
+            friendEmail = friendEmail,
+            showFriendDialog = false
+        )
+    }
+
+    suspend fun refreshFriendCards(supabaseClient: SupabaseClient, friendUid: String) {
+        println("HomeScreen: refreshFriendCards")
+        val db = supabaseClient.postgrest
+        val listOfFriendOwnedCards = db.from(dbTableUserOwnedCards).select(columns = Columns.ALL) {
+            filter {
+                eq("user_uid", friendUid)
+            }
+        }.decodeList<UserOwnedCardRow>()
+        setFriendOwnedCards(listOfFriendOwnedCards)
+        println("HomeScreen: refreshFriendCards: ${listOfFriendOwnedCards.size} cards")
+    }
+
+    fun setFriendOwnedCards(friendOwnedCards: List<UserOwnedCardRow>) {
+        _uiState.value = _uiState.value.copy(
+            friendOwnedCards = friendOwnedCards,
+            showFriendDialog = false
+        )
+    }
 }
 
 data class HomeScreenUiState(
@@ -152,4 +209,8 @@ data class HomeScreenUiState(
     val cardFilter: PokeCardFilter = PokeCardFilter(),
     val showLogoutDialog: Boolean = false,
     val amountInputMode: Boolean = false,
+    val showFriendDialog: Boolean = false,
+    val friendUid: String? = null,
+    val friendEmail: String? = null,
+    val friendOwnedCards: List<UserOwnedCardRow> = emptyList(),
 )

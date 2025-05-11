@@ -32,7 +32,7 @@ object Routes {
     object FriendsListScreen
 
     @Serializable
-    data class FriendDetailScreen(val friend_uid: String, val friend_email: String)
+    data class FriendDetailScreen(val friendUid: String, val friendEmail: String)
 }
 
 @Composable
@@ -56,7 +56,7 @@ fun CreateNavGraph(navController: NavHostController, appViewModel: AppViewModel)
         }
         composable<Routes.FriendDetailScreen> { backStackEntry ->
             val data = backStackEntry.toRoute<Routes.FriendDetailScreen>()
-            FriendDetailScreen(navController, appViewModel, data.friend_uid, data.friend_email)
+            FriendDetailScreen(navController, appViewModel, data.friendUid, data.friendEmail)
         }
     }
 }

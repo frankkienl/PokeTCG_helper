@@ -36,9 +36,9 @@ import nl.frankkie.poketcghelper.supabase.dbTableUserOwnedCards
 fun FriendDetailScreen(
     navController: NavController,
     appViewModel: AppViewModel,
-    friend_uid: String,
-    friend_email: String,
-    friendDetailScreenViewModel: FriendDetailScreenViewModel = viewModel { FriendDetailScreenViewModel(friend_uid, friend_email) }
+    friendUid: String,
+    friendEmail: String,
+    friendDetailScreenViewModel: FriendDetailScreenViewModel = viewModel { FriendDetailScreenViewModel(friendUid, friendEmail) }
 ) {
     val appState = appViewModel.appState.collectAsState().value
     if (appState.supabaseUserInfo == null) {
@@ -58,7 +58,7 @@ fun FriendDetailScreen(
             navController.popBackStack()
             return@LaunchedEffect
         }
-        friendDetailScreenViewModel.refreshFriendDetails(supabaseClient, friend_uid)
+        friendDetailScreenViewModel.refreshFriendDetails(supabaseClient, friendUid)
     }
     Scaffold(topBar = {
         TopAppBar(
@@ -77,7 +77,7 @@ fun FriendDetailScreen(
                 .padding(innerPadding)
                 .verticalScroll(rememberScrollState())
         ) {
-            Text("Friend detail screen - $friend_email")
+            Text("Friend detail screen - $friendEmail")
             Spacer(Modifier.height(16.dp))
 
             if (uiState.isLoading) {
@@ -86,8 +86,8 @@ fun FriendDetailScreen(
                 if (uiState.errorMessage != null) {
                     Text("Error: ${uiState.errorMessage}")
                 } else {
-                    Text("Friend UID: ${uiState.friend_uid}")
-                    Text("Friend email: ${uiState.friend_email}")
+                    Text("Friend UID: ${uiState.friendUid}")
+                    Text("Friend email: ${uiState.friendEmail}")
                     Text("Friend owned cards: ${uiState.friendOwnedCards.size}")
                 }
             }
@@ -96,11 +96,11 @@ fun FriendDetailScreen(
 }
 
 class FriendDetailScreenViewModel(
-    val friend_uid: String,
+    val friendUid: String,
     val friend_email: String
 ) : ViewModel() {
     private val _uiState = MutableStateFlow(
-        FriendDetailsScreenState(friend_uid, friend_email)
+        FriendDetailsScreenState(friendUid, friend_email)
     )
     val uiState = _uiState.asStateFlow()
 
@@ -137,7 +137,7 @@ class FriendDetailScreenViewModel(
         val db = supabaseClient.postgrest
         val listOfFriendOwnedCards = db.from(dbTableUserOwnedCards).select(columns = Columns.ALL) {
             filter {
-                eq("user_uid", friend_uid)
+                eq("user_uid", friendUid)
             }
         }.decodeList<UserOwnedCardRow>()
         setFriendOwnedCards(listOfFriendOwnedCards)
@@ -146,8 +146,8 @@ class FriendDetailScreenViewModel(
 }
 
 data class FriendDetailsScreenState(
-    val friend_uid: String,
-    val friend_email: String,
+    val friendUid: String,
+    val friendEmail: String,
     val isLoading: Boolean = false,
     val errorMessage: String? = null,
     val friendOwnedCards: List<UserOwnedCardRow> = emptyList(),
