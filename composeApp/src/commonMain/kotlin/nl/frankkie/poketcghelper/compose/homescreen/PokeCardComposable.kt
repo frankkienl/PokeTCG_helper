@@ -141,7 +141,7 @@ fun PokeCardComposableAmountInputMode(
         }
     }
     Column(
-        modifier = Modifier.padding(top = 8.dp),
+        modifier = Modifier.padding(top = 4.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Box(modifier = Modifier.height(100.dp)) {
@@ -187,8 +187,7 @@ fun PokeCardComposableAmountInputMode(
                 }
             }
         }
-        //Text(pokeCard.number.toString())
-        Text(pokeCard.pokeName, fontSize = 10.sp)
+        Text(pokeCard.pokeName + " (${pokeCard.number})", fontSize = 10.sp)
         val useVertical = true
         if (!useVertical) {
             Row(verticalAlignment = Alignment.CenterVertically) {
@@ -221,8 +220,7 @@ fun PokeCardComposableAmountInputMode(
                     Text("+")
                 }
                 Text(
-                    amountOwned.toString(),
-                    modifier = Modifier.padding(4.dp)
+                    amountOwned.toString()
                 )
                 OutlinedButton(
                     enabled = !cardAmountLoading,
