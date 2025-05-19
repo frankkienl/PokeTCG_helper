@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
 import nl.frankkie.poketcghelper.AppState
+import nl.frankkie.poketcghelper.compose.MyHorizontalDivider
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeRarityComposable
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeExpansion
@@ -110,6 +111,7 @@ fun GridOfCards(
                         } else {
                             ""
                         }
+                        MyHorizontalDivider()
                         Text("$arrow $amountOwned / $friendAmountOwned $arrow")
                         //if (arrow.isNotEmpty()) {
                         PokeRarityComposable(card.pokeRarity)
