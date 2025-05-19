@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import nl.frankkie.poketcghelper.AppState
 import nl.frankkie.poketcghelper.AppViewModel
+import nl.frankkie.poketcghelper.FormatUtil
 import nl.frankkie.poketcghelper.model.OwnedCard
 import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokeExpansionPack
@@ -84,8 +85,8 @@ fun SimpleAnaForExpansion(expansion: PokeExpansion, ownedCards: List<OwnedCard>)
             contentDescription = expansion.displayName
         )
         Text("${expansion.displayName} (${expansion.symbol})")
-        Text("You have ${expansionOwnedCards.size} cards out of ${expansionCards.size} (${expansionOwnedCards.size.toFloat() / expansionCards.size.toFloat() * 100}%)")
-        Text("You have ${expansionOwnedNonRareCards.size} non-rare cards out of ${expansionNonRareCards.size} (${expansionOwnedNonRareCards.size.toFloat() / expansionNonRareCards.size.toFloat() * 100}%)")
+        Text("You have ${expansionOwnedCards.size} cards out of ${expansionCards.size} (${FormatUtil.floatFormat(expansionOwnedCards.size.toFloat() / expansionCards.size.toFloat() * 100)}%)")
+        Text("You have ${expansionOwnedNonRareCards.size} non-rare cards out of ${expansionNonRareCards.size} (${FormatUtil.floatFormat(expansionOwnedNonRareCards.size.toFloat() / expansionNonRareCards.size.toFloat() * 100)}%)")
 
         if (expansion.packs.isNotEmpty()) {
             expansion.packs.forEach { pack ->
@@ -100,8 +101,8 @@ fun SimpleAnaForExpansion(expansion: PokeExpansion, ownedCards: List<OwnedCard>)
                         contentDescription = pack.name
                     )
                     Column {
-                        Text("You have ${ownedPackCards.size} cards from ${pack.name} out of ${packCards.size} (${ownedPackCards.size.toFloat() / packCards.size.toFloat() * 100}%)")
-                        Text("You have ${ownedPackNonRareCards.size} non-rare cards from ${pack.name} out of ${packNonRareCards.size} (${ownedPackNonRareCards.size.toFloat() / packNonRareCards.size.toFloat() * 100}%)")
+                        Text("You have ${ownedPackCards.size} cards from ${pack.name} out of ${packCards.size} (${FormatUtil.floatFormat(ownedPackCards.size.toFloat() / packCards.size.toFloat() * 100)}%)")
+                        Text("You have ${ownedPackNonRareCards.size} non-rare cards from ${pack.name} out of ${packNonRareCards.size} (${FormatUtil.floatFormat(ownedPackNonRareCards.size.toFloat() / packNonRareCards.size.toFloat() * 100)}%)")
                     }
                 }
             }

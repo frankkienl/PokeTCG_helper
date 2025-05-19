@@ -238,3 +238,70 @@ fun PokeCardComposableAmountInputMode(
         //Text(pokeCard.packId ?: "", fontSize = 10.sp)
     }
 }
+
+@OptIn(ExperimentalResourceApi::class)
+@Composable
+fun PokeCardForFriendDetailScreen(pokeExpansion: PokeExpansion, pokeCard: PokeCard, cardPlaceholderImage: ImageBitmap? = null) {
+    var imageBitmap by remember {
+        mutableStateOf<ImageBitmap?>(null)
+    }
+    LaunchedEffect(pokeCard) {
+        try {
+            // Try small version
+            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
+            imageBitmap = bytes.decodeToImageBitmap()
+        } catch (e: Exception) {
+            println("PokeCardComposableAmountInputMode: Failed to load image (small) " + e.message)
+            try {
+                // Try large version
+                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
+                imageBitmap = bytes.decodeToImageBitmap()
+            } catch (e: Exception) {
+                println("PokeCardComposableAmountInputMode: Failed to load image (large) " + e.message)
+                // Image doesn't work.
+                imageBitmap = null
+            }
+        }
+    }
+    Column(
+        modifier = Modifier.padding(top = 4.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Box(modifier = Modifier.height(100.dp)) {
+            if (imageBitmap == null) {
+                cardPlaceholderImage?.let {
+                    Image(it, contentDescription = "Loading ...")
+                }
+                Box(Modifier.padding(top = 10.dp).align(Alignment.Center)) {
+                    Text(
+                        "Loading ...",
+                        modifier = Modifier.fillMaxHeight().align(Alignment.Center),
+                        style = TextStyle.Default.copy(
+                            color = Color.White,
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold,
+                        ),
+                    )
+                    Text(
+                        "Loading ...",
+                        modifier = Modifier.fillMaxHeight().align(Alignment.Center),
+                        style = TextStyle.Default.copy(
+                            color = Color.Black,
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold,
+                            drawStyle = Stroke(
+                                miter = 10f,
+                                width = 2f,
+                                join = StrokeJoin.Round
+                            )
+                        )
+                    )
+                }
+            }
+            imageBitmap?.let {
+                Image(it, null)
+            }
+        }
+        Text(pokeCard.pokeName + " (${pokeCard.number})", fontSize = 10.sp)
+    }
+}
