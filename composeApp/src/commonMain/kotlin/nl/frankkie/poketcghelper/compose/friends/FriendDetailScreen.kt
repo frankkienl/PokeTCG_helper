@@ -67,8 +67,7 @@ fun FriendDetailScreen(
             return@LaunchedEffect
         }
         friendDetailScreenViewModel.refreshFriendDetails(supabaseClient, friendUid)
-    }
-    LaunchedEffect(uiState.friendOwnedCards) {
+        //
         friendDetailScreenViewModel.refreshTradeAdvice(appState)
     }
     Scaffold(topBar = {
@@ -201,22 +200,21 @@ class FriendDetailScreenViewModel(
             }
         }.map { someCard -> findPokeCard(appState, someCard) }
         _uiState.value = _uiState.value.copy(
-            tradeAdviceMeToFriend = tradeAdviceMeToFriend,
-            tradeAdviceFriendToMe = tradeAdviceFriendToMe
+            tradeAdviceMeToFriend = tradeAdviceMeToFriend.filter { someCard -> someCard != null } as List<PokeCard>,
+            tradeAdviceFriendToMe = tradeAdviceFriendToMe.filter { someCard -> someCard != null } as List<PokeCard>,
         )
+        println("refreshTradeAdvice: ${tradeAdviceMeToFriend.size} cards to trade to friend")
     }
 }
 
-fun findPokeCard(appState: AppState, someCard: UserOwnedCardRow): PokeCard {
+fun findPokeCard(appState: AppState, someCard: UserOwnedCardRow): PokeCard? {
     val cardSet = appState.pokeExpansions.find { someCard.card_set_id == it.codeName }
     //remove null safety !!
     return cardSet!!.cards.find { someCard.card_number == it.number }!!
 }
 
-fun findPokeCard(appState: AppState, someCard: OwnedCard): PokeCard {
-    val cardSet = appState.pokeExpansions.find { someCard.pokeCard.expansion == it.codeName }
-    //remove null safety !!
-    return cardSet!!.cards.find { someCard.pokeCard.number == it.number }!!
+fun findPokeCard(appState: AppState, someCard: OwnedCard): PokeCard? {
+    return someCard.pokeCard
 }
 
 data class FriendDetailsScreenState(
