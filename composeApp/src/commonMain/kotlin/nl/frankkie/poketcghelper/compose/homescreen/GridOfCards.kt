@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
 import nl.frankkie.poketcghelper.AppState
+import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeRarityComposable
 import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokeRarity
@@ -102,7 +103,17 @@ fun GridOfCards(
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     if (homeScreenUiState.friendUid != null) {
                         val friendAmountOwned = homeScreenUiState.friendOwnedCards.find { (card.number == it.card_number && expansion.codeName == it.card_set_id) }?.card_amount ?: 0
-                        Text("$amountOwned / $friendAmountOwned")
+                        val arrow = if (amountOwned == 0 && friendAmountOwned > 1) {
+                            "⬅\uFE0F"
+                        } else if (amountOwned > 1 && friendAmountOwned == 0) {
+                            "➡\uFE0F"
+                        } else {
+                            ""
+                        }
+                        Text("$arrow $amountOwned / $friendAmountOwned $arrow")
+                        //if (arrow.isNotEmpty()) {
+                        PokeRarityComposable(card.pokeRarity)
+                        //}
                     }
                     if (homeScreenUiState.amountInputMode && isLoggedIn) {
                         PokeCardComposableAmountInputMode(
