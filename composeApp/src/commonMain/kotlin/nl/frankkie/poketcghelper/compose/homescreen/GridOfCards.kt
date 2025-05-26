@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -14,6 +15,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.lazy.grid.rememberLazyGridState
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
@@ -28,6 +30,7 @@ import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeExpansion
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
+import nl.frankkie.poketcghelper.platform_dependant.MyVerticalScrollbar
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
 import poketcg_helper.composeapp.generated.resources.Res
@@ -56,92 +59,104 @@ fun GridOfCards(
         placeHolderImage = bytes.decodeToImageBitmap()
     }
 
-    //Grid of cards
-    LazyVerticalGrid(
+    val scrollState = rememberLazyGridState()
+
+    Box(
         modifier = Modifier.fillMaxSize(),
-        columns = GridCells.Fixed(5),
     ) {
-        if (homeScreenUiState.friendEmail != null) {
-            item(span = { GridItemSpan(5) }) {
-                Box(modifier = Modifier.padding(8.dp), contentAlignment = Alignment.Center) {
-                    Text("Comparing cards with ${homeScreenUiState.friendEmail}", style = MaterialTheme.typography.h6)
-                }
-            }
-        }
-        expansions.forEach { expansion ->
-            if (!homeScreenUiState.cardFilter.expansions.isEmpty() && !homeScreenUiState.cardFilter.expansions.contains(expansion)) {
-                return@forEach
-            }
-            val filteredCardsForExpansion = filteredCards[expansion] ?: emptyList()
-            if (filteredCardsForExpansion.isNotEmpty()) {
-                //No need to show header, if there's no cards shown in this set.
+        //Grid of cards
+        LazyVerticalGrid(
+            modifier = Modifier.fillMaxSize(),
+            columns = GridCells.Fixed(5),
+            state = scrollState,
+        ) {
+            if (homeScreenUiState.friendEmail != null) {
                 item(span = { GridItemSpan(5) }) {
-                    //Cardset logo
-                    var imageBitmap by remember { mutableStateOf<ImageBitmap?>(null) }
-                    LaunchedEffect(expansion) {
-                        val bytes = Res.readBytes("files/expansions/${expansion.symbol}/expansion_symbols/${expansion.imageUrl}")
-                        try {
-                            imageBitmap = bytes.decodeToImageBitmap()
-                        } catch (e: Exception) {
-                            println("GridOfCards: Error reading CardSet logo image")
-                            e.printStackTrace()
-                            imageBitmap = null
-                        }
-                    }
-                    Box(modifier = Modifier.height(80.dp), contentAlignment = Alignment.Center) {
-                        if (imageBitmap == null) {
-                            Text(expansion.displayName)
-                        } else {
-                            imageBitmap?.let { Image(it, contentDescription = expansion.displayName, modifier = Modifier.padding(8.dp)) }
-                        }
+                    Box(modifier = Modifier.padding(8.dp), contentAlignment = Alignment.Center) {
+                        Text("Comparing cards with ${homeScreenUiState.friendEmail}", style = MaterialTheme.typography.h6)
                     }
                 }
             }
-            items(filteredCardsForExpansion) { card ->
-                val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && expansion.codeName == it.pokeExpansion.codeName) }
-                val isOwned = ownedCard != null && ownedCard.amount > 0
-                val amountOwned = ownedCard?.amount ?: 0
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    if (homeScreenUiState.friendUid != null) {
-                        val friendAmountOwned = homeScreenUiState.friendOwnedCards.find { (card.number == it.card_number && expansion.codeName == it.card_set_id) }?.card_amount ?: 0
-                        val arrow = if (amountOwned == 0 && friendAmountOwned > 1) {
-                            "⬅\uFE0F"
-                        } else if (amountOwned > 1 && friendAmountOwned == 0) {
-                            "➡\uFE0F"
-                        } else {
-                            ""
+            expansions.forEach { expansion ->
+                if (!homeScreenUiState.cardFilter.expansions.isEmpty() && !homeScreenUiState.cardFilter.expansions.contains(expansion)) {
+                    return@forEach
+                }
+                val filteredCardsForExpansion = filteredCards[expansion] ?: emptyList()
+                if (filteredCardsForExpansion.isNotEmpty()) {
+                    //No need to show header, if there's no cards shown in this set.
+                    item(span = { GridItemSpan(5) }) {
+                        //Cardset logo
+                        var imageBitmap by remember { mutableStateOf<ImageBitmap?>(null) }
+                        LaunchedEffect(expansion) {
+                            val bytes = Res.readBytes("files/expansions/${expansion.symbol}/expansion_symbols/${expansion.imageUrl}")
+                            try {
+                                imageBitmap = bytes.decodeToImageBitmap()
+                            } catch (e: Exception) {
+                                println("GridOfCards: Error reading CardSet logo image")
+                                e.printStackTrace()
+                                imageBitmap = null
+                            }
                         }
-                        MyHorizontalDivider()
-                        Text("$arrow $amountOwned / $friendAmountOwned $arrow")
-                        //if (arrow.isNotEmpty()) {
-                        PokeRarityComposable(card.pokeRarity)
-                        //}
+                        Box(modifier = Modifier.height(80.dp), contentAlignment = Alignment.Center) {
+                            if (imageBitmap == null) {
+                                Text(expansion.displayName)
+                            } else {
+                                imageBitmap?.let { Image(it, contentDescription = expansion.displayName, modifier = Modifier.padding(8.dp)) }
+                            }
+                        }
                     }
-                    if (homeScreenUiState.amountInputMode && isLoggedIn) {
-                        PokeCardComposableAmountInputMode(
-                            pokeExpansion = expansion,
-                            pokeCard = card,
-                            amountOwned = amountOwned,
-                            cardAmountLoading = cardAmountLoading,
-                            cardPlaceholderImage = placeHolderImage,
-                            onChangeAmountOwned = onChangeAmountOwned,
-                        )
-                    } else {
-                        PokeCardComposableNormalMode(
-                            pokeExpansion = expansion,
-                            pokeCard = card,
-                            isLoggedIn = appState.supabaseUserInfo != null,
-                            isOwned = isOwned,
-                            cardPlaceholderImage = placeHolderImage,
-                            onClick = { _set, _card ->
-                                onCardClick(_set, _card)
-                            },
-                            onLongClick = { _set, _card -> onCardLongClick(_set, _card) }
-                        )
+                }
+                items(filteredCardsForExpansion) { card ->
+                    val ownedCard = appState.ownedCards.find { (card.number == it.pokeCard.number && expansion.codeName == it.pokeExpansion.codeName) }
+                    val isOwned = ownedCard != null && ownedCard.amount > 0
+                    val amountOwned = ownedCard?.amount ?: 0
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        if (homeScreenUiState.friendUid != null) {
+                            val friendAmountOwned = homeScreenUiState.friendOwnedCards.find { (card.number == it.card_number && expansion.codeName == it.card_set_id) }?.card_amount ?: 0
+                            val arrow = if (amountOwned == 0 && friendAmountOwned > 1) {
+                                "⬅\uFE0F"
+                            } else if (amountOwned > 1 && friendAmountOwned == 0) {
+                                "➡\uFE0F"
+                            } else {
+                                ""
+                            }
+                            MyHorizontalDivider()
+                            Text("$arrow $amountOwned / $friendAmountOwned $arrow")
+                            //if (arrow.isNotEmpty()) {
+                            PokeRarityComposable(card.pokeRarity)
+                            //}
+                        }
+                        if (homeScreenUiState.amountInputMode && isLoggedIn) {
+                            PokeCardComposableAmountInputMode(
+                                pokeExpansion = expansion,
+                                pokeCard = card,
+                                amountOwned = amountOwned,
+                                cardAmountLoading = cardAmountLoading,
+                                cardPlaceholderImage = placeHolderImage,
+                                onChangeAmountOwned = onChangeAmountOwned,
+                            )
+                        } else {
+                            PokeCardComposableNormalMode(
+                                pokeExpansion = expansion,
+                                pokeCard = card,
+                                isLoggedIn = appState.supabaseUserInfo != null,
+                                isOwned = isOwned,
+                                cardPlaceholderImage = placeHolderImage,
+                                onClick = { _set, _card ->
+                                    onCardClick(_set, _card)
+                                },
+                                onLongClick = { _set, _card -> onCardLongClick(_set, _card) }
+                            )
+                        }
                     }
                 }
             }
         }
+
+        MyVerticalScrollbar(
+            modifier = Modifier.align(Alignment.CenterEnd).fillMaxHeight(),
+            state = scrollState
+        )
     }
 }
 
