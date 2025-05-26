@@ -3,6 +3,7 @@ package nl.frankkie.poketcghelper.android
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.app.PendingIntent
 import android.app.Service
 import android.content.Intent
 import android.content.pm.ServiceInfo
@@ -17,6 +18,7 @@ import android.util.Log
 import android.view.Surface
 import androidx.core.app.NotificationCompat
 import androidx.core.app.ServiceCompat
+import androidx.core.content.getSystemService
 import nl.frankkie.poketcghelper.R
 
 
@@ -39,6 +41,12 @@ class MyMediaProjectionService : Service() {
 
         if (intent == null) {
             Log.e(TAG, "Intent is null")
+            return START_NOT_STICKY
+        }
+
+        if (ACTION_STOP == intent.action) {
+            Log.v(TAG, "Stopping MyMediaProjectionService")
+            stopSelf()
             return START_NOT_STICKY
         }
 
@@ -101,8 +109,30 @@ class MyMediaProjectionService : Service() {
             .setPriority(NotificationCompat.PRIORITY_LOW)
             .setSmallIcon(R.drawable.ic_notification_bell)
             .setOngoing(true)
+            .addAction(getStopAction())
 
         return notificationBuilder.build()
+    }
+
+    private fun getStopAction() : NotificationCompat.Action {
+        val stopIntent = Intent(this, MyMediaProjectionService::class.java).apply {
+            action = ACTION_STOP
+        }
+
+        val stopPendingIntent = PendingIntent.getService(
+            this,
+            0,
+            stopIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+
+        val stopAction = NotificationCompat.Action.Builder(
+            R.drawable.ic_stop,
+            "Stop Recording",
+            stopPendingIntent // You can set a PendingIntent to stop the service here
+        ).build()
+
+        return stopAction
     }
 
     private fun createNotificationChannel() {
@@ -126,11 +156,13 @@ class MyMediaProjectionService : Service() {
         Log.v(TAG, "MyMediaProjectionService - onDestroy")
         //Release any resources or stop any ongoing tasks
         surfaceTexture?.release()
+        this.getSystemService<NotificationManager>()?.cancel(NOTIFICATION_ID)
     }
 
     companion object {
         private const val TAG = "PokeTCG"
         private const val NOTIFICATION_CHANNEL_ID = "PokeTCG_foreground_service"
         private const val NOTIFICATION_ID = 1
+        const val ACTION_STOP = "ACTION_STOP"
     }
 }
