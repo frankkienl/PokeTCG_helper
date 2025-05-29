@@ -1,0 +1,222 @@
+{
+  "symbol": "PROMO_A",
+  "codeName": "PROMO_A",
+  "displayName": "Promo-A",
+  "numberOfCards": 23,
+  "imageUrl": "promo_a.png",
+  "packs": [],
+  "cards": [
+    {
+      "expansion": "PROMO_A",
+      "number": 1,
+      "pokeName": "Potion",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "1-Potion.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 2,
+      "pokeName": "X Speed",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "2-X-Speed.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 3,
+      "pokeName": "Poke Ball",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "3-Poke-Ball.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 4,
+      "pokeName": "Professor's Research",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "4-Professors-Research-Oak.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 5,
+      "pokeName": "Hand Scope",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "5-Hand-Scope.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 6,
+      "pokeName": "Pokedex",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "6-Pokedex.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 7,
+      "pokeName": "Red Card",
+      "pokeRarity": "PROMO",
+      "pokeType": "ITEM",
+      "imageUrl": "7-Red-Card.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 8,
+      "pokeName": "Pikachu ex",
+      "pokeRarity": "PROMO",
+      "pokeType": "LIGHTNING",
+      "pokePrint": "FULL_ART_EX",
+      "imageUrl": "8-Pikachu-ex.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 9,
+      "pokeName": "Mewtwo",
+      "pokeRarity": "PROMO",
+      "pokeType": "PSYCHIC",
+      "pokePrint": "FULL_ART",
+      "imageUrl": "9-Mewtwo.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 10,
+      "pokeName": "Chansey",
+      "pokeRarity": "PROMO",
+      "pokeType": "COLORLESS",
+      "pokePrint": "HOLO",
+      "imageUrl": "10-Chansey.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 11,
+      "pokeName": "Meowth",
+      "pokeRarity": "PROMO",
+      "pokeType": "COLORLESS",
+      "pokePrint": "HOLO",
+      "imageUrl": "11-Meowth.png"
+    },
+    {
+      "number": 12,
+      "pokeName": "Butterfree",
+      "imageUrl": "12-Butterfree.png",
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Metapod",
+      "pokeHp": 120,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRarity": "PROMO",
+      "pokePrint": "HOLO",
+      "expansion": "PROMO_A"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 13,
+      "pokeName": "Lapras ex",
+      "pokeRarity": "PROMO",
+      "pokeType": "WATER",
+      "pokePrint": "EX",
+      "imageUrl": "13-Lapras-ex.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 14,
+      "pokeName": "Pikachu",
+      "pokeRarity": "PROMO",
+      "pokeType": "LIGHTNING",
+      "imageUrl": "14-Pikachu.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 15,
+      "pokeName": "Clefairy",
+      "pokeRarity": "PROMO",
+      "pokeType": "PSYCHIC",
+      "imageUrl": "15-Clefairy.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 16,
+      "pokeName": "Mankey",
+      "pokeRarity": "PROMO",
+      "pokeType": "FIGHTING",
+      "imageUrl": "16-Mankey.png"
+    },
+    {
+      "number": 17,
+      "pokeName": "Venusaur",
+      "imageUrl": "17-Venusaur.png",
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Ivysaur",
+      "pokeHp": 160,
+      "pokeType": "GRASS",
+      "pokeWeakness": "FIRE",
+      "pokeRetreat": 3,
+      "pokeRarity": "PROMO",
+      "pokePrint": "FULL_ART",
+      "expansion": "PROMO_A"
+    },
+    {
+      "number": 18,
+      "pokeName": "Greninja",
+      "imageUrl": "18-Greninja.png",
+      "pokeStage": 2,
+      "pokeEvolvesFrom": "Frogadier",
+      "pokeType": "WATER",
+      "pokeWeakness": "LIGHTNING",
+      "pokeRetreat": 1,
+      "pokeRarity": "PROMO",
+      "pokePrint": "HOLO",
+      "expansion": "PROMO_A"
+    },
+    {
+      "number": 19,
+      "pokeName": "Haunter",
+      "imageUrl": "19-Haunter.png",
+      "pokeStage": 1,
+      "pokeEvolvesFrom": "Gastly",
+      "pokeHp": 70,
+      "pokeType": "PSYCHIC",
+      "pokeWeakness": "DARKNESS",
+      "pokeRetreat": 1,
+      "pokeRarity": "PROMO",
+      "expansion": "PROMO_A"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 20,
+      "pokeName": "Onix",
+      "pokeRarity": "PROMO",
+      "pokeType": "FIGHTING",
+      "imageUrl": "20-Onix.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 21,
+      "pokeName": "Jigglypuff",
+      "pokeRarity": "PROMO",
+      "pokeType": "COLORLESS",
+      "imageUrl": "21-Jigglypuff.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 22,
+      "pokeName": "Bulbasaur",
+      "pokeRarity": "PROMO",
+      "pokeType": "GRASS",
+      "pokePrint": "HOLO",
+      "imageUrl": "22-Bulbasaur.png"
+    },
+    {
+      "expansion": "PROMO_A",
+      "number": 23,
+      "pokeName": "Magnemite",
+      "pokeRarity": "PROMO",
+      "pokeType": "LIGHTNING",
+      "pokePrint": "HOLO",
+      "imageUrl": "23-Magnemite.png"
+    }
+  ]
+}

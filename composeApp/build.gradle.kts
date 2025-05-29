@@ -92,6 +92,9 @@ kotlin {
             //implementation(libs.supabase.functions.kt)
             //implementation(libs.supabase.compose.auth)
             //implementation(libs.supabase.compose.auth.ui)
+            // Coil
+            implementation(libs.coil.compose)
+            implementation(libs.coil.network.ktor3)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)

@@ -25,6 +25,7 @@ supabase = "3.0.3"
 uiGraphicsAndroid = "1.7.8"
 foundationAndroid = "1.7.8"
 mlkit = "16.0.1"
+coil = "3.1.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -47,6 +48,10 @@ androidx-foundation-android = { group = "androidx.compose.foundation", name = "f
 kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
 navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+# Coil
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+coil-network-ktor3 = { group = "io.coil-kt.coil3", name = "coil-network-ktor3", version.ref = "coil" }
 
 # Ktor client
 ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }

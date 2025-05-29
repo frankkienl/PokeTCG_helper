@@ -1,6 +1,5 @@
 package nl.frankkie.poketcghelper.compose.homescreen
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -8,25 +7,22 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ExitToApp
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.ImageBitmap
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
+import nl.frankkie.poketcghelper.compose.SimpleAsyncPokeCardImage
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeCardAmount
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokePackComposable
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeRarityComposable
 import nl.frankkie.poketcghelper.compose.pokecard_parts.PokeTextRow
+import nl.frankkie.poketcghelper.model.*
 import nl.frankkie.poketcghelper.platform_dependant.getCurrentPlatform
 import nl.frankkie.poketcghelper.platform_dependant.isOpenInBrowserSupported
-import nl.frankkie.poketcghelper.model.*
 import nl.frankkie.poketcghelper.platform_dependant.tryToOpenInBrowser
 import org.jetbrains.compose.resources.ExperimentalResourceApi
-import org.jetbrains.compose.resources.decodeToImageBitmap
-import poketcg_helper.composeapp.generated.resources.Res
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
@@ -41,27 +37,6 @@ fun PokeCardDialog2(
     val pokeCard = cardDialogData.pokeCard
     val pokeExpansion = cardDialogData.pokeExpansion
     val cardHeight = 300.dp
-    var imageBitmap by remember {
-        mutableStateOf<ImageBitmap?>(null)
-    }
-    LaunchedEffect(pokeCard) {
-        try {
-            // Try large version
-            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
-            imageBitmap = bytes.decodeToImageBitmap()
-        } catch (e: Exception) {
-            println("PokeCardDialog2: Failed to load image (large) " + e.message)
-            try {
-                // Try small version
-                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
-                imageBitmap = bytes.decodeToImageBitmap()
-            } catch (e: Exception) {
-                println("PokeCardDialog2: Failed to load image (small) " + e.message)
-                // Image doesn't work.
-                imageBitmap = null
-            }
-        }
-    }
     Dialog(onDismissRequest = onDismissRequest) {
         Card(
             modifier = Modifier
@@ -76,12 +51,12 @@ fun PokeCardDialog2(
                         modifier = Modifier.verticalScroll(rememberScrollState()),
                         verticalArrangement = Arrangement.Center,
                     ) {
-                        PokeCardDialog2_CardImagePart(imageBitmap, cardHeight, isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned, false)
+                        PokeCardDialog2_CardImagePart(pokeCard = pokeCard, pokeExpansion = pokeExpansion, cardHeight, isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned, false)
                         PokeCardDialog2_CardDetailsPart(pokeCard, pokeExpansion, false)
                     }
                 } else {
                     Row {
-                        PokeCardDialog2_CardImagePart(imageBitmap, cardHeight, isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned, true)
+                        PokeCardDialog2_CardImagePart(pokeCard = pokeCard, pokeExpansion = pokeExpansion, cardHeight, isLoggedIn, isAmountLoading, onChangeAmountOwned, amountOwned, true)
                         PokeCardDialog2_CardDetailsPart(pokeCard, pokeExpansion, true)
                     }
                 }
@@ -159,7 +134,8 @@ private fun PokeCardDialog2_CardDetailsPart(pokeCard: PokeCard, pokeExpansion: P
 
 @Composable
 private fun PokeCardDialog2_CardImagePart(
-    imageBitmap: ImageBitmap?,
+    pokeCard: PokeCard,
+    pokeExpansion: PokeExpansion,
     cardHeight: Dp,
     isLoggedIn: Boolean,
     isAmountLoading: Boolean,
@@ -175,14 +151,8 @@ private fun PokeCardDialog2_CardImagePart(
         },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        imageBitmap?.let {
-            Image(
-                it,
-                modifier = Modifier.height(cardHeight).padding(8.dp),
-                contentScale = ContentScale.Fit,
-                contentDescription = null
-            )
-        }
+        SimpleAsyncPokeCardImage(modifier = Modifier.height(cardHeight).padding(8.dp),
+            pokeCard = pokeCard, pokeExpansion = pokeExpansion, cardPlaceholderImage = null)
         PokeCardAmount(
             isLoggedIn = isLoggedIn,
             isAmountLoading = isAmountLoading,
