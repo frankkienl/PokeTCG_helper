@@ -1,13 +1,15 @@
 package nl.frankkie.poketcghelper.compose
 
-import androidx.compose.foundation.*
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.foundation.text.input.TextFieldLineLimits
 import androidx.compose.foundation.text.input.rememberTextFieldState
 import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
 import androidx.compose.foundation.text.selection.SelectionContainer
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -16,8 +18,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ImageBitmap
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import nl.frankkie.poketcghelper.AppViewModel
@@ -25,9 +25,6 @@ import nl.frankkie.poketcghelper.model.PokeCard
 import nl.frankkie.poketcghelper.model.PokeRarity
 import nl.frankkie.poketcghelper.model.PokeType
 import org.jetbrains.compose.resources.ExperimentalResourceApi
-import org.jetbrains.compose.resources.MissingResourceException
-import org.jetbrains.compose.resources.decodeToImageBitmap
-import poketcg_helper.composeapp.generated.resources.Res
 
 /*
  * Semi-hidden feature; Edit cards
@@ -45,18 +42,6 @@ fun CardEditScreen(
     val ogCard = ogExpansion.cards.find { someCard -> someCard.number == ogCardNumber } ?: return
     var newCard by remember { mutableStateOf<PokeCard>(ogCard.copy()) }
     val cardHeight = 512.dp
-    var imageBitmap by remember {
-        mutableStateOf<ImageBitmap?>(null)
-    }
-    LaunchedEffect(ogCard) {
-        try {
-            val bytes = Res.readBytes("files/expansions/${ogExpansion.symbol}/card_images/${ogCard.imageUrl}")
-            imageBitmap = bytes.decodeToImageBitmap()
-        } catch (missingResourceException: MissingResourceException) {
-            println("PokeCardDialog: Failed to load image " + missingResourceException.message)
-            //Ignore; No image it is.
-        }
-    }
     Scaffold(topBar = {
         TopAppBar(
             title = { Text("Poke TCG Helper - Edit card") },
@@ -69,14 +54,7 @@ fun CardEditScreen(
     }) {
         Row {
             Column {
-                imageBitmap?.let {
-                    Image(
-                        it,
-                        modifier = Modifier.height(cardHeight).padding(8.dp),
-                        contentScale = ContentScale.Fit,
-                        contentDescription = null
-                    )
-                }
+                SimpleAsyncImage(modifier = Modifier.height(cardHeight).padding(8.dp), imagePath = "files/expansions/${ogExpansion.symbol}/card_images/${ogCard.imageUrl}", contentDescription = null,)
             }
             Column(
                 modifier = Modifier
