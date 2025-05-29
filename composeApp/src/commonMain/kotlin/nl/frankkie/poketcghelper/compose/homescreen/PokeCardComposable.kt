@@ -16,6 +16,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import nl.frankkie.poketcghelper.compose.SimpleAsyncPokeCardImage
+import nl.frankkie.poketcghelper.compose.SimplePokeCardImage
 import nl.frankkie.poketcghelper.model.*
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.decodeToImageBitmap
@@ -32,27 +34,6 @@ fun PokeCardComposableNormalMode(
     onClick: (PokeExpansion, PokeCard) -> Unit,
     onLongClick: (PokeExpansion, PokeCard) -> Unit = { _, _ -> }
 ) {
-    var imageBitmap by remember {
-        mutableStateOf<ImageBitmap?>(null)
-    }
-    LaunchedEffect(pokeCard) {
-        try {
-            // Try small version
-            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
-            imageBitmap = bytes.decodeToImageBitmap()
-        } catch (e: Exception) {
-            println("PokeCardComposableNormalMode: Failed to load image (small) " + e.message)
-            try {
-                // Try large version
-                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
-                imageBitmap = bytes.decodeToImageBitmap()
-            } catch (e: Exception) {
-                println("PokeCardComposableNormalMode: Failed to load image (large) " + e.message)
-                // Image doesn't work.
-                imageBitmap = null
-            }
-        }
-    }
     Column(
         modifier = Modifier
             .padding(top = 8.dp)
@@ -61,48 +42,7 @@ fun PokeCardComposableNormalMode(
             },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(modifier = Modifier.height(100.dp)) {
-            //if cards image is not loaded yet, show placeholder image instead
-            if (imageBitmap == null) {
-                cardPlaceholderImage?.let {
-                    Image(it, contentDescription = "Loading ...")
-                }
-                Box(Modifier.padding(top = 10.dp).align(Alignment.Center)) {
-                    Text(
-                        "Loading ...",
-                        modifier = Modifier.fillMaxHeight().align(Alignment.Center),
-                        style = TextStyle.Default.copy(
-                            color = Color.White,
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold,
-                        ),
-                    )
-                    Text(
-                        "Loading ...",
-                        modifier = Modifier.fillMaxHeight().align(Alignment.Center),
-                        style = TextStyle.Default.copy(
-                            color = Color.Black,
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold,
-                            drawStyle = Stroke(
-                                miter = 10f,
-                                width = 2f,
-                                join = StrokeJoin.Round
-                            )
-                        )
-                    )
-                }
-            }
-            imageBitmap?.let {
-                if (isLoggedIn && !isOwned) {
-                    //Show blurred, card is not in collection
-                    Image(it, null, colorFilter = ColorFilter.tint(Color(0xCCFFFFFF), blendMode = BlendMode.Color))
-                } else {
-                    //Show normally
-                    Image(it, null)
-                }
-            }
-        }
+        SimpleAsyncPokeCardImage(pokeCard, pokeExpansion, cardPlaceholderImage, showBlurred = !isOwned)
         Text(pokeCard.number.toString(), modifier = Modifier.combinedClickable(onClick = { onClick(pokeExpansion, pokeCard) }, onLongClick = { onLongClick(pokeExpansion, pokeCard) }))
         //Text(pokeCard.pokeName)
         Text(pokeCard.packId ?: "", fontSize = 10.sp)
@@ -119,74 +59,11 @@ fun PokeCardComposableAmountInputMode(
     cardPlaceholderImage: ImageBitmap? = null,
     onChangeAmountOwned: (PokeExpansion, PokeCard, Int) -> Unit
 ) {
-    var imageBitmap by remember {
-        mutableStateOf<ImageBitmap?>(null)
-    }
-    LaunchedEffect(pokeCard) {
-        try {
-            // Try small version
-            val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images_small/${pokeCard.imageUrl}")
-            imageBitmap = bytes.decodeToImageBitmap()
-        } catch (e: Exception) {
-            println("PokeCardComposableAmountInputMode: Failed to load image (small) " + e.message)
-            try {
-                // Try large version
-                val bytes = Res.readBytes("files/expansions/${pokeExpansion.symbol}/card_images/${pokeCard.imageUrl}")
-                imageBitmap = bytes.decodeToImageBitmap()
-            } catch (e: Exception) {
-                println("PokeCardComposableAmountInputMode: Failed to load image (large) " + e.message)
-                // Image doesn't work.
-                imageBitmap = null
-            }
-        }
-    }
     Column(
         modifier = Modifier.padding(top = 4.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(modifier = Modifier.height(100.dp)) {
-            if (imageBitmap == null) {
-                cardPlaceholderImage?.let {
-                    Image(it, contentDescription = "Loading ...")
-                }
-                Box(Modifier.padding(top = 10.dp).align(Alignment.Center)) {
-                    Text(
-                        "Loading ...",
-                        modifier = Modifier.fillMaxHeight().align(Alignment.Center),
-                        style = TextStyle.Default.copy(
-                            color = Color.White,
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold,
-                        ),
-                    )
-                    Text(
-                        "Loading ...",
-                        modifier = Modifier.fillMaxHeight().align(Alignment.Center),
-                        style = TextStyle.Default.copy(
-                            color = Color.Black,
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold,
-                            drawStyle = Stroke(
-                                miter = 10f,
-                                width = 2f,
-                                join = StrokeJoin.Round
-                            )
-                        )
-                    )
-                }
-            }
-            imageBitmap?.let {
-                if (amountOwned < 1) {
-                    //Show blurred
-                    Image(
-                        it, null, colorFilter = ColorFilter.tint(Color(0xCCFFFFFF), blendMode = BlendMode.Color),
-                    )
-                } else {
-                    //Show normally
-                    Image(it, null)
-                }
-            }
-        }
+        SimpleAsyncPokeCardImage(pokeCard, pokeExpansion, cardPlaceholderImage, showBlurred = (amountOwned == 0 && !cardAmountLoading))
         Text(pokeCard.pokeName + " (${pokeCard.number})", fontSize = 10.sp)
         val useVertical = true
         if (!useVertical) {
