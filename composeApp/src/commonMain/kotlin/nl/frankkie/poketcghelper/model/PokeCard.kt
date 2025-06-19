@@ -128,6 +128,8 @@ enum class PokeType(val codeName: String, val displayName: String, val imageUrl:
     COLORLESS(codeName = "COLORLESS", displayName = "Colorless", imageUrl = "colorless.png"),
     ITEM(codeName = "ITEM", displayName = "Item", imageUrl = null),
     SUPPORT(codeName = "SUPPORT", displayName = "Support", imageUrl = null),
+    `POKÉMON TOOL`(codeName = "POKÉMON TOOL", displayName = "Pokémon Tool", imageUrl = null),
+    SUPPORTER(codeName = "SUPPORTER", displayName = "Supporter", imageUrl = null),
 }
 
 enum class PokeStage(val number: Int, val codeName: String, val displayName: String) {
