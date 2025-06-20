@@ -67,7 +67,7 @@ kotlin {
             //
             implementation(libs.ktor.client.cio)
             //
-            implementation(libs.mlkit.text.recognition)
+            //implementation(libs.mlkit.text.recognition) // For ML Kit text recognition (uses Google Play Services)
         }
         commonMain.dependencies {
             implementation(compose.runtime)

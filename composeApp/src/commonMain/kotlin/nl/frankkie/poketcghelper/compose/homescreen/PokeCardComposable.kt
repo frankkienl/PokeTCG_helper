@@ -39,7 +39,13 @@ fun PokeCardComposableNormalMode(
             },
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        SimpleAsyncPokeCardImage(modifier = Modifier.height(100.dp), pokeCard, pokeExpansion, cardPlaceholderImage, showBlurred = !isOwned)
+        SimpleAsyncPokeCardImage(
+            modifier = Modifier.height(100.dp),
+            pokeCard,
+            pokeExpansion,
+            cardPlaceholderImage,
+            showBlurred = !isOwned && isLoggedIn
+        )
         Text(pokeCard.number.toString(), modifier = Modifier.combinedClickable(onClick = { onClick(pokeExpansion, pokeCard) }, onLongClick = { onLongClick(pokeExpansion, pokeCard) }))
         //Text(pokeCard.pokeName)
         Text(pokeCard.packId ?: "", fontSize = 10.sp)

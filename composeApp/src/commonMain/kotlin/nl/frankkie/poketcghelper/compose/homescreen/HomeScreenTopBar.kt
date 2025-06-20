@@ -45,6 +45,7 @@ fun HomeScreenTopBar(
     val homeScreenUiState = homeScreenViewModel.uiState.collectAsState().value
     val rememberCoroutineScope = rememberCoroutineScope()
     var showOverflowMenu by remember { mutableStateOf(false) }
+    val isLoggedIn = appState.supabaseUserInfo != null
     TopAppBar(
         title = { Text("Poke TCG Helper") },
         navigationIcon = {
@@ -73,46 +74,49 @@ fun HomeScreenTopBar(
                 onDismissRequest = { showOverflowMenu = false }
             ) {
 
-                // Enable/disable number input mode
-                DropdownMenuItem(onClick = { homeScreenViewModel.setAmountInputMode(!homeScreenUiState.amountInputMode); showOverflowMenu = false }) {
-                    Row {
-                        Icon(
-                            if (homeScreenUiState.amountInputMode) {
-                                Icons.Filled.Add
-                            } else {
-                                Icons.Outlined.Add
-                            },
-                            contentDescription = "Number input mode"
-                        )
-                        Spacer(Modifier.width(8.dp))
-                        Text(
-                            if (homeScreenUiState.amountInputMode) {
-                                "Disable"
-                            } else {
-                                "Enable"
-                            } + " number input mode"
-                        )
-                    }
-                }
+                if (isLoggedIn) {
 
-                // Friends
-                if (appState.supabaseClient != null) {
-                    DropdownMenuItem(onClick = { homeScreenViewModel.showFriendDialog(true) ; showOverflowMenu = false }) {
+                    // Enable/disable number input mode
+                    DropdownMenuItem(onClick = { homeScreenViewModel.setAmountInputMode(!homeScreenUiState.amountInputMode); showOverflowMenu = false }) {
                         Row {
-                            Icon(Icons.Default.Person, contentDescription = "Friend")
+                            Icon(
+                                if (homeScreenUiState.amountInputMode) {
+                                    Icons.Filled.Add
+                                } else {
+                                    Icons.Outlined.Add
+                                },
+                                contentDescription = "Number input mode"
+                            )
                             Spacer(Modifier.width(8.dp))
-                            Text("Compare with Friend")
+                            Text(
+                                if (homeScreenUiState.amountInputMode) {
+                                    "Disable"
+                                } else {
+                                    "Enable"
+                                } + " number input mode"
+                            )
                         }
                     }
-                }
 
-                if (appState.supabaseClient != null) {
-                    // Refresh cards
-                    DropdownMenuItem(onClick = { rememberCoroutineScope.launch { appViewModel.refreshOwnedCards() }; showOverflowMenu = false }) {
-                        Row {
-                            Icon(Icons.Filled.Refresh, contentDescription = "Refresh owned cards")
-                            Spacer(Modifier.width(8.dp))
-                            Text("Refresh owned cards")
+                    // Friends
+                    if (appState.supabaseClient != null) {
+                        DropdownMenuItem(onClick = { homeScreenViewModel.showFriendDialog(true); showOverflowMenu = false }) {
+                            Row {
+                                Icon(Icons.Default.Person, contentDescription = "Friend")
+                                Spacer(Modifier.width(8.dp))
+                                Text("Compare with Friend")
+                            }
+                        }
+                    }
+
+                    if (appState.supabaseClient != null) {
+                        // Refresh cards
+                        DropdownMenuItem(onClick = { rememberCoroutineScope.launch { appViewModel.refreshOwnedCards() }; showOverflowMenu = false }) {
+                            Row {
+                                Icon(Icons.Filled.Refresh, contentDescription = "Refresh owned cards")
+                                Spacer(Modifier.width(8.dp))
+                                Text("Refresh owned cards")
+                            }
                         }
                     }
                 }

@@ -48,7 +48,7 @@ fun HomeDrawerContent(navController: NavController, appViewModel: AppViewModel) 
         MyHorizontalDivider()
 
         // Analytics
-        if (appState.supabaseClient != null) {
+        if (appState.supabaseClient != null && appState.supabaseUserInfo != null) {
             Row(
                 modifier = Modifier
                     .heightIn(60.dp)
@@ -83,8 +83,9 @@ fun HomeDrawerContent(navController: NavController, appViewModel: AppViewModel) 
             MyHorizontalDivider()
         }
 
-        //Android Remote Control
-        if (isRemoteControlClientSupported(getCurrentPlatform())) {
+        //Android Remote Control Client
+        val isRemoteClientReadyForUse = false
+        if (isRemoteClientReadyForUse && isRemoteControlClientSupported(getCurrentPlatform())) {
             Row(
                 modifier = Modifier
                     .heightIn(60.dp)
@@ -100,7 +101,8 @@ fun HomeDrawerContent(navController: NavController, appViewModel: AppViewModel) 
             }
         }
 
-        if (isRemoteControlHostSupported(getCurrentPlatform())) {
+        // Desktop Remote Control Host
+        if (isRemoteClientReadyForUse && isRemoteControlHostSupported(getCurrentPlatform())) {
             Row(
                 modifier = Modifier
                     .heightIn(60.dp)
