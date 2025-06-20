@@ -1,3 +1,13 @@
+PokeTCG Helper
+==============
+
+This application is a helper for the PokeTCG game, 
+allowing users to keep track of their owned cards, and other related functionalities.
+When you are logged in, you can sync your cards with the other devices you use.
+
+Kotlin Multiplatform project for PokeTCG Helper
+===============================================
+
 This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop, Server.
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
