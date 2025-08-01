@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper.desktop_utils
+package nl.frankkie.poketcghelper.desktop_utils.a4
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -7,9 +7,6 @@ import io.ktor.client.request.request
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import nl.frankkie.poketcghelper.desktop_utils.a3a.bulbaBaseUrl1
-import nl.frankkie.poketcghelper.desktop_utils.a3a.bulbaImageUrl
-import nl.frankkie.poketcghelper.desktop_utils.a3a.fixImageUrls
 import nl.frankkie.poketcghelper.initializeCardsFromJson
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import poketcg_helper.composeapp.generated.resources.Res
@@ -27,42 +24,52 @@ val bulbaBaseUrl1 = "https://bulbapedia.bulbagarden.net/wiki/"
 val bulbaBaseUrl2 = "https://bulbapedia.bulbagarden.net/w/index.php?title="
 val bulbaImageUrl = "https://bulbapedia.bulbagarden.net/wiki/File:"
 
+//val expansionName = "Celestial_Guardians"
+//val expansionName = "EeveeGrove"
+val expansionName = "Wisdom_of_Sea_and_Sky"
+val expansionNameImgUrl = "WisdomofSeaandSky"
+
 @OptIn(ExperimentalResourceApi::class)
 suspend fun bulbaScrap2() {
     val ktorClient = HttpClient(CIO)
 
-    val jsonStringCelestialGuardians = Res.readBytes("files/expansions/A3/expansion_celestial_guardians.json").decodeToString()
-    val expansionCelestialGuardians = initializeCardsFromJson(jsonStringCelestialGuardians)
+//    val jsonStringExpansion = Res.readBytes("files/expansions/A3b/expansion_eevee_grove.json").decodeToString()
+    val jsonStringExpansion = Res.readBytes("files/expansions/A4/expansion_wisdom_of_sea_and_sky.json").decodeToString()
+    val expansion = initializeCardsFromJson(jsonStringExpansion)
 
-    val skip = 0
+    val skip = 214
 
-    expansionCelestialGuardians.cards.forEach { card ->
+    expansion.cards.forEach { card ->
 
         if (card.number < skip) {
             return@forEach
         }
 
-        if (!card.pokeName.contains(" ")) {
-            return@forEach
+//        if (!card.pokeName.contains(" ")) {
+//            return@forEach
+//        }
+        val doRandomShit = false
+        if (doRandomShit) {
+            // For each card, check the Bulbapedia page, and correct any data
+            val bulbaUrl1 = "${bulbaBaseUrl1}${card.pokeName.replace(" ", "_")}_(${expansionName}_${card.number})"
+            val bulbaUrl2 = "${bulbaBaseUrl1}${card.pokeName.replace(" ", "_")}_(${expansionName}_${card.number})&action=edit"
+            println("Bulbapedia URL: $bulbaUrl1")
+
+            val response = ktorClient.request(bulbaUrl2)
+            val body: String = response.body()
+            //Get the information from the body
+            val enName = "\\|en name=(.+)\n".toRegex().find(body)?.groupValues?.get(1)
+            val hp = "\\|hp=(\\d+)\n".toRegex().find(body)?.groupValues?.get(1)
+            val weakness = "\\|weakness=(.+)\n".toRegex().find(body)?.groupValues?.get(1)
+            val retreat = "\\|retreat cost=(\\d+)\n".toRegex().find(body)?.groupValues?.get(1)
+            val evoStage = "\\|stage=(.+)\n".toRegex().find(body)?.groupValues?.get(1)
         }
 
-        // For each card, check the Bulbapedia page, and correct any data
-        val bulbaUrl1 = "${bulbaBaseUrl1}${card.pokeName.replace(" ", "_")}_(Celestial_Guardians_${card.number})"
-        val bulbaUrl2 = "${bulbaBaseUrl1}${card.pokeName.replace(" ", "_")}_(Celestial_Guardians_${card.number})&action=edit"
-        println("Bulbapedia URL: $bulbaUrl1")
-
-        val response = ktorClient.request(bulbaUrl2)
-        val body: String = response.body()
-        //Get the information from the body
-        val enName = "\\|en name=(.+)\n".toRegex().find(body)?.groupValues?.get(1)
-        val hp = "\\|hp=(\\d+)\n".toRegex().find(body)?.groupValues?.get(1)
-        val weakness = "\\|weakness=(.+)\n".toRegex().find(body)?.groupValues?.get(1)
-        val retreat = "\\|retreat cost=(\\d+)\n".toRegex().find(body)?.groupValues?.get(1)
-        val evoStage = "\\|stage=(.+)\n".toRegex().find(body)?.groupValues?.get(1)
-
         // image
-        val imageFileName = "${card.pokeName.replace(" ", "")}CelestialGuardians${card.number}.png"
-        val responseImg = ktorClient.request("${bulbaImageUrl}$imageFileName")
+        val imageFileName = "${card.pokeName.replace(" ", "")}${expansionNameImgUrl}${card.number}.png"
+        val imageUrl = "$bulbaImageUrl$imageFileName"
+        println(imageUrl)
+        val responseImg = ktorClient.request(imageUrl)
         val bodyImg: String = responseImg.body()
         val actualImageUrl = "(https://archives\\.bulbagarden\\.net/media/upload/.+/$imageFileName)".toRegex().find(bodyImg)?.groupValues?.get(1)
 
@@ -76,8 +83,8 @@ suspend fun bulbaScrap2() {
         println("Image found: $actualImageUrl")
 
         card.copy(
-            pokeName = enName ?: card.pokeName,
-            pokeHp = hp?.toIntOrNull() ?: card.pokeHp,
+            //pokeName = enName ?: card.pokeName,
+            //pokeHp = hp?.toIntOrNull() ?: card.pokeHp,
             //pokeWeakness = weakness ?: card.pokeWeakness,
             //pokeRetreat = retreat?.toIntOrNull() ?: card.pokeRetreat,
             //pokeStage = evoStage?: card.pokeStage,
@@ -90,10 +97,10 @@ suspend fun bulbaScrap2() {
 
 @OptIn(ExperimentalResourceApi::class)
 suspend fun fixImageUrls() {
-    val jsonStringCelestialGuardians = Res.readBytes("files/expansions/A3/expansion_celestial_guardians.json").decodeToString()
-    val expansionCelestialGuardians = initializeCardsFromJson(jsonStringCelestialGuardians)
-    expansionCelestialGuardians.cards.forEach { card ->
-        val imageFileName = "${card.pokeName.replace(" ", "")}CelestialGuardians${card.number}.png"
+    val jsonString = Res.readBytes("files/expansions/A4/expansion_wisdom_of_sea_and_sky.json").decodeToString()
+    val expansion = initializeCardsFromJson(jsonString)
+    expansion.cards.forEach { card ->
+        val imageFileName = "${card.pokeName.replace(" ", "")}${expansionNameImgUrl}${card.number}.png"
         card.copy(
             imageUrl = imageFileName,
         )

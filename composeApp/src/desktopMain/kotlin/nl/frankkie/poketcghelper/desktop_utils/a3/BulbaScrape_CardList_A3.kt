@@ -1,4 +1,4 @@
-package nl.frankkie.poketcghelper.desktop_utils
+package nl.frankkie.poketcghelper.desktop_utils.a3
 
 /*
  * Scrape data from Bulbapedia
