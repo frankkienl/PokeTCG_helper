@@ -8,14 +8,14 @@
     {
       "id": "HO_OH",
       "name": "Ho-Oh",
-      "imageUrl": "",
-      "imageUrlSymbol": ""
+      "imageUrl": "A4_Logo_Ho-Oh_EN.png",
+      "imageUrlSymbol": "A4_Logo_Ho-Oh_EN.png"
     },
     {
       "id": "LUGIA",
       "name": "Lugia",
-      "imageUrl": "",
-      "imageUrlSymbol": ""
+      "imageUrl": "A4_Logo_Lugia_EN.png",
+      "imageUrlSymbol": "A4_Logo_Lugia_EN.png"
     }
   ],
   "cards": [
@@ -3575,7 +3575,7 @@
     {
       "number": 210,
       "pokeName": "Ho-Oh ex",
-      "imageUrl": "Ho-OhexWisdomofSeaandSky210.png",
+      "imageUrl": "Ho-OhexWisdomofSeaandSky210_placeholder.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3592,7 +3592,7 @@
     {
       "number": 211,
       "pokeName": "Lugia ex",
-      "imageUrl": "LugiaexWisdomofSeaandSky211.png",
+      "imageUrl": "LugiaexWisdomofSeaandSky211_placeholder.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3796,7 +3796,7 @@
     {
       "number": 223,
       "pokeName": "Nidoran♀",
-      "imageUrl": "Nidoran♀WisdomofSeaandSky223.png",
+      "imageUrl": "NidoranWisdomofSeaandSky223.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
@@ -3847,7 +3847,7 @@
     {
       "number": 226,
       "pokeName": "Nidoran♂",
-      "imageUrl": "Nidoran♂WisdomofSeaandSky226.png",
+      "imageUrl": "NidoranWisdomofSeaandSky226.png",
       "pokeStage": 0,
       "pokeEvolvesFrom": null,
       "pokeHp": null,
